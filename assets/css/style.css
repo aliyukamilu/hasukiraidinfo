@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Muli;
+  src: url("../fonts/Muli.ttf");
+}
+
+@font-face {
+  font-family: Muli-light;
+  src: url("../fonts/Mulish-Light.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: LatoBold;
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: LatoBlack;
+  src: url("../fonts/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: Itim;
+  src: url("../fonts/Itim/Itim-cRegular.ttf");
+}
+
+/* ::-webkit-scrollbar {
+  display: none
+} */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E426F;
+}
+
+::-webkit-scrollbar-track {
+  background: #1B2845;
+}
+
+:root {
+  --primaryCol: #fa6002;
+  --orange: #F7931e;
+  --lightBlue: #25B0E9;
+  --shadowedBlue: rgba(28, 123, 175, 0.78);
+  --fade-gray: #657482;
+}
+
+body {
+  /* background: url('../img/bg.png'); */
+  background-size: cover;
+  color: #fff;
+  background: #0F172A;
+  font-family: Lato !important;
+  width: 100vw !important;
+  margin: 0 !important;
+  margin-bottom: 50px !important;
+  overflow-x: hidden !important;
+}
+
+.logoLa {
+  font-family: LatoBlack;
+}
+
+.heading {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 55px;
+  text-align: center;
+  color: #FA6002;
+}
+
+.textPrimary {
+  color: #FA6002;
+}
+
+.buttons {
+  background: var(--primaryCol);
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin-top: 20px;
+  line-height: 31px;
+  width: 100%;
+  letter-spacing: 0.035em;
+}
+
+.buttons:hover {
+  color: #fff;
+}
+
+.checkLatertext {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #01013F;
+}
+
+.theForm {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 9px 100px 12px rgba(255, 255, 255, 0.012);
+  border-radius: 36px;
+  padding: 30px;
+  width: 80%;
+}
+
+.theForm .form-control {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 0.5px solid rgba(0, 0, 0, 0.257);
+  border-radius: 10px;
+}
+
+.theForm .form-control.formInput {
+  height: 50px;
+}
+
+.enqText {
+  font-family: 'Arial';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FA6002;
+}

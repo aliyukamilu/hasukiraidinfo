@@ -1,0 +1,5981 @@
+let walletsClaim = [
+  {
+   "Wallet Address": "A6ZUPEaHSqNg8MnV9rh57Yeww31c8YEnK11q1wU4XjhC",
+   "Amount": 50,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=A6ZUPEaHSqNg8MnV9rh57Yeww31c8YEnK11q1wU4XjhC&amount=50&index=0&proof=FkZw6rWu5GKAC9qYjPWChbHgCeAnKgUzcCcq1Ci1UQar,9AbYo8yNPC4DefUuZqAuxjAaYxr82re4c1KDKh5SAqnj,2JCZcc6bojPLCz67P4n29WPSHFHtXjn984LjNMaFfaNV,4s9pQb6J8sb6zfJqFsFfCrZDSUf1BXqnH9qUxrTC9vfT,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2vy1FwRU2zxHtxBH2tLrDLsdT4msQM9K7DxvpEMVw7Ap",
+   "Amount": 50,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2vy1FwRU2zxHtxBH2tLrDLsdT4msQM9K7DxvpEMVw7Ap&amount=50&index=1&proof=D2cs8zDaNwYeawaPG9DjVUHaMdb3ZfcYLbV4RoeJLby7,9AbYo8yNPC4DefUuZqAuxjAaYxr82re4c1KDKh5SAqnj,2JCZcc6bojPLCz67P4n29WPSHFHtXjn984LjNMaFfaNV,4s9pQb6J8sb6zfJqFsFfCrZDSUf1BXqnH9qUxrTC9vfT,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "J4bpQjmh7yBDVirALzVGGaqWjRiHuUzxwbwfCpuAgUT4",
+   "Amount": 20,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=J4bpQjmh7yBDVirALzVGGaqWjRiHuUzxwbwfCpuAgUT4&amount=20&index=2&proof=2sZyKBnhwMbZ2K8CzxaP7ZdtfpZovnV4PmKeg5vcG3sg,GHd1p5GTu8JRo4P11f48knTxwVKLMQhYijhh21pCSXhX,2JCZcc6bojPLCz67P4n29WPSHFHtXjn984LjNMaFfaNV,4s9pQb6J8sb6zfJqFsFfCrZDSUf1BXqnH9qUxrTC9vfT,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2CHq3h1oWcxnqGSPXnBBnwNdFwhwDeMteQv9GDzMPzXb",
+   "Amount": 20,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2CHq3h1oWcxnqGSPXnBBnwNdFwhwDeMteQv9GDzMPzXb&amount=20&index=3&proof=QxzuhtsghYY2da3gNEwozkuc9YmbVtP2VWBncRoFkAj,GHd1p5GTu8JRo4P11f48knTxwVKLMQhYijhh21pCSXhX,2JCZcc6bojPLCz67P4n29WPSHFHtXjn984LjNMaFfaNV,4s9pQb6J8sb6zfJqFsFfCrZDSUf1BXqnH9qUxrTC9vfT,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2gUPh2LQNB7pRJHEg7SX426oZxSqySkuLi3wVn7ixSJL",
+   "Amount": 20,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2gUPh2LQNB7pRJHEg7SX426oZxSqySkuLi3wVn7ixSJL&amount=20&index=4&proof=36dXWMHTHdFBtujK4hUTNTsmsPNUe3SRPjArTS9Sjc3d,7B8xsTPr9pmbU2Q6hyvx9RkSgSxYpTiJmqiP19v7S6P6,BmtH7s34R6RsecsGCrmxJ7YrXKqyPGiEXrVbHvh9Lwsm,4s9pQb6J8sb6zfJqFsFfCrZDSUf1BXqnH9qUxrTC9vfT,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7wepMjGJvr8QmHaXSAfajL1EtuAsA6G82JgXUMuXgHM2",
+   "Amount": 20,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7wepMjGJvr8QmHaXSAfajL1EtuAsA6G82JgXUMuXgHM2&amount=20&index=5&proof=8dbF2LzapTjX8A4Q5fZ9YGkF7piDQe17PHw7PwcSrFa5,7B8xsTPr9pmbU2Q6hyvx9RkSgSxYpTiJmqiP19v7S6P6,BmtH7s34R6RsecsGCrmxJ7YrXKqyPGiEXrVbHvh9Lwsm,4s9pQb6J8sb6zfJqFsFfCrZDSUf1BXqnH9qUxrTC9vfT,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FYJUfpCuWBh6uk6ds4G5bEL5UmrR818U6MjNCKPbAz3w",
+   "Amount": 20,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FYJUfpCuWBh6uk6ds4G5bEL5UmrR818U6MjNCKPbAz3w&amount=20&index=6&proof=G2s84BAL2u9abxq76LS7x7wWST9goGnXVCqvyHpMwfag,3WcGJ7sCVS9tfyrcyDKhnPsT5iTcaK3RPgoHpMiVAzAG,BmtH7s34R6RsecsGCrmxJ7YrXKqyPGiEXrVbHvh9Lwsm,4s9pQb6J8sb6zfJqFsFfCrZDSUf1BXqnH9qUxrTC9vfT,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BoVJ7ZAi3cFJP2kD4kvmMgT9RuWzFbLYDTzvmpPMLZdF",
+   "Amount": 20,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BoVJ7ZAi3cFJP2kD4kvmMgT9RuWzFbLYDTzvmpPMLZdF&amount=20&index=7&proof=66MDz4JcfRMmazAcDShpgF5wJDMQV7AoRsuYhVNaXE92,3WcGJ7sCVS9tfyrcyDKhnPsT5iTcaK3RPgoHpMiVAzAG,BmtH7s34R6RsecsGCrmxJ7YrXKqyPGiEXrVbHvh9Lwsm,4s9pQb6J8sb6zfJqFsFfCrZDSUf1BXqnH9qUxrTC9vfT,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EyUUKsDgdBfw2nupXBHhFjNDzZYSm2gsynoLBo4ABNYx",
+   "Amount": 20,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EyUUKsDgdBfw2nupXBHhFjNDzZYSm2gsynoLBo4ABNYx&amount=20&index=8&proof=AjEFwwdrVGDAqRRwMiJdTQeWwz4wS75HwJLAzki26KMH,8ABQGJ3FzFBwJCjcP3LdJvQzcF7M7usKoHiRHCc3GUfp,D9jBMD1FnUoPWL5hP9DQZtBx9BD2Z1JPV6RMs9hq74b,587RJGQME6KYuRwVApuLKxUKbApWkb9sWy7jHtCsuzX,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5SamUVepztoigzj6k3Fe8SHg7Tr65CpXoAhs9dhV2etm",
+   "Amount": 20,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5SamUVepztoigzj6k3Fe8SHg7Tr65CpXoAhs9dhV2etm&amount=20&index=9&proof=4xpkn7Ev6Bc5BfzX3deGpojrbCAogv8o6RPDWYqrBPMK,8ABQGJ3FzFBwJCjcP3LdJvQzcF7M7usKoHiRHCc3GUfp,D9jBMD1FnUoPWL5hP9DQZtBx9BD2Z1JPV6RMs9hq74b,587RJGQME6KYuRwVApuLKxUKbApWkb9sWy7jHtCsuzX,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CmCdCiB2SixVDgwM24wed8kjP9fwBnWJiPSw5uFoDti8",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CmCdCiB2SixVDgwM24wed8kjP9fwBnWJiPSw5uFoDti8&amount=15&index=10&proof=J8h4VfYxFBp1uDHJvmzDmSCKhWRztXtinTAPid8nGvev,2hC7X59ihnW9pL9T3BpY9WLdQAqy2twBoSRrGyzVDsMD,D9jBMD1FnUoPWL5hP9DQZtBx9BD2Z1JPV6RMs9hq74b,587RJGQME6KYuRwVApuLKxUKbApWkb9sWy7jHtCsuzX,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8kjsR85AY3VPCFo1aU1NAtrExg1eaEqBRx55dsjELxdT",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8kjsR85AY3VPCFo1aU1NAtrExg1eaEqBRx55dsjELxdT&amount=15&index=11&proof=CWiN8N625Yepm964hVqfdWTYH7nUfAsmz8nTNbjCwrXY,2hC7X59ihnW9pL9T3BpY9WLdQAqy2twBoSRrGyzVDsMD,D9jBMD1FnUoPWL5hP9DQZtBx9BD2Z1JPV6RMs9hq74b,587RJGQME6KYuRwVApuLKxUKbApWkb9sWy7jHtCsuzX,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BzvpNDyGJuVJLN7Lqmho46uow1UHRmhKb4FdCwy2oGXX",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BzvpNDyGJuVJLN7Lqmho46uow1UHRmhKb4FdCwy2oGXX&amount=15&index=12&proof=HnEwcP9g5wE3p29pJNAD7zgkpH8y3C4StPKVbtKecRob,B8vcepyLSEDHaKnmBESN3ampVtRU8TqpoeVUL96bTF33,8ZhDLkAAXYT3qVyhfgUyMMtpvHbjq6TQoomKs51ARcGP,587RJGQME6KYuRwVApuLKxUKbApWkb9sWy7jHtCsuzX,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FE8XmDn1HxRsZ1sTdhmhJPXsoi1EZp5umh5Zp27srAJU",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FE8XmDn1HxRsZ1sTdhmhJPXsoi1EZp5umh5Zp27srAJU&amount=15&index=13&proof=CDMv6a2U4qrVLsmfE3a7aUVt1eWbd9DC4KpdF7Tv8bLw,B8vcepyLSEDHaKnmBESN3ampVtRU8TqpoeVUL96bTF33,8ZhDLkAAXYT3qVyhfgUyMMtpvHbjq6TQoomKs51ARcGP,587RJGQME6KYuRwVApuLKxUKbApWkb9sWy7jHtCsuzX,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AsFvzyzKWZkgRjXV8RG6hgX1cDBxtFLFbNMdwzpdW1XS",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AsFvzyzKWZkgRjXV8RG6hgX1cDBxtFLFbNMdwzpdW1XS&amount=15&index=14&proof=7dpMDzY7VCYuUSEYNuYFqRXXT6Zjo1zurqWyJeujXZ1z,6u4b6DLwvyfTuHhie1NfiDo8363SxRGMbCMubmu9hEZX,8ZhDLkAAXYT3qVyhfgUyMMtpvHbjq6TQoomKs51ARcGP,587RJGQME6KYuRwVApuLKxUKbApWkb9sWy7jHtCsuzX,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3LcAgr6wMGXLmRay2VZpYhS8cu1HZicNiQ1zj8pFyxny",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3LcAgr6wMGXLmRay2VZpYhS8cu1HZicNiQ1zj8pFyxny&amount=15&index=15&proof=6qk2skx4o7sPYM1nk3Fv4jtEupYQjPs25osPrEhK2Y92,6u4b6DLwvyfTuHhie1NfiDo8363SxRGMbCMubmu9hEZX,8ZhDLkAAXYT3qVyhfgUyMMtpvHbjq6TQoomKs51ARcGP,587RJGQME6KYuRwVApuLKxUKbApWkb9sWy7jHtCsuzX,4Cg643oPHJEmbXpXfRmYBWhLtqjqxAvt8XWA9i6VMbwb,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AbnwgzUgzLBDMS3Y2c3zdiTSSDZSBhX3Pvp2zwHBqccw",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AbnwgzUgzLBDMS3Y2c3zdiTSSDZSBhX3Pvp2zwHBqccw&amount=15&index=16&proof=zZy8jud3SBs8Fy6HtNf4S6LjJ1cZ5Pob4WHmZwAGa2y,C6WDWuprjDEsxUZcPAGdDrgu3qvh4Nq8QSA7aSVYtz6A,FteBJynKp3QVZSmNWm5iEtMNCZgUqHGiGMJZVmhyFzmb,DXsUR4eNMtPLvaRgX85zP76cCUfMyQpitGmBvUXXMCdn,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AT5N96E1bNpUpdht35s3ru1Sc4RZqAfML6oGZETydQSb",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AT5N96E1bNpUpdht35s3ru1Sc4RZqAfML6oGZETydQSb&amount=15&index=17&proof=GrCPTpVrSkfzQRW4sx4DfD1xY1gpd8Sc4Mh323uNUktu,C6WDWuprjDEsxUZcPAGdDrgu3qvh4Nq8QSA7aSVYtz6A,FteBJynKp3QVZSmNWm5iEtMNCZgUqHGiGMJZVmhyFzmb,DXsUR4eNMtPLvaRgX85zP76cCUfMyQpitGmBvUXXMCdn,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "ERGPTRcAYaiiAUFNMzMs2qUsxBChKnVmsqSGEjevRyoJ",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=ERGPTRcAYaiiAUFNMzMs2qUsxBChKnVmsqSGEjevRyoJ&amount=15&index=18&proof=EGEtkN8TD2u7tsmm9UXXztqcAh5suQnkpGCzBXRDuzFB,HdizXEvyuGkEJWzaJxEJF91rxi5mqEMtniayLLztHVWv,FteBJynKp3QVZSmNWm5iEtMNCZgUqHGiGMJZVmhyFzmb,DXsUR4eNMtPLvaRgX85zP76cCUfMyQpitGmBvUXXMCdn,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HZ4zvDueq2kDwosQeNZaJaT3n3gHQ25xLzHUmGjX74Nt",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HZ4zvDueq2kDwosQeNZaJaT3n3gHQ25xLzHUmGjX74Nt&amount=15&index=19&proof=BbbuAN7mkQd34FjKXKuAKSfUbqQAxn7HgQNvq5UFX4VC,HdizXEvyuGkEJWzaJxEJF91rxi5mqEMtniayLLztHVWv,FteBJynKp3QVZSmNWm5iEtMNCZgUqHGiGMJZVmhyFzmb,DXsUR4eNMtPLvaRgX85zP76cCUfMyQpitGmBvUXXMCdn,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2eBhMJWGyFKg8VwPinX9nDYRbGxkviy3osi7im983HJb",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2eBhMJWGyFKg8VwPinX9nDYRbGxkviy3osi7im983HJb&amount=15&index=20&proof=CXUrKmYkmMfu8FMP4QxHZLcaGYDw3EngsXx8sfHjsUyB,DRZ2rRpHvyDWqQR9hMo7hweFoiMwrRuDdiFQvZ4YpYSv,F4P3yjkYjjk7LhBXWfFtUQ2rCXbWiAHdrXeJTFQkYEun,DXsUR4eNMtPLvaRgX85zP76cCUfMyQpitGmBvUXXMCdn,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7Ax2ogAxyFAKFnNXaBphWgJDDPuVV6Hb5rneziqeNoY6",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7Ax2ogAxyFAKFnNXaBphWgJDDPuVV6Hb5rneziqeNoY6&amount=15&index=21&proof=3ZtZ8E123aa5wmedQ9LnaxEbVPVhoG8j3cdgLujh4uBt,DRZ2rRpHvyDWqQR9hMo7hweFoiMwrRuDdiFQvZ4YpYSv,F4P3yjkYjjk7LhBXWfFtUQ2rCXbWiAHdrXeJTFQkYEun,DXsUR4eNMtPLvaRgX85zP76cCUfMyQpitGmBvUXXMCdn,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "56jUy2a4Pdv3qvaLSmuNvL3HQPgfrcGciuV4afg1TAyS",
+   "Amount": 15,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=56jUy2a4Pdv3qvaLSmuNvL3HQPgfrcGciuV4afg1TAyS&amount=15&index=22&proof=AYenLAnxhNz2BCsBYy1j3H2AMa4hv8NXpCburndi71HT,3N5FQusR2WQ7Urrzwioof8XuEjnwLRBc7nCczTMJhbA2,F4P3yjkYjjk7LhBXWfFtUQ2rCXbWiAHdrXeJTFQkYEun,DXsUR4eNMtPLvaRgX85zP76cCUfMyQpitGmBvUXXMCdn,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7kuaFMzy7RyR6kkmPcyehryFw63joGzARZo2n5TSDLVP",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7kuaFMzy7RyR6kkmPcyehryFw63joGzARZo2n5TSDLVP&amount=8&index=23&proof=UV26Akhz8aFcGMVsXrwStAKyFR7ckpVULuxkhCRts42,3N5FQusR2WQ7Urrzwioof8XuEjnwLRBc7nCczTMJhbA2,F4P3yjkYjjk7LhBXWfFtUQ2rCXbWiAHdrXeJTFQkYEun,DXsUR4eNMtPLvaRgX85zP76cCUfMyQpitGmBvUXXMCdn,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CQX6qLzjCAo1BgxUMVEJh43qwRZ8CPPM9Kun3Tm7bA4u",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CQX6qLzjCAo1BgxUMVEJh43qwRZ8CPPM9Kun3Tm7bA4u&amount=8&index=24&proof=8VZUekLwEx4u14sVnHiArMMkDTMCjGkJVz2hL2bUnhmv,5v7ipmp21Zs1bbdB6iPf6XrZUX2Ednaa5xfeGCRHv8bQ,CP8bdpZe95ZoDVTJbLVbvdRfgaVHHkFcG5DXQcTbEDVZ,BAWLfXamvqGAB64zmBwBCHjT76LZD2WDcc9MAaYYh4t4,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Hyf9oYPBRwzTGCaci3TJwyC73dtEPrByF5zBVf244kBd",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Hyf9oYPBRwzTGCaci3TJwyC73dtEPrByF5zBVf244kBd&amount=8&index=25&proof=5mwgwX3F1KeW1jStn8upCb5qayK1yigZqvH8KMp1zrZ9,5v7ipmp21Zs1bbdB6iPf6XrZUX2Ednaa5xfeGCRHv8bQ,CP8bdpZe95ZoDVTJbLVbvdRfgaVHHkFcG5DXQcTbEDVZ,BAWLfXamvqGAB64zmBwBCHjT76LZD2WDcc9MAaYYh4t4,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DPTKWf9GYt1caYNv1RSbAi18xGX65YT1xeDiCTbU2BJX",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DPTKWf9GYt1caYNv1RSbAi18xGX65YT1xeDiCTbU2BJX&amount=8&index=26&proof=EPgBSSN9qXms2ZcSbpHxHhnFgyAsNHHf1Ma7GfdGEysi,E94FUv2yjR7ZCPYoaoswKvFWtPq5RUBWauP5e71uLdtw,CP8bdpZe95ZoDVTJbLVbvdRfgaVHHkFcG5DXQcTbEDVZ,BAWLfXamvqGAB64zmBwBCHjT76LZD2WDcc9MAaYYh4t4,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BCN8wfPqShoAcbDK4yq4HUpb5Gv5169ef3tYEyGqHcCN",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BCN8wfPqShoAcbDK4yq4HUpb5Gv5169ef3tYEyGqHcCN&amount=8&index=27&proof=ETrjAbpK4DyiSXyJTzs5t8cgK6Qhp9z7Zdb452PdTSii,E94FUv2yjR7ZCPYoaoswKvFWtPq5RUBWauP5e71uLdtw,CP8bdpZe95ZoDVTJbLVbvdRfgaVHHkFcG5DXQcTbEDVZ,BAWLfXamvqGAB64zmBwBCHjT76LZD2WDcc9MAaYYh4t4,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "J25GcZQGrqKK1Ea8K4UTy8RxehVT4Y2JqgMkez6WSkuP",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=J25GcZQGrqKK1Ea8K4UTy8RxehVT4Y2JqgMkez6WSkuP&amount=8&index=28&proof=xeoobzpBojm5kM3XSzgh9R17awSa7zcrH2rBCnyrhfp,8ZXAw4KGD9umt9Yychn88W8mDGbcvxLGD4HCyYFrRKjW,QZfqsqyZ4Rtrhghfm11iNHqFpF5Rc2xFCjrZTcnf8yF,BAWLfXamvqGAB64zmBwBCHjT76LZD2WDcc9MAaYYh4t4,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "252ukoPTZ4xM7dK6N9v1nTaN12kSuKKrCcxMsiw5ucoq",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=252ukoPTZ4xM7dK6N9v1nTaN12kSuKKrCcxMsiw5ucoq&amount=8&index=29&proof=7xffdEYZxpMq9BV99YcuTJYLgofu2UdUu5rtdx38Vdis,8ZXAw4KGD9umt9Yychn88W8mDGbcvxLGD4HCyYFrRKjW,QZfqsqyZ4Rtrhghfm11iNHqFpF5Rc2xFCjrZTcnf8yF,BAWLfXamvqGAB64zmBwBCHjT76LZD2WDcc9MAaYYh4t4,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "767PB63L9zVCjNjsXHoeinu74aww3HFnGzM1YArWrEYG",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=767PB63L9zVCjNjsXHoeinu74aww3HFnGzM1YArWrEYG&amount=8&index=30&proof=Cb5JycRZECh9Y2GjTcyYZnc59pPj6K9kX99g1F87cgpq,83mBnpT3gubV4XWcXtBTxGxCw2GSg1JxGP77weQPSXXC,QZfqsqyZ4Rtrhghfm11iNHqFpF5Rc2xFCjrZTcnf8yF,BAWLfXamvqGAB64zmBwBCHjT76LZD2WDcc9MAaYYh4t4,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FuH5ogbrCbAowZWatqdKqv4CgHjULVpUEuBrYeVLJ3K1",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FuH5ogbrCbAowZWatqdKqv4CgHjULVpUEuBrYeVLJ3K1&amount=8&index=31&proof=4LtiTAciPzrDYmWTDUxLmKz3i5wv4d69JE2ZBhMYfKPs,83mBnpT3gubV4XWcXtBTxGxCw2GSg1JxGP77weQPSXXC,QZfqsqyZ4Rtrhghfm11iNHqFpF5Rc2xFCjrZTcnf8yF,BAWLfXamvqGAB64zmBwBCHjT76LZD2WDcc9MAaYYh4t4,B9T7o9iewPqq1z1YPWPQRczTUmUUy7vpy8K7gfLHtA1B,GfDWBuM1iowjzoiQ64ruJMTLJUp3HDXmFC6fP3JjuQai,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5eWcKQUT67aezYbCYUaNHr6XLoLXCTac4nojQc6N17vH",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5eWcKQUT67aezYbCYUaNHr6XLoLXCTac4nojQc6N17vH&amount=8&index=32&proof=Bwa4LC8nErDCvNFKN32ytx8E59RLiGTWyKPDwdutZcYo,6zPh25HLsJUXnRaEnzgZpcLQ6vETdZMtZ6qpFLy55bwE,Dx692oTMnwLYjGFjQ6RnRAQjiud1NsGT42zkoi6Abf76,4Gf8g5Lm9PCykfWCPcskNBTLTuVDdy2p4cSK13wEgk5Z,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2TtcW2asi2Q55cB7cMZE4psMh7YdAszPBTpzWUfg581J",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2TtcW2asi2Q55cB7cMZE4psMh7YdAszPBTpzWUfg581J&amount=8&index=33&proof=231dZGc8G29DmqSqNsaqmu9PioUaeiRMvuxmZALXYVce,6zPh25HLsJUXnRaEnzgZpcLQ6vETdZMtZ6qpFLy55bwE,Dx692oTMnwLYjGFjQ6RnRAQjiud1NsGT42zkoi6Abf76,4Gf8g5Lm9PCykfWCPcskNBTLTuVDdy2p4cSK13wEgk5Z,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6pAy5fp4WbH6jHwgr6SUSoMYi9mhRoc3oMWjcWyvSVDB",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6pAy5fp4WbH6jHwgr6SUSoMYi9mhRoc3oMWjcWyvSVDB&amount=8&index=34&proof=6n6zFpYWbgkZMdRbaVcF7DjuTtLKcN12edAR6fHY5LtY,ESM7chNjNtcXEJDXTjq49bDkbu5J2Q9ZRX5WJYt2CgYV,Dx692oTMnwLYjGFjQ6RnRAQjiud1NsGT42zkoi6Abf76,4Gf8g5Lm9PCykfWCPcskNBTLTuVDdy2p4cSK13wEgk5Z,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "pwJ6VTD6xnExmUkDtGAVxAWWohhSLDDeNx5RCqaokQn",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=pwJ6VTD6xnExmUkDtGAVxAWWohhSLDDeNx5RCqaokQn&amount=8&index=35&proof=J79pvKA8dV336s85ncrDJNmBVRUuCp3NoshZkjwfG5Yb,ESM7chNjNtcXEJDXTjq49bDkbu5J2Q9ZRX5WJYt2CgYV,Dx692oTMnwLYjGFjQ6RnRAQjiud1NsGT42zkoi6Abf76,4Gf8g5Lm9PCykfWCPcskNBTLTuVDdy2p4cSK13wEgk5Z,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4xuMsLmmS6JSAsehzbcQhJGwvLiw5f7boAgJjRyVjpb2",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4xuMsLmmS6JSAsehzbcQhJGwvLiw5f7boAgJjRyVjpb2&amount=8&index=36&proof=7RXNoFGWyD6L6zdruGMRQnYLXv6xcirsJEgntt83PdgW,H7KUbqY17HGDGPiq7uXuB3RWUK4SiYw9qQBT7EwQPDfo,76rcEhMvzqXu9aVwKhcKUeWHEeGFLJkHXbwGSxqtuh3G,4Gf8g5Lm9PCykfWCPcskNBTLTuVDdy2p4cSK13wEgk5Z,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2n1DwXK6HpCqS3aRGpePM1bsHNR1gHM2z1cvfpTbGCiM",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2n1DwXK6HpCqS3aRGpePM1bsHNR1gHM2z1cvfpTbGCiM&amount=8&index=37&proof=6CoVbaN2t697AAtrZYALECYY1Vkn72UEbB9YxUDknUdN,H7KUbqY17HGDGPiq7uXuB3RWUK4SiYw9qQBT7EwQPDfo,76rcEhMvzqXu9aVwKhcKUeWHEeGFLJkHXbwGSxqtuh3G,4Gf8g5Lm9PCykfWCPcskNBTLTuVDdy2p4cSK13wEgk5Z,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "A2pQwC4mwDzRVxCfN4LcFiye5UAFbXVnjgvYzXJiM8K3",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=A2pQwC4mwDzRVxCfN4LcFiye5UAFbXVnjgvYzXJiM8K3&amount=8&index=38&proof=DtP1dvbjhanqzm8EETvRE1XUkgWZqzX8u5Kkg69hYnBW,6eMc9NofMj4mj55pgwMwEMBfF7fL3ajtYq1uJ8eqYhpY,76rcEhMvzqXu9aVwKhcKUeWHEeGFLJkHXbwGSxqtuh3G,4Gf8g5Lm9PCykfWCPcskNBTLTuVDdy2p4cSK13wEgk5Z,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GPtVbLNK7ktwq9wG4R92F1VywjjF21aTd9rmajL5mXwT",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GPtVbLNK7ktwq9wG4R92F1VywjjF21aTd9rmajL5mXwT&amount=8&index=39&proof=AGHeXRGRQL3mqCWUHL29ft4yrfQQGnh7oCiZYQ7PgFfL,6eMc9NofMj4mj55pgwMwEMBfF7fL3ajtYq1uJ8eqYhpY,76rcEhMvzqXu9aVwKhcKUeWHEeGFLJkHXbwGSxqtuh3G,4Gf8g5Lm9PCykfWCPcskNBTLTuVDdy2p4cSK13wEgk5Z,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CobQyfvGVWHuovJhMCdmT7sTWFKW1hjoCcC7VPyth9gU",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CobQyfvGVWHuovJhMCdmT7sTWFKW1hjoCcC7VPyth9gU&amount=8&index=40&proof=7ASgs6qLjFXBY9fmmBim8GEZmKF7RsgQV27cLfXFAFb7,8QKRHk1BEWoy5SxNQDZ278WqLjVCaaLiombprgvY8cpZ,3U2uPrfp1inUebeHLcnUNLo6Exp1p2Q2vqkjwRj3NZxE,DYGiv36Lzbi41AMvd4UYr5v58vB8neCxtt1N1LowW89k,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "G4ZWv1aug4opta9d3QveNFoXJQpc3CA8c36cr3XoJGQr",
+   "Amount": 8,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=G4ZWv1aug4opta9d3QveNFoXJQpc3CA8c36cr3XoJGQr&amount=8&index=41&proof=2QcdUzheHxp6nCRm4AmPKYAwQv6rMsg8aNFLxDp5Rund,8QKRHk1BEWoy5SxNQDZ278WqLjVCaaLiombprgvY8cpZ,3U2uPrfp1inUebeHLcnUNLo6Exp1p2Q2vqkjwRj3NZxE,DYGiv36Lzbi41AMvd4UYr5v58vB8neCxtt1N1LowW89k,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "45GZN23Za5dvcDFzNJfDj8tu2tzU6RfuWtdbL8sJgyyj",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=45GZN23Za5dvcDFzNJfDj8tu2tzU6RfuWtdbL8sJgyyj&amount=4&index=42&proof=y8Qu88F1YLpXvvfRRKk1q8GgpYJcDwU48gGh6DYKCMg,2bEfXr3KmQKZWQrDRTxhFGDQB7HECQCKKn7npg5rZUQv,3U2uPrfp1inUebeHLcnUNLo6Exp1p2Q2vqkjwRj3NZxE,DYGiv36Lzbi41AMvd4UYr5v58vB8neCxtt1N1LowW89k,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5Qytgh462uRhQnfRDspcsfo8tkWizBHQHQ8TLtgdt875",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5Qytgh462uRhQnfRDspcsfo8tkWizBHQHQ8TLtgdt875&amount=4&index=43&proof=6oxPD2Zya3kj8rEteQYWy1z35xZL7azqRjKoe1M6UHaB,2bEfXr3KmQKZWQrDRTxhFGDQB7HECQCKKn7npg5rZUQv,3U2uPrfp1inUebeHLcnUNLo6Exp1p2Q2vqkjwRj3NZxE,DYGiv36Lzbi41AMvd4UYr5v58vB8neCxtt1N1LowW89k,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Bjv3fKn3uWy5igdgEixdkdTg824Tr4p8BkGXKRCxPvGF",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Bjv3fKn3uWy5igdgEixdkdTg824Tr4p8BkGXKRCxPvGF&amount=4&index=44&proof=DtNqrfwzJjSQgNNhfAJrDdxTyDz4XRZCdiQknSFEuify,35QQcquGXg77W44hoqbDyrwhRM6ntnbjut5mhczxodEn,2npCpDe4qUCBnct2jsBzompa5idnUkHVZXcJGo5gdtyY,DYGiv36Lzbi41AMvd4UYr5v58vB8neCxtt1N1LowW89k,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9z2HRnp21ftD79RK9m5aUvmwNw4Km3yQrAQtcqy2RZYX",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9z2HRnp21ftD79RK9m5aUvmwNw4Km3yQrAQtcqy2RZYX&amount=4&index=45&proof=HJkEdgMzVa1ezuLonngWmNMwrA9TmtK4eNHTc3tMmWKX,35QQcquGXg77W44hoqbDyrwhRM6ntnbjut5mhczxodEn,2npCpDe4qUCBnct2jsBzompa5idnUkHVZXcJGo5gdtyY,DYGiv36Lzbi41AMvd4UYr5v58vB8neCxtt1N1LowW89k,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "1gYqnuFPJ1317VfUgf9UqKbdG7vCcTicJfazQtqp9xQ",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=1gYqnuFPJ1317VfUgf9UqKbdG7vCcTicJfazQtqp9xQ&amount=4&index=46&proof=DMCQXWhtmT7rLdQdmLVGAHiUfJiZbzsJuqoaiNYyLvVE,6d7aXYDzbpFwPSFKuiRkQ3X76mBfby4URNh26xojyq12,2npCpDe4qUCBnct2jsBzompa5idnUkHVZXcJGo5gdtyY,DYGiv36Lzbi41AMvd4UYr5v58vB8neCxtt1N1LowW89k,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "G9wy7o4KqzeMwDNzuQTGN5C6UemoYd9yhZSq5H5FB3XS",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=G9wy7o4KqzeMwDNzuQTGN5C6UemoYd9yhZSq5H5FB3XS&amount=4&index=47&proof=GBdE63PrwmYya6P1kTuF6ZSyzLgyyWqh9jrBfBNM1r4r,6d7aXYDzbpFwPSFKuiRkQ3X76mBfby4URNh26xojyq12,2npCpDe4qUCBnct2jsBzompa5idnUkHVZXcJGo5gdtyY,DYGiv36Lzbi41AMvd4UYr5v58vB8neCxtt1N1LowW89k,2JvGkVVzBPTafSD8dXb3vzZ2LL8ZknMmGA9WfxhyPNM9,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3CVqp8cowz15oYGj1maoJSjvAUjpxWRWt2EYyfShK655",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3CVqp8cowz15oYGj1maoJSjvAUjpxWRWt2EYyfShK655&amount=4&index=48&proof=GLdc8h8W8vmNZ8nYsyYXaTFhmjtkA8Q4tuyMgbX5rjnq,3dVUUXxc55DCu8SEXPhag34stEnQjUGX2TCCnxs6YASZ,D2v4MtGunrnSoTj4WkKmoWaB6SxPgHNUzPsur29V4vXz,C2eT2pUzd8AzGuYbxzxJbvoL2UhPnq3Hczx5qgEW1qB8,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7iBvJEUUbV9hKK9YtF2DWSdXmYoBz1gsfg4356zZJFZb",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7iBvJEUUbV9hKK9YtF2DWSdXmYoBz1gsfg4356zZJFZb&amount=4&index=49&proof=FxERvGNPCEzjfWXCfNXrSq9gpWyFHtQAT4ShCWgu2tF7,3dVUUXxc55DCu8SEXPhag34stEnQjUGX2TCCnxs6YASZ,D2v4MtGunrnSoTj4WkKmoWaB6SxPgHNUzPsur29V4vXz,C2eT2pUzd8AzGuYbxzxJbvoL2UhPnq3Hczx5qgEW1qB8,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3RNDMf76CreJBhtM9txoUDdsVEQMcow6xQmLpuxWS9Gc",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3RNDMf76CreJBhtM9txoUDdsVEQMcow6xQmLpuxWS9Gc&amount=4&index=50&proof=DTBmgc1u5iJz7VMiEuaZPgvtvaschGHHUKyqvMq7df1w,3ZBhyCGfrDHSt5CXsjrXaHk95BxCfCncLfUgr4kq6nr8,D2v4MtGunrnSoTj4WkKmoWaB6SxPgHNUzPsur29V4vXz,C2eT2pUzd8AzGuYbxzxJbvoL2UhPnq3Hczx5qgEW1qB8,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FrBm1n8kCEhYeSA7mWau6HxEuqcZP8fFc6NCLz2Sph7s",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FrBm1n8kCEhYeSA7mWau6HxEuqcZP8fFc6NCLz2Sph7s&amount=4&index=51&proof=DyvoHH9meUu3x6kZazM2MweWWkHhz1zHbxiyGeqW3RZJ,3ZBhyCGfrDHSt5CXsjrXaHk95BxCfCncLfUgr4kq6nr8,D2v4MtGunrnSoTj4WkKmoWaB6SxPgHNUzPsur29V4vXz,C2eT2pUzd8AzGuYbxzxJbvoL2UhPnq3Hczx5qgEW1qB8,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "J6WnqFsRWPr9gDywkRrdyPu93WNB5HLBr7aYv1di1YJ2",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=J6WnqFsRWPr9gDywkRrdyPu93WNB5HLBr7aYv1di1YJ2&amount=4&index=52&proof=6HLEaPL1Urh9NKAPKVZJLf7CBx6Hy8tpYjh3pxkdhupB,Em4aZDq8BmCW5vdvuFMM7Ns8g93BiHeqqEbA6Y7ByAUj,Gq6wMQzQMQddM3w8MfxNFNoqkrv5tzFSpxHu3ZKJJp5r,C2eT2pUzd8AzGuYbxzxJbvoL2UhPnq3Hczx5qgEW1qB8,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "nspKwYFatZK24rPjdPg78LPhQoPaR128Scw9KGGiCn8",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=nspKwYFatZK24rPjdPg78LPhQoPaR128Scw9KGGiCn8&amount=4&index=53&proof=8UFyJ769VVzZXPVJvuDXcffshabk7oVDxs2pZDE2j3n2,Em4aZDq8BmCW5vdvuFMM7Ns8g93BiHeqqEbA6Y7ByAUj,Gq6wMQzQMQddM3w8MfxNFNoqkrv5tzFSpxHu3ZKJJp5r,C2eT2pUzd8AzGuYbxzxJbvoL2UhPnq3Hczx5qgEW1qB8,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8CyxuGSGAuYDve9fGV5z7NTLyaPusx55pDxJrmHwjdKH",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8CyxuGSGAuYDve9fGV5z7NTLyaPusx55pDxJrmHwjdKH&amount=4&index=54&proof=FYortvM1fsEZ4rmXoC68JyfiLqmuJxsTMfn3Y2ZUhtNC,Bo3LvUgdcQbjBHVDpJDwTLuTuMRvw8hpTpdMWTiTcQPY,Gq6wMQzQMQddM3w8MfxNFNoqkrv5tzFSpxHu3ZKJJp5r,C2eT2pUzd8AzGuYbxzxJbvoL2UhPnq3Hczx5qgEW1qB8,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "B7vgVrV8BqHQST8Nn8iWT5jNkJ1PswyZAAbLwDwpJEbq",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=B7vgVrV8BqHQST8Nn8iWT5jNkJ1PswyZAAbLwDwpJEbq&amount=4&index=55&proof=DmWQeMaF5wvyeYvX2P9uVKE9y3Dt1eLSkrXtvVGbKW1n,Bo3LvUgdcQbjBHVDpJDwTLuTuMRvw8hpTpdMWTiTcQPY,Gq6wMQzQMQddM3w8MfxNFNoqkrv5tzFSpxHu3ZKJJp5r,C2eT2pUzd8AzGuYbxzxJbvoL2UhPnq3Hczx5qgEW1qB8,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "G54t2MJJ5isRytW9xqsgUyZRSRLGZ5JCoQ4iGHNdgQ1e",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=G54t2MJJ5isRytW9xqsgUyZRSRLGZ5JCoQ4iGHNdgQ1e&amount=4&index=56&proof=QPvG1RKBf32TRBJ3PbsyqgNqojFumeBNhDVbmEHPVm7,7u65V2GBrGMyM4nFjZGdoZkpYPwjVrKDYVDyqx2tyBAb,8DVaPMbzqBBpTSj3mjrvtpZEUQ2WnsvtKDTxzQYHAsUb,9e5aAWDkgCgCRUgdoqxXWVg5xXV3MQWPSmmTXHW2D96k,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AFQ5NYcF1ux3gsSdtDVCEhuuZAsfgYMFEemHhW3qPRMV",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AFQ5NYcF1ux3gsSdtDVCEhuuZAsfgYMFEemHhW3qPRMV&amount=4&index=57&proof=EoSRdL5BahSBAzPrm3BJYfbQNoETQxKQZ6fC7RBR3Ad6,7u65V2GBrGMyM4nFjZGdoZkpYPwjVrKDYVDyqx2tyBAb,8DVaPMbzqBBpTSj3mjrvtpZEUQ2WnsvtKDTxzQYHAsUb,9e5aAWDkgCgCRUgdoqxXWVg5xXV3MQWPSmmTXHW2D96k,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GSJSTYCHXMYHvuf3LQJi9vL3RUuhGUN5HZtNEVtAZPPs",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GSJSTYCHXMYHvuf3LQJi9vL3RUuhGUN5HZtNEVtAZPPs&amount=4&index=58&proof=C8hpMnnSBvARVoK8fGKZG9ijfKgK3hqRpj5a64e1aT5W,Gp9behe3XQ2jS67hnVEb8rjZsKXxHjsNbg67RQifP6xY,8DVaPMbzqBBpTSj3mjrvtpZEUQ2WnsvtKDTxzQYHAsUb,9e5aAWDkgCgCRUgdoqxXWVg5xXV3MQWPSmmTXHW2D96k,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2BX3efRdC8mBztgFc8sLKRj48MiYBdoSXLyY1xi8bDpa",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2BX3efRdC8mBztgFc8sLKRj48MiYBdoSXLyY1xi8bDpa&amount=4&index=59&proof=Af5wjXpnAspSJy4Yj5XZXgm39C9NPAg1oJ1FJn5Qr37F,Gp9behe3XQ2jS67hnVEb8rjZsKXxHjsNbg67RQifP6xY,8DVaPMbzqBBpTSj3mjrvtpZEUQ2WnsvtKDTxzQYHAsUb,9e5aAWDkgCgCRUgdoqxXWVg5xXV3MQWPSmmTXHW2D96k,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3RCyt9QJqfdzyMMjem3YGCLMRUiZXq1voUfEVyXV9viA",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3RCyt9QJqfdzyMMjem3YGCLMRUiZXq1voUfEVyXV9viA&amount=4&index=60&proof=qZWctm6fwPWiUws9Ebeasf37VuGCmpkDwubHXdLFKsb,FPyXP7Y4fFk9dkj9xH2fTbqXuS3n7c2NAwWmp6x45Qoc,ABxpKdtGWYae2k9eGyV9FMZ47ViuhnRcu6TnZrSX1Xg8,9e5aAWDkgCgCRUgdoqxXWVg5xXV3MQWPSmmTXHW2D96k,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "46avNRFPyP4fs59t4FvfDFi5qMMojqwgFDP9txAG2MiQ",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=46avNRFPyP4fs59t4FvfDFi5qMMojqwgFDP9txAG2MiQ&amount=4&index=61&proof=yqBp6Wu39RrzDbJxBV5DgQRhap3ipkkTx6BYznaU2mX,FPyXP7Y4fFk9dkj9xH2fTbqXuS3n7c2NAwWmp6x45Qoc,ABxpKdtGWYae2k9eGyV9FMZ47ViuhnRcu6TnZrSX1Xg8,9e5aAWDkgCgCRUgdoqxXWVg5xXV3MQWPSmmTXHW2D96k,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5evfAuNV8bwADF4JZdREUAajXbQFkCf81vtnz4Y9hjn1",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5evfAuNV8bwADF4JZdREUAajXbQFkCf81vtnz4Y9hjn1&amount=4&index=62&proof=F93YraS7eF4tJcgVcM1dxQmDcMM8DgyNCPXzNEVdfQ2v,HhkRMh8jTUyHrTKhhNtkJkNQyU9j7AqHtfS3mxvWmri,ABxpKdtGWYae2k9eGyV9FMZ47ViuhnRcu6TnZrSX1Xg8,9e5aAWDkgCgCRUgdoqxXWVg5xXV3MQWPSmmTXHW2D96k,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6DFeqkpXKZWLvNUkAoDFByhKskb389v9NqQe3DxDF7mG",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6DFeqkpXKZWLvNUkAoDFByhKskb389v9NqQe3DxDF7mG&amount=4&index=63&proof=53zn3pBx2VbsjSiwiRfn6Q4vLCWhaJAxNnwaeHf1s88C,HhkRMh8jTUyHrTKhhNtkJkNQyU9j7AqHtfS3mxvWmri,ABxpKdtGWYae2k9eGyV9FMZ47ViuhnRcu6TnZrSX1Xg8,9e5aAWDkgCgCRUgdoqxXWVg5xXV3MQWPSmmTXHW2D96k,FdhowSFPYRDoCB7ioUBCCocrtG3WMuK73zc2cHrZXeAf,A2byjSHaiDKkLrJUNxqicmtJrUnp7SPD6UzHGQoWm3SZ,FNeNGkwJCMX5UDMUjYC4M76H21N7t2YqMGJjVr3HWyxe,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8p671fg4qxmks1m6pW3wysWopRDdcg4GvfSMnyvnjLe4",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8p671fg4qxmks1m6pW3wysWopRDdcg4GvfSMnyvnjLe4&amount=4&index=64&proof=5TpEbJqRRi7UE9uqZqNvUTa8CpWeh7tgcxht6PYqN2uk,7mVJi9dNiVHggrzKA7d3mBtdCDXkvCrKmYj2QYmL3iKi,5rknzZLpoNUYvqjpFZaQDwAmNPeBTYdAE9B4XysizdCt,F8UvcZFg57NC2ADKFnLmaAZig84C5SS2pE3cta7xV7CZ,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DGvMziZrRvf48oyrLK5gsfbJKkEH4e4aRsceKb1NrmeV",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DGvMziZrRvf48oyrLK5gsfbJKkEH4e4aRsceKb1NrmeV&amount=4&index=65&proof=4HhFgDz9HMqBJre3y2o2tr9Y5PZCZPFkqEt75qF17yyg,7mVJi9dNiVHggrzKA7d3mBtdCDXkvCrKmYj2QYmL3iKi,5rknzZLpoNUYvqjpFZaQDwAmNPeBTYdAE9B4XysizdCt,F8UvcZFg57NC2ADKFnLmaAZig84C5SS2pE3cta7xV7CZ,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "VoshysH2zi1246v7J3P1jWXWJqtwFufJzgDbNfahDfo",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=VoshysH2zi1246v7J3P1jWXWJqtwFufJzgDbNfahDfo&amount=4&index=66&proof=2Qih8SQcaFDtgyudzeoj3Gw5aeYhfD71FGm4SAEk3sZG,5rKNjT36EMS1LcKzxRdxRPqekh3XLEtQCMjeELJtVBX,5rknzZLpoNUYvqjpFZaQDwAmNPeBTYdAE9B4XysizdCt,F8UvcZFg57NC2ADKFnLmaAZig84C5SS2pE3cta7xV7CZ,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2sw1RSRxfJiXFBvRNXCAhEHHJFBpAhow64d6L16CXviQ",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2sw1RSRxfJiXFBvRNXCAhEHHJFBpAhow64d6L16CXviQ&amount=4&index=67&proof=CbPTYW7Mc86sFFnjJQNZWnuSkhYhMqiHhFPbhX3S2mc1,5rKNjT36EMS1LcKzxRdxRPqekh3XLEtQCMjeELJtVBX,5rknzZLpoNUYvqjpFZaQDwAmNPeBTYdAE9B4XysizdCt,F8UvcZFg57NC2ADKFnLmaAZig84C5SS2pE3cta7xV7CZ,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8j7qfzsxb9ukZ68TE715WYjGFJ7RT9VboD4RLB4dsuns",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8j7qfzsxb9ukZ68TE715WYjGFJ7RT9VboD4RLB4dsuns&amount=4&index=68&proof=GxH3sPxNbF67E9QQQoMyLCmNwwKThuZ7NH1qp797G1Kz,2sQqBbQg6pqVYNnbAS3zZvjqmvZZHyZtw7PJ4zUqnBfY,5r6A5cHiH2AbgkuBhXcHc5R6Qf4EKx6ntAdoXrdye8Zn,F8UvcZFg57NC2ADKFnLmaAZig84C5SS2pE3cta7xV7CZ,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5LJjFcRvnzP5oPuM7Ft3usdFvCVoaDX3GF98XxGFR1Y7",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5LJjFcRvnzP5oPuM7Ft3usdFvCVoaDX3GF98XxGFR1Y7&amount=4&index=69&proof=E1Qt1zo66XWEcwgBKKUos7ZwPhQ5EsqQPcQYLwVwzPSK,2sQqBbQg6pqVYNnbAS3zZvjqmvZZHyZtw7PJ4zUqnBfY,5r6A5cHiH2AbgkuBhXcHc5R6Qf4EKx6ntAdoXrdye8Zn,F8UvcZFg57NC2ADKFnLmaAZig84C5SS2pE3cta7xV7CZ,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5Z8vPToGXEv8bmfGJEioVkHuZqTARn4mFPe8yryL5eL1",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5Z8vPToGXEv8bmfGJEioVkHuZqTARn4mFPe8yryL5eL1&amount=4&index=70&proof=FytuB5hpTDKwsvNyE1a1k61PsLPDbmsuUwWEHZjCtzsM,9HuD4NxKNoLnMRDGy1droqgdNjZ4LqEVhyrme8RkiPEY,5r6A5cHiH2AbgkuBhXcHc5R6Qf4EKx6ntAdoXrdye8Zn,F8UvcZFg57NC2ADKFnLmaAZig84C5SS2pE3cta7xV7CZ,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4EqFLBAhxtRg1zM5b36besqLjc5f8YXkeMz8bCHLAkjY",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4EqFLBAhxtRg1zM5b36besqLjc5f8YXkeMz8bCHLAkjY&amount=4&index=71&proof=7zh4dczr4iv3PdAB4F8UtHvf3a54frpf5jeDGf5mNudt,9HuD4NxKNoLnMRDGy1droqgdNjZ4LqEVhyrme8RkiPEY,5r6A5cHiH2AbgkuBhXcHc5R6Qf4EKx6ntAdoXrdye8Zn,F8UvcZFg57NC2ADKFnLmaAZig84C5SS2pE3cta7xV7CZ,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4MenoSKBo6un8niPUQfB3fWGSFqznNwrEDzmGwfAuAeA",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4MenoSKBo6un8niPUQfB3fWGSFqznNwrEDzmGwfAuAeA&amount=4&index=72&proof=Du73zek4hQASt6X8n9rUgwj2bs963PMP5gwKeGQyKpNn,HgogR18nW6mif8rvmY5RV2Ne8fToXvbKb45C4nb9T2JB,2nDKruksDZqk4Uho63E8R9HjS173i24YgE8anj6GDCG5,CC1ioJk78VzAb7NFgUunE1HPKmwBNVPbgxWxs5ZX5Cgh,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5GRtj7r8LW584CDniGuCp4hAs9Azur88y7hka59Rp9T7",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5GRtj7r8LW584CDniGuCp4hAs9Azur88y7hka59Rp9T7&amount=4&index=73&proof=4gi59hKX3kkTTiYHh5keAGAzGvMU95Wf4NWiqxKy44nP,HgogR18nW6mif8rvmY5RV2Ne8fToXvbKb45C4nb9T2JB,2nDKruksDZqk4Uho63E8R9HjS173i24YgE8anj6GDCG5,CC1ioJk78VzAb7NFgUunE1HPKmwBNVPbgxWxs5ZX5Cgh,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8gdMXCHsF4TLvRdX3Wa5PvGTUQ44Lit2PvxaJ3eVt3yb",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8gdMXCHsF4TLvRdX3Wa5PvGTUQ44Lit2PvxaJ3eVt3yb&amount=4&index=74&proof=7BU3HF6tsJbHCqhWhbpb65at1npDCNLuQimrSyXpMsd,3U7HS5Bg6p3asJ3BMpCMNTLBjVAoJggUyBJ1hMktFhWz,2nDKruksDZqk4Uho63E8R9HjS173i24YgE8anj6GDCG5,CC1ioJk78VzAb7NFgUunE1HPKmwBNVPbgxWxs5ZX5Cgh,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9zth24v3GULk4VmY8hAcHu4dCJEo7B7TskxgKUTBffww",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9zth24v3GULk4VmY8hAcHu4dCJEo7B7TskxgKUTBffww&amount=4&index=75&proof=ECVseyHJ2WKs6SG4ez8L6ro3tTRwfuJKfSMM97RmYZ4W,3U7HS5Bg6p3asJ3BMpCMNTLBjVAoJggUyBJ1hMktFhWz,2nDKruksDZqk4Uho63E8R9HjS173i24YgE8anj6GDCG5,CC1ioJk78VzAb7NFgUunE1HPKmwBNVPbgxWxs5ZX5Cgh,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "C2gJg6tKpQs41PRS1nC9aw3ZKNZK3HQQZGVrDFDup5nx",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=C2gJg6tKpQs41PRS1nC9aw3ZKNZK3HQQZGVrDFDup5nx&amount=4&index=76&proof=3V8zq81kZwDATF6JmB6ih4KqvAc9K9CRM6dKr16p1LWv,EHvHyFgZfsSAKkDCz4Mg9u9MBkmeKjax6yMisnvVGCK,DbGxotzj7tFUnrfLpLdPQ49dKeR91abA2K3dkdivKBsZ,CC1ioJk78VzAb7NFgUunE1HPKmwBNVPbgxWxs5ZX5Cgh,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CVNZCYsoKfx2mvuWZr2pAsp87X4fwCKYeGq4svWacj3V",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CVNZCYsoKfx2mvuWZr2pAsp87X4fwCKYeGq4svWacj3V&amount=4&index=77&proof=82XvB4X3gZX2gYWjNknBsjbvSNidvXH8fnsTFR9MRQjc,EHvHyFgZfsSAKkDCz4Mg9u9MBkmeKjax6yMisnvVGCK,DbGxotzj7tFUnrfLpLdPQ49dKeR91abA2K3dkdivKBsZ,CC1ioJk78VzAb7NFgUunE1HPKmwBNVPbgxWxs5ZX5Cgh,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FWvnGD52EQWRreBwmtpZuUFBu8ouCErispXB2xPFybky",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FWvnGD52EQWRreBwmtpZuUFBu8ouCErispXB2xPFybky&amount=4&index=78&proof=BXaHcVqmrQumgnNiKuGxufqvipWsQee2GiiSiRFW6fMx,6Fb9vJ8Jpjv5XYu3hVY79EBwijPdLoY93yEySZyYFmpR,DbGxotzj7tFUnrfLpLdPQ49dKeR91abA2K3dkdivKBsZ,CC1ioJk78VzAb7NFgUunE1HPKmwBNVPbgxWxs5ZX5Cgh,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "364kNi4LbCh8iDuNvmbHbPML4N3xbg6msZnaj5dFSJbL",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=364kNi4LbCh8iDuNvmbHbPML4N3xbg6msZnaj5dFSJbL&amount=4&index=79&proof=5Y79SmF3EcQcrkFYUBUCrq2Qp9xtNe4fHZCsrZPeDxeP,6Fb9vJ8Jpjv5XYu3hVY79EBwijPdLoY93yEySZyYFmpR,DbGxotzj7tFUnrfLpLdPQ49dKeR91abA2K3dkdivKBsZ,CC1ioJk78VzAb7NFgUunE1HPKmwBNVPbgxWxs5ZX5Cgh,FuLNkWy77PAgqhdC2HyLasVTPv2bhXHTmnrNLA8Wwvsv,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4NkpbgY42hD932YiLZ1tQbBKrUGYcQvCGUN5gDZawKw6",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4NkpbgY42hD932YiLZ1tQbBKrUGYcQvCGUN5gDZawKw6&amount=4&index=80&proof=ScyRC3ZXEjYVU9cDuwg5q1RSnZYhgQmfTzs7ahdtcB8,2ynkg2QxrKzPoPhzsHSqcsirxj4d1nYgvx5Qrj9KMh2U,CE8tKfwFWAiUtHkpPtgvyk7yTYemk7SqQCAMpb5sZsxL,2cZxCgeQS69eb6k9jGub7m4uxdKjGVA65gXUap51PSd8,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7yPRjJnpFtckiWzvdaGpwAbqD52STfiswMPmd46DPi7k",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7yPRjJnpFtckiWzvdaGpwAbqD52STfiswMPmd46DPi7k&amount=4&index=81&proof=Epbw2t24d6Cowskyda9Yw11bXKxiEdUj9yeATswhXbPZ,2ynkg2QxrKzPoPhzsHSqcsirxj4d1nYgvx5Qrj9KMh2U,CE8tKfwFWAiUtHkpPtgvyk7yTYemk7SqQCAMpb5sZsxL,2cZxCgeQS69eb6k9jGub7m4uxdKjGVA65gXUap51PSd8,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CqHtBv8b3jjDtcXbTjLJUia7J8dRhRaDsj5cqc91NmJi",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CqHtBv8b3jjDtcXbTjLJUia7J8dRhRaDsj5cqc91NmJi&amount=4&index=82&proof=7RsjL3VDv6UpyWx9fBgJkwzG8XX1BbGU9q5uq8W97o4H,2pDKaP6QSJfYnctVFd1vvX8ausrzhPQGa9uckjDQyUs3,CE8tKfwFWAiUtHkpPtgvyk7yTYemk7SqQCAMpb5sZsxL,2cZxCgeQS69eb6k9jGub7m4uxdKjGVA65gXUap51PSd8,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Eov84meJFz5eNHhsfHpK4vp8PgUePsZ4yHL6rtrgKm5M",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Eov84meJFz5eNHhsfHpK4vp8PgUePsZ4yHL6rtrgKm5M&amount=4&index=83&proof=GYvoY4BtsqspXNaF2Amf165eg99ye2w69MLCkML9HcHS,2pDKaP6QSJfYnctVFd1vvX8ausrzhPQGa9uckjDQyUs3,CE8tKfwFWAiUtHkpPtgvyk7yTYemk7SqQCAMpb5sZsxL,2cZxCgeQS69eb6k9jGub7m4uxdKjGVA65gXUap51PSd8,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4C13ZAYiXGLDK1zvJcswcmzELDayNB3jWy94t2y9v2mp",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4C13ZAYiXGLDK1zvJcswcmzELDayNB3jWy94t2y9v2mp&amount=4&index=84&proof=GzAMPPG3r1k15ggaJrfesgXiaEpD8Xzoymujk2UKZNps,7siYLyRtS6RwLwkrASzUChs9Fiq13SdG5ktov8RpJKoP,FcK49f2gtyqFhTyTcdgdgFu7zMhA9wx1YxUv3BjEJh7n,2cZxCgeQS69eb6k9jGub7m4uxdKjGVA65gXUap51PSd8,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9aDdutqFs4PkhvdWKuEwF6GFqRaFdNV5MnpuNsc3QL4E",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9aDdutqFs4PkhvdWKuEwF6GFqRaFdNV5MnpuNsc3QL4E&amount=4&index=85&proof=8tMEfEBbdsWQ9BtdNCjBGJVTbid8dwwbJvZ4gXq7aKe6,7siYLyRtS6RwLwkrASzUChs9Fiq13SdG5ktov8RpJKoP,FcK49f2gtyqFhTyTcdgdgFu7zMhA9wx1YxUv3BjEJh7n,2cZxCgeQS69eb6k9jGub7m4uxdKjGVA65gXUap51PSd8,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BBR7vphPMxVxke1qaSUAef6jzrnZcvHjS5m4L1Nx69La",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BBR7vphPMxVxke1qaSUAef6jzrnZcvHjS5m4L1Nx69La&amount=4&index=86&proof=AD1rAFQAfMgZuySY1MgGaZWVFQH8WrM4ssLy4LUFdDco,DcKwhKeA6Bs24Rpb7C6hXAEBcbshN36qgdDXaox2Tw9U,FcK49f2gtyqFhTyTcdgdgFu7zMhA9wx1YxUv3BjEJh7n,2cZxCgeQS69eb6k9jGub7m4uxdKjGVA65gXUap51PSd8,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BEbm967RFQi85tz5jLxK6xQXSRUo9uk1Xh2RoQ7qJvQV",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BEbm967RFQi85tz5jLxK6xQXSRUo9uk1Xh2RoQ7qJvQV&amount=4&index=87&proof=6c3mDHKcZscaREwBpBHii7bQq3CBrSJYiesEKSV54r3o,DcKwhKeA6Bs24Rpb7C6hXAEBcbshN36qgdDXaox2Tw9U,FcK49f2gtyqFhTyTcdgdgFu7zMhA9wx1YxUv3BjEJh7n,2cZxCgeQS69eb6k9jGub7m4uxdKjGVA65gXUap51PSd8,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Gi8Rym7Hu3G75VA9ftDRwC9gygQKrKEAfbnbqon1CSnR",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Gi8Rym7Hu3G75VA9ftDRwC9gygQKrKEAfbnbqon1CSnR&amount=4&index=88&proof=8h1MEiG2WK5itmjvboS2k1oeRtzr5y5McFLSaDeMZMMp,8psa1PYwUyYwgusXWrxZcbRbYU5v3MfTgEYdUgfiXgZE,6wJBBJTpBgiXtTBiah6upucZ6NaKk3cwECfSXvupGiG6,G9d81UmkCvAoTzpauTnGsSVTZn4CRSrypMiJymWz4a4A,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GxSDR43wT3gNgvM5vuh1XDSEeqvjLZ9SAWrYbzJDKHAU",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GxSDR43wT3gNgvM5vuh1XDSEeqvjLZ9SAWrYbzJDKHAU&amount=4&index=89&proof=DeMSBHHrZHCydQxUk7mTMKGaaxNmusNPAcMVKLAbT7HU,8psa1PYwUyYwgusXWrxZcbRbYU5v3MfTgEYdUgfiXgZE,6wJBBJTpBgiXtTBiah6upucZ6NaKk3cwECfSXvupGiG6,G9d81UmkCvAoTzpauTnGsSVTZn4CRSrypMiJymWz4a4A,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7gwDdz1HjjPf18zmf1zHemoKP2kx4k3WCzvzjARwhFLM",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7gwDdz1HjjPf18zmf1zHemoKP2kx4k3WCzvzjARwhFLM&amount=4&index=90&proof=5h8f8E2H5kSQiaGESrhjHrr5NxxUxnmQugRNGH33VZQG,2yvknYpxisDeHFKqsPCSbNW4PsYqCvCekQeWxS83oLvk,6wJBBJTpBgiXtTBiah6upucZ6NaKk3cwECfSXvupGiG6,G9d81UmkCvAoTzpauTnGsSVTZn4CRSrypMiJymWz4a4A,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8Taqoq7xq7DEgpegEFxJuHWbpEEfZazPC26RpPUXBL6x",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8Taqoq7xq7DEgpegEFxJuHWbpEEfZazPC26RpPUXBL6x&amount=4&index=91&proof=6a3wRVGwcmXwaUC2ssTDJUyNgZSHUK37oDFwP27B9VJJ,2yvknYpxisDeHFKqsPCSbNW4PsYqCvCekQeWxS83oLvk,6wJBBJTpBgiXtTBiah6upucZ6NaKk3cwECfSXvupGiG6,G9d81UmkCvAoTzpauTnGsSVTZn4CRSrypMiJymWz4a4A,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8xE9b1krmF6WDUmbYjErkMhghtxedtdwEUVHtqfhmBfq",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8xE9b1krmF6WDUmbYjErkMhghtxedtdwEUVHtqfhmBfq&amount=4&index=92&proof=BU3P6QvbTJEPKvNEmWAGtjdyf4R17Vu7dKQgap4wnHKs,7kxVRaQF7DrrEuRP3bq4ajEd6rXB1Af5UqHvaN5KYJZr,4a9yEBUispNcMwWSDHSuWU8PwBXRWsVXryD9GAR3ZCGZ,G9d81UmkCvAoTzpauTnGsSVTZn4CRSrypMiJymWz4a4A,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9C5wkhwx5dX5Q3WePkL6MSNXhwwWCFLepx4P3QjLZaY6",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9C5wkhwx5dX5Q3WePkL6MSNXhwwWCFLepx4P3QjLZaY6&amount=4&index=93&proof=SSHUb9FSMk9JraA7rUFurd6bKwPgm8y5XDuj4ma5Nta,7kxVRaQF7DrrEuRP3bq4ajEd6rXB1Af5UqHvaN5KYJZr,4a9yEBUispNcMwWSDHSuWU8PwBXRWsVXryD9GAR3ZCGZ,G9d81UmkCvAoTzpauTnGsSVTZn4CRSrypMiJymWz4a4A,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9RZZ44isqRbyctB5tsLtSdnSXutjNt8zW5DSpZT5uKn8",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9RZZ44isqRbyctB5tsLtSdnSXutjNt8zW5DSpZT5uKn8&amount=4&index=94&proof=3RhE6pNbkW4vpWZFh7oeFCxwRNGi297sovDBcWFnbpBB,CxaHKSpHczTkqgh17CRkXcau8UT2JiUzuq1k9Y1gTxjo,4a9yEBUispNcMwWSDHSuWU8PwBXRWsVXryD9GAR3ZCGZ,G9d81UmkCvAoTzpauTnGsSVTZn4CRSrypMiJymWz4a4A,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EgMuMr6HXRxYDGeZhFKpjH41eUbkgyn196gFzYb31jwb",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EgMuMr6HXRxYDGeZhFKpjH41eUbkgyn196gFzYb31jwb&amount=4&index=95&proof=BtYWP3oLAvegacGRcePTvhaFATqY3qSNvhCtmxNgVwC9,CxaHKSpHczTkqgh17CRkXcau8UT2JiUzuq1k9Y1gTxjo,4a9yEBUispNcMwWSDHSuWU8PwBXRWsVXryD9GAR3ZCGZ,G9d81UmkCvAoTzpauTnGsSVTZn4CRSrypMiJymWz4a4A,9CvyWN72t88tEbXoqmF6waHzQo4goKtgQa7KV5Q8m3Q5,GfsC4HDBRCUEDsD6wakoDn8SkmCZUk1mpdRTbVfs4diC,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GPgQTkBKNPnuWjyrTnXhXqQo9Y2vqz7w7iqNBp5wwzKk",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GPgQTkBKNPnuWjyrTnXhXqQo9Y2vqz7w7iqNBp5wwzKk&amount=4&index=96&proof=mLqBsrxwrDvKQ3ZE9ejbwNNLsDc9vPq7XA8izjzJVCw,7Fq7HKGdWhWZXJkSYNAep9k2iqhdsv5rSuyBc8AfttnJ,3v3NMTGdkVfvfvETXUAZTwN5m9ZubY4bXXEJoTCpR8TS,DnrvBrwzMgonEdYYqbgdyUxmJw69WXfwLfiLzvPkccHy,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HQhVWaJLhfPJp6wkytx3SjVta8V8diVGRhKK48DUC28k",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HQhVWaJLhfPJp6wkytx3SjVta8V8diVGRhKK48DUC28k&amount=4&index=97&proof=2gfP7Su72DydDumHgzUsfAEQU5LaTEYNN4MRS7idq9oo,7Fq7HKGdWhWZXJkSYNAep9k2iqhdsv5rSuyBc8AfttnJ,3v3NMTGdkVfvfvETXUAZTwN5m9ZubY4bXXEJoTCpR8TS,DnrvBrwzMgonEdYYqbgdyUxmJw69WXfwLfiLzvPkccHy,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "47JFn3HMo3X9PuVxbBnrcv74YCQ8EZ3WWcxSCPUtwbtu",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=47JFn3HMo3X9PuVxbBnrcv74YCQ8EZ3WWcxSCPUtwbtu&amount=4&index=98&proof=oJdS4sGqz6CsRwzWcex7tb1cGXGG4gVARow4pay9KD3,8iFFyvfDFdmqHThJ5jL7ftEovTDR5cVU3j1BWH3fZa6u,3v3NMTGdkVfvfvETXUAZTwN5m9ZubY4bXXEJoTCpR8TS,DnrvBrwzMgonEdYYqbgdyUxmJw69WXfwLfiLzvPkccHy,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "64rPdCtUM4q8pXTCVTcVhQCLzKUAG22uL3nhxWbN6Gpr",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=64rPdCtUM4q8pXTCVTcVhQCLzKUAG22uL3nhxWbN6Gpr&amount=4&index=99&proof=Bvy3mYkhC2DoV8sf9FyQT1THrFL85uar7TWayBLvdYpR,8iFFyvfDFdmqHThJ5jL7ftEovTDR5cVU3j1BWH3fZa6u,3v3NMTGdkVfvfvETXUAZTwN5m9ZubY4bXXEJoTCpR8TS,DnrvBrwzMgonEdYYqbgdyUxmJw69WXfwLfiLzvPkccHy,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7tQX4zjwnvYAkbcg354eDeJZmko3tyKHNFYtbF7z4JDV",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7tQX4zjwnvYAkbcg354eDeJZmko3tyKHNFYtbF7z4JDV&amount=4&index=100&proof=F7ccYeoeWjB2EEyx5j5ucy3Zd5bZ1MMyzfLu6SbKSLBz,9pADuvphXRLBFSQXfRqcvAGQug5TqQ1pvKVpMmy32xXJ,F1JUX1nEHSUCsgECWaSXFNpGoEksGftrGMqxuchpBw9u,DnrvBrwzMgonEdYYqbgdyUxmJw69WXfwLfiLzvPkccHy,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Bme4LRYLq199vosFJcP2YrHSduMj27tmqdTNadYDma9A",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Bme4LRYLq199vosFJcP2YrHSduMj27tmqdTNadYDma9A&amount=4&index=101&proof=6QPXyFmF1Bgm2apQGoRgkt1b7huf8TKLFDfgzc9snCje,9pADuvphXRLBFSQXfRqcvAGQug5TqQ1pvKVpMmy32xXJ,F1JUX1nEHSUCsgECWaSXFNpGoEksGftrGMqxuchpBw9u,DnrvBrwzMgonEdYYqbgdyUxmJw69WXfwLfiLzvPkccHy,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "D9hG2MXm55DvvGKRJtrUrfktHmnto8xy4K1EtctUFxzN",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=D9hG2MXm55DvvGKRJtrUrfktHmnto8xy4K1EtctUFxzN&amount=4&index=102&proof=4NJjK6UT174PL9CD7knU9HZ25S99P2nYN1ceDriY5Qfo,8r9enCp4i9QFqvF9Qq6N6mRMLMAg26Feh2eywJGuC6Q8,F1JUX1nEHSUCsgECWaSXFNpGoEksGftrGMqxuchpBw9u,DnrvBrwzMgonEdYYqbgdyUxmJw69WXfwLfiLzvPkccHy,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EmcCUpTL2s4t119fdU3UvjpzLGeQxCorPToRY8gmCU4E",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EmcCUpTL2s4t119fdU3UvjpzLGeQxCorPToRY8gmCU4E&amount=4&index=103&proof=24U2PcfLt9r5vqPkbnvvqpNBX32hgrQdZQRLjBU6Y3HL,8r9enCp4i9QFqvF9Qq6N6mRMLMAg26Feh2eywJGuC6Q8,F1JUX1nEHSUCsgECWaSXFNpGoEksGftrGMqxuchpBw9u,DnrvBrwzMgonEdYYqbgdyUxmJw69WXfwLfiLzvPkccHy,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GWZrD6H6VwZAqgPdoebkVbBQJWvangEc1fYqcm9RY8ez",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GWZrD6H6VwZAqgPdoebkVbBQJWvangEc1fYqcm9RY8ez&amount=4&index=104&proof=AMLyvF9S8KZCKusUxVE9e8WhpM2hoV42PgAAo3ycJhJX,C3yLLAmNffhHRxPx2ejynjksd7Pt8Uc7Hc8QtPFPBn7Y,37Kds5BpHcFiTiA6TrzqHygHSGXSoVSUAF8rHfdPkzN8,C1VeNCpns8Qx6ULQdZiWu1hhK3U9yMQZyvRc1SkSgWem,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "23GVeA1KC5744Nu8BvFXfSUZBeDT1sQJA9gCJHJCaXhN",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=23GVeA1KC5744Nu8BvFXfSUZBeDT1sQJA9gCJHJCaXhN&amount=4&index=105&proof=BsSKaih71dMQUi64VWPwyrjkHBiN35ME8DQEsrxwg8LN,C3yLLAmNffhHRxPx2ejynjksd7Pt8Uc7Hc8QtPFPBn7Y,37Kds5BpHcFiTiA6TrzqHygHSGXSoVSUAF8rHfdPkzN8,C1VeNCpns8Qx6ULQdZiWu1hhK3U9yMQZyvRc1SkSgWem,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2FrLhtGkQ7HPqFyLMkWrjb9qbiZZHDXWGdKtmreoy6pq",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2FrLhtGkQ7HPqFyLMkWrjb9qbiZZHDXWGdKtmreoy6pq&amount=4&index=106&proof=EeF2m54LW5hSjRWYQoRwwrapyUapscw1oV52wqtHpGht,BVfWLaxT6dzHrkyTxYbmRpbLYGXKZkqoG6hXUqZNNKqQ,37Kds5BpHcFiTiA6TrzqHygHSGXSoVSUAF8rHfdPkzN8,C1VeNCpns8Qx6ULQdZiWu1hhK3U9yMQZyvRc1SkSgWem,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2opMwrcqvtJkNuFfQS2i8Ui8ApaEfeZU71BTdkKn8PAa",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2opMwrcqvtJkNuFfQS2i8Ui8ApaEfeZU71BTdkKn8PAa&amount=4&index=107&proof=CaLWXEdbQ7jj825xyyafNCYG7Bd1vcjHLgQYbSvcjRta,BVfWLaxT6dzHrkyTxYbmRpbLYGXKZkqoG6hXUqZNNKqQ,37Kds5BpHcFiTiA6TrzqHygHSGXSoVSUAF8rHfdPkzN8,C1VeNCpns8Qx6ULQdZiWu1hhK3U9yMQZyvRc1SkSgWem,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2xmG9Q3Q6hSKzw59kqm5yiuvDzqGtrYMPLnydVTSroJC",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2xmG9Q3Q6hSKzw59kqm5yiuvDzqGtrYMPLnydVTSroJC&amount=4&index=108&proof=HgSiZao5GfhZu68satt5AAp3QnJfrTSbAwQu1bJX2UmL,FLXdo6sswzVmkSyPd7Z1cpWtGWsrBFSyZvYLBjovh4k,CSN7WG6By21pqK2jn3k2yW5yrtSw3f234nntdc7X5qQj,C1VeNCpns8Qx6ULQdZiWu1hhK3U9yMQZyvRc1SkSgWem,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2zi9A78mMERD8aRKkpHmegRqRyvHR4Dy34nMPj9NnnJF",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2zi9A78mMERD8aRKkpHmegRqRyvHR4Dy34nMPj9NnnJF&amount=4&index=109&proof=FonWzuUfRGpHrBbtB6tdPgyiCeDX9Hp1Nb4WHJQiB1Dj,FLXdo6sswzVmkSyPd7Z1cpWtGWsrBFSyZvYLBjovh4k,CSN7WG6By21pqK2jn3k2yW5yrtSw3f234nntdc7X5qQj,C1VeNCpns8Qx6ULQdZiWu1hhK3U9yMQZyvRc1SkSgWem,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "57qGGdUuucPZmUyBHTHTU8J9dLYwDHrqBu1sXahcW3xr",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=57qGGdUuucPZmUyBHTHTU8J9dLYwDHrqBu1sXahcW3xr&amount=4&index=110&proof=C4M5B5exRksfcCFbPFYD8CywrwZG2XoyKJpdzz5uCw81,wjxbrvnLvyXHsPdUErmanya42cGU4nG534K3FRrbmNQ,CSN7WG6By21pqK2jn3k2yW5yrtSw3f234nntdc7X5qQj,C1VeNCpns8Qx6ULQdZiWu1hhK3U9yMQZyvRc1SkSgWem,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "59AbRz8TwLkqgQ9gxMgDJRQFjS9HtfwhZoL7sxUPgSfo",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=59AbRz8TwLkqgQ9gxMgDJRQFjS9HtfwhZoL7sxUPgSfo&amount=4&index=111&proof=8XwcmXHAeGEcUF1gnPnTD7GkMZisAH9aWeQJcpVXHrYU,wjxbrvnLvyXHsPdUErmanya42cGU4nG534K3FRrbmNQ,CSN7WG6By21pqK2jn3k2yW5yrtSw3f234nntdc7X5qQj,C1VeNCpns8Qx6ULQdZiWu1hhK3U9yMQZyvRc1SkSgWem,6taKPUcCjsUpqK1KsWnTax5F7hjWaCqeTvsFxgQWk6Eg,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "66wJMZR1cVMS5jLKyAXfc7VFFPnrBoancQbAyuq2fe6d",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=66wJMZR1cVMS5jLKyAXfc7VFFPnrBoancQbAyuq2fe6d&amount=4&index=112&proof=Ayh8gQkMAzQXqzhkv73XdoB4LkbUvTiDaeRJYVSjz48L,DXTY5zdpyVkqgLUDZepT7ezHBvMpXKbaohaXGxAe7i5q,9PuRjBtRac9vHGy3PzAsMAtjP9w9L25ubaAAd59FBELp,FDR7mpnYmLKMRBod5QjBjuF3LTKCR6GYLKSbKkXYJbsF,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6cPpBJotDwAuikJngUbPUngHJsJ3ZsyCZeYgFC6o4b6x",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6cPpBJotDwAuikJngUbPUngHJsJ3ZsyCZeYgFC6o4b6x&amount=4&index=113&proof=FbU1c3SRzU6kc3Dvk19t6msvZiWuvTQfK3WWTE2fecJ7,DXTY5zdpyVkqgLUDZepT7ezHBvMpXKbaohaXGxAe7i5q,9PuRjBtRac9vHGy3PzAsMAtjP9w9L25ubaAAd59FBELp,FDR7mpnYmLKMRBod5QjBjuF3LTKCR6GYLKSbKkXYJbsF,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6smu36j5E6AfW4NM2RQPpDbdzEpp9tKZvg7ZTE2KKgcL",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6smu36j5E6AfW4NM2RQPpDbdzEpp9tKZvg7ZTE2KKgcL&amount=4&index=114&proof=DYfDTFioVGVvMVSGvTpa1V5JPUX4JN2xccF29q6F2tyK,7ZE1wZeW3vY1rzgKwSRS5AemsW7T71i8q6TCjg9JVg5N,9PuRjBtRac9vHGy3PzAsMAtjP9w9L25ubaAAd59FBELp,FDR7mpnYmLKMRBod5QjBjuF3LTKCR6GYLKSbKkXYJbsF,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "79aC5oWcdXrUjVo9MBpFVx7kMAMFM5JwjXYxJsePmfqJ",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=79aC5oWcdXrUjVo9MBpFVx7kMAMFM5JwjXYxJsePmfqJ&amount=4&index=115&proof=ddfSSpZMdZ1VgEhcquvmHZy6mMYKp8uLZskUgcCjHEd,7ZE1wZeW3vY1rzgKwSRS5AemsW7T71i8q6TCjg9JVg5N,9PuRjBtRac9vHGy3PzAsMAtjP9w9L25ubaAAd59FBELp,FDR7mpnYmLKMRBod5QjBjuF3LTKCR6GYLKSbKkXYJbsF,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7ZjWXpwrTA4q1vDvDetVZ4X5PMCGe42TkM8UFgPEsGX1",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7ZjWXpwrTA4q1vDvDetVZ4X5PMCGe42TkM8UFgPEsGX1&amount=4&index=116&proof=GfwAkB57CPobfCd1qqivuXXBW6j7ZCAnYXA64Mxvi54G,7u9GAMsK4zqErPKS3Fnq8Et3jbhpYDu7JMvS7795tofA,J12irmQZmXPyf5s4q6SN3PURZwgDXt4vdKfvYbQadwPe,FDR7mpnYmLKMRBod5QjBjuF3LTKCR6GYLKSbKkXYJbsF,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9jfxin88fkKYCXY8hjNPYWZU9ddqq2gPRbudo6GzgWZk",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9jfxin88fkKYCXY8hjNPYWZU9ddqq2gPRbudo6GzgWZk&amount=4&index=117&proof=7xBRq9eisnJv8MjdhpK2E9pNVWpWsCAtbeCPKG79SpAc,7u9GAMsK4zqErPKS3Fnq8Et3jbhpYDu7JMvS7795tofA,J12irmQZmXPyf5s4q6SN3PURZwgDXt4vdKfvYbQadwPe,FDR7mpnYmLKMRBod5QjBjuF3LTKCR6GYLKSbKkXYJbsF,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AxqQqW1gQnXQsDFgkmMUvdVv42QP87MknxJZKnjhG5zu",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AxqQqW1gQnXQsDFgkmMUvdVv42QP87MknxJZKnjhG5zu&amount=4&index=118&proof=ZCVoDoZL5LMEuUtZ5dy85Qy14ZDPSG6MGMk8FUF4BqR,FpKEoXQiqrR2rxaQmmbGETJWdcdZvMEzq23frTvYsDLo,J12irmQZmXPyf5s4q6SN3PURZwgDXt4vdKfvYbQadwPe,FDR7mpnYmLKMRBod5QjBjuF3LTKCR6GYLKSbKkXYJbsF,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "B9pyHMH8KVPe6XHyyaTpCGePhBXrA9M5SThKLVjsQHxp",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=B9pyHMH8KVPe6XHyyaTpCGePhBXrA9M5SThKLVjsQHxp&amount=4&index=119&proof=6pMgj81WJs7W8YWfsenqiwqvTujYDMRxxPpZtXtgwzV8,FpKEoXQiqrR2rxaQmmbGETJWdcdZvMEzq23frTvYsDLo,J12irmQZmXPyf5s4q6SN3PURZwgDXt4vdKfvYbQadwPe,FDR7mpnYmLKMRBod5QjBjuF3LTKCR6GYLKSbKkXYJbsF,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Bj7CFFg46SLU2DbPPT1Ex6MLR955BBaWvJhrq9rT19G3",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Bj7CFFg46SLU2DbPPT1Ex6MLR955BBaWvJhrq9rT19G3&amount=4&index=120&proof=H5kustxgZZtM7Avu32ovxjeT7yn49XCMR3u3i6b1rpCv,JBCZFuk2AnnfhB7zwMJYq6DF8LUzVuPCE6LnGL5v8NwL,Ew4YS2dCNKJp1FW9jJeDWhcWebQxhPkCzddUAe5eVxGE,17pVkdV9gusbByumdynqVBLY9NXvhKsMqmmNdmNBhN7,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Bkxr3AUF5KYZqQNqq4wyiyHfy5id26mrdP4HWB4qdyJo",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Bkxr3AUF5KYZqQNqq4wyiyHfy5id26mrdP4HWB4qdyJo&amount=4&index=121&proof=96di6fHojU2C6em8ANDP32ZswPGsQ5m9q6jmQiYMS4wC,JBCZFuk2AnnfhB7zwMJYq6DF8LUzVuPCE6LnGL5v8NwL,Ew4YS2dCNKJp1FW9jJeDWhcWebQxhPkCzddUAe5eVxGE,17pVkdV9gusbByumdynqVBLY9NXvhKsMqmmNdmNBhN7,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DrFCE7ziJXBFDbYSXEfU17tWRdfyv2wLSM4VvFjoNuzA",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DrFCE7ziJXBFDbYSXEfU17tWRdfyv2wLSM4VvFjoNuzA&amount=4&index=122&proof=5TnVNFwQ35nuYduPULdBcwKjNXhHwdv8GQfoinKgXhab,FHCvcKai2HsWqiLzioBn6LuMG67j2t3Sip1ZoCeYsX2K,Ew4YS2dCNKJp1FW9jJeDWhcWebQxhPkCzddUAe5eVxGE,17pVkdV9gusbByumdynqVBLY9NXvhKsMqmmNdmNBhN7,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HLmvLg1mv25vQTcPU91q5adcrmfTRMAZoeN6PBoBiFrp",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HLmvLg1mv25vQTcPU91q5adcrmfTRMAZoeN6PBoBiFrp&amount=4&index=123&proof=B2SXz6cLn8SiKPTyTCELYUGQsSgKrogNuS8gBmB2ZdZW,FHCvcKai2HsWqiLzioBn6LuMG67j2t3Sip1ZoCeYsX2K,Ew4YS2dCNKJp1FW9jJeDWhcWebQxhPkCzddUAe5eVxGE,17pVkdV9gusbByumdynqVBLY9NXvhKsMqmmNdmNBhN7,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "V2sn8d4rBrf1BsQFR3SfcPicohH9DJ65dgkAhCj7gPe",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=V2sn8d4rBrf1BsQFR3SfcPicohH9DJ65dgkAhCj7gPe&amount=4&index=124&proof=A5KVqbz89gjBhFhHm629VHH2G5kaJUnR12dp2P2xuQsD,2SUAmgtDuST8qrk8LPv5efXiWPKwkT9BaexmWcLmKtxj,FLfsp1Bk5yCRkLN6rsqqs7fzNGbrZqUunoY1FzZ9v9Fn,17pVkdV9gusbByumdynqVBLY9NXvhKsMqmmNdmNBhN7,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "YZwKVQrGrrMv7TeUffWrMoMkrkE6FEJ2q3qZ4tfmALR",
+   "Amount": 4,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=YZwKVQrGrrMv7TeUffWrMoMkrkE6FEJ2q3qZ4tfmALR&amount=4&index=125&proof=2UQj1DYWjrfcf9gnKU4KhpGPC7waKcaRGwcAbS7AChGW,2SUAmgtDuST8qrk8LPv5efXiWPKwkT9BaexmWcLmKtxj,FLfsp1Bk5yCRkLN6rsqqs7fzNGbrZqUunoY1FzZ9v9Fn,17pVkdV9gusbByumdynqVBLY9NXvhKsMqmmNdmNBhN7,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "25BuFqnd7pGfuocJXxnKaYybkp6QtozuPH1WJW1EsnpW",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=25BuFqnd7pGfuocJXxnKaYybkp6QtozuPH1WJW1EsnpW&amount=1&index=126&proof=W1JrYjTDnTZqcvC9azZNscMNSzrCTjUv1M5XqKamK1v,AtWm8c33BDLEu28iqDZLM5XsySCPWwH8LCMBwvTX2YwF,FLfsp1Bk5yCRkLN6rsqqs7fzNGbrZqUunoY1FzZ9v9Fn,17pVkdV9gusbByumdynqVBLY9NXvhKsMqmmNdmNBhN7,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2CmBzVcpnYtpXthj9SRyAu6kZ3qTFDH6PyJXE6UrpuKi",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2CmBzVcpnYtpXthj9SRyAu6kZ3qTFDH6PyJXE6UrpuKi&amount=1&index=127&proof=33cq63xU9yNYNqdbipH3pP1pQARkzxkmhapomZFCQcD9,AtWm8c33BDLEu28iqDZLM5XsySCPWwH8LCMBwvTX2YwF,FLfsp1Bk5yCRkLN6rsqqs7fzNGbrZqUunoY1FzZ9v9Fn,17pVkdV9gusbByumdynqVBLY9NXvhKsMqmmNdmNBhN7,DHTRYWmw3bYuuWmrPuPC5t9DojvSurQACyEH3XkovWyj,EU6VG2Mxkpm9nRLRgnGBi9Q9Z4PWajLAx4SsCWi76D8,BvCxP8ZmWEcHQ1VHe6eHmCyCgCmRXSgrQocTsy1XqMZ1,4hMGzLQY1J4gaEUYEQ23ous2J62s9p8gXfFuvYoKNBWF,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3ePHN3yccoP7EjTyVMG8di7v43qL6DE36vTJ3rtCUzU1",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3ePHN3yccoP7EjTyVMG8di7v43qL6DE36vTJ3rtCUzU1&amount=1&index=128&proof=73cFGZb5kHTn3SCd7gLbUXHzRjorLafCqqX9veUK57KU,9x2bRiu1nnfiMkhkEY6PSmzTgR1a8HJ8Jm3gp5jmoXVb,5m6zxu4aJYbWVYy4PUzodUVXD33eSRPkNiWH7JZCs43D,3Q6ixUdni1bAcUKmSf8u1ys6GpFAKU4qo1NwxznAsxHP,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3Wo9pLiWmcc4vU7oGWjk17xphHw1coWXNqahSjAY5CAR",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3Wo9pLiWmcc4vU7oGWjk17xphHw1coWXNqahSjAY5CAR&amount=1&index=129&proof=FoSKXFxDWaW8FmZKKjaiRzu4ZSJ1XFr6D7qF3fT9oigA,9x2bRiu1nnfiMkhkEY6PSmzTgR1a8HJ8Jm3gp5jmoXVb,5m6zxu4aJYbWVYy4PUzodUVXD33eSRPkNiWH7JZCs43D,3Q6ixUdni1bAcUKmSf8u1ys6GpFAKU4qo1NwxznAsxHP,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4A9J9FymAdJ567fh8nsLnicvMGTCy7UNpRASpgi7vcPH",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4A9J9FymAdJ567fh8nsLnicvMGTCy7UNpRASpgi7vcPH&amount=1&index=130&proof=8JFZ8aD6DXapHkGRhZ3iVFitzmrxWaMix1hVnV9yF6uL,9qfT2B4EpFNsWaVJTu5Tw72ABNQjeLjUKhtUazWkbian,5m6zxu4aJYbWVYy4PUzodUVXD33eSRPkNiWH7JZCs43D,3Q6ixUdni1bAcUKmSf8u1ys6GpFAKU4qo1NwxznAsxHP,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4hc6aHen43q27b2qaBkAzkZsrNyfv9xSHpvJThcXJdh6",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4hc6aHen43q27b2qaBkAzkZsrNyfv9xSHpvJThcXJdh6&amount=1&index=131&proof=3tZDHSnqyjYbFbv3DiGNTmstU6itSuwzuUX6u5Z6pfWJ,9qfT2B4EpFNsWaVJTu5Tw72ABNQjeLjUKhtUazWkbian,5m6zxu4aJYbWVYy4PUzodUVXD33eSRPkNiWH7JZCs43D,3Q6ixUdni1bAcUKmSf8u1ys6GpFAKU4qo1NwxznAsxHP,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5CxVLBRdfpC5gn6vX1d3MWcPxdfHYuK459dcSjYk9DrV",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5CxVLBRdfpC5gn6vX1d3MWcPxdfHYuK459dcSjYk9DrV&amount=1&index=132&proof=5GhH8vCQs7ynwr97WpfouDjnf24wwSY1RAwh5qUSXWjc,BphsG4t1cyQaovF7bubLc1dhGz3W58AYTAZ9oDmCkhRt,7vzfc9xRHpUEvgyi7w8mw9mHrUp2QBvZvQ46zfLg1u2H,3Q6ixUdni1bAcUKmSf8u1ys6GpFAKU4qo1NwxznAsxHP,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "618wpgpDKstQ4gefiJNpKeEg696UoPYFrNppYxpabks7",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=618wpgpDKstQ4gefiJNpKeEg696UoPYFrNppYxpabks7&amount=1&index=133&proof=B1XZPmawcYCi7kegX43JKhJFDonkZ5sfYxgWych6nHDL,BphsG4t1cyQaovF7bubLc1dhGz3W58AYTAZ9oDmCkhRt,7vzfc9xRHpUEvgyi7w8mw9mHrUp2QBvZvQ46zfLg1u2H,3Q6ixUdni1bAcUKmSf8u1ys6GpFAKU4qo1NwxznAsxHP,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "63fMJgKY49tdAYUCGjSzNRaVVPT1wDpNBvxPGe5vLsZw",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=63fMJgKY49tdAYUCGjSzNRaVVPT1wDpNBvxPGe5vLsZw&amount=1&index=134&proof=9oZzhdQmk4TG4HJ76JXhkMzHBPTEmdCsB8VzRaiRM5p7,2WNRKk6mjQCaSDShnckzQ3aAHsycAYYSo8WX4jue7WVc,7vzfc9xRHpUEvgyi7w8mw9mHrUp2QBvZvQ46zfLg1u2H,3Q6ixUdni1bAcUKmSf8u1ys6GpFAKU4qo1NwxznAsxHP,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6mtqGb2SPUt8yydU5dJYTx8ZeFg2RUiNQ2YykY5FKvtN",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6mtqGb2SPUt8yydU5dJYTx8ZeFg2RUiNQ2YykY5FKvtN&amount=1&index=135&proof=6A5SHjVbLDG4TV1wMVPhYGW9k3BuWwTjtjuUvLsgPrCN,2WNRKk6mjQCaSDShnckzQ3aAHsycAYYSo8WX4jue7WVc,7vzfc9xRHpUEvgyi7w8mw9mHrUp2QBvZvQ46zfLg1u2H,3Q6ixUdni1bAcUKmSf8u1ys6GpFAKU4qo1NwxznAsxHP,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7fHng4sabj3SwxDN34HvUhHSyRKhiK7ttsLEiXhGb1s4",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7fHng4sabj3SwxDN34HvUhHSyRKhiK7ttsLEiXhGb1s4&amount=1&index=136&proof=H8nWnmmd7cqPztsx8bSjWSDZ8agDEh64LKeAFPSNZwJh,GwxHjA2Td3VB52EQw8VqM7F3Jr4C9EwYftRnjryqPGAy,VTdHZZEmL89hYaxH24NPfTFpG5C1uTQz1HxVHKr6VhE,RUvPrTFxjKGEugUNYkPjn5FXQb5qRd9BzLsQqYNXQaQ,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8BL7G52tPNrfkySYdT5oXxUivT7owat2fChz8xEdhFLX",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8BL7G52tPNrfkySYdT5oXxUivT7owat2fChz8xEdhFLX&amount=1&index=137&proof=DnDPynyXkvtavdnFui8SerpaJA5o6gDd1AgncQTiChP,GwxHjA2Td3VB52EQw8VqM7F3Jr4C9EwYftRnjryqPGAy,VTdHZZEmL89hYaxH24NPfTFpG5C1uTQz1HxVHKr6VhE,RUvPrTFxjKGEugUNYkPjn5FXQb5qRd9BzLsQqYNXQaQ,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "96X5j2914YSua7Z1KGhFt63kFGpo38kjkYTGvGbmDBsL",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=96X5j2914YSua7Z1KGhFt63kFGpo38kjkYTGvGbmDBsL&amount=1&index=138&proof=Fp9wGWsyNViaTxT6UKc2v8Fpn3qcLZ6w3QsQs1JgfYhk,5wNkXU9gTxFJnXajBuNKf2c8A9VxLnogHEvLKPGiyKwF,VTdHZZEmL89hYaxH24NPfTFpG5C1uTQz1HxVHKr6VhE,RUvPrTFxjKGEugUNYkPjn5FXQb5qRd9BzLsQqYNXQaQ,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9apnHjEQ8enLaPLxP7z9VQTphWE4nWqZcyHJYocQMpSE",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9apnHjEQ8enLaPLxP7z9VQTphWE4nWqZcyHJYocQMpSE&amount=1&index=139&proof=GLGfXD36SVhAkiJUsPxftarxsujNxggincYZghpGmHHg,5wNkXU9gTxFJnXajBuNKf2c8A9VxLnogHEvLKPGiyKwF,VTdHZZEmL89hYaxH24NPfTFpG5C1uTQz1HxVHKr6VhE,RUvPrTFxjKGEugUNYkPjn5FXQb5qRd9BzLsQqYNXQaQ,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9fxwmyNGAmAx9suvmUiAw6Lmqwu6ReEr4a8EdroknUpR",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9fxwmyNGAmAx9suvmUiAw6Lmqwu6ReEr4a8EdroknUpR&amount=1&index=140&proof=HLJExgPVbKJkzgWKCRKg68eRA6qfwB1Z4q8SnGNhCLZX,A8vkDk8CNXT15SHYZctwxdqrhNnhK746H3G1UCJeeKeb,CuEHFsQx6G4QR8bar6BJF5CMP12BpyhWhj1Ugwes6A1Z,RUvPrTFxjKGEugUNYkPjn5FXQb5qRd9BzLsQqYNXQaQ,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AbsHuQyDiRH9QNdKmBvo3wEhRVoK3CHj8FJnnyt1cjB",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AbsHuQyDiRH9QNdKmBvo3wEhRVoK3CHj8FJnnyt1cjB&amount=1&index=141&proof=EfCvaHqpL5FUvWr9V325BB38LM7AhMfxtynFmA1qSYzo,A8vkDk8CNXT15SHYZctwxdqrhNnhK746H3G1UCJeeKeb,CuEHFsQx6G4QR8bar6BJF5CMP12BpyhWhj1Ugwes6A1Z,RUvPrTFxjKGEugUNYkPjn5FXQb5qRd9BzLsQqYNXQaQ,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Af7C8ZQEZxPDPY3yVJHYnQVXSzBsoUEKBVmNcgBFmR7c",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Af7C8ZQEZxPDPY3yVJHYnQVXSzBsoUEKBVmNcgBFmR7c&amount=1&index=142&proof=E1Mq46rLUeZSujsXDds3gPSSdERqHcyLGaHEG123u92r,2r1FmSmgDz7v4WLrtc4BeytetkWbSaRQagGxEYh8gJwy,CuEHFsQx6G4QR8bar6BJF5CMP12BpyhWhj1Ugwes6A1Z,RUvPrTFxjKGEugUNYkPjn5FXQb5qRd9BzLsQqYNXQaQ,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BBru73dsuUfguDniu6jkB3wAafGY8hpBdWX4X59y4xzc",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BBru73dsuUfguDniu6jkB3wAafGY8hpBdWX4X59y4xzc&amount=1&index=143&proof=EpTWTCUGJMdU4cdiLB7n1vRgQGjuwoectxMZ6Y3jbuh4,2r1FmSmgDz7v4WLrtc4BeytetkWbSaRQagGxEYh8gJwy,CuEHFsQx6G4QR8bar6BJF5CMP12BpyhWhj1Ugwes6A1Z,RUvPrTFxjKGEugUNYkPjn5FXQb5qRd9BzLsQqYNXQaQ,8BSMb2qqjj8h5k6ABH5oVxGzojT6eyMBUbmeSoiTVjZD,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Brpu9ponNfXCi8o3jWN7UCYy8cmh4gJdJzRzzWUQmyf",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Brpu9ponNfXCi8o3jWN7UCYy8cmh4gJdJzRzzWUQmyf&amount=1&index=144&proof=569Ci5hXVMRVXJfBW67c9GZKiTgCjt4fwpsjCFRdWceU,GKKSnrzqyhFU8wRTkAnMKytcXzm1fJHkDfWjroVEpdjr,FUefz24U9VVCQFZW4fGTymwg8muYbGM8Ns726WGyyTRC,An59ZtbEnLJsoGpv2myaJDD95WkF9juCDM9SjnYbgSNu,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CdekRz2JmKDcW2tpGzKAN9rN2V7E1PuGjoMN9zvW68HF",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CdekRz2JmKDcW2tpGzKAN9rN2V7E1PuGjoMN9zvW68HF&amount=1&index=145&proof=Dj3BcykzcAMGsWoGEwRbTYoQr7rhJXmYUz7J1fcwefWM,GKKSnrzqyhFU8wRTkAnMKytcXzm1fJHkDfWjroVEpdjr,FUefz24U9VVCQFZW4fGTymwg8muYbGM8Ns726WGyyTRC,An59ZtbEnLJsoGpv2myaJDD95WkF9juCDM9SjnYbgSNu,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CwJeoENwrVnWocL74xiQRnxfWGw8UTazdYbxRXNVxixy",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CwJeoENwrVnWocL74xiQRnxfWGw8UTazdYbxRXNVxixy&amount=1&index=146&proof=AiX9P8cvs147jQEL4cCwou9CYrALC26jo6yJfKn8sUuC,Grefmc5ZpQjhamGvSmpgRZQmfGRrZ2KzWg61JzGMvSjD,FUefz24U9VVCQFZW4fGTymwg8muYbGM8Ns726WGyyTRC,An59ZtbEnLJsoGpv2myaJDD95WkF9juCDM9SjnYbgSNu,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DoZ1tbFkx663Pt8RUuw5jzCeypUKQsehXsfuezmmeXrt",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DoZ1tbFkx663Pt8RUuw5jzCeypUKQsehXsfuezmmeXrt&amount=1&index=147&proof=5RedfN1SgSRoRNJpm3GNLmjGGSpiLiCADso1kmi9jFQt,Grefmc5ZpQjhamGvSmpgRZQmfGRrZ2KzWg61JzGMvSjD,FUefz24U9VVCQFZW4fGTymwg8muYbGM8Ns726WGyyTRC,An59ZtbEnLJsoGpv2myaJDD95WkF9juCDM9SjnYbgSNu,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EbEfzWPSdBJ7aE6LixGg5taLZkz7fPtZUkphtqLWzgFC",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EbEfzWPSdBJ7aE6LixGg5taLZkz7fPtZUkphtqLWzgFC&amount=1&index=148&proof=GDG62pmoSqTREMamTTxPUWFWvM5B5G4EGw6jX9ew9diX,41hrVwskEHuBPhLcS9zqW4B3Bt2pv2uhUigLrJrTyXB9,Dc14ChKNrfvoRfQsYomxdNvgurmxLVy9csZhrEUJf7DY,An59ZtbEnLJsoGpv2myaJDD95WkF9juCDM9SjnYbgSNu,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EJnoxsAGvBbE7hnJZ9QdT6bNHWFsXoQx53smGA3eH1r9",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EJnoxsAGvBbE7hnJZ9QdT6bNHWFsXoQx53smGA3eH1r9&amount=1&index=149&proof=Di7t7hLjkxZ4TZfP5cvEKQQzDcnCfbRWZeDqkCZL1xe1,41hrVwskEHuBPhLcS9zqW4B3Bt2pv2uhUigLrJrTyXB9,Dc14ChKNrfvoRfQsYomxdNvgurmxLVy9csZhrEUJf7DY,An59ZtbEnLJsoGpv2myaJDD95WkF9juCDM9SjnYbgSNu,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Ezfb4dKGJuAUERE7UzgUzCJ9tuprvHD9MB9QprSCx57b",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Ezfb4dKGJuAUERE7UzgUzCJ9tuprvHD9MB9QprSCx57b&amount=1&index=150&proof=37YxbYkpTz786meUJLSmxeCGZVgWEjszii72sskt4CUG,CXhoWQnQ8Kg7ynDNrUAHqUS3BGCThP5bKA7S4usaX87b,Dc14ChKNrfvoRfQsYomxdNvgurmxLVy9csZhrEUJf7DY,An59ZtbEnLJsoGpv2myaJDD95WkF9juCDM9SjnYbgSNu,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FPP2CEzwNMqxqzgmtHPVpgTEjSPsTFYCLqhFwsa3uQbR",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FPP2CEzwNMqxqzgmtHPVpgTEjSPsTFYCLqhFwsa3uQbR&amount=1&index=151&proof=E4cCa1dLfzpquYG95ebuNJvY64Legd7deLLryjKF9E2b,CXhoWQnQ8Kg7ynDNrUAHqUS3BGCThP5bKA7S4usaX87b,Dc14ChKNrfvoRfQsYomxdNvgurmxLVy9csZhrEUJf7DY,An59ZtbEnLJsoGpv2myaJDD95WkF9juCDM9SjnYbgSNu,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GRFdkxZf5raq2T5kVzcbDTprDKie6oF2QNuH5ck1Ehot",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GRFdkxZf5raq2T5kVzcbDTprDKie6oF2QNuH5ck1Ehot&amount=1&index=152&proof=9cxr2BHcqvYJ5aNnLWzmes8jNGScAc2jFwrsyCYJqWsh,42LS57WbJeRokg7YFbz2ycjRzGifLhWwtuAW7MYtuPgc,4Gmdys2aVYt5jMRjDCW8FNJgihbAwfNPdiiokd5fZWEv,3R3SSp3wQgezxHLu8sLP4BcDabm4xx7YhnBF8et5oRLT,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Hd7TvS1nQyVp8BnPehT8jcoWJqth15ZnKZLSG8tDAbGi",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Hd7TvS1nQyVp8BnPehT8jcoWJqth15ZnKZLSG8tDAbGi&amount=1&index=153&proof=CJz9sweRjkW1i7NtYR9Z29BhiKHk5MdTHUCAvWhi4f38,42LS57WbJeRokg7YFbz2ycjRzGifLhWwtuAW7MYtuPgc,4Gmdys2aVYt5jMRjDCW8FNJgihbAwfNPdiiokd5fZWEv,3R3SSp3wQgezxHLu8sLP4BcDabm4xx7YhnBF8et5oRLT,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Hp42RnEjB9GL5ujjJdcm7tm48uEZTzYowz3vx1XZg8pc",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Hp42RnEjB9GL5ujjJdcm7tm48uEZTzYowz3vx1XZg8pc&amount=1&index=154&proof=6GBKzC7kEpHzhqthB6UKDKNQraesGgLfK4UU1u6XcSCo,8XPXADhNRdzLAhzgobLChmAffYwemdcio4bnW7862igg,4Gmdys2aVYt5jMRjDCW8FNJgihbAwfNPdiiokd5fZWEv,3R3SSp3wQgezxHLu8sLP4BcDabm4xx7YhnBF8et5oRLT,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Hye6Df1fxmq3tbgsFnuooedca3XmuXixz2Rd11aFv4r2",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Hye6Df1fxmq3tbgsFnuooedca3XmuXixz2Rd11aFv4r2&amount=1&index=155&proof=DVtaHzxsNHkA4Vqqy9ZtcTV88M43Ehix5uEtra7oMfHA,8XPXADhNRdzLAhzgobLChmAffYwemdcio4bnW7862igg,4Gmdys2aVYt5jMRjDCW8FNJgihbAwfNPdiiokd5fZWEv,3R3SSp3wQgezxHLu8sLP4BcDabm4xx7YhnBF8et5oRLT,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3Z3UQNEEG8fFSP5u518fbP5EEAaxbP39pgBJCGYEZKxz",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3Z3UQNEEG8fFSP5u518fbP5EEAaxbP39pgBJCGYEZKxz&amount=1&index=156&proof=H5kwQX2QLVVix6U8Uf5QWw1RFbpU2ZxyzZ35YXVK2L7M,3YLUdh8pjoP8DR9jJXMhoYoJakdPrhLNUFrP4aEiJeoN,8QBaH1tc1eN22EawBggEG9kSggKsuB9PAjCM8zwMqsR9,3R3SSp3wQgezxHLu8sLP4BcDabm4xx7YhnBF8et5oRLT,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3zBpJVEHANpfo8RXoCT43Swfio2Q7EJy6mwSn1AJDiM4",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3zBpJVEHANpfo8RXoCT43Swfio2Q7EJy6mwSn1AJDiM4&amount=1&index=157&proof=9eZxvmnCAtwjRw8B2nuXDVyAQBz4tfGcNshyKjGMjKnw,3YLUdh8pjoP8DR9jJXMhoYoJakdPrhLNUFrP4aEiJeoN,8QBaH1tc1eN22EawBggEG9kSggKsuB9PAjCM8zwMqsR9,3R3SSp3wQgezxHLu8sLP4BcDabm4xx7YhnBF8et5oRLT,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "67uSK1viRu7iwURhEVqxNr2tqQ7xNLvZ8JiCpPjB1k4W",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=67uSK1viRu7iwURhEVqxNr2tqQ7xNLvZ8JiCpPjB1k4W&amount=1&index=158&proof=6r2URxJTno5Dt1HonykhfAnBGLV5kewVwgnHfL47ALLW,BDFyJzoH8ZnL5Xn8465to3BYdXZdyyGwcy8Sih6E3VLb,8QBaH1tc1eN22EawBggEG9kSggKsuB9PAjCM8zwMqsR9,3R3SSp3wQgezxHLu8sLP4BcDabm4xx7YhnBF8et5oRLT,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6DPwJRgWB655kNMUGJYUxQXpXAJVMpahRcNxnrXrnVU4",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6DPwJRgWB655kNMUGJYUxQXpXAJVMpahRcNxnrXrnVU4&amount=1&index=159&proof=GaM8SAMPCxh9b816ArVCbvBehL9daDSW7EP2WDwwVpRb,BDFyJzoH8ZnL5Xn8465to3BYdXZdyyGwcy8Sih6E3VLb,8QBaH1tc1eN22EawBggEG9kSggKsuB9PAjCM8zwMqsR9,3R3SSp3wQgezxHLu8sLP4BcDabm4xx7YhnBF8et5oRLT,ZmK1vcGqhw23j5FudWN6LssJJagXK25iGHtwFhT72uX,8Qdc2WzvmEVmRyaR4MK44G4LxJ2YLWV2aCsWVwxVT19F,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6S8isJzdTFpia31b8Z7ZcATjHqAdq911JdL3QCGrUuLx",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6S8isJzdTFpia31b8Z7ZcATjHqAdq911JdL3QCGrUuLx&amount=1&index=160&proof=Fq2sGVHmXQX8kX4VCD9pRSQB5UdY6Rya75mQe2cHFFVi,34gFWGVBXx1BXiHCXDtZGxUnvGfEmk2TdzNwjGjaqq1e,7Xz3VUnrLjwPVxCRxLwZJcCgVr6RWTsWGftYohe3XRBX,43dXHEpK2oWa2ZCsaVpng94N3FAKmMVvrvDe7YuPPDQe,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6vshaUn5e7FmW2JXCeAfh4PXnW9nvz9q6p8SJuYYpNGx",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6vshaUn5e7FmW2JXCeAfh4PXnW9nvz9q6p8SJuYYpNGx&amount=1&index=161&proof=339hHG3PzfDtaUQWjTJtuLj1SZrxyz3Ter5E62EYZYjE,34gFWGVBXx1BXiHCXDtZGxUnvGfEmk2TdzNwjGjaqq1e,7Xz3VUnrLjwPVxCRxLwZJcCgVr6RWTsWGftYohe3XRBX,43dXHEpK2oWa2ZCsaVpng94N3FAKmMVvrvDe7YuPPDQe,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8E3fBtqzDNL6wrQNfXz6sWTDAWgHPBTc65iE8pGf6QSd",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8E3fBtqzDNL6wrQNfXz6sWTDAWgHPBTc65iE8pGf6QSd&amount=1&index=162&proof=HtmP6pRts1hXVZLnvGzKkPZ4yyxrUCVNrrjzZKFfc8xM,3D4md2JEB41P2uJR96UbUX35wRoroWB8bMuMZBWmAgpB,7Xz3VUnrLjwPVxCRxLwZJcCgVr6RWTsWGftYohe3XRBX,43dXHEpK2oWa2ZCsaVpng94N3FAKmMVvrvDe7YuPPDQe,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9PHbhKHkYveUEMxg8snBmW1F1cxhMCQvvZ4qvy6CWBSu",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9PHbhKHkYveUEMxg8snBmW1F1cxhMCQvvZ4qvy6CWBSu&amount=1&index=163&proof=GrqPVF8h6n3X9E77S2VdD4p9qiiWpAbwELvdB16o7aoy,3D4md2JEB41P2uJR96UbUX35wRoroWB8bMuMZBWmAgpB,7Xz3VUnrLjwPVxCRxLwZJcCgVr6RWTsWGftYohe3XRBX,43dXHEpK2oWa2ZCsaVpng94N3FAKmMVvrvDe7YuPPDQe,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FJ8i36kn3jd2jR3z195AHJ8QadmkX7Lj3izQNziKaXqs",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FJ8i36kn3jd2jR3z195AHJ8QadmkX7Lj3izQNziKaXqs&amount=1&index=164&proof=Fn88tBVHPGHVTbYoAYbT69EHkNzQgf2NLTjBwuCPABvG,BeaspgKZmfmgDi4bf1xvNiQZna1zVHUzb7JXKFJHaEXU,4t5PirBXvX3HubvQcj8G4FnngjnTdmzkL9YVe8b2T16y,43dXHEpK2oWa2ZCsaVpng94N3FAKmMVvrvDe7YuPPDQe,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GzejrqovfD692mauf72NYaq2PvZtgxDgevW4sqYxctfo",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GzejrqovfD692mauf72NYaq2PvZtgxDgevW4sqYxctfo&amount=1&index=165&proof=CweXgYqD8f7xbrkxH5GvAUPkrd7jHgUB48xbC6gzmdAd,BeaspgKZmfmgDi4bf1xvNiQZna1zVHUzb7JXKFJHaEXU,4t5PirBXvX3HubvQcj8G4FnngjnTdmzkL9YVe8b2T16y,43dXHEpK2oWa2ZCsaVpng94N3FAKmMVvrvDe7YuPPDQe,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HJzdwoeuShHpY1Sg9mYjJXfKnpY8rpdX9Y5DNGFwEHh4",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HJzdwoeuShHpY1Sg9mYjJXfKnpY8rpdX9Y5DNGFwEHh4&amount=1&index=166&proof=BWFkTTiT1w5HCpzMVmKnmiS8th2mpqcspFiMAnDSHLsn,BtdSpZUzQFpcP84UhcDBxcRxGKVRkVNbhFfNURwAUqi1,4t5PirBXvX3HubvQcj8G4FnngjnTdmzkL9YVe8b2T16y,43dXHEpK2oWa2ZCsaVpng94N3FAKmMVvrvDe7YuPPDQe,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2jpSWaKUASoMHc2V4Gu9SCZ63dw6tjKkU2TTnxwUn4UK",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2jpSWaKUASoMHc2V4Gu9SCZ63dw6tjKkU2TTnxwUn4UK&amount=1&index=167&proof=FgWTNHLjpTDyL97CFXjdcLxLVbSfDhfCTpP7oF3N92TG,BtdSpZUzQFpcP84UhcDBxcRxGKVRkVNbhFfNURwAUqi1,4t5PirBXvX3HubvQcj8G4FnngjnTdmzkL9YVe8b2T16y,43dXHEpK2oWa2ZCsaVpng94N3FAKmMVvrvDe7YuPPDQe,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3HS3mjdXm8yiwbX7uUxKr2KuwLCphaQSx75rFXzFEi6z",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3HS3mjdXm8yiwbX7uUxKr2KuwLCphaQSx75rFXzFEi6z&amount=1&index=168&proof=94KGmZoZPBtsBe1XJR2D5RT5nNBmHb7dR7AnFxbZUQ48,E226i4Dcn1fsRYgQ7iyrR96t5nJ3vadQv4Kd7nr3yE5s,FAv9outiFjiXowwy98WzmDNiZazG2DtY27UFXW6pmE5i,DMe2JFKMnAxGmkiDMANCTFC3JHo43uvXsQCczkyovzS,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3McRbYDkcYWTuuLu6rB6spt8hGjCWDWdb66Az4qXzC7h",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3McRbYDkcYWTuuLu6rB6spt8hGjCWDWdb66Az4qXzC7h&amount=1&index=169&proof=HZWG4QbaP3c4cMoAwLzvB1qx9PoqxMe2komdWfEVJZgV,E226i4Dcn1fsRYgQ7iyrR96t5nJ3vadQv4Kd7nr3yE5s,FAv9outiFjiXowwy98WzmDNiZazG2DtY27UFXW6pmE5i,DMe2JFKMnAxGmkiDMANCTFC3JHo43uvXsQCczkyovzS,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "74qW7oDhhPe9eqNiACQx7nXk2kpJ1XNp6YV62JsfAE1w",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=74qW7oDhhPe9eqNiACQx7nXk2kpJ1XNp6YV62JsfAE1w&amount=1&index=170&proof=GGxgBAkoA4L577P3ign5mHW38hL2un6qvWzgPANkip6S,4mFzbwCkNsWrid2didxiGrUEbaphXUPDdfAvncvhZrgW,FAv9outiFjiXowwy98WzmDNiZazG2DtY27UFXW6pmE5i,DMe2JFKMnAxGmkiDMANCTFC3JHo43uvXsQCczkyovzS,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9BuLNv2TefVapax4wTKt9tSuL8H1gUfevShf5pDdCUFm",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9BuLNv2TefVapax4wTKt9tSuL8H1gUfevShf5pDdCUFm&amount=1&index=171&proof=HHMf7pTZpZRK9oWxgVkST18riALZXRmXy9pMqTneGBac,4mFzbwCkNsWrid2didxiGrUEbaphXUPDdfAvncvhZrgW,FAv9outiFjiXowwy98WzmDNiZazG2DtY27UFXW6pmE5i,DMe2JFKMnAxGmkiDMANCTFC3JHo43uvXsQCczkyovzS,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9CGPZF1XSB6e1ms71PJeNYgKDkPP2ivXJe2SoP8SPSbz",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9CGPZF1XSB6e1ms71PJeNYgKDkPP2ivXJe2SoP8SPSbz&amount=1&index=172&proof=5u6DaPqTipCMPKD9JynvtxhpnarMJbPM4LGozmsiN41t,CVZjJ2MfNpkyzeQd7SYaCYYWPs6mA8wS9QMKmQpnj8Tj,E1cAXgiYg88B91ypK8j4TqVDTGUc3RCrAc8BfnsNyqNX,DMe2JFKMnAxGmkiDMANCTFC3JHo43uvXsQCczkyovzS,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "A3JJbYWxdB7gtTWzur9DKB6DjSmu8rRf4jMrM7vJWZVR",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=A3JJbYWxdB7gtTWzur9DKB6DjSmu8rRf4jMrM7vJWZVR&amount=1&index=173&proof=7TuNgBgD9X4KkUrumLAPBAc9ohFA1PyhcvFjUASPG6zJ,CVZjJ2MfNpkyzeQd7SYaCYYWPs6mA8wS9QMKmQpnj8Tj,E1cAXgiYg88B91ypK8j4TqVDTGUc3RCrAc8BfnsNyqNX,DMe2JFKMnAxGmkiDMANCTFC3JHo43uvXsQCczkyovzS,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AETfRjxsYZqZnyqkbCuGqCNmLetxEGATv9NJAsfuxErV",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AETfRjxsYZqZnyqkbCuGqCNmLetxEGATv9NJAsfuxErV&amount=1&index=174&proof=5JX3Nt2h6EzipBzJGuXoWmmU6ioZHhfCNqP7YDd63QiU,5uYyBVzzxbEk9LC3RXQLsPhs7J3b6oxs5u1gJhHNFnF,E1cAXgiYg88B91ypK8j4TqVDTGUc3RCrAc8BfnsNyqNX,DMe2JFKMnAxGmkiDMANCTFC3JHo43uvXsQCczkyovzS,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AmbuoPMBX92R2ZF9tuKwhbN5CXFp8uVyBFtCxGrfPgXp",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AmbuoPMBX92R2ZF9tuKwhbN5CXFp8uVyBFtCxGrfPgXp&amount=1&index=175&proof=DkFiixeGdggNnEVN7ZDpgsfm3V9WCebinggnQtyGSVZp,5uYyBVzzxbEk9LC3RXQLsPhs7J3b6oxs5u1gJhHNFnF,E1cAXgiYg88B91ypK8j4TqVDTGUc3RCrAc8BfnsNyqNX,DMe2JFKMnAxGmkiDMANCTFC3JHo43uvXsQCczkyovzS,EXwEvjQmuPQQLZmm9HLw2cYnp6bDDW8omiT3kZCXtwUp,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AxKQg4yWYyRgCrmD6WZ96ejdbCEW9fnssLvUE2nQ85RV",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AxKQg4yWYyRgCrmD6WZ96ejdbCEW9fnssLvUE2nQ85RV&amount=1&index=176&proof=4hi7yAWZthM2FpiVTSvzjqdGqbX5ukn1jyLeKSu8M43E,214KV7X6TBc7VZKwCRoZRBLgLSpxb8hNoLkdUm6wD2T4,8cVZ2pN3awUpqC6gxyY7a7WJh4mxUukYy6yfojcUYbPJ,CHTpKThz4RAXBZgmNB4DBeE9aWe9aV6ZgPs4eiW9CgMg,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AyyE7tpGcE7BWHKjEw2PandEX3gHiHvQaLXVdAqxodyi",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AyyE7tpGcE7BWHKjEw2PandEX3gHiHvQaLXVdAqxodyi&amount=1&index=177&proof=58DpuYn6L4jBSGzbyy7TcaC1GyiiqgdVAdDxbUP1YP4p,214KV7X6TBc7VZKwCRoZRBLgLSpxb8hNoLkdUm6wD2T4,8cVZ2pN3awUpqC6gxyY7a7WJh4mxUukYy6yfojcUYbPJ,CHTpKThz4RAXBZgmNB4DBeE9aWe9aV6ZgPs4eiW9CgMg,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BbvM3eSLxtL5kyNLaHZrZ9UBjJXRdKM7AjhSqJerDjXc",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BbvM3eSLxtL5kyNLaHZrZ9UBjJXRdKM7AjhSqJerDjXc&amount=1&index=178&proof=8i3jKeocY3Xjv6t7dBYnp96SPmYj2MdZ2o3kxvyyYUBK,pK6NQ1ueNkbM8XanWeJWkQV6LxmXhE9CRLgCfrjtrdw,8cVZ2pN3awUpqC6gxyY7a7WJh4mxUukYy6yfojcUYbPJ,CHTpKThz4RAXBZgmNB4DBeE9aWe9aV6ZgPs4eiW9CgMg,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DLbZdwb6nCv7ssGNy63xnP77syHNYT5xUFLvCMRzXMUQ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DLbZdwb6nCv7ssGNy63xnP77syHNYT5xUFLvCMRzXMUQ&amount=1&index=179&proof=337odfF8FqgTWoLpB4EuRnour8mTi8fK8f2PF1xu4uGx,pK6NQ1ueNkbM8XanWeJWkQV6LxmXhE9CRLgCfrjtrdw,8cVZ2pN3awUpqC6gxyY7a7WJh4mxUukYy6yfojcUYbPJ,CHTpKThz4RAXBZgmNB4DBeE9aWe9aV6ZgPs4eiW9CgMg,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FJH7DTuHzE1LV7QBeE1GsNwfZu1qTawewSWeSeYWSwcL",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FJH7DTuHzE1LV7QBeE1GsNwfZu1qTawewSWeSeYWSwcL&amount=1&index=180&proof=CE1Skx4KGxrm9ZvYKkebp72d3HMGWb5NtBgWFMLgf1Br,8iqFe6QS7TLAaGUCwHmRvcXan5hUjZcQFFv9CDgfszEn,AYQd5be9LegZS2oYdfoJPyBqmhguv99V2JzvqCxTHtft,CHTpKThz4RAXBZgmNB4DBeE9aWe9aV6ZgPs4eiW9CgMg,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "H8Pn8minEzy99QCXo35nKZH7FSbXE2EJo2rjo518pXjL",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=H8Pn8minEzy99QCXo35nKZH7FSbXE2EJo2rjo518pXjL&amount=1&index=181&proof=3zKQ1iZo276t1n5yNiTaZqmpwQ5BqQBrMXkyWQB5NZG1,8iqFe6QS7TLAaGUCwHmRvcXan5hUjZcQFFv9CDgfszEn,AYQd5be9LegZS2oYdfoJPyBqmhguv99V2JzvqCxTHtft,CHTpKThz4RAXBZgmNB4DBeE9aWe9aV6ZgPs4eiW9CgMg,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "JTQCvv9n72rjq1Ju6LwN5TZXbxKPuNQUcSYbHtQXJFi",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=JTQCvv9n72rjq1Ju6LwN5TZXbxKPuNQUcSYbHtQXJFi&amount=1&index=182&proof=YmzEzsGfX5sDoyjCu38saLZxqoExp5irJmH4PbHKFAR,4HM53YZaozu6bC6BLP17DnzxfW49EJxXk9UVYi9Lr8wv,AYQd5be9LegZS2oYdfoJPyBqmhguv99V2JzvqCxTHtft,CHTpKThz4RAXBZgmNB4DBeE9aWe9aV6ZgPs4eiW9CgMg,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "VvcvxquhETeFbbH8xQRD8SjCjh8Ky3srqDfJeMVWdJX",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=VvcvxquhETeFbbH8xQRD8SjCjh8Ky3srqDfJeMVWdJX&amount=1&index=183&proof=AUKxCZjpUguYJ4wGVfEWk4vKcF9yrvo5dneLChTCxoUZ,4HM53YZaozu6bC6BLP17DnzxfW49EJxXk9UVYi9Lr8wv,AYQd5be9LegZS2oYdfoJPyBqmhguv99V2JzvqCxTHtft,CHTpKThz4RAXBZgmNB4DBeE9aWe9aV6ZgPs4eiW9CgMg,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2q7yHwjq36ju3XurXggtQYbcJUwmfU8C588uFsf24q51",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2q7yHwjq36ju3XurXggtQYbcJUwmfU8C588uFsf24q51&amount=1&index=184&proof=AuF2fSR4cbF7VsDWYRGB27ndkvqUnNTCF5Y6eqRthRjQ,qw8umjwP2WYZrkaEfmV7Xir1YsVtQbc4QmX6KXMq79u,AMVM4sqtcutnvtuELJTDYswHZcLwJLVMVoLF1EaEToV4,GCczcAvohNgotZAd2BYz5yo36CQhmgyHJxQS8FKzkyoV,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3bB7fjCFD2quf8ENiwevQobAPcfHaWKLRLwk3WcF86CQ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3bB7fjCFD2quf8ENiwevQobAPcfHaWKLRLwk3WcF86CQ&amount=1&index=185&proof=3h2p8woDUgKrc34gc5pBPtLoFYwopgxbocDuw9B8pe8w,qw8umjwP2WYZrkaEfmV7Xir1YsVtQbc4QmX6KXMq79u,AMVM4sqtcutnvtuELJTDYswHZcLwJLVMVoLF1EaEToV4,GCczcAvohNgotZAd2BYz5yo36CQhmgyHJxQS8FKzkyoV,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3JDHeWHZDHszNMSQbZMpCeUibhiBqVkWsBsi5R2XQaba",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3JDHeWHZDHszNMSQbZMpCeUibhiBqVkWsBsi5R2XQaba&amount=1&index=186&proof=EWqPAju9dju5m5DKspwEQLjybM5rx4T5f2nZmYoSFq3V,C61ko7BkZuNeZVjF3pwWDNkPNbfMYDCYot212ZY1goCB,AMVM4sqtcutnvtuELJTDYswHZcLwJLVMVoLF1EaEToV4,GCczcAvohNgotZAd2BYz5yo36CQhmgyHJxQS8FKzkyoV,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5ZNfDRsoFwPar5qWqswgxs3MdEXCM82nbqQtaEoCr9nH",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5ZNfDRsoFwPar5qWqswgxs3MdEXCM82nbqQtaEoCr9nH&amount=1&index=187&proof=7GpVMWPF3u6n4wCRpMMVXStvPisuH247MMPdjwU9UYkJ,C61ko7BkZuNeZVjF3pwWDNkPNbfMYDCYot212ZY1goCB,AMVM4sqtcutnvtuELJTDYswHZcLwJLVMVoLF1EaEToV4,GCczcAvohNgotZAd2BYz5yo36CQhmgyHJxQS8FKzkyoV,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6sdP7XajhYneZL2271QMiQgXJjvyrhqc18cZBg27Mmz8",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6sdP7XajhYneZL2271QMiQgXJjvyrhqc18cZBg27Mmz8&amount=1&index=188&proof=619KzJEFNEf7MFk23zwYgaXyKPGVN8LGBNy5wKQ9vm4c,BUgfmEk9xTLLtWXrAHGR9bTjTW9agudCaEfV9sMPsGKv,ErrQY9ctJ5k7fAz86Ud118nFX2f1DibQu4BVeysnXy11,GCczcAvohNgotZAd2BYz5yo36CQhmgyHJxQS8FKzkyoV,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6W6Vq1e1kW2Q9qNBeQXjL1YzrD54xFvGnGnHnJADK6Mc",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6W6Vq1e1kW2Q9qNBeQXjL1YzrD54xFvGnGnHnJADK6Mc&amount=1&index=189&proof=DFQc7WTt5GZHAs3HSkELoizGvVz5Yx99N4DN6L7o1Mo1,BUgfmEk9xTLLtWXrAHGR9bTjTW9agudCaEfV9sMPsGKv,ErrQY9ctJ5k7fAz86Ud118nFX2f1DibQu4BVeysnXy11,GCczcAvohNgotZAd2BYz5yo36CQhmgyHJxQS8FKzkyoV,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7EGmWjDrdeyG9QTMpQJNPd3bi1RQ3CzAGrLDKtGTkybg",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7EGmWjDrdeyG9QTMpQJNPd3bi1RQ3CzAGrLDKtGTkybg&amount=1&index=190&proof=HVRkjH2XQJteyTATds16uf7eGvdBmqtMrgGnkcJYeTtq,8YdDpNHsMXnVXSxUsEuAn8oRnGpJhjSyztFVoSaFgZvt,ErrQY9ctJ5k7fAz86Ud118nFX2f1DibQu4BVeysnXy11,GCczcAvohNgotZAd2BYz5yo36CQhmgyHJxQS8FKzkyoV,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7kjytyrD6vTBkDqpg1vw5LZyEKrdUxet4iVpZh8Lx3uC",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7kjytyrD6vTBkDqpg1vw5LZyEKrdUxet4iVpZh8Lx3uC&amount=1&index=191&proof=5bdXYmftLqjKAEYa3zbsRS92f7kSnjNppdXExVLXhqvM,8YdDpNHsMXnVXSxUsEuAn8oRnGpJhjSyztFVoSaFgZvt,ErrQY9ctJ5k7fAz86Ud118nFX2f1DibQu4BVeysnXy11,GCczcAvohNgotZAd2BYz5yo36CQhmgyHJxQS8FKzkyoV,7HxVi74RvABJS4QbFbHM9w51F4DsbpH8xc2RSmpuypMP,8TEHCAM2fSHuQhbRjW3K3NEDv91VRXGomjLJzCjYPyWq,2BSWxUcFC5BRnGonFb1yFUxnSbCyd9awawo2STYXmU9X,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7mEyWC2B7REc3ut6t645dtXPwJgDKbDhY42jNkfsoZ4m",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7mEyWC2B7REc3ut6t645dtXPwJgDKbDhY42jNkfsoZ4m&amount=1&index=192&proof=Gp1xjm2zBW78Zihpc1tML5wPjSroiaqwn3C7f4G45aHe,2KFzQXUp7GoNfFVMzALo1GQy5gRNGLAZMju5fzJYszbT,2obh5EcDTtEyDiWYj7BVto1PcSe39NVkyRy8NSdFDFe3,GwQTHtLpCJNRH9qaBJcTqqhAj1kBBUpw8ngGAcn25fFK,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "913fWaCsiGAGte5C4qD8hMNMYmfTYcVgJLTN27yWUbjV",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=913fWaCsiGAGte5C4qD8hMNMYmfTYcVgJLTN27yWUbjV&amount=1&index=193&proof=J2QJH1sCsd387AnJeZ3DiN8WTWQkbYKEbZDi4WRVmLVK,2KFzQXUp7GoNfFVMzALo1GQy5gRNGLAZMju5fzJYszbT,2obh5EcDTtEyDiWYj7BVto1PcSe39NVkyRy8NSdFDFe3,GwQTHtLpCJNRH9qaBJcTqqhAj1kBBUpw8ngGAcn25fFK,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AHPWgjmNLHqe2ugHCZMik67fbw19pXQYRPNSJPe18n4U",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AHPWgjmNLHqe2ugHCZMik67fbw19pXQYRPNSJPe18n4U&amount=1&index=194&proof=AZsGmWhRciry8rhqNVRNZEQE95ve18RQ4ih5114EYXe7,8aLjMH52c5yrrKr2cKxGCbwTjoD98h2DdGpT1D96Hhvd,2obh5EcDTtEyDiWYj7BVto1PcSe39NVkyRy8NSdFDFe3,GwQTHtLpCJNRH9qaBJcTqqhAj1kBBUpw8ngGAcn25fFK,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "APMf3baHAyK6n9zcNEq4RS439J78BMdtwJUSA58TdmKa",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=APMf3baHAyK6n9zcNEq4RS439J78BMdtwJUSA58TdmKa&amount=1&index=195&proof=9NqN7dxoDPmwbsBFZUQbqwbeZpJ6DXrUM1tFbtUHZPfD,8aLjMH52c5yrrKr2cKxGCbwTjoD98h2DdGpT1D96Hhvd,2obh5EcDTtEyDiWYj7BVto1PcSe39NVkyRy8NSdFDFe3,GwQTHtLpCJNRH9qaBJcTqqhAj1kBBUpw8ngGAcn25fFK,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "D9DgrDmjpd2atLnC8EJgyB3gADyPnFWyT9mUR42WRKnv",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=D9DgrDmjpd2atLnC8EJgyB3gADyPnFWyT9mUR42WRKnv&amount=1&index=196&proof=q3uuS7vtHaVfDd6w1PiLRUiLFdRjDLZ548tqZ1apJLj,AKC9BB6KxgCFB2PyuyjtCaBMxZm7XgCGsGCrYrhh2GPe,4b8q78CtQKBnDp9HvJ3JQuAo1hV5Y7SLov9mG8HThuvH,GwQTHtLpCJNRH9qaBJcTqqhAj1kBBUpw8ngGAcn25fFK,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EQun8VTsecywvhFnb1n24xFg4HHywNJv88umtKzRsVRH",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EQun8VTsecywvhFnb1n24xFg4HHywNJv88umtKzRsVRH&amount=1&index=197&proof=2sSD9D9sQYowfEJny5JskKkvhFA7naQA7WttfWsm61ig,AKC9BB6KxgCFB2PyuyjtCaBMxZm7XgCGsGCrYrhh2GPe,4b8q78CtQKBnDp9HvJ3JQuAo1hV5Y7SLov9mG8HThuvH,GwQTHtLpCJNRH9qaBJcTqqhAj1kBBUpw8ngGAcn25fFK,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "ErKiD4HEQ2Sbc4G4i3f66aUuxi5sg9SvstzzVgHGeu1d",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=ErKiD4HEQ2Sbc4G4i3f66aUuxi5sg9SvstzzVgHGeu1d&amount=1&index=198&proof=ECzuunp8P3hbSxTAZqmBM2Bf9kyeWVEjAhvkhYTS3qmj,5FSiZWQY8dVWenXHXUizQa2LB8Q9hFnUjSwVf4ywZDP5,4b8q78CtQKBnDp9HvJ3JQuAo1hV5Y7SLov9mG8HThuvH,GwQTHtLpCJNRH9qaBJcTqqhAj1kBBUpw8ngGAcn25fFK,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "F6be9b5VwtiMgnT9wCAGB7AXyg4BNGJJr3vvL5MpjcyJ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=F6be9b5VwtiMgnT9wCAGB7AXyg4BNGJJr3vvL5MpjcyJ&amount=1&index=199&proof=AzVzf9LcBqKn67ieaPcv9K82vUn4xKQwd6ffAjCsbitg,5FSiZWQY8dVWenXHXUizQa2LB8Q9hFnUjSwVf4ywZDP5,4b8q78CtQKBnDp9HvJ3JQuAo1hV5Y7SLov9mG8HThuvH,GwQTHtLpCJNRH9qaBJcTqqhAj1kBBUpw8ngGAcn25fFK,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FqJx2xR5uM1eTkVJ2aAmQowQ2sRfp9UASjJW6iHUW7QS",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FqJx2xR5uM1eTkVJ2aAmQowQ2sRfp9UASjJW6iHUW7QS&amount=1&index=200&proof=A1qh3ArsLMStYSiLx6hf73NDS5taRmqZNq9F8w6JizhG,CyiAEpb1wbe6H57ZbPCEYADncWXwRUmXHmLhbnMvbdA4,BtymWo74yMJqKAemW2bWKN4c8AkZik8vu6Njr78XSNwp,7pK4wPHh2gqs8sb3cL6zix7EWwSak17PQzi2CaFKPmY9,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GerxTJpggioVWHMv7bkn1XLdUuGx7FD614ySq1HQLjGv",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GerxTJpggioVWHMv7bkn1XLdUuGx7FD614ySq1HQLjGv&amount=1&index=201&proof=6Er2iuHpjRc4Rm4MJ2FGW3couFnsWkxyv3y6Bj2Ea3Ns,CyiAEpb1wbe6H57ZbPCEYADncWXwRUmXHmLhbnMvbdA4,BtymWo74yMJqKAemW2bWKN4c8AkZik8vu6Njr78XSNwp,7pK4wPHh2gqs8sb3cL6zix7EWwSak17PQzi2CaFKPmY9,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2KnrdPpWN2HSEYg5KJhoCKcjwvZoGjr94p41ZGzM5tFJ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2KnrdPpWN2HSEYg5KJhoCKcjwvZoGjr94p41ZGzM5tFJ&amount=1&index=202&proof=9VeGfNUgpK45UFU8NPkTUiR4oW7XFfA7juVWTYq37Dvb,79hD7bKV8SQtYPTGYT7D1LPjViGw9UuHoMSFA6M5ok2X,BtymWo74yMJqKAemW2bWKN4c8AkZik8vu6Njr78XSNwp,7pK4wPHh2gqs8sb3cL6zix7EWwSak17PQzi2CaFKPmY9,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2RBhb1ffS9PX7qRgk2BUVWPRXDopJE3ytcvSZtFZSyxq",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2RBhb1ffS9PX7qRgk2BUVWPRXDopJE3ytcvSZtFZSyxq&amount=1&index=203&proof=GpFAGKhwYGV9sjeXFDQCRdmDdESmUbctUpDyn9Qdi9LK,79hD7bKV8SQtYPTGYT7D1LPjViGw9UuHoMSFA6M5ok2X,BtymWo74yMJqKAemW2bWKN4c8AkZik8vu6Njr78XSNwp,7pK4wPHh2gqs8sb3cL6zix7EWwSak17PQzi2CaFKPmY9,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "36f56pqptnJTKwqmK8uDJQPR3ADB4TFGoqV76sd24rbC",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=36f56pqptnJTKwqmK8uDJQPR3ADB4TFGoqV76sd24rbC&amount=1&index=204&proof=FQTXt7TPT5GScX4eT2LXMjG1vy9H15hhGeap97FSpkEj,9EvECbS8S4qP6XDfMSBjPnwbpMKdeDCFHQMGmqeQBHFs,2rM7wkAvpNrfef6mwN8CXcNtAQvAeMDTDoZrRJA9sghE,7pK4wPHh2gqs8sb3cL6zix7EWwSak17PQzi2CaFKPmY9,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3rb7JQvBEMaNVhKh5m4MNUdYZdha7vyuT2uH1oGZupb2",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3rb7JQvBEMaNVhKh5m4MNUdYZdha7vyuT2uH1oGZupb2&amount=1&index=205&proof=98NNjJLpi5GDuMJtCq5DeVWDDCmwwx4WZNhzhJT2VLdS,9EvECbS8S4qP6XDfMSBjPnwbpMKdeDCFHQMGmqeQBHFs,2rM7wkAvpNrfef6mwN8CXcNtAQvAeMDTDoZrRJA9sghE,7pK4wPHh2gqs8sb3cL6zix7EWwSak17PQzi2CaFKPmY9,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4B8dAtX1uRonYYfgkfEcTedeSGwCQdQkwZw7ux3JvPNn",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4B8dAtX1uRonYYfgkfEcTedeSGwCQdQkwZw7ux3JvPNn&amount=1&index=206&proof=Fq7N3cfYhaXJsykZWUFTin5J578H3ZeYk1oVWNfkVa7r,5b87wdQNexoswsyoxAsVF73fdtkvyH6brvqKHV27YihX,2rM7wkAvpNrfef6mwN8CXcNtAQvAeMDTDoZrRJA9sghE,7pK4wPHh2gqs8sb3cL6zix7EWwSak17PQzi2CaFKPmY9,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4h58D5KpLbiWM6a6EWvbXLcf84FzC3Dxv5iPzzCMACJx",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4h58D5KpLbiWM6a6EWvbXLcf84FzC3Dxv5iPzzCMACJx&amount=1&index=207&proof=4sasWJVA54My5jwpNYqDmqTvdqj7tgxzq6hpAWtGdkb2,5b87wdQNexoswsyoxAsVF73fdtkvyH6brvqKHV27YihX,2rM7wkAvpNrfef6mwN8CXcNtAQvAeMDTDoZrRJA9sghE,7pK4wPHh2gqs8sb3cL6zix7EWwSak17PQzi2CaFKPmY9,E3a3JaVEh9NanJwMiEGduVrhmL8xkh5saAxdjXHn5ioB,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6zpBDpJXrXujAnWW4TCM6oKb5WCSssCpWmggoq4xmeE3",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6zpBDpJXrXujAnWW4TCM6oKb5WCSssCpWmggoq4xmeE3&amount=1&index=208&proof=2rieqbVUkDaoX9MR4Ujv73FTX6EtYn4mJubh1FWWpygj,64ykJao1B8gt4NR5ESkBAgBUJnGbVTsi5yYmuHP2bCeR,6g2H2mtDcRTPm3RyyUJHisJrRK6soumiXvu6sRXEYp3p,HJrxWpZXdpX8JxAdHTTWPrfMqgZqFeG8Jh3GUeHKC2dt,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7cSAXxDTuAjF4qdZNSdbfGtX5eBtsCq7xrQPwboPb95",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7cSAXxDTuAjF4qdZNSdbfGtX5eBtsCq7xrQPwboPb95&amount=1&index=209&proof=3k8xWkgxSAapGoUSowvJSbDFdY1P4qFjnBFjzztkZfSs,64ykJao1B8gt4NR5ESkBAgBUJnGbVTsi5yYmuHP2bCeR,6g2H2mtDcRTPm3RyyUJHisJrRK6soumiXvu6sRXEYp3p,HJrxWpZXdpX8JxAdHTTWPrfMqgZqFeG8Jh3GUeHKC2dt,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8daAXfmdw2Gkc5Cy82wTT1Hxg3G7acR2aos3LXQZuNju",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8daAXfmdw2Gkc5Cy82wTT1Hxg3G7acR2aos3LXQZuNju&amount=1&index=210&proof=ByF7cNgLe8aXoSMMVipnTbLdW91EByYWnPdNQhTvyKiM,7w8dZ2EQWYV4DrVhJ3z6HungBychJwLKU5yJt5Me7p26,6g2H2mtDcRTPm3RyyUJHisJrRK6soumiXvu6sRXEYp3p,HJrxWpZXdpX8JxAdHTTWPrfMqgZqFeG8Jh3GUeHKC2dt,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8xNe91ssUtdWLrBtergzF1mydazqKvTDHBT9oDh285sq",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8xNe91ssUtdWLrBtergzF1mydazqKvTDHBT9oDh285sq&amount=1&index=211&proof=2x2FcdtXWTtNuBCjaMMytJcMcb5vZtTivW3M2WcU7zhB,7w8dZ2EQWYV4DrVhJ3z6HungBychJwLKU5yJt5Me7p26,6g2H2mtDcRTPm3RyyUJHisJrRK6soumiXvu6sRXEYp3p,HJrxWpZXdpX8JxAdHTTWPrfMqgZqFeG8Jh3GUeHKC2dt,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8z8WYo6QfUrmedhwxWpYNq8TbimNnX8ZF6ntdta92pKg",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8z8WYo6QfUrmedhwxWpYNq8TbimNnX8ZF6ntdta92pKg&amount=1&index=212&proof=5ESrJTgiMzBgrLaSb3xK8W9AdwnSURXWY8DcAjxxeNtf,B9RdtHckHrbKeJsU5rtNZsAPnAgZMRGZAxbp6aY1iYub,B42n2W7q87B4egttv7YhWcWhGF2XY6BcdXtkgWw2ouY5,HJrxWpZXdpX8JxAdHTTWPrfMqgZqFeG8Jh3GUeHKC2dt,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AwBJQfcSRSBjNt7HCs3YevnHC9XgqQZ1vDLiJm3kjVSR",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AwBJQfcSRSBjNt7HCs3YevnHC9XgqQZ1vDLiJm3kjVSR&amount=1&index=213&proof=BFxpDmXWZ35GtFWLqVeqcfHRSXCjQ7cmZhsSMWnZrWNZ,B9RdtHckHrbKeJsU5rtNZsAPnAgZMRGZAxbp6aY1iYub,B42n2W7q87B4egttv7YhWcWhGF2XY6BcdXtkgWw2ouY5,HJrxWpZXdpX8JxAdHTTWPrfMqgZqFeG8Jh3GUeHKC2dt,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BEBJ2MfimeyEuD5vCrCbkhSEvg5PAkSigGPS2Vpfd2hL",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BEBJ2MfimeyEuD5vCrCbkhSEvg5PAkSigGPS2Vpfd2hL&amount=1&index=214&proof=2RW8FAXtKe1qGMPhZ1Wpc4UTy7bjDT1SwXWRRFSFkMFi,HTTzpCTEG2niSfWbE4gqkHAgYFjvzYxgYTcNFJ3c3ef9,B42n2W7q87B4egttv7YhWcWhGF2XY6BcdXtkgWw2ouY5,HJrxWpZXdpX8JxAdHTTWPrfMqgZqFeG8Jh3GUeHKC2dt,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BU67BUtxXidupHfnKnJB8wFe1g3qVS6cbw1xMxQ1onrr",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BU67BUtxXidupHfnKnJB8wFe1g3qVS6cbw1xMxQ1onrr&amount=1&index=215&proof=CXmk1qjtSuU8y45bD7TMiZZYakdnYMvUEUZNr4apquPa,HTTzpCTEG2niSfWbE4gqkHAgYFjvzYxgYTcNFJ3c3ef9,B42n2W7q87B4egttv7YhWcWhGF2XY6BcdXtkgWw2ouY5,HJrxWpZXdpX8JxAdHTTWPrfMqgZqFeG8Jh3GUeHKC2dt,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CeybTm9ZU2LXF8SSeuvuv1Y6RTT47kHC9KMtN9uoCMgm",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CeybTm9ZU2LXF8SSeuvuv1Y6RTT47kHC9KMtN9uoCMgm&amount=1&index=216&proof=FBArk8iJY3Gqh29bAhGYoiCcfHip3ew6KbUSTQmypM3e,BQp8CVRQa81hANTRy5zX1EGspyLDD1wGWyGrDw4mifyA,DyR8De42sCjuDcYZqmocSFvqTMi4jNbySXG3XrHNxeVX,68dUkS1SkHNL7Ww7cHWAFMVgMXZgwe61MKianaSDXNiT,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CtoGTY6xMUnoKBiqTa9WSqfFzvBCwH3AhCorEk35MUWZ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CtoGTY6xMUnoKBiqTa9WSqfFzvBCwH3AhCorEk35MUWZ&amount=1&index=217&proof=BSVofqQNe156uLbZBJg6Fn2ZCkaxt7FM9dzj5UCnE3nV,BQp8CVRQa81hANTRy5zX1EGspyLDD1wGWyGrDw4mifyA,DyR8De42sCjuDcYZqmocSFvqTMi4jNbySXG3XrHNxeVX,68dUkS1SkHNL7Ww7cHWAFMVgMXZgwe61MKianaSDXNiT,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Dk5u21VMrnU3taKCt37RAdRvrZhMTxZt4W4ZHSG1Ys9W",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Dk5u21VMrnU3taKCt37RAdRvrZhMTxZt4W4ZHSG1Ys9W&amount=1&index=218&proof=6cp1EhGCE3pbbfraum4bPAokrgt8uZJuGYsQkdgVjZmM,2bjCudNuTcL2bdEJz8D95ytasRb8UNGv1RxUz23V9imF,DyR8De42sCjuDcYZqmocSFvqTMi4jNbySXG3XrHNxeVX,68dUkS1SkHNL7Ww7cHWAFMVgMXZgwe61MKianaSDXNiT,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "E85DSvSLbL8hUq3LxNE6SiGmLW9jrofjzfZ894RihrHz",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=E85DSvSLbL8hUq3LxNE6SiGmLW9jrofjzfZ894RihrHz&amount=1&index=219&proof=3ZxBQ3u85shQCnXmVRxAUBU76pSPt9t9mRLqaZqcqTPS,2bjCudNuTcL2bdEJz8D95ytasRb8UNGv1RxUz23V9imF,DyR8De42sCjuDcYZqmocSFvqTMi4jNbySXG3XrHNxeVX,68dUkS1SkHNL7Ww7cHWAFMVgMXZgwe61MKianaSDXNiT,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EBq8xhw3mi9jAxX9KoWRUUw5Q76KWouo7PpNHCBgLu6g",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EBq8xhw3mi9jAxX9KoWRUUw5Q76KWouo7PpNHCBgLu6g&amount=1&index=220&proof=Cgf26pG53agKnZ8s7zHrfgRVPZcHwxGwowcnuyQngp5,9urTTUwtdrArYmNeYV4ohuo7tpK2kziBpWePJfpGXJNB,HpKHtqyTwDaN5TjxqtrW9V2AcLCXqxwRiTqzLRcbBqJT,68dUkS1SkHNL7Ww7cHWAFMVgMXZgwe61MKianaSDXNiT,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FFRG7XHQtAWgdVSUednW4f59CYCWsPrq2nzFuTmVu2n4",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FFRG7XHQtAWgdVSUednW4f59CYCWsPrq2nzFuTmVu2n4&amount=1&index=221&proof=WSHDNoBoqyFcrUBD3MMyENfHPNjstAtzRrrfSYDxnf3,9urTTUwtdrArYmNeYV4ohuo7tpK2kziBpWePJfpGXJNB,HpKHtqyTwDaN5TjxqtrW9V2AcLCXqxwRiTqzLRcbBqJT,68dUkS1SkHNL7Ww7cHWAFMVgMXZgwe61MKianaSDXNiT,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FYv4QjnPGxkPCHUd7KKgjPHqz2DXyJfKo3HvUu33Lq17",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FYv4QjnPGxkPCHUd7KKgjPHqz2DXyJfKo3HvUu33Lq17&amount=1&index=222&proof=CR9DsTTVdaskY6vpzcQ68m3Aoxg2dqAFeRUf4ZgG5btj,Cn3zD3cMsBr52pAZy6ExkEpPZTM5mRapbThnr82RWYq7,HpKHtqyTwDaN5TjxqtrW9V2AcLCXqxwRiTqzLRcbBqJT,68dUkS1SkHNL7Ww7cHWAFMVgMXZgwe61MKianaSDXNiT,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FzcTYFksn1v4VxbHie42ftTeBRMfmJGziX4tkGqykQbW",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FzcTYFksn1v4VxbHie42ftTeBRMfmJGziX4tkGqykQbW&amount=1&index=223&proof=J5tzoFL3jEQiaVh3TunGWz4jDiTx7zh8sFnTbSYtjQZp,Cn3zD3cMsBr52pAZy6ExkEpPZTM5mRapbThnr82RWYq7,HpKHtqyTwDaN5TjxqtrW9V2AcLCXqxwRiTqzLRcbBqJT,68dUkS1SkHNL7Ww7cHWAFMVgMXZgwe61MKianaSDXNiT,3zFN8doDc94NGrvMSbWq83r8LjCqXYdYG4NUvPyrX3xp,3VHkBdWeRJmVAWbroyXnqaR3py1XwM1sJkjTBVGpZDsd,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "J3AHgsdTutFvgaDMkSvjm3be6TnETDGuJjgaaAsX2feP",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=J3AHgsdTutFvgaDMkSvjm3be6TnETDGuJjgaaAsX2feP&amount=1&index=224&proof=2Pq1BJd7uZnMYSNeEpDqRgsxUumSSQDedGWxbhEBaW8Q,FqpPFC2mttjop8MQ37XK7FaV5FRAPXsSzfwpGUXJ4TfE,2kUVEXNQr9MoQEfBqP63KGtjmaGKwcb6mXeJhxt4CCom,f6xbwUQzQF4M4maP9tztvoYtr1iivkRsf3PqWzWNfQ3,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "14DkKDtgXnLTgRdaNdYdWoYGsvY9SPpczDWgDPpfJfdo",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=14DkKDtgXnLTgRdaNdYdWoYGsvY9SPpczDWgDPpfJfdo&amount=1&index=225&proof=4JsimG4dAVK776bqwAyBfUCpMesXikK9WUkXrWmZMY7F,FqpPFC2mttjop8MQ37XK7FaV5FRAPXsSzfwpGUXJ4TfE,2kUVEXNQr9MoQEfBqP63KGtjmaGKwcb6mXeJhxt4CCom,f6xbwUQzQF4M4maP9tztvoYtr1iivkRsf3PqWzWNfQ3,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2axrTEEXfeQmxzeEaVKorEkBMFYLfNwWZ645V5PY8jzE",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2axrTEEXfeQmxzeEaVKorEkBMFYLfNwWZ645V5PY8jzE&amount=1&index=226&proof=8BFPBv1jDUQFhNj8tbrcuPwochcomFPNjNuvMzya8NaJ,98SahBqjtY14Y9VueAj3ajgHgtokRPNoQM4352uMLzqV,2kUVEXNQr9MoQEfBqP63KGtjmaGKwcb6mXeJhxt4CCom,f6xbwUQzQF4M4maP9tztvoYtr1iivkRsf3PqWzWNfQ3,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2gEoR4NcEshC7WdTtkZ6rxMVoaWaH6HDU6Tp7GZ4kkeQ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2gEoR4NcEshC7WdTtkZ6rxMVoaWaH6HDU6Tp7GZ4kkeQ&amount=1&index=227&proof=6NCLi9BbGFe7vQ5o3oYw4VQonyxsbb1QMsZtf7Ac564s,98SahBqjtY14Y9VueAj3ajgHgtokRPNoQM4352uMLzqV,2kUVEXNQr9MoQEfBqP63KGtjmaGKwcb6mXeJhxt4CCom,f6xbwUQzQF4M4maP9tztvoYtr1iivkRsf3PqWzWNfQ3,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2kGpZceQgqFTdrdzPvQs8q1EvXs1jaC1KhahvD1cDb7w",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2kGpZceQgqFTdrdzPvQs8q1EvXs1jaC1KhahvD1cDb7w&amount=1&index=228&proof=BtTFimw7opr51sAx3N7ppQ72CgUGsQp2TYqWyC68bRQR,H6LT33ms2JoBKeoNfgmxaR6FrpwBGj7dAybRnP2HicTu,JpBtdiyStYMFeKeXkTeEYtvhuoyuRqQiMUtdukus4MY,f6xbwUQzQF4M4maP9tztvoYtr1iivkRsf3PqWzWNfQ3,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2STXUaLXJf4Kez7etznktJXaMz2fRC21X5d7H2jBhWeC",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2STXUaLXJf4Kez7etznktJXaMz2fRC21X5d7H2jBhWeC&amount=1&index=229&proof=Heq3kEN1BqjCePCL7ao2eqg6W1H1uNhmyDzAENiaJ3cj,H6LT33ms2JoBKeoNfgmxaR6FrpwBGj7dAybRnP2HicTu,JpBtdiyStYMFeKeXkTeEYtvhuoyuRqQiMUtdukus4MY,f6xbwUQzQF4M4maP9tztvoYtr1iivkRsf3PqWzWNfQ3,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "34yPyAhjrdHBQQNsuk1Gvooaa7paADkqYDFoTBJL1nyt",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=34yPyAhjrdHBQQNsuk1Gvooaa7paADkqYDFoTBJL1nyt&amount=1&index=230&proof=DZLyxsJ88DAmnEtKEe4aKZDYpD4nZT5oYuP99wDxK8zg,2djCEAZGMXAQmcs9GRZQv3V4REvxZw3LWoWv3yQSxUfN,JpBtdiyStYMFeKeXkTeEYtvhuoyuRqQiMUtdukus4MY,f6xbwUQzQF4M4maP9tztvoYtr1iivkRsf3PqWzWNfQ3,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3fwrThobUZy8ETzdF4AhfXgFKeBiTwYFYPRFSD4AaJFK",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3fwrThobUZy8ETzdF4AhfXgFKeBiTwYFYPRFSD4AaJFK&amount=1&index=231&proof=AvK4YpevkMDzN9hvDu36cPcb5zzTEoDn913YkXaLn61Z,2djCEAZGMXAQmcs9GRZQv3V4REvxZw3LWoWv3yQSxUfN,JpBtdiyStYMFeKeXkTeEYtvhuoyuRqQiMUtdukus4MY,f6xbwUQzQF4M4maP9tztvoYtr1iivkRsf3PqWzWNfQ3,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3GTjn9m1wXecs1FgzsywXke5cthqXzoq9Xj5GPytzjQx",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3GTjn9m1wXecs1FgzsywXke5cthqXzoq9Xj5GPytzjQx&amount=1&index=232&proof=2DvNoUXJuiwNUje8nrTwHRKgugdo4gqRhwuCWnXuHgxn,CLnDT4gym9HWxd57ZMZZ2RhrnBjMX7fc1SkPcgyr5Lx,75hLQYJbGNspUbk2ZQpqHnUqXRXBUcc67biBFaPvmzKk,2Npsq7zgWoF7oFDHRCHrVkf4GqorZ4MVdPVsohZV3pqX,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3gWm1vwAQub6D1tfhNKy7dvD8MGh8zUjEKjmdWKWqr8Z",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3gWm1vwAQub6D1tfhNKy7dvD8MGh8zUjEKjmdWKWqr8Z&amount=1&index=233&proof=8KNSNVVzhVFLpizcAkHbMAtPiUgCn2ag5bRz48ULMDkP,CLnDT4gym9HWxd57ZMZZ2RhrnBjMX7fc1SkPcgyr5Lx,75hLQYJbGNspUbk2ZQpqHnUqXRXBUcc67biBFaPvmzKk,2Npsq7zgWoF7oFDHRCHrVkf4GqorZ4MVdPVsohZV3pqX,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3S8HkW2Cznf3igsVZxDSykU6dTVUrEoeSu1GYYp7qybq",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3S8HkW2Cznf3igsVZxDSykU6dTVUrEoeSu1GYYp7qybq&amount=1&index=234&proof=BkVRckdgZtYiXjXvkG7xiJMjB1z115JSXXLAcYJUjHeF,DyYWQhNUerZuMHs2RuCpr2NhPZEFP25vPBocsbxtQAu,75hLQYJbGNspUbk2ZQpqHnUqXRXBUcc67biBFaPvmzKk,2Npsq7zgWoF7oFDHRCHrVkf4GqorZ4MVdPVsohZV3pqX,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "46ffHTAZGk2VDE5wd2EiHMi76zPu6JQ9ZovoHMnB4Dro",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=46ffHTAZGk2VDE5wd2EiHMi76zPu6JQ9ZovoHMnB4Dro&amount=1&index=235&proof=BJc5Gp4gRejrvDiVjNW2QyWqFAGotcVsy4nk5ohoYun6,DyYWQhNUerZuMHs2RuCpr2NhPZEFP25vPBocsbxtQAu,75hLQYJbGNspUbk2ZQpqHnUqXRXBUcc67biBFaPvmzKk,2Npsq7zgWoF7oFDHRCHrVkf4GqorZ4MVdPVsohZV3pqX,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4af4ZzwKimW1GSUsCqyNb37Y5G2SKnPnxU7HWUfX3fiF",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4af4ZzwKimW1GSUsCqyNb37Y5G2SKnPnxU7HWUfX3fiF&amount=1&index=236&proof=64QJjEp9BrRqufPwHPMZMjNnDVKEsgsJaj7d7UyNNFN9,5j8eLeAb6s2xGFkb37kBgHxujpkQsqnxmaaPP1zyiDik,HbATnz2Me812h2ukSs4V9hNmwuhv8yhCyaaz8GSKuckZ,2Npsq7zgWoF7oFDHRCHrVkf4GqorZ4MVdPVsohZV3pqX,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4By8wDDXjAPJvMqFGF3GareKkK37pfKiPzRccSEGbCKv",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4By8wDDXjAPJvMqFGF3GareKkK37pfKiPzRccSEGbCKv&amount=1&index=237&proof=7wETB3XqbePejpTdWQDSQ8Ko9nJs1aEyeP13wx7mShnx,5j8eLeAb6s2xGFkb37kBgHxujpkQsqnxmaaPP1zyiDik,HbATnz2Me812h2ukSs4V9hNmwuhv8yhCyaaz8GSKuckZ,2Npsq7zgWoF7oFDHRCHrVkf4GqorZ4MVdPVsohZV3pqX,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4Gz4cj7KkZENDGHZeVPgjjFjLhvSBi71tSR7nF8cYVpQ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4Gz4cj7KkZENDGHZeVPgjjFjLhvSBi71tSR7nF8cYVpQ&amount=1&index=238&proof=2E5u4hAdgzZJ1eDVf5bYzzyKz3iSsLngFp3dggquHipL,2aLc8etrxDRzJYiGiiVgUYoAx17wv2UdZu5jy22ShNzZ,HbATnz2Me812h2ukSs4V9hNmwuhv8yhCyaaz8GSKuckZ,2Npsq7zgWoF7oFDHRCHrVkf4GqorZ4MVdPVsohZV3pqX,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4mxzYVdmibVvFkoWS7fvxeS6PJ3jwnWJpQ9wjkBgQ8Gs",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4mxzYVdmibVvFkoWS7fvxeS6PJ3jwnWJpQ9wjkBgQ8Gs&amount=1&index=239&proof=6eBpyyZRymqwWVVa33Hyg2aPZi5YbDAe3JPDXvjwZwA2,2aLc8etrxDRzJYiGiiVgUYoAx17wv2UdZu5jy22ShNzZ,HbATnz2Me812h2ukSs4V9hNmwuhv8yhCyaaz8GSKuckZ,2Npsq7zgWoF7oFDHRCHrVkf4GqorZ4MVdPVsohZV3pqX,9MrETgf17VB6pQph4mtM5ozPr64hoT7K8nQk3oBJyEij,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4rqT7odiTR2J7x5fzLEfjmToRdg6fEFhMAmnx9YGUvsM",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4rqT7odiTR2J7x5fzLEfjmToRdg6fEFhMAmnx9YGUvsM&amount=1&index=240&proof=ECox5MRQPY7NeFXWqrXodXHmxS9okctc9tPhSntshH16,4t72gFrfSkQLDjiNkexJh6eAauFe5rBKLZDQELWXTRRJ,68vpCvG9sZPYqpwupW6rx2KbyMVbJbUytV8aTuqDRrLh,HdusT3vUjQDd9fSzbKbr8NvmPeM93ct9w9QaHTGVspVo,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4seUEAFkrVfzz59Rt3gFXvX1gJYUnGVjNnJ8RZ5AKpjw",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4seUEAFkrVfzz59Rt3gFXvX1gJYUnGVjNnJ8RZ5AKpjw&amount=1&index=241&proof=7sFmrE75E25W1veiJtcCGabhHVS3quY5xeji5AzLSomd,4t72gFrfSkQLDjiNkexJh6eAauFe5rBKLZDQELWXTRRJ,68vpCvG9sZPYqpwupW6rx2KbyMVbJbUytV8aTuqDRrLh,HdusT3vUjQDd9fSzbKbr8NvmPeM93ct9w9QaHTGVspVo,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4U21pkbkDQMZz2RavXMc6jRDodnmpgxaaEZjVw4888qe",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4U21pkbkDQMZz2RavXMc6jRDodnmpgxaaEZjVw4888qe&amount=1&index=242&proof=3t1psy1hE76xuqaxycFug8PC6jGdUD8ugZbgWdyhgryP,BGNokPNq8F23faFpmRM2ggB1VizupjXH8MSEZXwt9oT4,68vpCvG9sZPYqpwupW6rx2KbyMVbJbUytV8aTuqDRrLh,HdusT3vUjQDd9fSzbKbr8NvmPeM93ct9w9QaHTGVspVo,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4y8Q7QGJKLEFpZpT8uR8riJ19PnnwAZfW7vkL2AgahNq",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4y8Q7QGJKLEFpZpT8uR8riJ19PnnwAZfW7vkL2AgahNq&amount=1&index=243&proof=8rjp9VqRg6iE1Bp3LYZbGDf19XX96E2bXRPCybtMzMjC,BGNokPNq8F23faFpmRM2ggB1VizupjXH8MSEZXwt9oT4,68vpCvG9sZPYqpwupW6rx2KbyMVbJbUytV8aTuqDRrLh,HdusT3vUjQDd9fSzbKbr8NvmPeM93ct9w9QaHTGVspVo,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "587hZv6pt8fSWsEBLQtGdGSngdjRhnRtcb6WpQx11Aex",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=587hZv6pt8fSWsEBLQtGdGSngdjRhnRtcb6WpQx11Aex&amount=1&index=244&proof=F3XAVgdfWN4Fa1DG4fUUWZ64NnJey67WZmi9hQF5Uqx,BCZrJgX422qaQY1mT4d33tEHKUK3J3GjDnbRV2QHhy8,6ofbPjUsiEDYX67YQc9aqKhEYeDfcUBNR5grHkVQVG6H,HdusT3vUjQDd9fSzbKbr8NvmPeM93ct9w9QaHTGVspVo,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5THoXUZfH1cYo2bz1dNby4Ta72CQLW8qyEZtzPa3iUV7",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5THoXUZfH1cYo2bz1dNby4Ta72CQLW8qyEZtzPa3iUV7&amount=1&index=245&proof=3QuAh9u4RxVNoVH2kPBnZfF5PFnA8RWREAPuBEccLQKL,BCZrJgX422qaQY1mT4d33tEHKUK3J3GjDnbRV2QHhy8,6ofbPjUsiEDYX67YQc9aqKhEYeDfcUBNR5grHkVQVG6H,HdusT3vUjQDd9fSzbKbr8NvmPeM93ct9w9QaHTGVspVo,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6o3oDy5eb46N9Ah2LB6hQVBqa9oGpFziSS74D6Nx1y41",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6o3oDy5eb46N9Ah2LB6hQVBqa9oGpFziSS74D6Nx1y41&amount=1&index=246&proof=8xm55E1HtXRAhzv5secWNF9VhibKZyVndHRn5tpkYLjz,svjurwhFm3ASXiK7SdUyT85aULspTAxYP1J5P3VZLmJ,6ofbPjUsiEDYX67YQc9aqKhEYeDfcUBNR5grHkVQVG6H,HdusT3vUjQDd9fSzbKbr8NvmPeM93ct9w9QaHTGVspVo,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6oA5z5DkdwtySGSRhxZsKxJxdRdtEEn3Ug6Xp4Y79giT",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6oA5z5DkdwtySGSRhxZsKxJxdRdtEEn3Ug6Xp4Y79giT&amount=1&index=247&proof=GwF44T2e7gWqG8MEKHBGwU2vBk3AKMLbeoV5jZ1q3yxM,svjurwhFm3ASXiK7SdUyT85aULspTAxYP1J5P3VZLmJ,6ofbPjUsiEDYX67YQc9aqKhEYeDfcUBNR5grHkVQVG6H,HdusT3vUjQDd9fSzbKbr8NvmPeM93ct9w9QaHTGVspVo,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6wVMZcvdRy3BQBoWzuGuSHpTpEK9ShTidzyVfFc3vfTe",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6wVMZcvdRy3BQBoWzuGuSHpTpEK9ShTidzyVfFc3vfTe&amount=1&index=248&proof=2Vh3dhbweeu2kHbEc4vtxrcm2p5jCtJk8x6A3sabd4Cs,2A8upzUHA9DZKEqA8rhjhpBviF7AE23pwMFaK4HnMJin,8vwy8bbVtTUB9m7Y3c44ZtRUMGpPpJbGh5464WcFNjCp,A96PMtBsBFAocDsBJJk4Jv36YWWJQWkCk1ze9QRdyKtb,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7AgbERwWG4GnTzKtHdWjNrWm4FtJeEJApij7n4KK6U4X",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7AgbERwWG4GnTzKtHdWjNrWm4FtJeEJApij7n4KK6U4X&amount=1&index=249&proof=76p17HZPyQ84CpcTVLqvixb3mgV4pFJVmsKT1JHLLPjF,2A8upzUHA9DZKEqA8rhjhpBviF7AE23pwMFaK4HnMJin,8vwy8bbVtTUB9m7Y3c44ZtRUMGpPpJbGh5464WcFNjCp,A96PMtBsBFAocDsBJJk4Jv36YWWJQWkCk1ze9QRdyKtb,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7c6YXrS7rgcTC8L7c1J1wgpBhjb71qbkSiedxv4qrA3k",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7c6YXrS7rgcTC8L7c1J1wgpBhjb71qbkSiedxv4qrA3k&amount=1&index=250&proof=2LPoMxL1oAPmkdJUCC4X2bdoDJM2VEEYvNuiUJQV9ZBm,9SeX3Dgkr3Wvawiwryx5UVw5sXggbNeuo8xWEMxeTsni,8vwy8bbVtTUB9m7Y3c44ZtRUMGpPpJbGh5464WcFNjCp,A96PMtBsBFAocDsBJJk4Jv36YWWJQWkCk1ze9QRdyKtb,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7Pu52hda79BLkZRfaKA6xmW3EBr1XaERAj96SuPoqK5L",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7Pu52hda79BLkZRfaKA6xmW3EBr1XaERAj96SuPoqK5L&amount=1&index=251&proof=AfxpqnvxqNDP7hBUYLptqsLnKa9PyZwK8BfL2wTtZYaD,9SeX3Dgkr3Wvawiwryx5UVw5sXggbNeuo8xWEMxeTsni,8vwy8bbVtTUB9m7Y3c44ZtRUMGpPpJbGh5464WcFNjCp,A96PMtBsBFAocDsBJJk4Jv36YWWJQWkCk1ze9QRdyKtb,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7Vs3QZY9Lxao1QDtZDMPxcp5dD74WBqaZv5the4um5Ub",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7Vs3QZY9Lxao1QDtZDMPxcp5dD74WBqaZv5the4um5Ub&amount=1&index=252&proof=7V4kqfE35b1dq3eib4v5TgWdfwAhrN4csRZfCWNjvcBZ,56Vnfmu3FGdp5mjRyXLzaheCJu9XPQw9mXZnC4zUTr48,u1yTWx2PSrZEbesP3YiEBPqpKdqeMi7hiqUoWGXEwtx,A96PMtBsBFAocDsBJJk4Jv36YWWJQWkCk1ze9QRdyKtb,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8FEaajd1UGwj3pYEonMPkNH6k1UPHCtZNurE3TZCjEyA",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8FEaajd1UGwj3pYEonMPkNH6k1UPHCtZNurE3TZCjEyA&amount=1&index=253&proof=6T4mzZFmStDSFhj5zwDi46P1NWNjVJmjcGKL5XTZkUTi,56Vnfmu3FGdp5mjRyXLzaheCJu9XPQw9mXZnC4zUTr48,u1yTWx2PSrZEbesP3YiEBPqpKdqeMi7hiqUoWGXEwtx,A96PMtBsBFAocDsBJJk4Jv36YWWJQWkCk1ze9QRdyKtb,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8MVFH1tdbTmkYf8z6Wz72HwaWbp17TtREURWjuMW7xfC",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8MVFH1tdbTmkYf8z6Wz72HwaWbp17TtREURWjuMW7xfC&amount=1&index=254&proof=3NpWRP8GMf4PVoLZaMmo831QpLHXGgUAXnSqWSEVxiPi,6GpczPWpU8ogP37ByDP3Y5RxwuLDrPs2rpLszgAk6rqY,u1yTWx2PSrZEbesP3YiEBPqpKdqeMi7hiqUoWGXEwtx,A96PMtBsBFAocDsBJJk4Jv36YWWJQWkCk1ze9QRdyKtb,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8sh6CEgykKoRNhqhgeHBEN2U6gTpY4sh12cdtDRBn7vk",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8sh6CEgykKoRNhqhgeHBEN2U6gTpY4sh12cdtDRBn7vk&amount=1&index=255&proof=C62yixej3JphDk13LMuBx8QbEFHA6JvjwcSQYmqrbcXw,6GpczPWpU8ogP37ByDP3Y5RxwuLDrPs2rpLszgAk6rqY,u1yTWx2PSrZEbesP3YiEBPqpKdqeMi7hiqUoWGXEwtx,A96PMtBsBFAocDsBJJk4Jv36YWWJQWkCk1ze9QRdyKtb,BR4PNXwi1Fs2HUHfrMDw221PUEUCRSa5YvKa6KuSY7j6,2f164HzeaaXdUfujLj6pnKprUadbQKJLhKJKQWCfeUSR,75DQzhdeQftRhB1g6DrQ6UcoaBjaqLsC9m62Kq8JJ7Dc,BQduNyehDSyAYEkTcG1XfZrGo6oUMV3iUKvvPd6JfeMG,yMPtz8YZqHyd6TZj47vyEzSbJ8aZJGdEeb9uSgw8RhL&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8sWChZ3eQYxgsoVq8X6bbe8XVtKHKW1ZJBkYtSguoe7V",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8sWChZ3eQYxgsoVq8X6bbe8XVtKHKW1ZJBkYtSguoe7V&amount=1&index=256&proof=BdZDXTZHQAa72wZdjB4emGHgbYpo3nEvCjYVothiMX5y,34TiuvwosftebXJhLx6LjNBWz2v2XYyzWh9Vznf3hBeJ,GJeP3v33kVcPgmMT3QiYCcBC9HwtCaYo6rxPyYDHHhg2,8bnqcPuEPfpbbyZsoL8Qjr6dbjn7JfWtFfY1uzZdPaHK,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8vaq2ebGPjpfwLszYvnYPJkzUtwrHAeWSPawNhLsuMW3",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8vaq2ebGPjpfwLszYvnYPJkzUtwrHAeWSPawNhLsuMW3&amount=1&index=257&proof=3mV56XvrFRVK9w8wbzDve9YwuJP2X8WWQjWcWrtZdcng,34TiuvwosftebXJhLx6LjNBWz2v2XYyzWh9Vznf3hBeJ,GJeP3v33kVcPgmMT3QiYCcBC9HwtCaYo6rxPyYDHHhg2,8bnqcPuEPfpbbyZsoL8Qjr6dbjn7JfWtFfY1uzZdPaHK,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9HvAwv73BRRAU7QPyo6qCBcUThxE6ouWWdCHYvTFCZyd",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9HvAwv73BRRAU7QPyo6qCBcUThxE6ouWWdCHYvTFCZyd&amount=1&index=258&proof=8HrKdUGcmz37fsAZrUjKMTdBNz99BDqraufzWksixXfw,CuhmAkiNcFgFPHhFjWa7GPFPDhdw7qbk77EfEcRrH9th,GJeP3v33kVcPgmMT3QiYCcBC9HwtCaYo6rxPyYDHHhg2,8bnqcPuEPfpbbyZsoL8Qjr6dbjn7JfWtFfY1uzZdPaHK,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9Jqu3R5CLb8c76q7Bg47VYnpMwyCThnz4A1mBZ6m5LJ7",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9Jqu3R5CLb8c76q7Bg47VYnpMwyCThnz4A1mBZ6m5LJ7&amount=1&index=259&proof=V63Bnrk8SG7LKktsnRHiDma2ZYrLmK2VPnMgLyBUY19,CuhmAkiNcFgFPHhFjWa7GPFPDhdw7qbk77EfEcRrH9th,GJeP3v33kVcPgmMT3QiYCcBC9HwtCaYo6rxPyYDHHhg2,8bnqcPuEPfpbbyZsoL8Qjr6dbjn7JfWtFfY1uzZdPaHK,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9ke5yZGddgzm26awuxkruDAAhMt5NHTdu4wGjvWyVw8F",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9ke5yZGddgzm26awuxkruDAAhMt5NHTdu4wGjvWyVw8F&amount=1&index=260&proof=A2rLeKHk9Jf8qeW3D7vu2QcrAHaqJ2SyR3956d2wqGMU,7XMYCG3NZ9HNs7roacrz9Kpa9HQx7ywhyUCSZMEy52yk,6ceQtdFbChuNRpiV1sTvAF6pCC5LniFBrdmX5XiZAcRc,8bnqcPuEPfpbbyZsoL8Qjr6dbjn7JfWtFfY1uzZdPaHK,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9Pyr5Qi2RYQDCSxQGLNR8quE9q9U5T91fQZ6a8Q1ccQT",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9Pyr5Qi2RYQDCSxQGLNR8quE9q9U5T91fQZ6a8Q1ccQT&amount=1&index=261&proof=FCogSEr7PTZ7QTFAHiQ9vwKZRqTTyBbkhJE6w217dbkR,7XMYCG3NZ9HNs7roacrz9Kpa9HQx7ywhyUCSZMEy52yk,6ceQtdFbChuNRpiV1sTvAF6pCC5LniFBrdmX5XiZAcRc,8bnqcPuEPfpbbyZsoL8Qjr6dbjn7JfWtFfY1uzZdPaHK,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9VN1hV84YeTzTGRzjQ94WJeCktM3SZdPJxeEtsroMdTr",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9VN1hV84YeTzTGRzjQ94WJeCktM3SZdPJxeEtsroMdTr&amount=1&index=262&proof=6iJqNF2eLXYmiBuwdvgKbCA7G6vo9URsUMunBNGPsChd,GDvrfU7UFc4vSpQ1mv5HuqM9nmDsr7iMMzFQ2ikgvTbn,6ceQtdFbChuNRpiV1sTvAF6pCC5LniFBrdmX5XiZAcRc,8bnqcPuEPfpbbyZsoL8Qjr6dbjn7JfWtFfY1uzZdPaHK,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9xxCJhDMaT9Vu4HxDGRAJPb878ANGnv8BYkQ6hTynyYG",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9xxCJhDMaT9Vu4HxDGRAJPb878ANGnv8BYkQ6hTynyYG&amount=1&index=263&proof=FeEFYE2sXgGhatcT3ge6kXARDddB9MdGv4dB1nkzFe4K,GDvrfU7UFc4vSpQ1mv5HuqM9nmDsr7iMMzFQ2ikgvTbn,6ceQtdFbChuNRpiV1sTvAF6pCC5LniFBrdmX5XiZAcRc,8bnqcPuEPfpbbyZsoL8Qjr6dbjn7JfWtFfY1uzZdPaHK,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "ASFCGfuYZPrxFCcYRfwkQACv73dsfG9JLnA3eUuDg1bL",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=ASFCGfuYZPrxFCcYRfwkQACv73dsfG9JLnA3eUuDg1bL&amount=1&index=264&proof=pn9WzmDBtCh6PAPw8wf7NQTXiP1Uj3RiYJVB6UGxBGs,MPkKboKfdgFJcSfDhhccqY5iiEfHKLoZXZQHqux3Udz,CVGvwxEvAEmPdRqTg4ubx5PEyXAuXvinH1iSwPJQmiaH,3pqbZWkcZJVhtZM6RnZrTARHVFRqFFg6Urw7zeNBWtQY,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AsGeA2dPYjE51wuvA1PJZQjgRfYCgCrfKgtjUJPykojB",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AsGeA2dPYjE51wuvA1PJZQjgRfYCgCrfKgtjUJPykojB&amount=1&index=265&proof=36fCuCMp4mtcqb7Tedkquis5i9cffY9uN4aF7WaXw1C3,MPkKboKfdgFJcSfDhhccqY5iiEfHKLoZXZQHqux3Udz,CVGvwxEvAEmPdRqTg4ubx5PEyXAuXvinH1iSwPJQmiaH,3pqbZWkcZJVhtZM6RnZrTARHVFRqFFg6Urw7zeNBWtQY,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Bhtv2Jy2gtBxYKPXCB7XdaPQ8HUN7xgFbUr1L36ccvna",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Bhtv2Jy2gtBxYKPXCB7XdaPQ8HUN7xgFbUr1L36ccvna&amount=1&index=266&proof=J7cLLyo9ME4QoWovxnZxPHZPjpkP6KR6s7t4dGWyPdQ2,3wKfwx4AR1DuFJ2XBzNpfxXTv1z7ELsCFD1Hb75FWSXF,CVGvwxEvAEmPdRqTg4ubx5PEyXAuXvinH1iSwPJQmiaH,3pqbZWkcZJVhtZM6RnZrTARHVFRqFFg6Urw7zeNBWtQY,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BKxLXEAbnYtCoDRvfxdWTbkid98RzQUcuHuQ6vsknson",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BKxLXEAbnYtCoDRvfxdWTbkid98RzQUcuHuQ6vsknson&amount=1&index=267&proof=53LnGHiofmqtDrkZMjXxsyMmzwK5zHye5Mm5vYmVSbWp,3wKfwx4AR1DuFJ2XBzNpfxXTv1z7ELsCFD1Hb75FWSXF,CVGvwxEvAEmPdRqTg4ubx5PEyXAuXvinH1iSwPJQmiaH,3pqbZWkcZJVhtZM6RnZrTARHVFRqFFg6Urw7zeNBWtQY,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BKXQSQDHbdJLitM3FthG52bS84jFABPUEhBv5YahssSk",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BKXQSQDHbdJLitM3FthG52bS84jFABPUEhBv5YahssSk&amount=1&index=268&proof=CixX5dCNGEGrk2vkhMsbWjKGCWUcAi7anHMHCtwWNYj5,FvZ1idkveAwzSCJ3rWVohEdjvbTU2c2QhmDnAHptFVrZ,4FQLVFV3rUpFjT3ehxwVfWopChwWZ4yB97RwDKmfaPnp,3pqbZWkcZJVhtZM6RnZrTARHVFRqFFg6Urw7zeNBWtQY,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BvTZn6Twom7kxGYkLLfmS4sN5xGRS5QrBKEBUYZSpvko",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BvTZn6Twom7kxGYkLLfmS4sN5xGRS5QrBKEBUYZSpvko&amount=1&index=269&proof=As8FApBsBKeXaQJ4yweBpkhTvES5NSNBz8DtmHtPzvRA,FvZ1idkveAwzSCJ3rWVohEdjvbTU2c2QhmDnAHptFVrZ,4FQLVFV3rUpFjT3ehxwVfWopChwWZ4yB97RwDKmfaPnp,3pqbZWkcZJVhtZM6RnZrTARHVFRqFFg6Urw7zeNBWtQY,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CirRxtUHMhbrqRmRRa2QtN5gVSQF63g1TJPLVPmsWp8i",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CirRxtUHMhbrqRmRRa2QtN5gVSQF63g1TJPLVPmsWp8i&amount=1&index=270&proof=7pmy25cQ2u3ZVdcQmXm934f2t7XvkEp9JUW2L3oJgdDJ,6vq88ia3NPT2R4vd7zuZRyhbsBWt8AK35bQwSG5L9byE,4FQLVFV3rUpFjT3ehxwVfWopChwWZ4yB97RwDKmfaPnp,3pqbZWkcZJVhtZM6RnZrTARHVFRqFFg6Urw7zeNBWtQY,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Cv9MpkfHTehmnKTL3dR3ZHJcG6aM5NSapzJBgLUupVXk",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Cv9MpkfHTehmnKTL3dR3ZHJcG6aM5NSapzJBgLUupVXk&amount=1&index=271&proof=2YHxZvrJEYubnxx9Uypwf7hSnzYhS4KGAcuUYPeGeyuT,6vq88ia3NPT2R4vd7zuZRyhbsBWt8AK35bQwSG5L9byE,4FQLVFV3rUpFjT3ehxwVfWopChwWZ4yB97RwDKmfaPnp,3pqbZWkcZJVhtZM6RnZrTARHVFRqFFg6Urw7zeNBWtQY,7s4CY3DVtmuq67SE1zpTZW6eYz6brtHmqiEf64tuRcwK,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DSXbwC3bhUXvXvhiGSsKjBwbEoastNjj53hAUVr6hbwQ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DSXbwC3bhUXvXvhiGSsKjBwbEoastNjj53hAUVr6hbwQ&amount=1&index=272&proof=5eP2ud1wmsqFQzBn3LpVqaM2HjXaYDmKFPQyeUhRbdUV,4jP4L6Wk8DBawhCAiKNR8awegvqHgsztjpnqMz45bGcE,CJ29qrmnZqia62gZEiKh5E8rKGMXcrCHz7bzxC8qZSBb,F9uaa76aQJHTtFXnqNXpKZV9hEa3zLUNSw8dB2VbVcyX,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DyU17ihZRSSsYLNQ6zcrATkEcfDKhk5MD96R2ZgKQ25M",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DyU17ihZRSSsYLNQ6zcrATkEcfDKhk5MD96R2ZgKQ25M&amount=1&index=273&proof=9gcDucfQ5mYyY9PLv3Em3nLcWtUapPuScMo6A3pj6p9g,4jP4L6Wk8DBawhCAiKNR8awegvqHgsztjpnqMz45bGcE,CJ29qrmnZqia62gZEiKh5E8rKGMXcrCHz7bzxC8qZSBb,F9uaa76aQJHTtFXnqNXpKZV9hEa3zLUNSw8dB2VbVcyX,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EcA7AwCickEmSSCBwdNobTD3KfVKVmjx7X3quHC6sMGw",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EcA7AwCickEmSSCBwdNobTD3KfVKVmjx7X3quHC6sMGw&amount=1&index=274&proof=3igbKYM8vTDNd7XopCoyzKjZENDcmPe5NM7q3sMYxpZu,Cgmb92FE89EXzp9htpkQKa9YDrXHqYBT4niq9LENtWdK,CJ29qrmnZqia62gZEiKh5E8rKGMXcrCHz7bzxC8qZSBb,F9uaa76aQJHTtFXnqNXpKZV9hEa3zLUNSw8dB2VbVcyX,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EN6xdJYF6SFWvc4t3LLcf1g2j7tWEBkMfdwXkpga8D34",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EN6xdJYF6SFWvc4t3LLcf1g2j7tWEBkMfdwXkpga8D34&amount=1&index=275&proof=4PYLkXzdSw4KVw8JXLEv3P6vhd2vpWuBxgr7m8zfY2Yr,Cgmb92FE89EXzp9htpkQKa9YDrXHqYBT4niq9LENtWdK,CJ29qrmnZqia62gZEiKh5E8rKGMXcrCHz7bzxC8qZSBb,F9uaa76aQJHTtFXnqNXpKZV9hEa3zLUNSw8dB2VbVcyX,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EQRakiVMZCZJzUGNxb9qiRAL8FyyvHyMWgak3hT5aTAa",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EQRakiVMZCZJzUGNxb9qiRAL8FyyvHyMWgak3hT5aTAa&amount=1&index=276&proof=7S65Bf71gexBuS1iSPkXvFESaRAha6Yzz3UDTiKdUWU6,GUkcdmJgE5DzVNKsCLVwHwokQCVvX4rdu7kqq7oY3Rxr,955C2gvq1QaUsU8J6kusWhWp8SowJVMFK7JS8vvtmAX6,F9uaa76aQJHTtFXnqNXpKZV9hEa3zLUNSw8dB2VbVcyX,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FCXvmXCJ7Qav7ZzGcV7KxeiSNM3Ms9WjNYrkqHpKXpC1",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FCXvmXCJ7Qav7ZzGcV7KxeiSNM3Ms9WjNYrkqHpKXpC1&amount=1&index=277&proof=5koGJXnokRZ6TwkHWwLWxMedJBFb4ZMhb57mqY2FgZKT,GUkcdmJgE5DzVNKsCLVwHwokQCVvX4rdu7kqq7oY3Rxr,955C2gvq1QaUsU8J6kusWhWp8SowJVMFK7JS8vvtmAX6,F9uaa76aQJHTtFXnqNXpKZV9hEa3zLUNSw8dB2VbVcyX,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FHeQUz3GufrTiR72XDCJ7vTNypF7SRvkXGG1q9XUJift",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FHeQUz3GufrTiR72XDCJ7vTNypF7SRvkXGG1q9XUJift&amount=1&index=278&proof=HfVttSZiR4yusjinZSXyfW3bRnxFJdATFuMyAbSNhjKi,9dAG6KL8MipEUa7W2uJbwA527tpRiYGRGZPuXPEnry9L,955C2gvq1QaUsU8J6kusWhWp8SowJVMFK7JS8vvtmAX6,F9uaa76aQJHTtFXnqNXpKZV9hEa3zLUNSw8dB2VbVcyX,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Fhm7F5WAtRLzTqqMutzHc6tz55zsQ7nrKW8L64NAKGyT",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Fhm7F5WAtRLzTqqMutzHc6tz55zsQ7nrKW8L64NAKGyT&amount=1&index=279&proof=DuSuHhpFR45aUjPj8s996qirjCFP8ZtoNe9WKdcZeWHY,9dAG6KL8MipEUa7W2uJbwA527tpRiYGRGZPuXPEnry9L,955C2gvq1QaUsU8J6kusWhWp8SowJVMFK7JS8vvtmAX6,F9uaa76aQJHTtFXnqNXpKZV9hEa3zLUNSw8dB2VbVcyX,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FhPxqJsDBxZkGT3YkxsGTvzFCGVjxt7du7EnPQXXqpht",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FhPxqJsDBxZkGT3YkxsGTvzFCGVjxt7du7EnPQXXqpht&amount=1&index=280&proof=CZJsmdSro7aDrzbuTiv2gq2BWwonUuq9c4tLRwq9eDY8,AjN265WjMtygf99WtuZcubnyLZ7B8Gsw3nEpFApBeecQ,9KKjj2DLfZaBisYYJteUz2rv9D272n4vxEBSv9kUG6rN,Ccdf1GuXYhJWEcjY9fKmgwafoxSRq71urYBFczcmvUVk,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Fwp5qu8HS48EoqjKG4KG7tMCpUf87a4tmoZEqrNvHms",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Fwp5qu8HS48EoqjKG4KG7tMCpUf87a4tmoZEqrNvHms&amount=1&index=281&proof=4WF9v1KQEErFUbzgCJDuF688SJasyPom2yh4VfLQeGub,AjN265WjMtygf99WtuZcubnyLZ7B8Gsw3nEpFApBeecQ,9KKjj2DLfZaBisYYJteUz2rv9D272n4vxEBSv9kUG6rN,Ccdf1GuXYhJWEcjY9fKmgwafoxSRq71urYBFczcmvUVk,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "G1iLxRSBL7S9HfgbDjG8PgQRhsoP8yv6uiMrxKaKJe9T",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=G1iLxRSBL7S9HfgbDjG8PgQRhsoP8yv6uiMrxKaKJe9T&amount=1&index=282&proof=8wwQfMQqp6ktFfbCJ7hkqktRUoVeG6gxkqeLZSfTtdpV,EP8RtD389gHK5V6FgTCuTfan1vBr8UM5FsXWP2eyyCQH,9KKjj2DLfZaBisYYJteUz2rv9D272n4vxEBSv9kUG6rN,Ccdf1GuXYhJWEcjY9fKmgwafoxSRq71urYBFczcmvUVk,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "G5G6FHdjhRwS8fEJCBW3FGyhXdrh9WPzE9drwbz6nMR9",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=G5G6FHdjhRwS8fEJCBW3FGyhXdrh9WPzE9drwbz6nMR9&amount=1&index=283&proof=GtYog6FLD8WXTRALuYad8dD1ufbR9xDphDE1HHox6ptc,EP8RtD389gHK5V6FgTCuTfan1vBr8UM5FsXWP2eyyCQH,9KKjj2DLfZaBisYYJteUz2rv9D272n4vxEBSv9kUG6rN,Ccdf1GuXYhJWEcjY9fKmgwafoxSRq71urYBFczcmvUVk,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Gke4yj2do4BT78XzmFBEJUYPABB5YYZKydmBc4ZKQYwa",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Gke4yj2do4BT78XzmFBEJUYPABB5YYZKydmBc4ZKQYwa&amount=1&index=284&proof=Ezv3hdwJfdFJPA7qUE5JE6ytrmmZff8DGs85Kb1sKsxa,3LfQ4feHvfmXFq4pMKmnE9aYGURnznkHLhC16ioBWbU9,AuUkYAPRLhrwBynoSfrgAv5anH4HpHAyuaD2MQGiAf2F,Ccdf1GuXYhJWEcjY9fKmgwafoxSRq71urYBFczcmvUVk,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GmnGpj1LWHHhao3AEa111cQSZAAGcW7JtMiq7be2NTPN",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GmnGpj1LWHHhao3AEa111cQSZAAGcW7JtMiq7be2NTPN&amount=1&index=285&proof=3ctbxBK6epA36y3sCa7s5j3hkAoUGSTREhKm8NVDZr3J,3LfQ4feHvfmXFq4pMKmnE9aYGURnznkHLhC16ioBWbU9,AuUkYAPRLhrwBynoSfrgAv5anH4HpHAyuaD2MQGiAf2F,Ccdf1GuXYhJWEcjY9fKmgwafoxSRq71urYBFczcmvUVk,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GZGKReoj5XoXvWQKDLpZLWPaZBxzX1Vp58sG4YUUcB5r",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GZGKReoj5XoXvWQKDLpZLWPaZBxzX1Vp58sG4YUUcB5r&amount=1&index=286&proof=C7CbLjVirBAwZpD89HTs35WAsnoQeiMpTQToPhDUzJi4,EQkxSDYcngePJAueHVA9x9HptV4gZbbQj1XepAyUb6BK,AuUkYAPRLhrwBynoSfrgAv5anH4HpHAyuaD2MQGiAf2F,Ccdf1GuXYhJWEcjY9fKmgwafoxSRq71urYBFczcmvUVk,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "H9sfqZZgd41fGjKBciSAK4R4MNvp68qceGUAUV4jtj5A",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=H9sfqZZgd41fGjKBciSAK4R4MNvp68qceGUAUV4jtj5A&amount=1&index=287&proof=8FBWhXgGECC9qbMJ17DgmxXufQsuQ1g4jr2i1k2w3LR2,EQkxSDYcngePJAueHVA9x9HptV4gZbbQj1XepAyUb6BK,AuUkYAPRLhrwBynoSfrgAv5anH4HpHAyuaD2MQGiAf2F,Ccdf1GuXYhJWEcjY9fKmgwafoxSRq71urYBFczcmvUVk,E2FsmdXqZhjWGzSLjKrd7XfzXz4AngZrQuxYyciwKfyN,7jkzZRzKUJB5Js6qWpn9f2Hw3myey6Nyk81jh28jAFfL,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HJbF727JoVRXo6V1S3cJvaXaQbrcxSuuoDaSCs919qRt",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HJbF727JoVRXo6V1S3cJvaXaQbrcxSuuoDaSCs919qRt&amount=1&index=288&proof=Dj9Da76iWcdfY6D2f5ni1oQv9ywab8HbRvmrrerFXFrc,5gtXxfoaxZNthZqcAGgRMbi3hS8cRNZYud2tpSK7sLuo,5UVHkiMqFaLCdRC8juVGEsXgi5cj7QWSbKbCrefNLf8Q,HwgDJ54zbfGG5DurcCEh6LtPLWHsWcK1HTZ6qJ5GFGPf,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HL67v6gt4LuozyXtZJpKHXe9n58sS1zVRtLRu3gHsozZ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HL67v6gt4LuozyXtZJpKHXe9n58sS1zVRtLRu3gHsozZ&amount=1&index=289&proof=CzgoWaNf1Bxy4hATH4yQ7pNSr6rw1vUo1E6oP6jeoq4T,5gtXxfoaxZNthZqcAGgRMbi3hS8cRNZYud2tpSK7sLuo,5UVHkiMqFaLCdRC8juVGEsXgi5cj7QWSbKbCrefNLf8Q,HwgDJ54zbfGG5DurcCEh6LtPLWHsWcK1HTZ6qJ5GFGPf,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HmGztejqSKwUzDehmCWsHXBrjzkF6EKD5UdPvBpPpy8k",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HmGztejqSKwUzDehmCWsHXBrjzkF6EKD5UdPvBpPpy8k&amount=1&index=290&proof=BhjpPEnjjzrqVNpmvHu9m4jhw4XQ22qTFGXqFRYVmrKm,A6fr5AH3noaWNCtPRtLCj5bDKFTHW3y2H8sitMV3xUXM,5UVHkiMqFaLCdRC8juVGEsXgi5cj7QWSbKbCrefNLf8Q,HwgDJ54zbfGG5DurcCEh6LtPLWHsWcK1HTZ6qJ5GFGPf,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HoJFjk9wW2mGFKvrwB98aJ6tzXZnGs1cPUFbeaHydVZy",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HoJFjk9wW2mGFKvrwB98aJ6tzXZnGs1cPUFbeaHydVZy&amount=1&index=291&proof=CQwZRSYi6UxVSg2hXgyi5nu5GFthWT7tL67Z7dWHA35M,A6fr5AH3noaWNCtPRtLCj5bDKFTHW3y2H8sitMV3xUXM,5UVHkiMqFaLCdRC8juVGEsXgi5cj7QWSbKbCrefNLf8Q,HwgDJ54zbfGG5DurcCEh6LtPLWHsWcK1HTZ6qJ5GFGPf,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HSEKFLZTbRKMGfuUT46gtrS3FMJuZV9gaSqqzVp9p3iA",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HSEKFLZTbRKMGfuUT46gtrS3FMJuZV9gaSqqzVp9p3iA&amount=1&index=292&proof=57DgRG8oum7CCU8HceNCWzVjy8LTZfjVMspQEB2HNjye,A8txx7GnTmgZWxspe6GUkWD3fDjBk2NZt6u8beY7uzdH,Dn2P8V33Tqcq2dS5bv1t3fffYSUYUx73fznXpPrUhDh7,HwgDJ54zbfGG5DurcCEh6LtPLWHsWcK1HTZ6qJ5GFGPf,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "wPBUBzZqycXSKoE5SSA2hnoRc8dusQhptrfUfnfDsan",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=wPBUBzZqycXSKoE5SSA2hnoRc8dusQhptrfUfnfDsan&amount=1&index=293&proof=HXDzrZvQwt8XCJf6YnvZnsBEKGpSzUJB2kUGk5GDzocS,A8txx7GnTmgZWxspe6GUkWD3fDjBk2NZt6u8beY7uzdH,Dn2P8V33Tqcq2dS5bv1t3fffYSUYUx73fznXpPrUhDh7,HwgDJ54zbfGG5DurcCEh6LtPLWHsWcK1HTZ6qJ5GFGPf,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2irWcj7E4BsF6tZMEDV34LT8LqYPxmGQTmKhECQvkVyr",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2irWcj7E4BsF6tZMEDV34LT8LqYPxmGQTmKhECQvkVyr&amount=1&index=294&proof=HAo3B8pjyNfpEA5oQUyEXFk82cpCRQk1V1GTaZXiMPWD,2QhTSidaszRCTgytjUgnfAzJ4RCC5ADBADtFzdMdYAvj,Dn2P8V33Tqcq2dS5bv1t3fffYSUYUx73fznXpPrUhDh7,HwgDJ54zbfGG5DurcCEh6LtPLWHsWcK1HTZ6qJ5GFGPf,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2MKBadJpmvgBzkFSsttNDhT45LHr7C8ApWEpukZhqBj5",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2MKBadJpmvgBzkFSsttNDhT45LHr7C8ApWEpukZhqBj5&amount=1&index=295&proof=4UukKB6cAvoY53FHxvkpH3DLD7aeKfSN2M3pJ2BK96UW,2QhTSidaszRCTgytjUgnfAzJ4RCC5ADBADtFzdMdYAvj,Dn2P8V33Tqcq2dS5bv1t3fffYSUYUx73fznXpPrUhDh7,HwgDJ54zbfGG5DurcCEh6LtPLWHsWcK1HTZ6qJ5GFGPf,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2yYAVEXbM4sdiBLN7Jx21zdAXvQeu3o1VqrjTNVMvuSu",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2yYAVEXbM4sdiBLN7Jx21zdAXvQeu3o1VqrjTNVMvuSu&amount=1&index=296&proof=62udWraz72tbZNwLmfnwbVpttKYM2JDCsJumbrYhk5ty,95XLRhdxtBsRJbsCbGybrot9ih3TrzWF2WZPE7iVgoRG,2tfhQ4gvYKig9V1wPJht3yD1rSW4G6DESFHVNbjf4M4F,938q2Nz6d4c83ZUSeRz98qZfcpb1chM1gjbCdnQFcFGv,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "35RdSrctN1RtmwHivB67EXm1gVrm9Cse3QNvJuk79SpW",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=35RdSrctN1RtmwHivB67EXm1gVrm9Cse3QNvJuk79SpW&amount=1&index=297&proof=3kBSD4tHc3XZVCzuSVuWSEVDAqsKnQ43eUiTohfbeTAR,95XLRhdxtBsRJbsCbGybrot9ih3TrzWF2WZPE7iVgoRG,2tfhQ4gvYKig9V1wPJht3yD1rSW4G6DESFHVNbjf4M4F,938q2Nz6d4c83ZUSeRz98qZfcpb1chM1gjbCdnQFcFGv,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3CraPq7dkb6rasKuZepFvdTibXT2fAn3D3yZr4rceMNV",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3CraPq7dkb6rasKuZepFvdTibXT2fAn3D3yZr4rceMNV&amount=1&index=298&proof=Af3aDV38RjqH8kXTJ51yVonAda1EiUp6DAixSuEwAkbf,32psyrqLqXppvqyFS2HjVYMNo5mhwXbDoDJHtppzANGJ,2tfhQ4gvYKig9V1wPJht3yD1rSW4G6DESFHVNbjf4M4F,938q2Nz6d4c83ZUSeRz98qZfcpb1chM1gjbCdnQFcFGv,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3HXzY3jY7wSa7m2PUUUdRCtAAqmGuJBynys5wbRThtHV",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3HXzY3jY7wSa7m2PUUUdRCtAAqmGuJBynys5wbRThtHV&amount=1&index=299&proof=4232EJgkqM2sACAt6XeehcUGxJSTec1YEUJVW8x5Z4qJ,32psyrqLqXppvqyFS2HjVYMNo5mhwXbDoDJHtppzANGJ,2tfhQ4gvYKig9V1wPJht3yD1rSW4G6DESFHVNbjf4M4F,938q2Nz6d4c83ZUSeRz98qZfcpb1chM1gjbCdnQFcFGv,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3KjutEwukbfdeQzq7FTj1jxUQ3irLGgB4tbcLbTZWw5E",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3KjutEwukbfdeQzq7FTj1jxUQ3irLGgB4tbcLbTZWw5E&amount=1&index=300&proof=ErJ9e6CAocFE7mHYpF35N62ktK193BzYMZC5biWwD6D1,6sSXAj1iANwJAra5mYcVj9EY63zQt42oshnQNhxG67Ng,EFKKbAYVpf56bbg2jTgzN4ex3oDdiPFmhP9HDPKh6iSB,938q2Nz6d4c83ZUSeRz98qZfcpb1chM1gjbCdnQFcFGv,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3ossud18CCp7KNvgFLUNvtNr6ZGgRfzMpM5UNh5NMYbX",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3ossud18CCp7KNvgFLUNvtNr6ZGgRfzMpM5UNh5NMYbX&amount=1&index=301&proof=CjLfZuSikiZaLrUgSTpF7b8t75qs6UUYQb8wxGstw6JG,6sSXAj1iANwJAra5mYcVj9EY63zQt42oshnQNhxG67Ng,EFKKbAYVpf56bbg2jTgzN4ex3oDdiPFmhP9HDPKh6iSB,938q2Nz6d4c83ZUSeRz98qZfcpb1chM1gjbCdnQFcFGv,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "43jxc91As5rmTMZAXQsYBQ9vzWpPQemQGDQR2uu6vAFc",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=43jxc91As5rmTMZAXQsYBQ9vzWpPQemQGDQR2uu6vAFc&amount=1&index=302&proof=8adq5bnsXVFgtkcizoEDVinHvAi41SPyFLSREiNCyowi,2xg6YBdXviLyivfBw4hQKPueEvRPi4dk6hPnZggmAYwX,EFKKbAYVpf56bbg2jTgzN4ex3oDdiPFmhP9HDPKh6iSB,938q2Nz6d4c83ZUSeRz98qZfcpb1chM1gjbCdnQFcFGv,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "45yFNFF7WUvTD4tFjuyLYNmKsuniQTBkjkGjjZjJRxs9",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=45yFNFF7WUvTD4tFjuyLYNmKsuniQTBkjkGjjZjJRxs9&amount=1&index=303&proof=FZpD6MoruoW25dEKS7DDaynW4jTxzTrW1uMcwiYHwiD5,2xg6YBdXviLyivfBw4hQKPueEvRPi4dk6hPnZggmAYwX,EFKKbAYVpf56bbg2jTgzN4ex3oDdiPFmhP9HDPKh6iSB,938q2Nz6d4c83ZUSeRz98qZfcpb1chM1gjbCdnQFcFGv,HXcmS6p7RjgEjrb54H4UQHqGLr96grmgisxQZAQ8S7tu,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4QRp2AoDJPKWo2auNUkyJVtHPcS6E7MVkeXbYibW4nhz",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4QRp2AoDJPKWo2auNUkyJVtHPcS6E7MVkeXbYibW4nhz&amount=1&index=304&proof=53x9KYk9BPNLmb7xKD1T9CqHQar6vTPFZUdsSb6kJLFx,GD12dBGFKshNjtDx9L6sHEdPVpF4AcZt8XxiHDyQHutj,43B4pfWuGnBViUm4NetVWjSkQ6bmgeDqY2fxCnYkfx99,93uJvzvrM4JKZCFRvdn8fBjXzF3rrX4Wpwgv3TgPZiKZ,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue&amount=1&index=305&proof=4vrjdzWvCxUyrwYSoutY9vAz2zK4BuR5VXSoiVEZVaoG,GD12dBGFKshNjtDx9L6sHEdPVpF4AcZt8XxiHDyQHutj,43B4pfWuGnBViUm4NetVWjSkQ6bmgeDqY2fxCnYkfx99,93uJvzvrM4JKZCFRvdn8fBjXzF3rrX4Wpwgv3TgPZiKZ,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5g1QtWyMASDiQcGFq4kAV226Q8M7MHQcd3wbA8b9inpM",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5g1QtWyMASDiQcGFq4kAV226Q8M7MHQcd3wbA8b9inpM&amount=1&index=306&proof=6MkkKYGQx7ju2iQf66EwfMAD41MRN1EAg4WA2psp56VB,4EfFyYZXpHSCuBLQmy7mdy434JysVih6cef2M6Av1WyB,43B4pfWuGnBViUm4NetVWjSkQ6bmgeDqY2fxCnYkfx99,93uJvzvrM4JKZCFRvdn8fBjXzF3rrX4Wpwgv3TgPZiKZ,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5wuG3AWtb9HMycVGsLdL6r6spF4i1WCdGXgnwJ3XFEBe",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5wuG3AWtb9HMycVGsLdL6r6spF4i1WCdGXgnwJ3XFEBe&amount=1&index=307&proof=BPy5tjwo7XdJVC9Vt9bCsXrtQr7UpPok55TSqNpFjn1y,4EfFyYZXpHSCuBLQmy7mdy434JysVih6cef2M6Av1WyB,43B4pfWuGnBViUm4NetVWjSkQ6bmgeDqY2fxCnYkfx99,93uJvzvrM4JKZCFRvdn8fBjXzF3rrX4Wpwgv3TgPZiKZ,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5Zx7ejpTsJwC52Qb7YcnQ9pVveZZG3xUJPRkb3gg6Yj2",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5Zx7ejpTsJwC52Qb7YcnQ9pVveZZG3xUJPRkb3gg6Yj2&amount=1&index=308&proof=EAQSts8KqEDgT6EzrdMfCJndU7n4XmC7nCHZz2b6GEqs,3Tq5pdRoCAp9JpMXLpbWnN5PnNeNtPwyrjxnEB7SokrY,4kegRLt2ZQx8RqQhEVRkE8DS67c4BdUmFt6CUzBhpz41,93uJvzvrM4JKZCFRvdn8fBjXzF3rrX4Wpwgv3TgPZiKZ,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6wqLkTCgTsw1xTXJKZAHM4RMEXyMRymSesBKTm7eCZTN",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6wqLkTCgTsw1xTXJKZAHM4RMEXyMRymSesBKTm7eCZTN&amount=1&index=309&proof=136tPdzGhyUWM1mxHUG7YhtAjYiqTH3Sexd8r7bcSEhm,3Tq5pdRoCAp9JpMXLpbWnN5PnNeNtPwyrjxnEB7SokrY,4kegRLt2ZQx8RqQhEVRkE8DS67c4BdUmFt6CUzBhpz41,93uJvzvrM4JKZCFRvdn8fBjXzF3rrX4Wpwgv3TgPZiKZ,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7B5Var9NTThRKbdwfrTJT6ErSYLDZSZ9sCr8VUvHwS1c",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7B5Var9NTThRKbdwfrTJT6ErSYLDZSZ9sCr8VUvHwS1c&amount=1&index=310&proof=4BjdEMtc6TVZtPmkHogw4zmhvxBoEyVBWVjHsHnhs3eY,5EA5tyRg5PmxEYaQpHF2hJjvCwGeJ7u5qqPhn7ebCyQJ,4kegRLt2ZQx8RqQhEVRkE8DS67c4BdUmFt6CUzBhpz41,93uJvzvrM4JKZCFRvdn8fBjXzF3rrX4Wpwgv3TgPZiKZ,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7PSDu8cmukuDE9sCx17a7XhBvsYpxzfapSHm6XSQCMKo",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7PSDu8cmukuDE9sCx17a7XhBvsYpxzfapSHm6XSQCMKo&amount=1&index=311&proof=F1jJThvtarVCTnsU4wQ71BdjbDubS3iXquXqcdaQCepb,5EA5tyRg5PmxEYaQpHF2hJjvCwGeJ7u5qqPhn7ebCyQJ,4kegRLt2ZQx8RqQhEVRkE8DS67c4BdUmFt6CUzBhpz41,93uJvzvrM4JKZCFRvdn8fBjXzF3rrX4Wpwgv3TgPZiKZ,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7rt3KbWd3KQEJxP5pPfUBumfUKCo9uNDNos3XbpXPRpu",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7rt3KbWd3KQEJxP5pPfUBumfUKCo9uNDNos3XbpXPRpu&amount=1&index=312&proof=HkzrctyBsrLLNsbaDL3xzRgmaawpB8nyc7u9x8nxM1Cs,2c5doQVGDQZ3WTYrYVJcyNXpVJ3XKywmpjHtcqVFRk3X,D477Wdg6bycKXPs4KSLcGQVsdU6ARGZtmd5nSMM5aB6B,3dWjfiHJYygJmvVTswr1MeG3XxaKURgsyfzBNzyiVTUo,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7YuMp7pA6ageaaoeRE5Ez86efJVv6TpHrRFSAbq65eAP",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7YuMp7pA6ageaaoeRE5Ez86efJVv6TpHrRFSAbq65eAP&amount=1&index=313&proof=9q1XjpjjGNjMxi1grZc7BoBGZvT4VAA6cdaUShhma9rU,2c5doQVGDQZ3WTYrYVJcyNXpVJ3XKywmpjHtcqVFRk3X,D477Wdg6bycKXPs4KSLcGQVsdU6ARGZtmd5nSMM5aB6B,3dWjfiHJYygJmvVTswr1MeG3XxaKURgsyfzBNzyiVTUo,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8b6nG7siN7iLFuwETgZHGhQLmMHKpdoFTW5yf1xD4Q3b",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8b6nG7siN7iLFuwETgZHGhQLmMHKpdoFTW5yf1xD4Q3b&amount=1&index=314&proof=FN4GiZ26B1qA1TFsWm2fKyTPTswwxSaZWCXafd1yey4d,2JtFaKuP5EoWAwpFDWeafQg3wqcdDiKkAzpthGjPJM9e,D477Wdg6bycKXPs4KSLcGQVsdU6ARGZtmd5nSMM5aB6B,3dWjfiHJYygJmvVTswr1MeG3XxaKURgsyfzBNzyiVTUo,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8GtGqjrU8TYmnioMhC4nAKPqx6eDFwx4skxhvN21Nfsa",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8GtGqjrU8TYmnioMhC4nAKPqx6eDFwx4skxhvN21Nfsa&amount=1&index=315&proof=AWSra9eDpsLbrTqwwRhaJWS4imiuGXBozSrSA8PpxCeX,2JtFaKuP5EoWAwpFDWeafQg3wqcdDiKkAzpthGjPJM9e,D477Wdg6bycKXPs4KSLcGQVsdU6ARGZtmd5nSMM5aB6B,3dWjfiHJYygJmvVTswr1MeG3XxaKURgsyfzBNzyiVTUo,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8JiUqwKUCx2bYvFr48F9HwiBjK43eB56V8hn8G8gCGwZ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8JiUqwKUCx2bYvFr48F9HwiBjK43eB56V8hn8G8gCGwZ&amount=1&index=316&proof=9NG9KUfEdMMSLdjwkh1LHtxDaXbeYw3ZYSvEBePa4ngY,9rTzJhpSQ7FnjG17qefrpotZoN9WMTf38YFcB48uKB1h,HyXxEffRG6SQLnWwxRPxncfZPVsoeA4qyQ5bdEHvTFaq,3dWjfiHJYygJmvVTswr1MeG3XxaKURgsyfzBNzyiVTUo,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8X6x8Ke9iGAUGpW35Pb9Pt6CRHbTAegjio9DW8ExVxCP",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8X6x8Ke9iGAUGpW35Pb9Pt6CRHbTAegjio9DW8ExVxCP&amount=1&index=317&proof=7zwzj6dShimBviSW2LHSe1dcQ3eNyg7L9yWqG89r8Ae6,9rTzJhpSQ7FnjG17qefrpotZoN9WMTf38YFcB48uKB1h,HyXxEffRG6SQLnWwxRPxncfZPVsoeA4qyQ5bdEHvTFaq,3dWjfiHJYygJmvVTswr1MeG3XxaKURgsyfzBNzyiVTUo,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "99oGtDB848R4wJFm5aAi65CYLgvyMShApX1Bd2FdNJ9w",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=99oGtDB848R4wJFm5aAi65CYLgvyMShApX1Bd2FdNJ9w&amount=1&index=318&proof=93QweizTBYGyCwJmRqdbgyDQ2tKiznTXmG8gxmYbmopX,8k1CGexBnr7TrgNGi54UsBKt4vJmgVLhgL6qWVxTseAM,HyXxEffRG6SQLnWwxRPxncfZPVsoeA4qyQ5bdEHvTFaq,3dWjfiHJYygJmvVTswr1MeG3XxaKURgsyfzBNzyiVTUo,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9JkrDK2qtxiFoCuKKbS3bMpmyT31WtifGmhUWNdJK97s",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9JkrDK2qtxiFoCuKKbS3bMpmyT31WtifGmhUWNdJK97s&amount=1&index=319&proof=GAWapjohjkTj7zqeCjpSWxK2hruR5jtykEish1LXAXgE,8k1CGexBnr7TrgNGi54UsBKt4vJmgVLhgL6qWVxTseAM,HyXxEffRG6SQLnWwxRPxncfZPVsoeA4qyQ5bdEHvTFaq,3dWjfiHJYygJmvVTswr1MeG3XxaKURgsyfzBNzyiVTUo,3UwRSuGRGUhKCbJxAHX6TpNau3Bu5LMYCX9spg2ZeFUF,6iC9CXnoGxXCQRdHCQwfb9bmuCcfG6kV7ZtBp9c24swC,4wT8vxmfwfnNcFspwRxHkgiWH7EdhyW8tgiZUPZWcLGu,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9MMxmGKP1b3mB35EHaz88yWz3mp9ZjnsLMk6M1i9BXwm",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9MMxmGKP1b3mB35EHaz88yWz3mp9ZjnsLMk6M1i9BXwm&amount=1&index=320&proof=BsaLdpVUci3eqKCP2F91jRYzyj4QCHXpfpD4thvDbwup,3CA8NR9zci6ARvRbLpavGPZYwCrNfQ2Jh6N5EeTwd3q4,3uFTvbZvG2nk1FxJonhgtWCxepADM7veGK1ULpgAk8mf,H94iR7A9J1nZE4JZbwcMFdq6c3MksfHdQGTA4kPivvGo,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9Y22yAogChXFSY36XSmkZ3t8mSrvTimsd9Dkoe3YwRQE",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9Y22yAogChXFSY36XSmkZ3t8mSrvTimsd9Dkoe3YwRQE&amount=1&index=321&proof=3AhgNyJEmmLnyW2BV44t6LUbBw3uYsqnZjb5eu2rvLGw,3CA8NR9zci6ARvRbLpavGPZYwCrNfQ2Jh6N5EeTwd3q4,3uFTvbZvG2nk1FxJonhgtWCxepADM7veGK1ULpgAk8mf,H94iR7A9J1nZE4JZbwcMFdq6c3MksfHdQGTA4kPivvGo,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AFtCPcsqvNRQVujLZJMB4KRrkmFS3PNZdmoCo9ZfoWTg",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AFtCPcsqvNRQVujLZJMB4KRrkmFS3PNZdmoCo9ZfoWTg&amount=1&index=322&proof=Cc23gt2vrf4WSmV9srfidF87C3BzULeNfa2NMQtpSoW,3sBFBJkJEqEnTxa56E57RiQjVcAuaNshdW8R5cHvjegw,3uFTvbZvG2nk1FxJonhgtWCxepADM7veGK1ULpgAk8mf,H94iR7A9J1nZE4JZbwcMFdq6c3MksfHdQGTA4kPivvGo,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AWaDBxoBB4jJZiUfbP94HHaz63R1SxL25GndoWZMcHfP",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AWaDBxoBB4jJZiUfbP94HHaz63R1SxL25GndoWZMcHfP&amount=1&index=323&proof=5PVZwwCqRPCC6UYF9ZyYJGzPhbWePZiiWFpV7JZdEj1j,3sBFBJkJEqEnTxa56E57RiQjVcAuaNshdW8R5cHvjegw,3uFTvbZvG2nk1FxJonhgtWCxepADM7veGK1ULpgAk8mf,H94iR7A9J1nZE4JZbwcMFdq6c3MksfHdQGTA4kPivvGo,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BdcUXiqQGrXTDhLaTS1pWzFc3K27une7rwxdMmUqghw6",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BdcUXiqQGrXTDhLaTS1pWzFc3K27une7rwxdMmUqghw6&amount=1&index=324&proof=BDyw9yeSdx7iemJ6fLdHFvXPeR9FHnxJmoCFdU2d7WpN,BfGv2X3JRzHKuMrXj54dtzD5Udf83JB7qnrcaMdPxpGi,8Sy6DQLM8EUnn7CkjpvYPKDWmaRLMichg97GT1VNTEvq,H94iR7A9J1nZE4JZbwcMFdq6c3MksfHdQGTA4kPivvGo,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Bf4PCfkTM57XbGmsRyEY6NZtFD3Aqhs9GxCg39yVsz6x",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Bf4PCfkTM57XbGmsRyEY6NZtFD3Aqhs9GxCg39yVsz6x&amount=1&index=325&proof=6t24xS4hLmp5x5S6zNwhbR4K2WSvi21HXCbVW9GpZPrs,BfGv2X3JRzHKuMrXj54dtzD5Udf83JB7qnrcaMdPxpGi,8Sy6DQLM8EUnn7CkjpvYPKDWmaRLMichg97GT1VNTEvq,H94iR7A9J1nZE4JZbwcMFdq6c3MksfHdQGTA4kPivvGo,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BUykC1ZyTEvmitYxjoUrBcEZEWRqGrUkrpYNS8Qm5GBz",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BUykC1ZyTEvmitYxjoUrBcEZEWRqGrUkrpYNS8Qm5GBz&amount=1&index=326&proof=H9r9pbEfX7xEcVW13xA3XvtTtJmGDZaDFw7Kze1tkZfd,AE7JQikmR15EbUtKEN9LLVv6Qp1YWXp2Sy7J8SPzB3ot,8Sy6DQLM8EUnn7CkjpvYPKDWmaRLMichg97GT1VNTEvq,H94iR7A9J1nZE4JZbwcMFdq6c3MksfHdQGTA4kPivvGo,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "C2abWHh7RnSqLaHyWsA3wXVjZHL5xzsPQC4XgYXCbk5d",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=C2abWHh7RnSqLaHyWsA3wXVjZHL5xzsPQC4XgYXCbk5d&amount=1&index=327&proof=4YbFf7rYCPtKMv8urv53Vwy7DX5SQrdj7cjUiKcSg65i,AE7JQikmR15EbUtKEN9LLVv6Qp1YWXp2Sy7J8SPzB3ot,8Sy6DQLM8EUnn7CkjpvYPKDWmaRLMichg97GT1VNTEvq,H94iR7A9J1nZE4JZbwcMFdq6c3MksfHdQGTA4kPivvGo,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "C5xhiB1tbqwRG8qsDdaxU52FGHV8UbwV6KT26VtAtHEN",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=C5xhiB1tbqwRG8qsDdaxU52FGHV8UbwV6KT26VtAtHEN&amount=1&index=328&proof=4hhN1cHf4Nfb2QNbQ9rTGeGjC6gZfBbrap9FE9BDEKkW,2Z6WiVtyr4bYjXGf9QNXYCF6PPhtkGyb9VFYisSQGUsB,3EVJ8tezBTG4LKwegvQgdSKHYiVVbBh1btZH9LX8m8f4,CXZD7CL6Agdpa1Q5JGwoWiH59Y2AdqS6tdc936thWa5t,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CFdvSEJquhgJTJprfdQx5PU8GqhVJS6BSAVjjrTYZ4LH",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CFdvSEJquhgJTJprfdQx5PU8GqhVJS6BSAVjjrTYZ4LH&amount=1&index=329&proof=483kzUahtbVVUq55CH7tC8Y4Fw6yn8RiS2qXyM3gb2Bx,2Z6WiVtyr4bYjXGf9QNXYCF6PPhtkGyb9VFYisSQGUsB,3EVJ8tezBTG4LKwegvQgdSKHYiVVbBh1btZH9LX8m8f4,CXZD7CL6Agdpa1Q5JGwoWiH59Y2AdqS6tdc936thWa5t,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CHXDLTU37kLXeGJ5XSKhYLUwVkTecgzq1xjeXYmfx1bb",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CHXDLTU37kLXeGJ5XSKhYLUwVkTecgzq1xjeXYmfx1bb&amount=1&index=330&proof=UUwuKdPqN71FK3BPRoLbQhdZtxS12PUNFKEdwnDEt7B,7kKYHKBy7Us1oeZfSVJLn7yoQkbmAPxHW94k1YqZ9fbP,3EVJ8tezBTG4LKwegvQgdSKHYiVVbBh1btZH9LX8m8f4,CXZD7CL6Agdpa1Q5JGwoWiH59Y2AdqS6tdc936thWa5t,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CTdMdqidmXDyYSUHudXdSYdxx7PKAhLT8eZBKKXVsqt1",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CTdMdqidmXDyYSUHudXdSYdxx7PKAhLT8eZBKKXVsqt1&amount=1&index=331&proof=AzcJmxGngbR69iLrBHiyfNgRF8cXEm2rTwKmFMc6ddHk,7kKYHKBy7Us1oeZfSVJLn7yoQkbmAPxHW94k1YqZ9fbP,3EVJ8tezBTG4LKwegvQgdSKHYiVVbBh1btZH9LX8m8f4,CXZD7CL6Agdpa1Q5JGwoWiH59Y2AdqS6tdc936thWa5t,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Cwr9dV4YiH7basiAsxaAgz3QFTWE25KYZyyTgvgdbt8X",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Cwr9dV4YiH7basiAsxaAgz3QFTWE25KYZyyTgvgdbt8X&amount=1&index=332&proof=JC6GQwEGGvKLg9CWnwEjjGCXShk6zDbsH6L7yyhfMVuh,9ysFv6DfxAvkQYTGM9cHKAgU13phaphjidbGoce4A8cM,FQa4bzWLN2PvmEvbx9jGzzkpRjfLxsKDhrLNoVMq6jRa,CXZD7CL6Agdpa1Q5JGwoWiH59Y2AdqS6tdc936thWa5t,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "D9Eb6Y8Gi7i7xSr4Heg32xjhg9wEuAK2jvDxdbTxoetc",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=D9Eb6Y8Gi7i7xSr4Heg32xjhg9wEuAK2jvDxdbTxoetc&amount=1&index=333&proof=6RVmsAo7cGfjMdg5pfRxviQuHeQ7KyWfpeK3AJj2S1JL,9ysFv6DfxAvkQYTGM9cHKAgU13phaphjidbGoce4A8cM,FQa4bzWLN2PvmEvbx9jGzzkpRjfLxsKDhrLNoVMq6jRa,CXZD7CL6Agdpa1Q5JGwoWiH59Y2AdqS6tdc936thWa5t,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "D9qbCHeufTtGYzJkDKQDMUdgmdwjRZGjfQUAfmVK1tgj",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=D9qbCHeufTtGYzJkDKQDMUdgmdwjRZGjfQUAfmVK1tgj&amount=1&index=334&proof=3Rj1iLYNPyrseWfxEwsmotenR2UAQ8BhwHjH9zRQAHco,ChhXaQ9P2LAQqMEknxTjmxPfnf1R7Egu3dDzQou71URe,FQa4bzWLN2PvmEvbx9jGzzkpRjfLxsKDhrLNoVMq6jRa,CXZD7CL6Agdpa1Q5JGwoWiH59Y2AdqS6tdc936thWa5t,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DpEBUERKn48Eko81Ss2drW2vUCnqtBzPh54iksEwpyPh",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DpEBUERKn48Eko81Ss2drW2vUCnqtBzPh54iksEwpyPh&amount=1&index=335&proof=5q8KopurTrvVKRjgtLigtfLXi49GAZkk2KrgymSr1Y1t,ChhXaQ9P2LAQqMEknxTjmxPfnf1R7Egu3dDzQou71URe,FQa4bzWLN2PvmEvbx9jGzzkpRjfLxsKDhrLNoVMq6jRa,CXZD7CL6Agdpa1Q5JGwoWiH59Y2AdqS6tdc936thWa5t,7g725uvt5fT8DU2EbuvrxFZMiF1waXZHcstehFwerugD,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DupV7g8LMejRpy66PEfDCBYacdpmNgPBpft6sVCxPfNY",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DupV7g8LMejRpy66PEfDCBYacdpmNgPBpft6sVCxPfNY&amount=1&index=336&proof=Ev5V3qoYjXaarDLLYk88VgCq2XUt8BWXbM9WiMcXoGWk,HrjVZ78e1LJyn5hXHXo4CVEgzV3GjkJy5dm4UBJWxrqq,HmmUvWi8tdQzc4xu4cCChEUSexttGYG7zutuPb3yLR32,EwWwoifHeCaqamgMCYwU1Yw5123tdwpoVZF2h6XNGhhR,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DX7usH2siZvaBczGVVH5WkxCH5zdTNw3XpbDjEfPQbrb",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DX7usH2siZvaBczGVVH5WkxCH5zdTNw3XpbDjEfPQbrb&amount=1&index=337&proof=CqvoY27qQq8aC9G52bFUHQpjM6VYSaqmC19CrcfGKe8E,HrjVZ78e1LJyn5hXHXo4CVEgzV3GjkJy5dm4UBJWxrqq,HmmUvWi8tdQzc4xu4cCChEUSexttGYG7zutuPb3yLR32,EwWwoifHeCaqamgMCYwU1Yw5123tdwpoVZF2h6XNGhhR,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EMmjSRQntcezpEmDLcdUesfPp2fzzkaPKpvFw6g3NPU4",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EMmjSRQntcezpEmDLcdUesfPp2fzzkaPKpvFw6g3NPU4&amount=1&index=338&proof=AD4ZhAbLbWaKVU4HK8311NCXFvDVcmZyvso5HkSxtVr9,HwBUcExuwMEsgKicQjaPKkp6Pi14AcEBeL1f7u1qtXXL,HmmUvWi8tdQzc4xu4cCChEUSexttGYG7zutuPb3yLR32,EwWwoifHeCaqamgMCYwU1Yw5123tdwpoVZF2h6XNGhhR,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EpK1DxFG1oiaRCbAQxq1r2aXgjrAaQBQYaV8QLNtfEob",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EpK1DxFG1oiaRCbAQxq1r2aXgjrAaQBQYaV8QLNtfEob&amount=1&index=339&proof=2eVfietQRgDtbTyQgvFjgVdHxTDpMjoNGbuQfiw5h6oW,HwBUcExuwMEsgKicQjaPKkp6Pi14AcEBeL1f7u1qtXXL,HmmUvWi8tdQzc4xu4cCChEUSexttGYG7zutuPb3yLR32,EwWwoifHeCaqamgMCYwU1Yw5123tdwpoVZF2h6XNGhhR,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EsPamgPV8L7Pczfo425KJApKVE5dZRPo8hJPUKXVfASY",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EsPamgPV8L7Pczfo425KJApKVE5dZRPo8hJPUKXVfASY&amount=1&index=340&proof=9JTCxjbWQb2XdZ9rJe4NieVXnEVu8M1rNRdTVTeAiXEa,Fhy9JRy6TuC2VcMCfezKJqEAGt2J668Csp5BLsJ8qFqm,Bp4KfAGmE97e27zCkaRpSe8dvQvkqwLx5Nv9ikG2sqym,EwWwoifHeCaqamgMCYwU1Yw5123tdwpoVZF2h6XNGhhR,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EZ8qmiB7wSpeg7akPYpBip9EXQpBmERfWQQ16yz4vw9x",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EZ8qmiB7wSpeg7akPYpBip9EXQpBmERfWQQ16yz4vw9x&amount=1&index=341&proof=J9eLzkTGhciowfyR3czwxDb2PTgGH6WXbNGDu2HNMDwc,Fhy9JRy6TuC2VcMCfezKJqEAGt2J668Csp5BLsJ8qFqm,Bp4KfAGmE97e27zCkaRpSe8dvQvkqwLx5Nv9ikG2sqym,EwWwoifHeCaqamgMCYwU1Yw5123tdwpoVZF2h6XNGhhR,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FhUbc5eNRG5sfrXviaGw7byp2UHGn1LxWdVfw24giYve",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FhUbc5eNRG5sfrXviaGw7byp2UHGn1LxWdVfw24giYve&amount=1&index=342&proof=GGEeHJvKLehMjYBtQLMEwkfxeUrGXrN7QopnMHWw138y,7kGtapD8uaMZxiQofW6MjDGV5x3jTDsBJ9sVmzzK8xxC,Bp4KfAGmE97e27zCkaRpSe8dvQvkqwLx5Nv9ikG2sqym,EwWwoifHeCaqamgMCYwU1Yw5123tdwpoVZF2h6XNGhhR,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GcdxtwG8v9pnWwrbLHZaRAM8GVePjHz7TCeT1TSVry9X",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GcdxtwG8v9pnWwrbLHZaRAM8GVePjHz7TCeT1TSVry9X&amount=1&index=343&proof=GRPGdNovgqbywNghgtnxKkJEbNQxFYKzp6daT1GMWm8U,7kGtapD8uaMZxiQofW6MjDGV5x3jTDsBJ9sVmzzK8xxC,Bp4KfAGmE97e27zCkaRpSe8dvQvkqwLx5Nv9ikG2sqym,EwWwoifHeCaqamgMCYwU1Yw5123tdwpoVZF2h6XNGhhR,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GJAUQ9jsY7tRhK62G9obxD9LTs25aiX6SYCRvtCBe992",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GJAUQ9jsY7tRhK62G9obxD9LTs25aiX6SYCRvtCBe992&amount=1&index=344&proof=6Fc9P61Q3DvNKsLXQqWgopkMJXz4nwfb5XNZ4Vk1KoW6,HxzNFMLYeTCcRWMDRM3UyzABVka5ZxTzgVEGiK1tu6p9,DJH3TEm17QfpLUxxf6zZe52ScMtCLx4WK56VhdmG5oav,7va4P7KojgGpG6XHXk6z6i8SRn7P3QdL27hTfS56jtJx,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GrKsGMgyrQvZHAPtqgEPFRRH3AyqrMMxUEeyjRNJeyuj",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GrKsGMgyrQvZHAPtqgEPFRRH3AyqrMMxUEeyjRNJeyuj&amount=1&index=345&proof=6ede2JKWuvQoQwedquVQnWH2jSF678mK6eLhZ244UyHb,HxzNFMLYeTCcRWMDRM3UyzABVka5ZxTzgVEGiK1tu6p9,DJH3TEm17QfpLUxxf6zZe52ScMtCLx4WK56VhdmG5oav,7va4P7KojgGpG6XHXk6z6i8SRn7P3QdL27hTfS56jtJx,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HDbUr9J2u4UyWMknnp9C4afSXqzD51vbqfXRyGfxsgYe",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HDbUr9J2u4UyWMknnp9C4afSXqzD51vbqfXRyGfxsgYe&amount=1&index=346&proof=tyBwtzZ34gjxiqXhJFbPrkfjXaYDUhgz3rVYihEC69D,2QByzAQdiPzpkMNUjoeSGnZcN6j5Hahdnhj9xDmwMR5W,DJH3TEm17QfpLUxxf6zZe52ScMtCLx4WK56VhdmG5oav,7va4P7KojgGpG6XHXk6z6i8SRn7P3QdL27hTfS56jtJx,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "J92hFCYLbKcioiVfpgGG2ify8h1dvuqGak5DceZtdoEg",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=J92hFCYLbKcioiVfpgGG2ify8h1dvuqGak5DceZtdoEg&amount=1&index=347&proof=8YuoBPVJ3QoJZvQEMaWd7752ARahbwPT1Ft9STpzGJ9p,2QByzAQdiPzpkMNUjoeSGnZcN6j5Hahdnhj9xDmwMR5W,DJH3TEm17QfpLUxxf6zZe52ScMtCLx4WK56VhdmG5oav,7va4P7KojgGpG6XHXk6z6i8SRn7P3QdL27hTfS56jtJx,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "245rvY91iXKZKexYk8y6fF1pKueMSX2W1wfpVUQ94ux6",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=245rvY91iXKZKexYk8y6fF1pKueMSX2W1wfpVUQ94ux6&amount=1&index=348&proof=HugBg3rrh9P4p1CX7pgeYnpcpHokRhVBqGJ6iexJ29E3,FZHH4LwRVPdwAtV2Q3ueAFfVTU67Sqs99jGQtJPDXfjT,HZxerZ2zrXynMC2Dr57HRh3DD2FSx1ScGmG4ZQygrgXu,7va4P7KojgGpG6XHXk6z6i8SRn7P3QdL27hTfS56jtJx,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2ByDe2TaCsh79DmPcebmor7WMkmcB38f77ZfAc98Ayio",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2ByDe2TaCsh79DmPcebmor7WMkmcB38f77ZfAc98Ayio&amount=1&index=349&proof=BsAbcMCVCdnriCzYdw9aDs845uDvDiNdYqU5C2Jm4LcH,FZHH4LwRVPdwAtV2Q3ueAFfVTU67Sqs99jGQtJPDXfjT,HZxerZ2zrXynMC2Dr57HRh3DD2FSx1ScGmG4ZQygrgXu,7va4P7KojgGpG6XHXk6z6i8SRn7P3QdL27hTfS56jtJx,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2DctaGtgkY8UUHQyDbdm4wrC7LAQcQoZzDZ2u2V8n2fp",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2DctaGtgkY8UUHQyDbdm4wrC7LAQcQoZzDZ2u2V8n2fp&amount=1&index=350&proof=7jHj6QrqUzYxEyVY3A1XNKN4HxuUt51RHiqE5QrnnwTE,96F7cneELXc12KtkP8EubDKL5mAeXduqdEdC7az2Hxhy,HZxerZ2zrXynMC2Dr57HRh3DD2FSx1ScGmG4ZQygrgXu,7va4P7KojgGpG6XHXk6z6i8SRn7P3QdL27hTfS56jtJx,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "2Jyf2V2TNgS5AtPjECN1rskkKF97HVfst8pmnBo6hn6e",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=2Jyf2V2TNgS5AtPjECN1rskkKF97HVfst8pmnBo6hn6e&amount=1&index=351&proof=8vP6rYzQ4rZ3Lyji6UFGM8Dz5gXUm5Nvk5BFZRi6LyBn,96F7cneELXc12KtkP8EubDKL5mAeXduqdEdC7az2Hxhy,HZxerZ2zrXynMC2Dr57HRh3DD2FSx1ScGmG4ZQygrgXu,7va4P7KojgGpG6XHXk6z6i8SRn7P3QdL27hTfS56jtJx,Bbi3A6GT4SaP35GBPynFQpY7shcVpkS7BMqbVjA1fsuP,33o5vqHC3V2rxrRWngf8fhK79cDsCkT1NHCneTrrunp5,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "32eRToQcUDLzBzz4kDZWEv51XKmb1u9TvRMQwYfa7V6F",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=32eRToQcUDLzBzz4kDZWEv51XKmb1u9TvRMQwYfa7V6F&amount=1&index=352&proof=DoZ3Da4ZskYBMDG9i9q81CgfSJsGVdAPGqVSiCA66Jw1,3qcxBZj6TcXC3ZmeiUEF1zEHLqJkuPpe3HTaHkwPuKU1,AsjBTfLxLtZg2Tm2gVkgtXuaPZ3sMhR24jTeYVKMXBTf,ESSL2iDaPpkUqKt62YcMX5y35UWuPmcb11wARquqjyeV,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3AvMp9XxnyTioN7wz3CgdfcGe5beaVwdc9ZM7kUamqnk",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3AvMp9XxnyTioN7wz3CgdfcGe5beaVwdc9ZM7kUamqnk&amount=1&index=353&proof=4HXAGMsD48XGG8VcFZgGLLCF9M6RojXLVf2rt3dyj141,3qcxBZj6TcXC3ZmeiUEF1zEHLqJkuPpe3HTaHkwPuKU1,AsjBTfLxLtZg2Tm2gVkgtXuaPZ3sMhR24jTeYVKMXBTf,ESSL2iDaPpkUqKt62YcMX5y35UWuPmcb11wARquqjyeV,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3jaHRuZMC8n7jMFeW9pELy7iYr5CEpe1aCgXdhPQhzKs",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3jaHRuZMC8n7jMFeW9pELy7iYr5CEpe1aCgXdhPQhzKs&amount=1&index=354&proof=Fm7DFN5Xdmv93ENVjhBcNPySB1aSNs45LDmaVw88Mtvh,2AtKtDJNKSkdGcmRMgYh1SnjrDnCuyWdsXrUFnq42jpy,AsjBTfLxLtZg2Tm2gVkgtXuaPZ3sMhR24jTeYVKMXBTf,ESSL2iDaPpkUqKt62YcMX5y35UWuPmcb11wARquqjyeV,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3pw2YEhrV8pM3mpCrG21TgAfNUf48uzfFg8cYL2L3P9s",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3pw2YEhrV8pM3mpCrG21TgAfNUf48uzfFg8cYL2L3P9s&amount=1&index=355&proof=3jXGpQB14s3cKg8m6rheFe2AwZ6fXU21EaQT8Vry5N9m,2AtKtDJNKSkdGcmRMgYh1SnjrDnCuyWdsXrUFnq42jpy,AsjBTfLxLtZg2Tm2gVkgtXuaPZ3sMhR24jTeYVKMXBTf,ESSL2iDaPpkUqKt62YcMX5y35UWuPmcb11wARquqjyeV,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3T55g6cSC2DQ45McpAyjjxNMDxtU3Ba3NP6deCn2Dq14",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3T55g6cSC2DQ45McpAyjjxNMDxtU3Ba3NP6deCn2Dq14&amount=1&index=356&proof=7xmyy9x3pE8vS1ymPHoKJT9SMf3ZYcn6VhxX5ZBEgMaG,EFdhUbha6TpYsdZvA6nvbLpTWvp3Uq1MeXQEQXXDjet,AQE7QEfxvTnKeqtjcSPd1VgLYnhtkDJqciB94MM4YMKJ,ESSL2iDaPpkUqKt62YcMX5y35UWuPmcb11wARquqjyeV,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "3TUe3h3jEbRC5R5tHi2kkRVufRofjbDET4rC14pcvaxt",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=3TUe3h3jEbRC5R5tHi2kkRVufRofjbDET4rC14pcvaxt&amount=1&index=357&proof=3pqpofKW2sdjFeVaoE6YPxTFcXVA8H6RnD9LcHw98fHh,EFdhUbha6TpYsdZvA6nvbLpTWvp3Uq1MeXQEQXXDjet,AQE7QEfxvTnKeqtjcSPd1VgLYnhtkDJqciB94MM4YMKJ,ESSL2iDaPpkUqKt62YcMX5y35UWuPmcb11wARquqjyeV,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4cN4KiGr9pUfoH1VmuAXnMnjH3P4SQJPft8nWQ3mNuSq",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4cN4KiGr9pUfoH1VmuAXnMnjH3P4SQJPft8nWQ3mNuSq&amount=1&index=358&proof=DnCrLywDQNXN25i6YXsA65ZTKgQ6Hyqgp3qTNQYNZPTm,5QWkjTxvVkUJ68Y2UhSrgT9bfG6c1UcpLWHXv4yJNTmo,AQE7QEfxvTnKeqtjcSPd1VgLYnhtkDJqciB94MM4YMKJ,ESSL2iDaPpkUqKt62YcMX5y35UWuPmcb11wARquqjyeV,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4hhUiPvupJs4ZamcmwEsGxomePq36HHBrsC7hBmsXC2V",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4hhUiPvupJs4ZamcmwEsGxomePq36HHBrsC7hBmsXC2V&amount=1&index=359&proof=BZdMC4yJTGCBKbW8tUr3Y52TJGuqMx3preSntaY2ZiSq,5QWkjTxvVkUJ68Y2UhSrgT9bfG6c1UcpLWHXv4yJNTmo,AQE7QEfxvTnKeqtjcSPd1VgLYnhtkDJqciB94MM4YMKJ,ESSL2iDaPpkUqKt62YcMX5y35UWuPmcb11wARquqjyeV,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4NqbHBxiJwR1JtqsvqouqP2WV27hN5nFcyQf9yCxZNGj",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4NqbHBxiJwR1JtqsvqouqP2WV27hN5nFcyQf9yCxZNGj&amount=1&index=360&proof=JAh7UzvfV5ZiBw6SfLjUDkFqLjxq11pcHbqbBkGXrUuN,Gd5nhyGnBQ7hMaX8Vz8VCWVUDJD5RMGwPsn1QojuGicg,7bMjEgy6grSj1xNuZ1f4f21dN4RjcaMy5gGXeRteb7YF,5YhjN9CDHgfvFuHQeXeue2xg5L5BTSfncuq28gGq7YqN,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "4yxegArucJ74ttas9UMAeBcUkUNWJYbksi6TgQw2nTSw",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=4yxegArucJ74ttas9UMAeBcUkUNWJYbksi6TgQw2nTSw&amount=1&index=361&proof=GtQVccN5xrcJgVXeVzLUdnktQMHMspD1cEz5zEivqMNA,Gd5nhyGnBQ7hMaX8Vz8VCWVUDJD5RMGwPsn1QojuGicg,7bMjEgy6grSj1xNuZ1f4f21dN4RjcaMy5gGXeRteb7YF,5YhjN9CDHgfvFuHQeXeue2xg5L5BTSfncuq28gGq7YqN,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "54BXRz6e5REwv13f5notwQKm9JDAFxatuKncBZkb4XFN",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=54BXRz6e5REwv13f5notwQKm9JDAFxatuKncBZkb4XFN&amount=1&index=362&proof=7zeoCDNvUXUX6pHQqNrkgJ4xjktKcRoAJcFRrcADxueV,C5aTmP4fBEgvHAbnU4wavjNsUiViKjC52rK4Hy6EL8Ud,7bMjEgy6grSj1xNuZ1f4f21dN4RjcaMy5gGXeRteb7YF,5YhjN9CDHgfvFuHQeXeue2xg5L5BTSfncuq28gGq7YqN,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "59FNuAhcDWxVUakKvWMhQHVRo1f4shJJrzcCPC5RdbRQ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=59FNuAhcDWxVUakKvWMhQHVRo1f4shJJrzcCPC5RdbRQ&amount=1&index=363&proof=BE4ZMJwYrrRuzVMMM3BQMSveHXdkapZAuQxU9TH914zJ,C5aTmP4fBEgvHAbnU4wavjNsUiViKjC52rK4Hy6EL8Ud,7bMjEgy6grSj1xNuZ1f4f21dN4RjcaMy5gGXeRteb7YF,5YhjN9CDHgfvFuHQeXeue2xg5L5BTSfncuq28gGq7YqN,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5g9ckdBoQLxCSfiCCU32ZrtNLW2w9cyu7iNSogUC5Nzp",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5g9ckdBoQLxCSfiCCU32ZrtNLW2w9cyu7iNSogUC5Nzp&amount=1&index=364&proof=FqEoaGEo2T2b4ny42e8Lc2esHqoCE7gc7N9h9fm4SK6t,E2yBipyo1pBcYr1b5GsTAguWiEDh3PoZDRt8vScg6LyC,GaKvBN4fkMWLY2Q1kJFZ3TzVm6tGkacZQtXzuEMcmywB,5YhjN9CDHgfvFuHQeXeue2xg5L5BTSfncuq28gGq7YqN,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5iZnLBvpkZ6BA4bV2WwNpzqBwbsNZzg4oeo7z2CngsM3",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5iZnLBvpkZ6BA4bV2WwNpzqBwbsNZzg4oeo7z2CngsM3&amount=1&index=365&proof=HuJMtR8E3eJTyG9AYKuKQtXfNUHPFRJcmems1hh83qmd,E2yBipyo1pBcYr1b5GsTAguWiEDh3PoZDRt8vScg6LyC,GaKvBN4fkMWLY2Q1kJFZ3TzVm6tGkacZQtXzuEMcmywB,5YhjN9CDHgfvFuHQeXeue2xg5L5BTSfncuq28gGq7YqN,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5pZw6sYi49LZobpqDNpcCUDF6qL8f6ZhCJjvMRwzgbr5",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5pZw6sYi49LZobpqDNpcCUDF6qL8f6ZhCJjvMRwzgbr5&amount=1&index=366&proof=3ZWnM7p1ALHZWz856LdwgytKukYymsyJyJzWKTi7A7Yo,9TUnmSrjstBsFGtaHtFzcae2eajm8m3TzYaZq65ifXBt,GaKvBN4fkMWLY2Q1kJFZ3TzVm6tGkacZQtXzuEMcmywB,5YhjN9CDHgfvFuHQeXeue2xg5L5BTSfncuq28gGq7YqN,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "5ZWNZCYZDR8tqzqWdK18K8iSRFhCq4wHVggzBdCXcAzS",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=5ZWNZCYZDR8tqzqWdK18K8iSRFhCq4wHVggzBdCXcAzS&amount=1&index=367&proof=2EaqPYd5mDcjb66hD2Jag1N6KP8euQ3uR5vDakgkmjnp,9TUnmSrjstBsFGtaHtFzcae2eajm8m3TzYaZq65ifXBt,GaKvBN4fkMWLY2Q1kJFZ3TzVm6tGkacZQtXzuEMcmywB,5YhjN9CDHgfvFuHQeXeue2xg5L5BTSfncuq28gGq7YqN,8rCFt3xV5T1ZuNzFrXstYAHiFjeWp177Ukb4yHsxDRyS,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "61KQCQuGXyWNvKuArQGWEhuAg3wh4mLW3N22cvjPphJ3",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=61KQCQuGXyWNvKuArQGWEhuAg3wh4mLW3N22cvjPphJ3&amount=1&index=368&proof=DnPiuKrUSMSMvYKxCem8VcteUdnux842fev3ALJZUqAy,GvanRR48BgniWG1JBTFDXUrMPUq6oXCBSxhUG3Pv9Xcx,BivB7ad4Sp9bC4c4yjr4BMSBeYyggCguexwbdk3XyP8w,3amH7YGVyX26RpQFdpXQ7CEKZTAz5WR2aeURgLHP9TP5,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6dWmdBeo34URhkWf4fFr5xp43bu3YzBGuBHDdpN3BtCM",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6dWmdBeo34URhkWf4fFr5xp43bu3YzBGuBHDdpN3BtCM&amount=1&index=369&proof=29tjsVLbFUq1Ras3Jxt4emubtfKEbDe6mouL3JcgazKF,GvanRR48BgniWG1JBTFDXUrMPUq6oXCBSxhUG3Pv9Xcx,BivB7ad4Sp9bC4c4yjr4BMSBeYyggCguexwbdk3XyP8w,3amH7YGVyX26RpQFdpXQ7CEKZTAz5WR2aeURgLHP9TP5,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6fgn3vjVLFRM9WX4wUwk3CJBfVw3wtwSDvpJVqQ7Snh8",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6fgn3vjVLFRM9WX4wUwk3CJBfVw3wtwSDvpJVqQ7Snh8&amount=1&index=370&proof=2Kw2EkpQBowddYbpSrNnZ4AD9R3fDxNynm9ibRLNP229,527dDgcuXu5pXAG9QQ1YnjptZVRNxLt8HzNZqBDS4yxz,BivB7ad4Sp9bC4c4yjr4BMSBeYyggCguexwbdk3XyP8w,3amH7YGVyX26RpQFdpXQ7CEKZTAz5WR2aeURgLHP9TP5,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6fMHZfhLLaakwutQUGnwfbDWmNKe5kwEFiaUxQ5FcsoL",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6fMHZfhLLaakwutQUGnwfbDWmNKe5kwEFiaUxQ5FcsoL&amount=1&index=371&proof=9L1pah2bNksLHhqGq4drxdhPGqUAxn2f81BbCn7GE764,527dDgcuXu5pXAG9QQ1YnjptZVRNxLt8HzNZqBDS4yxz,BivB7ad4Sp9bC4c4yjr4BMSBeYyggCguexwbdk3XyP8w,3amH7YGVyX26RpQFdpXQ7CEKZTAz5WR2aeURgLHP9TP5,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6Fpf6eDTt6e5HXrGs89GnpHAuAHnH686SPNEjt7561dp",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6Fpf6eDTt6e5HXrGs89GnpHAuAHnH686SPNEjt7561dp&amount=1&index=372&proof=A4e553eTBs5bgMuigmNh6UKbXCgcyYyTma158pUtyV5c,8VeyxxTBASf8Hh1GL4oGREqUZUDcBWoLGxJ3EpnHBJq8,731MnFirV83kt9ptSe7kyN7xiU6be5i7VgKhyVD1Zuqc,3amH7YGVyX26RpQFdpXQ7CEKZTAz5WR2aeURgLHP9TP5,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6ikADuPpRtVknc44zwZ1YTAL557qR6NHERz66YxAbVwL",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6ikADuPpRtVknc44zwZ1YTAL557qR6NHERz66YxAbVwL&amount=1&index=373&proof=FovtSno8V6Kh79nrSZtbw5MoKN3676RMgwm2DYAurikq,8VeyxxTBASf8Hh1GL4oGREqUZUDcBWoLGxJ3EpnHBJq8,731MnFirV83kt9ptSe7kyN7xiU6be5i7VgKhyVD1Zuqc,3amH7YGVyX26RpQFdpXQ7CEKZTAz5WR2aeURgLHP9TP5,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6jbrbMbhuAhjLmnTHZ5iSX2BKEiqTGe796v33NXd89PX",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6jbrbMbhuAhjLmnTHZ5iSX2BKEiqTGe796v33NXd89PX&amount=1&index=374&proof=Hzenm2s8ADamFp8L5faxWQPMtc6m32cBQpBpbvTh2FV3,7xLeo7BhF5VQzXPv7bDCSdGcbuvv5hT7kXSCcJHFpApd,731MnFirV83kt9ptSe7kyN7xiU6be5i7VgKhyVD1Zuqc,3amH7YGVyX26RpQFdpXQ7CEKZTAz5WR2aeURgLHP9TP5,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6ocbdUB44hkpVTNuFoqRW1MLSgfvxzMbZv8fjC2Jwg5q",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6ocbdUB44hkpVTNuFoqRW1MLSgfvxzMbZv8fjC2Jwg5q&amount=1&index=375&proof=4msU29v1GYxUQPXnFf6gdGAngXwLb6JYf2ikypV92uyf,7xLeo7BhF5VQzXPv7bDCSdGcbuvv5hT7kXSCcJHFpApd,731MnFirV83kt9ptSe7kyN7xiU6be5i7VgKhyVD1Zuqc,3amH7YGVyX26RpQFdpXQ7CEKZTAz5WR2aeURgLHP9TP5,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "6WNGja9uxELBsU63kAifey9khLX2aUdjoSAUrX934unz",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=6WNGja9uxELBsU63kAifey9khLX2aUdjoSAUrX934unz&amount=1&index=376&proof=GWUAXmcjwyFq1r9KgSybeJY3Fvyv5cXWLpMjwCARD2sy,CFijQQGHt41n8X1sNhjPHgsJhMx4FiQHccoKNo5Lc9Jf,AY7znx3jSLogHikoKw5LaLyJc1hcXmpeLtkEJf74Y2k8,GyBA3PpNXhWLMHaCxrPJvZp3xGGMkgutLgGeSaaGjD1U,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7BBkfHLykwS6EVH9J9JrHDMCjHaTps4ac914rJi4ou4j",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7BBkfHLykwS6EVH9J9JrHDMCjHaTps4ac914rJi4ou4j&amount=1&index=377&proof=5jEJRL7jMnFvQ9YarWAfxbddrP7WrV6q8rfAQgTjveXQ,CFijQQGHt41n8X1sNhjPHgsJhMx4FiQHccoKNo5Lc9Jf,AY7znx3jSLogHikoKw5LaLyJc1hcXmpeLtkEJf74Y2k8,GyBA3PpNXhWLMHaCxrPJvZp3xGGMkgutLgGeSaaGjD1U,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7e73tF4fWpEeaqjgL1GuwduiiJUheiRPVVPtYfnTjbDF",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7e73tF4fWpEeaqjgL1GuwduiiJUheiRPVVPtYfnTjbDF&amount=1&index=378&proof=6B6ZdeGHE4zxjV1phWxcurHwwFgLgscuufYbQkFYpaKG,CrHqXRezzd4jUaeKs38ZrmSr9d54jjXCH5fEWVhmAtq,AY7znx3jSLogHikoKw5LaLyJc1hcXmpeLtkEJf74Y2k8,GyBA3PpNXhWLMHaCxrPJvZp3xGGMkgutLgGeSaaGjD1U,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7h7D9VWadJSqbLpCKzaVTQPcYiLHahykuKzDWaS8QJin",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7h7D9VWadJSqbLpCKzaVTQPcYiLHahykuKzDWaS8QJin&amount=1&index=379&proof=79Etz56yUz2799nb5zr2Bayi54zxHVF836wqNnM3RhZb,CrHqXRezzd4jUaeKs38ZrmSr9d54jjXCH5fEWVhmAtq,AY7znx3jSLogHikoKw5LaLyJc1hcXmpeLtkEJf74Y2k8,GyBA3PpNXhWLMHaCxrPJvZp3xGGMkgutLgGeSaaGjD1U,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7HWVpNXGvP1JkdJGctYwJgyK1wrK2DzqGeR4zaNhfwon",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7HWVpNXGvP1JkdJGctYwJgyK1wrK2DzqGeR4zaNhfwon&amount=1&index=380&proof=F9QMiJxvcB2NNyGz6RwtK3MnTMDZEGvX957jQYCCsSKg,85DCzGH7aZdabsmLcZva2gJ4gjHh796hKwBDBTkPzg75,B8j1ktQKDcHVHVUrCYdcwcDNYYg5PFvC9y5hBMHyRXhx,GyBA3PpNXhWLMHaCxrPJvZp3xGGMkgutLgGeSaaGjD1U,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7LJLQLCryTpPhVvFmyGkGX9EvmoFMqUXZJwULD4Aq5ed",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7LJLQLCryTpPhVvFmyGkGX9EvmoFMqUXZJwULD4Aq5ed&amount=1&index=381&proof=EUTo9QLGTkhu8DQEiuXgdmKBCq32ttMBkU8BpmFZ8Ezy,85DCzGH7aZdabsmLcZva2gJ4gjHh796hKwBDBTkPzg75,B8j1ktQKDcHVHVUrCYdcwcDNYYg5PFvC9y5hBMHyRXhx,GyBA3PpNXhWLMHaCxrPJvZp3xGGMkgutLgGeSaaGjD1U,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7NqENUyGWS6yKNNnT7swE1WsRF9wrdvLLpskDN32qZVn",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7NqENUyGWS6yKNNnT7swE1WsRF9wrdvLLpskDN32qZVn&amount=1&index=382&proof=9i6ADtSnJmm1t5r1xr9afs89pWFa1oKBPf76sQUqQZa1,B4kMejcgMySrbqqP4NLHYRc6ua5EUr1hKztuXDdiAfXS,B8j1ktQKDcHVHVUrCYdcwcDNYYg5PFvC9y5hBMHyRXhx,GyBA3PpNXhWLMHaCxrPJvZp3xGGMkgutLgGeSaaGjD1U,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7o4koRfPUu2RWaszRY6X7fh1bkEwfneDY4knewsxJTKV",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7o4koRfPUu2RWaszRY6X7fh1bkEwfneDY4knewsxJTKV&amount=1&index=383&proof=BBAcu5EbUmdYcfwAALhkwjzuEWFq4d848spx7yNh11Pq,B4kMejcgMySrbqqP4NLHYRc6ua5EUr1hKztuXDdiAfXS,B8j1ktQKDcHVHVUrCYdcwcDNYYg5PFvC9y5hBMHyRXhx,GyBA3PpNXhWLMHaCxrPJvZp3xGGMkgutLgGeSaaGjD1U,9fcSkRq24Z5oHLdA9wmVseP82UqcBqZLNBgKQc7WVrYu,cvXtuUDNTeipxpmEfCMtBxgicn4dkWCLf4HRbvtLBRF,4VFpBxdzsf2V3se73swc3gGFxMT7fohxZMW86w3CvNAh,HC8QGw7JdLWfFsDU7q4KyGh5WLDrbTG5MXv8y5K66isA,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7oujMefWTWDnBE9cj8Pe5aeCwkaVQe638kmZ6k99TQ2v",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7oujMefWTWDnBE9cj8Pe5aeCwkaVQe638kmZ6k99TQ2v&amount=1&index=384&proof=FvqzABJ8gFBimCXr25SWg8PZpf4t8XTrwg2eKRps7mM4,G3eHF5QB2oHsgpsM5vTHb58aPT2md8EegYUixZgj6yJc,HmH7tFHXLL8rbmdM1R6nJ2SDZkaJcQMeYcUXjKTfhKf7,4cHvzhQMjrCBzKAL6HjHWMKFCqXXaamQqpE9syjhngJJ,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7s9nkKHitZAsWS2zLPZmFe7Wd6CuYVDPKrffLSmSYW6",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7s9nkKHitZAsWS2zLPZmFe7Wd6CuYVDPKrffLSmSYW6&amount=1&index=385&proof=3UQegeHyEJWDnFBXnSsotqmF3NiXPQVapxSJJ1SQYwB4,G3eHF5QB2oHsgpsM5vTHb58aPT2md8EegYUixZgj6yJc,HmH7tFHXLL8rbmdM1R6nJ2SDZkaJcQMeYcUXjKTfhKf7,4cHvzhQMjrCBzKAL6HjHWMKFCqXXaamQqpE9syjhngJJ,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7Wo3ybABWmijwfA6H4gHhCjz6EHATzGAtjgjG88LzFPN",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7Wo3ybABWmijwfA6H4gHhCjz6EHATzGAtjgjG88LzFPN&amount=1&index=386&proof=CaPmEWRAMxSJYLE1zfXVjbK1wHZAm31MGeNfF2dnYMiq,8YMmbWVoqSzrQJwfH2hQEPMvGnPmQcLaHHMPygWmdTNy,HmH7tFHXLL8rbmdM1R6nJ2SDZkaJcQMeYcUXjKTfhKf7,4cHvzhQMjrCBzKAL6HjHWMKFCqXXaamQqpE9syjhngJJ,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "7WTyTmv8t8qyfKYE9SETu1kjmVsBVuSc6Tt5AbJ5CrsH",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=7WTyTmv8t8qyfKYE9SETu1kjmVsBVuSc6Tt5AbJ5CrsH&amount=1&index=387&proof=5tNAEWPuiwPYvggofc9C7Hp1BXNrsmZQ6Ew6dDFBWYiN,8YMmbWVoqSzrQJwfH2hQEPMvGnPmQcLaHHMPygWmdTNy,HmH7tFHXLL8rbmdM1R6nJ2SDZkaJcQMeYcUXjKTfhKf7,4cHvzhQMjrCBzKAL6HjHWMKFCqXXaamQqpE9syjhngJJ,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "87hTDjkftamJ9AnUxbgoN8d2z5LwoKT5uwH3TqPXwTn3",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=87hTDjkftamJ9AnUxbgoN8d2z5LwoKT5uwH3TqPXwTn3&amount=1&index=388&proof=BeX5ASfdsNq529GUGmMPN3jdFfTj7Y4FC5HiTJ63zf7Y,Ck2fQrvRC8wJzpsJbkjwphk5RExvJam8yDp5TrU6LDhE,BBcPqewqivgDrwXUDzbCNFSJ2CLYvuVdiguvPciaKTSC,4cHvzhQMjrCBzKAL6HjHWMKFCqXXaamQqpE9syjhngJJ,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8Cb5FzYYKwD6tGSHRQcGgbLbkF5NG5duRiHqaQrc8NrM",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8Cb5FzYYKwD6tGSHRQcGgbLbkF5NG5duRiHqaQrc8NrM&amount=1&index=389&proof=D794U7iijwqSzFaGF3WPkMos8VYAww41aPcJiVjDbGHb,Ck2fQrvRC8wJzpsJbkjwphk5RExvJam8yDp5TrU6LDhE,BBcPqewqivgDrwXUDzbCNFSJ2CLYvuVdiguvPciaKTSC,4cHvzhQMjrCBzKAL6HjHWMKFCqXXaamQqpE9syjhngJJ,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "8DWMTZqa9uKFVJJNyLmXj7vQLeurnxk9AfaJRKSLdykS",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=8DWMTZqa9uKFVJJNyLmXj7vQLeurnxk9AfaJRKSLdykS&amount=1&index=390&proof=5Qt8iHmY47FAmBAy3my4bYzhshyRZ7GMn9xyD6WRbmDj,EeqmBfCLP7xcS9iM2JKo7vqRKHK8QZ36C8vP8CrXs9DX,BBcPqewqivgDrwXUDzbCNFSJ2CLYvuVdiguvPciaKTSC,4cHvzhQMjrCBzKAL6HjHWMKFCqXXaamQqpE9syjhngJJ,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "91LPQbxnP1qoqEicGPFzvHi3MmzAPHyEcxuBCe6yed6W",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=91LPQbxnP1qoqEicGPFzvHi3MmzAPHyEcxuBCe6yed6W&amount=1&index=391&proof=BXZH8242DtiXK2QmgFQLviceBPhdZdeoxSR7MseXhhZ7,EeqmBfCLP7xcS9iM2JKo7vqRKHK8QZ36C8vP8CrXs9DX,BBcPqewqivgDrwXUDzbCNFSJ2CLYvuVdiguvPciaKTSC,4cHvzhQMjrCBzKAL6HjHWMKFCqXXaamQqpE9syjhngJJ,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9B5LL9wqu6TqHdFM9SrMbGwRWmX6yT37MiksmhigLaKM",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9B5LL9wqu6TqHdFM9SrMbGwRWmX6yT37MiksmhigLaKM&amount=1&index=392&proof=74oyveS75kx6dEkUVqdc21AYfL6HkraTg9cuZbnpKN3h,BBG6b579f2bfxfQ234P5SdubRoGu7xSNK3cAdCpkLNTH,3CFNDmd3LSeWjxZNrP71MF4xL2j6rAkf1SRZ85phVYxQ,8Lb2J6jRqyxTxcaXnTmTwcSDGMqheo7triNGPjggEGqD,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9CJAZF4Anei8bXinZPhcKLiEo6eXWPft6RJCGrx1KmSC",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9CJAZF4Anei8bXinZPhcKLiEo6eXWPft6RJCGrx1KmSC&amount=1&index=393&proof=G9GGtzDVhGwAfm2L2T4FXHrjSiQ7zkLH4dvKcqWv2Wxy,BBG6b579f2bfxfQ234P5SdubRoGu7xSNK3cAdCpkLNTH,3CFNDmd3LSeWjxZNrP71MF4xL2j6rAkf1SRZ85phVYxQ,8Lb2J6jRqyxTxcaXnTmTwcSDGMqheo7triNGPjggEGqD,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9D9N8mkrf7oQRdP5qrnpUseJPEFqdU3onBt3yCnevm7u",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9D9N8mkrf7oQRdP5qrnpUseJPEFqdU3onBt3yCnevm7u&amount=1&index=394&proof=H8qtC8tYCwZtdWyP2HM9qyMzoenAD8C6B5mpGnvj5tWG,7W7Y3659y2ZnyxDrJAhJnCkXxTWkgEc4SdcChm6VsJib,3CFNDmd3LSeWjxZNrP71MF4xL2j6rAkf1SRZ85phVYxQ,8Lb2J6jRqyxTxcaXnTmTwcSDGMqheo7triNGPjggEGqD,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9FdEErSA8N9kkyukLHLsKTyyu6vN3iNq4vpQLN1rdWpc",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9FdEErSA8N9kkyukLHLsKTyyu6vN3iNq4vpQLN1rdWpc&amount=1&index=395&proof=PY491TWXuZTHzV9BcHgJGAH1JoENQMvUGHJq3jTsK3q,7W7Y3659y2ZnyxDrJAhJnCkXxTWkgEc4SdcChm6VsJib,3CFNDmd3LSeWjxZNrP71MF4xL2j6rAkf1SRZ85phVYxQ,8Lb2J6jRqyxTxcaXnTmTwcSDGMqheo7triNGPjggEGqD,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9K9uzPDR6McKhnjNH9ySaAEvnKwxdWU9kHn9L5KwAucK",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9K9uzPDR6McKhnjNH9ySaAEvnKwxdWU9kHn9L5KwAucK&amount=1&index=396&proof=RJ86W1zhhKeW7C8t3VpwAiHWCXnryEmQDRPcwKbTG72,GLQSXVD1uMBkYABrE16LPCVSM4ToLH4oVjuHxc3NB4MS,6v7YRYEJKzVPVXpbpF6vn9jf2LdotD1YhYs4sRPoW8uk,8Lb2J6jRqyxTxcaXnTmTwcSDGMqheo7triNGPjggEGqD,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9kLewrmgWjKp3GWu4YFrb7GHLHfWKU3aCtdGGbAjf9U",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9kLewrmgWjKp3GWu4YFrb7GHLHfWKU3aCtdGGbAjf9U&amount=1&index=397&proof=FzQatqeG2PQHXgfwR5TsxrFPgHzx649A4oTubMagJF7h,GLQSXVD1uMBkYABrE16LPCVSM4ToLH4oVjuHxc3NB4MS,6v7YRYEJKzVPVXpbpF6vn9jf2LdotD1YhYs4sRPoW8uk,8Lb2J6jRqyxTxcaXnTmTwcSDGMqheo7triNGPjggEGqD,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "9nQz1bRNkTLYFqm6o3RGrnQJsthrNfTETYyhx74NuFGn",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=9nQz1bRNkTLYFqm6o3RGrnQJsthrNfTETYyhx74NuFGn&amount=1&index=398&proof=J2Umh9CZn2d1ZgZFYfeQGdti3SPpMqV7U7tYQDYhaCfu,4YzFTuRtq5LUgs8EqPu9ddrejNhs4u36rFMMLMoVzVck,6v7YRYEJKzVPVXpbpF6vn9jf2LdotD1YhYs4sRPoW8uk,8Lb2J6jRqyxTxcaXnTmTwcSDGMqheo7triNGPjggEGqD,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "ABJE3n5hvVQiFsbkUXR7nBeoVADuAszxcwCSbGzxss2s",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=ABJE3n5hvVQiFsbkUXR7nBeoVADuAszxcwCSbGzxss2s&amount=1&index=399&proof=E7xC7VzsXYEmdkGLER1xZsau1MpMThibr44ofwdNHBjA,4YzFTuRtq5LUgs8EqPu9ddrejNhs4u36rFMMLMoVzVck,6v7YRYEJKzVPVXpbpF6vn9jf2LdotD1YhYs4sRPoW8uk,8Lb2J6jRqyxTxcaXnTmTwcSDGMqheo7triNGPjggEGqD,E1ZRDnbDyTYXMJevZPKvWzJ3ZV7SvRb7sprBjgJepRtH,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AmgdC8f4rE1jCGr7tP8WTSSeJQQba7t1bmc52uiPGQJi",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AmgdC8f4rE1jCGr7tP8WTSSeJQQba7t1bmc52uiPGQJi&amount=1&index=400&proof=83oW5ue2Tzf3uYctsEUkrwDEmHvrjrV8crVBmwD2QZrm,ER2iGDP3XSF79WdpVchMvKnLgaqVHN4qFh9DQ8vn6Sxo,2yt48WCa1jfd2N2mUomE1Sj7GiGCqteryfWwPgHkWv9w,4USYZ5TzJeSG6szhMR9by1bQUhyPvuNsfkv1VZp1MZBd,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "AsYK85wy7hyS4idce2iToLNMX6PkXJj2vjnSbsBtpisy",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=AsYK85wy7hyS4idce2iToLNMX6PkXJj2vjnSbsBtpisy&amount=1&index=401&proof=BKwzDaLcKmjY7tMwfxXswZQJUp5yL1Ruiy7VGukmQsGe,ER2iGDP3XSF79WdpVchMvKnLgaqVHN4qFh9DQ8vn6Sxo,2yt48WCa1jfd2N2mUomE1Sj7GiGCqteryfWwPgHkWv9w,4USYZ5TzJeSG6szhMR9by1bQUhyPvuNsfkv1VZp1MZBd,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BagrBFohA5BDmzjw4zdwB2Vh98DXZPYwNYbBzK2b5obK",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BagrBFohA5BDmzjw4zdwB2Vh98DXZPYwNYbBzK2b5obK&amount=1&index=402&proof=CgfjaUC9YDSzD5Y2R5yKEch27PkRFFYDchoL45ad8Dg8,95gW1jzKRtzrS8YB5gHfqLQYwecURXD6QWv5mtoRXhyh,2yt48WCa1jfd2N2mUomE1Sj7GiGCqteryfWwPgHkWv9w,4USYZ5TzJeSG6szhMR9by1bQUhyPvuNsfkv1VZp1MZBd,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "biP1EZ2DGqrzN8N3SjnaWfDTCChoZuFXWBaMpDSBgnR",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=biP1EZ2DGqrzN8N3SjnaWfDTCChoZuFXWBaMpDSBgnR&amount=1&index=403&proof=9PpJRQoFTZWQoqoPuKKhUo7S2Wa5zZjQ6hm2rjtvWWgH,95gW1jzKRtzrS8YB5gHfqLQYwecURXD6QWv5mtoRXhyh,2yt48WCa1jfd2N2mUomE1Sj7GiGCqteryfWwPgHkWv9w,4USYZ5TzJeSG6szhMR9by1bQUhyPvuNsfkv1VZp1MZBd,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BJv6HEs8HjQTUKg2YonMtV4x53A7eGaD8Bj5GSqvQnM1",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BJv6HEs8HjQTUKg2YonMtV4x53A7eGaD8Bj5GSqvQnM1&amount=1&index=404&proof=2C682NzFp3bJcPcE8of8MWg11oEYbkW37E3wgNpA2ePK,CMseXBz6LZ8UzHNAeTEYEstGpPGEpBHPCxZXaUfVW25q,GpUvNm44jku1a66yrQFyp3kjuYSfghcHWN8wdGDSwFC1,4USYZ5TzJeSG6szhMR9by1bQUhyPvuNsfkv1VZp1MZBd,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BwdrbbrPKHmCMWxa2QcPxVcJ37PyWtFmwMN4LRqhuyKs",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BwdrbbrPKHmCMWxa2QcPxVcJ37PyWtFmwMN4LRqhuyKs&amount=1&index=405&proof=9Qd9xpVViAuiMJcvH4DuEqw4c48pTSeSU79uK81bdRZC,CMseXBz6LZ8UzHNAeTEYEstGpPGEpBHPCxZXaUfVW25q,GpUvNm44jku1a66yrQFyp3kjuYSfghcHWN8wdGDSwFC1,4USYZ5TzJeSG6szhMR9by1bQUhyPvuNsfkv1VZp1MZBd,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "BxbqwDsCADBfoUpBJYXXmDEeqT3oGBKeBTintrb1MPLN",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=BxbqwDsCADBfoUpBJYXXmDEeqT3oGBKeBTintrb1MPLN&amount=1&index=406&proof=9a9rKTkZhZN1gUnAqDsHnjEvktbUdS9SBvSYwVJpSSTH,Be8TV6Xc4GiTedhcuR3F7GmT3kMiZJLdcCdWMryS2J4d,GpUvNm44jku1a66yrQFyp3kjuYSfghcHWN8wdGDSwFC1,4USYZ5TzJeSG6szhMR9by1bQUhyPvuNsfkv1VZp1MZBd,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "C7R5TkeLB5bGquUGYqkrKbgRNp59YBtGHCd9h41oT3Mv",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=C7R5TkeLB5bGquUGYqkrKbgRNp59YBtGHCd9h41oT3Mv&amount=1&index=407&proof=7hgXu1LpcWLvJPQKA4qXkxSGcBEF9iBSME9bamYRX4B4,Be8TV6Xc4GiTedhcuR3F7GmT3kMiZJLdcCdWMryS2J4d,GpUvNm44jku1a66yrQFyp3kjuYSfghcHWN8wdGDSwFC1,4USYZ5TzJeSG6szhMR9by1bQUhyPvuNsfkv1VZp1MZBd,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CAT3Ct8YXiJgbMEF5rDmUgVu9XdfeXeQ4XS3D52ersad",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CAT3Ct8YXiJgbMEF5rDmUgVu9XdfeXeQ4XS3D52ersad&amount=1&index=408&proof=89fLS8PdiW1US3gmgHQCzhdE1DBCK793e5DncBrTkTju,4HzGu7atpwwPumaSheRrizUy2LktnPkto7mvxFzU7Re8,DsTPja2fJUEvqp2uC1qMvJKcs5VdwmaTUjGiktJv4pHw,Es6LQLyj7kRYNhZyyJsimehh1qkc4WY5hzqhKBJQZ3os,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CGMNiPrCCJYfZYVdr3DMBzHsTLXhiEBzvwoqMn6D2gMV",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CGMNiPrCCJYfZYVdr3DMBzHsTLXhiEBzvwoqMn6D2gMV&amount=1&index=409&proof=GYSp7TTVx9jm7EzbT46jhJFKdymJxdRnayyKjVbWKM95,4HzGu7atpwwPumaSheRrizUy2LktnPkto7mvxFzU7Re8,DsTPja2fJUEvqp2uC1qMvJKcs5VdwmaTUjGiktJv4pHw,Es6LQLyj7kRYNhZyyJsimehh1qkc4WY5hzqhKBJQZ3os,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CKidK4MkuNp3m5kfQTnLBHkYTGgehpJjnHtPN9v4XNJ8",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CKidK4MkuNp3m5kfQTnLBHkYTGgehpJjnHtPN9v4XNJ8&amount=1&index=410&proof=G8eP22J6YDhbdstDok9UDdDWdKrRHNZyYSjYyXg3QhCu,2f9rifgozzEjxVG5KM9jhM6eW6P8RoazSdNqPPdRCa2o,DsTPja2fJUEvqp2uC1qMvJKcs5VdwmaTUjGiktJv4pHw,Es6LQLyj7kRYNhZyyJsimehh1qkc4WY5hzqhKBJQZ3os,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CkkYMZg8RQsZd514uNMUV7TE2x13UVnzWcWstbsyozQf",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CkkYMZg8RQsZd514uNMUV7TE2x13UVnzWcWstbsyozQf&amount=1&index=411&proof=EvDqLpbdMrRGnXPghYUvmMMdqanxJdmpGXNEHPQYNdNv,2f9rifgozzEjxVG5KM9jhM6eW6P8RoazSdNqPPdRCa2o,DsTPja2fJUEvqp2uC1qMvJKcs5VdwmaTUjGiktJv4pHw,Es6LQLyj7kRYNhZyyJsimehh1qkc4WY5hzqhKBJQZ3os,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CyoPXWJHTNfSZneMB97LgZJkrZXcSQwVFFteMYXREgQS",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CyoPXWJHTNfSZneMB97LgZJkrZXcSQwVFFteMYXREgQS&amount=1&index=412&proof=6YAYECAo1CRnrFuj7Yu8X3siFPjvfGdxAuN79xTXvSgL,9keMQN8oPhnt59GDp5ryENLU2KYoaNM9rET46anrvJkY,Eu4cXEtSA9Y6QVGuYT6E13U4HaYkWhEEezEnkryddP7i,Es6LQLyj7kRYNhZyyJsimehh1qkc4WY5hzqhKBJQZ3os,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "CzikGTNWvoAZGu19ALWwfoEG7bcu6y98WU2qn3bwk52k",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=CzikGTNWvoAZGu19ALWwfoEG7bcu6y98WU2qn3bwk52k&amount=1&index=413&proof=DG7eRGmxqWoVYBZRhDcSwJg5SCnqHvNZTW9hzGDEm5h4,9keMQN8oPhnt59GDp5ryENLU2KYoaNM9rET46anrvJkY,Eu4cXEtSA9Y6QVGuYT6E13U4HaYkWhEEezEnkryddP7i,Es6LQLyj7kRYNhZyyJsimehh1qkc4WY5hzqhKBJQZ3os,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "D338WGjnpMcxZMxH18HBD6kUKebDF69MxEdRut3zSV32",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=D338WGjnpMcxZMxH18HBD6kUKebDF69MxEdRut3zSV32&amount=1&index=414&proof=GTiMuqq5x3siVYgEEs9HqmgGGv1RsZRkUKWg4saAET8V,D8DzV9pxnFnLDjWsvY5ajqxSbxVKE5Q8ALJi8YmLPk4N,Eu4cXEtSA9Y6QVGuYT6E13U4HaYkWhEEezEnkryddP7i,Es6LQLyj7kRYNhZyyJsimehh1qkc4WY5hzqhKBJQZ3os,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "d7q7rTMeZQJcydmttUcH5n8U3tMY8gXM6DJkvnMugn6",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=d7q7rTMeZQJcydmttUcH5n8U3tMY8gXM6DJkvnMugn6&amount=1&index=415&proof=8JxkUpbCDjkkoYtC6B1QuEdygTAyvxq618GUBGT9qVkH,D8DzV9pxnFnLDjWsvY5ajqxSbxVKE5Q8ALJi8YmLPk4N,Eu4cXEtSA9Y6QVGuYT6E13U4HaYkWhEEezEnkryddP7i,Es6LQLyj7kRYNhZyyJsimehh1qkc4WY5hzqhKBJQZ3os,F4nC81DrNzQcpw87EkJP9j83mGf1PsxfvaNAZmHPoV14,36sc7JQRyCiQoPS7PpbdwBvwhejrZMJARRdgCBdxY6A2,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "D9i7K6jRKU9wRVyXYhLRFdcnkygsHKzrYMkXT2cagygW",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=D9i7K6jRKU9wRVyXYhLRFdcnkygsHKzrYMkXT2cagygW&amount=1&index=416&proof=8SXRuw6SuvE6napBc7RZXuoGjxCeKgZgTjwRnkxdRUYe,6QsH4nmsBaFBAz2VQS2R8iazDMs8vzkyWeb8VbTCCs3z,7MbyPwPReikQ9fXji2DXnRJep2KnGrZXq61kfGdPcGq8,3WeYtsAtJyAXGESNJxrhLgVqDDd69NpjmZNgZco9ZUoW,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DjcsUvD4TZAeJedueFdp4EQfwAkWUc3vBCrpx1wvdBjz",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DjcsUvD4TZAeJedueFdp4EQfwAkWUc3vBCrpx1wvdBjz&amount=1&index=417&proof=2Qj3Fpc9PeJxdddA8peQ3Y4yUZyCU3Q7zhD6m4cDT1XP,6QsH4nmsBaFBAz2VQS2R8iazDMs8vzkyWeb8VbTCCs3z,7MbyPwPReikQ9fXji2DXnRJep2KnGrZXq61kfGdPcGq8,3WeYtsAtJyAXGESNJxrhLgVqDDd69NpjmZNgZco9ZUoW,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DPvEP7LuV97zguntnYbpGdqvMpMJjDaWcvb9hSG1vz6H",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DPvEP7LuV97zguntnYbpGdqvMpMJjDaWcvb9hSG1vz6H&amount=1&index=418&proof=6oijs9j3HHSkXdTMBXapHnA5CZ3aVVbgcoakDan4ANVk,Cu7Y9DTXgxqSbbC5TuVZDZr9p95v3NYZD83KjZQb7rzk,7MbyPwPReikQ9fXji2DXnRJep2KnGrZXq61kfGdPcGq8,3WeYtsAtJyAXGESNJxrhLgVqDDd69NpjmZNgZco9ZUoW,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DVqQRdECoWKasPC8DsvSNbNC1cCsnvkVcxHD3sWVrUVe",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DVqQRdECoWKasPC8DsvSNbNC1cCsnvkVcxHD3sWVrUVe&amount=1&index=419&proof=56jvJt61oxov7pqtA1gP9hwepADSrzhdCaPVhmKA8Bzz,Cu7Y9DTXgxqSbbC5TuVZDZr9p95v3NYZD83KjZQb7rzk,7MbyPwPReikQ9fXji2DXnRJep2KnGrZXq61kfGdPcGq8,3WeYtsAtJyAXGESNJxrhLgVqDDd69NpjmZNgZco9ZUoW,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DW5Ws5yBqVBHuRJHesXRnu17GvSQVRxy8y3udNbDMY4p",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DW5Ws5yBqVBHuRJHesXRnu17GvSQVRxy8y3udNbDMY4p&amount=1&index=420&proof=CjmSLoJhHsJEG9JqbUuGKpndrJYAhYtCStrQq6uKb2e1,9Pxq4Gs6vTiaCtosSEvgAgdSLPYtiqQZb1XaUgSJg7rC,Cj8yRvJTFsMhvky4zV91A9TPGi5nE1HvEyttqryqnFNU,3WeYtsAtJyAXGESNJxrhLgVqDDd69NpjmZNgZco9ZUoW,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Dxg2XKbsms7kYxQxvdU8GAhtSzq4n3S6V9CLuUXudrxf",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Dxg2XKbsms7kYxQxvdU8GAhtSzq4n3S6V9CLuUXudrxf&amount=1&index=421&proof=DaeghPEyVGvLUPLStLd6vqoZMUXz3GiyEvYHnan37APe,9Pxq4Gs6vTiaCtosSEvgAgdSLPYtiqQZb1XaUgSJg7rC,Cj8yRvJTFsMhvky4zV91A9TPGi5nE1HvEyttqryqnFNU,3WeYtsAtJyAXGESNJxrhLgVqDDd69NpjmZNgZco9ZUoW,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "DYArGApaA8xaeCp4Er7NYhEW5utQTP8zxesjmXW8UkCd",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=DYArGApaA8xaeCp4Er7NYhEW5utQTP8zxesjmXW8UkCd&amount=1&index=422&proof=HYXAPP8i46VZSFiGs8kHsXGvWKKBBySCPoA3jwPLXjfY,4kxaeQ3F6FnsJUf3nRM1sraAHDQN5g66H1hW4bWQog3Z,Cj8yRvJTFsMhvky4zV91A9TPGi5nE1HvEyttqryqnFNU,3WeYtsAtJyAXGESNJxrhLgVqDDd69NpjmZNgZco9ZUoW,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "E7H4v3cBd9Uck4wffFgjnc5H6Qgi3aVbPSvRumaQBmVb",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=E7H4v3cBd9Uck4wffFgjnc5H6Qgi3aVbPSvRumaQBmVb&amount=1&index=423&proof=7uEUpv61AvChWoX3miTFRtbpZZRRWTReeNQuGBpMetPh,4kxaeQ3F6FnsJUf3nRM1sraAHDQN5g66H1hW4bWQog3Z,Cj8yRvJTFsMhvky4zV91A9TPGi5nE1HvEyttqryqnFNU,3WeYtsAtJyAXGESNJxrhLgVqDDd69NpjmZNgZco9ZUoW,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "E7iY196NvPhcx9sDCWPL1jJKpzrjxziN5FJaEURDNVsi",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=E7iY196NvPhcx9sDCWPL1jJKpzrjxziN5FJaEURDNVsi&amount=1&index=424&proof=4hJ6VSh6fBvqEaztV8tFn3SfSiraKQ1q6tbds7Nu2DBS,EfpoAV25joTLcfQSWrLxmCRYtuVJo54ibA2cBNrgyv9x,CqdvvGpKAKjqSujfxUU6ETxFaBf6tMg3Pu1ANsRPaXvF,Bbu5WcrTw7BtXCrPPVxfr8ZQP3Gz4RJy61ZKNLDqgCGG,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "E8C5tu27cSRtaHca91iUcEbMnT4i48CUpbTemtF68y6C",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=E8C5tu27cSRtaHca91iUcEbMnT4i48CUpbTemtF68y6C&amount=1&index=425&proof=D2a24DUyB7MT5nKTkWZdBm8bKe7BVNGxCZjRqEYqSk9u,EfpoAV25joTLcfQSWrLxmCRYtuVJo54ibA2cBNrgyv9x,CqdvvGpKAKjqSujfxUU6ETxFaBf6tMg3Pu1ANsRPaXvF,Bbu5WcrTw7BtXCrPPVxfr8ZQP3Gz4RJy61ZKNLDqgCGG,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EDguM5ojxusDXnQhNA7XY8dcjHd3pJwQraqwDwe568VK",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EDguM5ojxusDXnQhNA7XY8dcjHd3pJwQraqwDwe568VK&amount=1&index=426&proof=6WBu2qg6kyJuB8yin2k8aFzvqSyxMzeTN1Z3Sh2TVZSx,2AzrvDdcyVETEK3x4T8TjKTonZPUVSVPDoVGCsVD3xeL,CqdvvGpKAKjqSujfxUU6ETxFaBf6tMg3Pu1ANsRPaXvF,Bbu5WcrTw7BtXCrPPVxfr8ZQP3Gz4RJy61ZKNLDqgCGG,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Ee9vsphNYpj9DmFH1HqPcrLFeufSdSjV1YfBcScRdYW4",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Ee9vsphNYpj9DmFH1HqPcrLFeufSdSjV1YfBcScRdYW4&amount=1&index=427&proof=HvXmcN13khgG8fac7LnwBTf2tuVRULn7ZiHSv56jMLGC,2AzrvDdcyVETEK3x4T8TjKTonZPUVSVPDoVGCsVD3xeL,CqdvvGpKAKjqSujfxUU6ETxFaBf6tMg3Pu1ANsRPaXvF,Bbu5WcrTw7BtXCrPPVxfr8ZQP3Gz4RJy61ZKNLDqgCGG,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Em5M3Gb8cf8mgqHtejZXtFNrQebNabrNSNLN56L4m8W7",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Em5M3Gb8cf8mgqHtejZXtFNrQebNabrNSNLN56L4m8W7&amount=1&index=428&proof=HfqBxyzbngSCYkd3tRw9468VDHSz9o2adKEy8wtZ6XHq,8g7DVwWGzLWN71TnWDYgLp9uH8eCuEm5RFztmyGFbrP9,9e2oMrhFTkh7ZxHeDNtrsFLe65DcWw5HudPeYBdj4iur,Bbu5WcrTw7BtXCrPPVxfr8ZQP3Gz4RJy61ZKNLDqgCGG,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EQfW1kgS3KubvhmMEfzEtAND4jiEkMWAhMh4gdDWiZLo",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EQfW1kgS3KubvhmMEfzEtAND4jiEkMWAhMh4gdDWiZLo&amount=1&index=429&proof=H42UV6EPVfiDUrtuPPfJZUDBmhWK7AAK3GuAkYHW2SMP,8g7DVwWGzLWN71TnWDYgLp9uH8eCuEm5RFztmyGFbrP9,9e2oMrhFTkh7ZxHeDNtrsFLe65DcWw5HudPeYBdj4iur,Bbu5WcrTw7BtXCrPPVxfr8ZQP3Gz4RJy61ZKNLDqgCGG,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EsQM9izotFxXwvbaztwjQ1LoykkCJppnr3wkDonXeHsP",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EsQM9izotFxXwvbaztwjQ1LoykkCJppnr3wkDonXeHsP&amount=1&index=430&proof=6hYQXF6o3C1UeDQ6GdWy3zVfxmyEXkENKAyQwsA92C2x,2UE97c1Td3t1JEit6BS7LNmotBDKzJTYxbNRmq8KJiKv,9e2oMrhFTkh7ZxHeDNtrsFLe65DcWw5HudPeYBdj4iur,Bbu5WcrTw7BtXCrPPVxfr8ZQP3Gz4RJy61ZKNLDqgCGG,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "ESqqMNG9RQWgag9PKQKVNyBGb1StD2sds1AM8JRB9LL7",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=ESqqMNG9RQWgag9PKQKVNyBGb1StD2sds1AM8JRB9LL7&amount=1&index=431&proof=5RBRdzX7WDKfqty5tH8DzJNNSR9AE3HSnW6NtqGowCEo,2UE97c1Td3t1JEit6BS7LNmotBDKzJTYxbNRmq8KJiKv,9e2oMrhFTkh7ZxHeDNtrsFLe65DcWw5HudPeYBdj4iur,Bbu5WcrTw7BtXCrPPVxfr8ZQP3Gz4RJy61ZKNLDqgCGG,DL7iBGH8iy2ggg4BN7Zd6WuCJysJ1a3vLUuSq9HXGwHK,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "ET2guii8eUevMQyXom7q3PF7VYFqLmqQxRJXk3c262nD",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=ET2guii8eUevMQyXom7q3PF7VYFqLmqQxRJXk3c262nD&amount=1&index=432&proof=5WUk6XUPz6LusEfA5CPDyFqH29n5kEXHRnvK2ghiJQmt,F9Sn5FMmunYXWchPyQmCvzb42piGxYbAtfTVHUuQ8sSN,AwwcrCKSjdaaTDcHtBXTNTnNXWiNfBQ5aRXEU2dEDGuB,XgsMjsPtbWfUT6xb4S5P8YDQ5HpEHA6yH4rSZmQJHM6,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "EXygYvFxrZZ9ZWVuRcqsTQGqWwvaKXLF5De5uC83kWna",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=EXygYvFxrZZ9ZWVuRcqsTQGqWwvaKXLF5De5uC83kWna&amount=1&index=433&proof=Ayqrx1wVLx5cPmK8nXatFDjrFdafRhwXUePKeKmJLqUX,F9Sn5FMmunYXWchPyQmCvzb42piGxYbAtfTVHUuQ8sSN,AwwcrCKSjdaaTDcHtBXTNTnNXWiNfBQ5aRXEU2dEDGuB,XgsMjsPtbWfUT6xb4S5P8YDQ5HpEHA6yH4rSZmQJHM6,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Ey87fKn7y76rrAAgYHGFPPoMtT3fpbARMUSms7zYSNQf",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Ey87fKn7y76rrAAgYHGFPPoMtT3fpbARMUSms7zYSNQf&amount=1&index=434&proof=C1vNLwKEFx7sRnA1iidSzPQyc5QSeiJoSpf2khwbUtVa,J5JF9YJQx9cG4hfhq8bPhZifknqk2wNioi5Y3qsrdAcN,AwwcrCKSjdaaTDcHtBXTNTnNXWiNfBQ5aRXEU2dEDGuB,XgsMjsPtbWfUT6xb4S5P8YDQ5HpEHA6yH4rSZmQJHM6,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "F77ptJbwnArP1XEKsP7RhLTn3cPW6UMohhz9CT8gBWoA",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=F77ptJbwnArP1XEKsP7RhLTn3cPW6UMohhz9CT8gBWoA&amount=1&index=435&proof=8rLpyiW1UTSqQ7dDqoNRGGn29o2QTaxhKWFaLQeJdERk,J5JF9YJQx9cG4hfhq8bPhZifknqk2wNioi5Y3qsrdAcN,AwwcrCKSjdaaTDcHtBXTNTnNXWiNfBQ5aRXEU2dEDGuB,XgsMjsPtbWfUT6xb4S5P8YDQ5HpEHA6yH4rSZmQJHM6,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FenxzvFnKK3ZWKnm15bBcyKaEjivqzSHTxn7gRS4a5gx",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FenxzvFnKK3ZWKnm15bBcyKaEjivqzSHTxn7gRS4a5gx&amount=1&index=436&proof=LQDnLGQpwixm8XjhGXBXEJwiEXqdRbruFCbKYoAYzUQ,BBQYuLNB2uhb19hfMGWfbZJUpqwN1SbVqoMydNC4UeQJ,53Mzk15HcP7GTBmVkbJpwoL7C2xop4H56tLP8i9kyDMH,XgsMjsPtbWfUT6xb4S5P8YDQ5HpEHA6yH4rSZmQJHM6,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FF8UQtgcC8Za9Bj9ExJc1nVChiGRE3hw1dDpQDqi3en6",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FF8UQtgcC8Za9Bj9ExJc1nVChiGRE3hw1dDpQDqi3en6&amount=1&index=437&proof=8kY6DbcQuNNQ78CQem9hzMWCjSdYMkieU1m4S1aLTRUx,BBQYuLNB2uhb19hfMGWfbZJUpqwN1SbVqoMydNC4UeQJ,53Mzk15HcP7GTBmVkbJpwoL7C2xop4H56tLP8i9kyDMH,XgsMjsPtbWfUT6xb4S5P8YDQ5HpEHA6yH4rSZmQJHM6,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FNAgf9QbyewF1jmxMm8SrwfVXrWG7Lb9TPGQ5zhe7uEB",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FNAgf9QbyewF1jmxMm8SrwfVXrWG7Lb9TPGQ5zhe7uEB&amount=1&index=438&proof=8S88KPrGC27Zm9zGQT4QXweTJHZR9a4FjWspMT6bUyej,7erBNCVvA9yty85VC1NbWiaPgngwBwWXYEcoHhAEG9Dv,53Mzk15HcP7GTBmVkbJpwoL7C2xop4H56tLP8i9kyDMH,XgsMjsPtbWfUT6xb4S5P8YDQ5HpEHA6yH4rSZmQJHM6,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "FS6jEb1kL1Z5ZmrC946m36sHwRkRBrf8oFTYbpMHBC4b",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=FS6jEb1kL1Z5ZmrC946m36sHwRkRBrf8oFTYbpMHBC4b&amount=1&index=439&proof=EWCBpMQKcD9btEafjJWdAhmKse51586DMnFmRuSeHJF2,7erBNCVvA9yty85VC1NbWiaPgngwBwWXYEcoHhAEG9Dv,53Mzk15HcP7GTBmVkbJpwoL7C2xop4H56tLP8i9kyDMH,XgsMjsPtbWfUT6xb4S5P8YDQ5HpEHA6yH4rSZmQJHM6,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "g1grGcoCvPPkiHT62E5raK7ssRZTt4VcheDwFmHZ3Gp",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=g1grGcoCvPPkiHT62E5raK7ssRZTt4VcheDwFmHZ3Gp&amount=1&index=440&proof=AA789yY2eieEpa1KLpWryQ3S1P7jfKCRiZs8i1Df7g2E,C3rqd1JZvcikoBCyfTtyr4JwDTrbQgRa6NCettwpf24Q,HY4PSZGwB9tjidDkY5mmkMvdayxU1ciaMi956hLDJJzM,4GT6pk4bhbMrjJmLEtz3iK8biE7MwyUPJhg1wBfThNGs,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "G4UBcfjYXEQ1MuyfbHKFJMgLCcYerUmjNGRAKCZxhweU",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=G4UBcfjYXEQ1MuyfbHKFJMgLCcYerUmjNGRAKCZxhweU&amount=1&index=441&proof=5GFKCKc8v43CC3MM8jkkd9GQLE3ekNp2JdV57N5EhpPE,C3rqd1JZvcikoBCyfTtyr4JwDTrbQgRa6NCettwpf24Q,HY4PSZGwB9tjidDkY5mmkMvdayxU1ciaMi956hLDJJzM,4GT6pk4bhbMrjJmLEtz3iK8biE7MwyUPJhg1wBfThNGs,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GEbvVHsRcbURKwjRC73SneYyJzw2AWVdS8hERbQmUdfj",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GEbvVHsRcbURKwjRC73SneYyJzw2AWVdS8hERbQmUdfj&amount=1&index=442&proof=5jCYKFF5FYpenXQVe9oMYvi2soHFZ214Vw66H5YBqpQC,3RfDyyqBDkGykqsMEEYtCgcKpc9h58THmRsHfAR7Juxr,HY4PSZGwB9tjidDkY5mmkMvdayxU1ciaMi956hLDJJzM,4GT6pk4bhbMrjJmLEtz3iK8biE7MwyUPJhg1wBfThNGs,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GEk8gFq8smWYSKumMZfcYUEs13kb3UfhzsgLkSGdNuPC",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GEk8gFq8smWYSKumMZfcYUEs13kb3UfhzsgLkSGdNuPC&amount=1&index=443&proof=LDEaDPjDsYy51pwWSEJAbCF2cfeAMiVaEReweXtr7YZ,3RfDyyqBDkGykqsMEEYtCgcKpc9h58THmRsHfAR7Juxr,HY4PSZGwB9tjidDkY5mmkMvdayxU1ciaMi956hLDJJzM,4GT6pk4bhbMrjJmLEtz3iK8biE7MwyUPJhg1wBfThNGs,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GG7KuBytCcTo96Jk9UBRvL6NDGVMczkgRsP1Y1JcP5FQ",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GG7KuBytCcTo96Jk9UBRvL6NDGVMczkgRsP1Y1JcP5FQ&amount=1&index=444&proof=GunA3KUhCGnjgVPrA9Q7xPBjT7Fu8Bc47yumbhXpyo3P,A3dT5JV76kbSrqMRZWrRWYryhsi9hHKJFwsnrEK7EEsp,AkMvrVKfWcmhGQWKbTDcbktvP7o22s48mXkaxdqFEk53,4GT6pk4bhbMrjJmLEtz3iK8biE7MwyUPJhg1wBfThNGs,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GKw5zoyRWMJMwVuypiXi7mjMuPq5uRFNVBMvvCLuEiQe",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GKw5zoyRWMJMwVuypiXi7mjMuPq5uRFNVBMvvCLuEiQe&amount=1&index=445&proof=83FnpZkbsaeGRqEfe42HW1t6skSaWQyQtxv55UGhxx7c,A3dT5JV76kbSrqMRZWrRWYryhsi9hHKJFwsnrEK7EEsp,AkMvrVKfWcmhGQWKbTDcbktvP7o22s48mXkaxdqFEk53,4GT6pk4bhbMrjJmLEtz3iK8biE7MwyUPJhg1wBfThNGs,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GnVnfeTPusCfNoKtEXL5knMuzeKRMfA5yTybq6JBwGCx",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GnVnfeTPusCfNoKtEXL5knMuzeKRMfA5yTybq6JBwGCx&amount=1&index=446&proof=3AXsMxQL5VEBSHYhmaCj8TFoUEGoo6qWNCv4CzXKy5Ff,BWuF5Lv3DGrowaFkjtdu3qGFp8X8AgFB1cNogD2Cqyi4,AkMvrVKfWcmhGQWKbTDcbktvP7o22s48mXkaxdqFEk53,4GT6pk4bhbMrjJmLEtz3iK8biE7MwyUPJhg1wBfThNGs,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GtQAhhFNht3775BHw1RGBTYx6NMn9dnMvRrjxjadkq1R",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GtQAhhFNht3775BHw1RGBTYx6NMn9dnMvRrjxjadkq1R&amount=1&index=447&proof=EmkYxCc71jRLwSb7QFZpXL8Ya3LrvUFMEkokpkDi7w5z,BWuF5Lv3DGrowaFkjtdu3qGFp8X8AgFB1cNogD2Cqyi4,AkMvrVKfWcmhGQWKbTDcbktvP7o22s48mXkaxdqFEk53,4GT6pk4bhbMrjJmLEtz3iK8biE7MwyUPJhg1wBfThNGs,FSrG9wfieHXzBKSpfRWd1tHtkjoCVDt4wRxF9XVj4YeD,6vJq15pKsmtpNcvPp9ncq2qYEa4QXNCkqyETXQEaczuD,3b9Mz4UukG8CbT5u3N7ecTwoREPfVuTitvfaEDJNmnjP,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "GYMoHSUM9wA21UdVNq2K1ebNTyzeeNjJoXmrhoyegiJ1",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=GYMoHSUM9wA21UdVNq2K1ebNTyzeeNjJoXmrhoyegiJ1&amount=1&index=448&proof=Hk7x7eNo9MT51sNeMof9jZy22xQrD2ixB8phJuE9sE5E,DqY83n7pUmqAQTXpM7HY1cJX85hrJ8EnAhteo9rPNx4H,3dXWUCrf9j5b4D7BWkgpcJkC7jfw4q4NQgw2FZ22LyUh,C2HZPdxqb91MU7LgCPRFFREnSmNGkH9YhT8sBn8ye2fN,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "H5rrKao913WycZL8ieHGc8DFXVeVMHDumPaDot3ZTXQv",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=H5rrKao913WycZL8ieHGc8DFXVeVMHDumPaDot3ZTXQv&amount=1&index=449&proof=Bn4M3FDT3i6Z3SFRq1fpQvQ5xGXervwa8AGdumVmYh8M,DqY83n7pUmqAQTXpM7HY1cJX85hrJ8EnAhteo9rPNx4H,3dXWUCrf9j5b4D7BWkgpcJkC7jfw4q4NQgw2FZ22LyUh,C2HZPdxqb91MU7LgCPRFFREnSmNGkH9YhT8sBn8ye2fN,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "H5VA76NVi7pYwqvopJN7t2kjAH54N1Tm9XeEaaHncfC9",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=H5VA76NVi7pYwqvopJN7t2kjAH54N1Tm9XeEaaHncfC9&amount=1&index=450&proof=CXQjki7vsyrfJVwkSybH3HKVxeNToE9aRcgCEr54eoXW,2sUA65hmq2HgFr4pUoEnxVfLHTUUEexniv8jeMAepZXX,3dXWUCrf9j5b4D7BWkgpcJkC7jfw4q4NQgw2FZ22LyUh,C2HZPdxqb91MU7LgCPRFFREnSmNGkH9YhT8sBn8ye2fN,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "H9bDuZZ6y12bPtxFRQtY1x9jAaSsdEfa3kPfW5yiSPn9",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=H9bDuZZ6y12bPtxFRQtY1x9jAaSsdEfa3kPfW5yiSPn9&amount=1&index=451&proof=CbHktigtdtzpwWAWmCsbXoW4nesNkjXtFpBw8qm4ufXW,2sUA65hmq2HgFr4pUoEnxVfLHTUUEexniv8jeMAepZXX,3dXWUCrf9j5b4D7BWkgpcJkC7jfw4q4NQgw2FZ22LyUh,C2HZPdxqb91MU7LgCPRFFREnSmNGkH9YhT8sBn8ye2fN,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HeiHC4xSZDq29hUmXzBfiXBv2dDuoohqkdBL45WUoW4e",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HeiHC4xSZDq29hUmXzBfiXBv2dDuoohqkdBL45WUoW4e&amount=1&index=452&proof=87BRRgXpCJjStbn35YTy2VrKHnxMnNiKUztfEx5MBYXv,DdL48DMERPyQtXvKHSfXDycs7jLw14gZfd9rWKPHJgv9,Af3yGcrNVyTMkKCwHUq5nSXwrpAJKdbXSEm2mjyuukMX,C2HZPdxqb91MU7LgCPRFFREnSmNGkH9YhT8sBn8ye2fN,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Hfxvymss9yKgy3otKzHtUQEAvNM1Kmz7xgNtcADtw8Ap",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Hfxvymss9yKgy3otKzHtUQEAvNM1Kmz7xgNtcADtw8Ap&amount=1&index=453&proof=29FWcba3pvWfn5wXpnKbW15CZeejuCz448rjpf3CNzTa,DdL48DMERPyQtXvKHSfXDycs7jLw14gZfd9rWKPHJgv9,Af3yGcrNVyTMkKCwHUq5nSXwrpAJKdbXSEm2mjyuukMX,C2HZPdxqb91MU7LgCPRFFREnSmNGkH9YhT8sBn8ye2fN,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Hk9D7Gjmz4zzn4ytb7i8VRqBjb8kvBDmdRADUGKmiQTS",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Hk9D7Gjmz4zzn4ytb7i8VRqBjb8kvBDmdRADUGKmiQTS&amount=1&index=454&proof=GXB4uRVNmAPBpS5LtBbJmcxT5YWHq15nZwGM99mKF8AH,Y1uNfjtvpfaoE7nq3XNPFZ5TADJp86XTqCSkw9vDTwj,Af3yGcrNVyTMkKCwHUq5nSXwrpAJKdbXSEm2mjyuukMX,C2HZPdxqb91MU7LgCPRFFREnSmNGkH9YhT8sBn8ye2fN,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HmyHFScy17utGv83ZzY8523c2b1Scy5x72xnx1Waika1",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HmyHFScy17utGv83ZzY8523c2b1Scy5x72xnx1Waika1&amount=1&index=455&proof=J5PXfaHgfcpKbRbBKoS3JgsgwXHce6PxWzWug5Ruzwa7,Y1uNfjtvpfaoE7nq3XNPFZ5TADJp86XTqCSkw9vDTwj,Af3yGcrNVyTMkKCwHUq5nSXwrpAJKdbXSEm2mjyuukMX,C2HZPdxqb91MU7LgCPRFFREnSmNGkH9YhT8sBn8ye2fN,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HSHhRT2oy1vHKxaUW2UafGi26Aq1P35WMjcEmRtJZd7T",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HSHhRT2oy1vHKxaUW2UafGi26Aq1P35WMjcEmRtJZd7T&amount=1&index=456&proof=76KVCFEoHVrg2XL2Yqp34d8XupvcVrsrSXBbVWMgmhKo,AEAUCGCcDDS6EmDn7Ny7VPTzVPtB1GYyQKULUPze8aQS,33Wh1GAJQf54jJ4zG69JxitcrC3pX25cjSMC3q91W7iH,CS3eh22GeSgNHSfvzwCkje6DRTiFupC5n5Lt6No7ifo1,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HV3cm1hA1Gc9Mj345JSCAcAEY8dk49CxXzhjHGSkR2uE",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HV3cm1hA1Gc9Mj345JSCAcAEY8dk49CxXzhjHGSkR2uE&amount=1&index=457&proof=3si5wTBn94NPw3PdfZSq2DgdJSV8uSSfJXDFtiBp7BYi,AEAUCGCcDDS6EmDn7Ny7VPTzVPtB1GYyQKULUPze8aQS,33Wh1GAJQf54jJ4zG69JxitcrC3pX25cjSMC3q91W7iH,CS3eh22GeSgNHSfvzwCkje6DRTiFupC5n5Lt6No7ifo1,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HWqB9ffSWCca6sgo6RzbhxQGekzXcnUf3GQoPokr888N",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HWqB9ffSWCca6sgo6RzbhxQGekzXcnUf3GQoPokr888N&amount=1&index=458&proof=D72X6tfGFYEaHmPzsoCWcJ5DZQi19fdc5XkNRXRBU2S3,4eDSGKitBPiLust7zcLFCGj2CM8ZA7my7RoQkgVbvhVd,33Wh1GAJQf54jJ4zG69JxitcrC3pX25cjSMC3q91W7iH,CS3eh22GeSgNHSfvzwCkje6DRTiFupC5n5Lt6No7ifo1,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "HzUdvnAtGKUiAsTc23imQefNMU644eLm2MPMNnky8tmp",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=HzUdvnAtGKUiAsTc23imQefNMU644eLm2MPMNnky8tmp&amount=1&index=459&proof=7q4zjYbRQwkxgtpyFGTVVvmTx8u21LxVGbqotBmNN3RN,4eDSGKitBPiLust7zcLFCGj2CM8ZA7my7RoQkgVbvhVd,33Wh1GAJQf54jJ4zG69JxitcrC3pX25cjSMC3q91W7iH,CS3eh22GeSgNHSfvzwCkje6DRTiFupC5n5Lt6No7ifo1,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "J5GN5BHR37wDTauhm6SvA7jop9LixXc9wDU18uVR42Me",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=J5GN5BHR37wDTauhm6SvA7jop9LixXc9wDU18uVR42Me&amount=1&index=460&proof=4m5WvEqJmVCpJXz765GHG5fiauPsQ9EgJLvm4LDmHxCm,B1CfgMXz5R91AwLKcgDQH2sJVecGfN1wC2LTa5Xn6XbG,5ChvD3QfCrEKJFMyTNuzai9FszXA2J1k6BPbHksFxhQY,CS3eh22GeSgNHSfvzwCkje6DRTiFupC5n5Lt6No7ifo1,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "JApFpbWgJ1RfQhMfNQFTUHvfYpEmE6FArxg7nS54eViS",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=JApFpbWgJ1RfQhMfNQFTUHvfYpEmE6FArxg7nS54eViS&amount=1&index=461&proof=ER2AwN2YRpE8wRy4UxShMcw1dW5rCKzoJgbnq3dzWmj7,B1CfgMXz5R91AwLKcgDQH2sJVecGfN1wC2LTa5Xn6XbG,5ChvD3QfCrEKJFMyTNuzai9FszXA2J1k6BPbHksFxhQY,CS3eh22GeSgNHSfvzwCkje6DRTiFupC5n5Lt6No7ifo1,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "Mn6tFAHWv5vvdCJfi5ZwDbstAcctGbH5KFDrL9jHg4m",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=Mn6tFAHWv5vvdCJfi5ZwDbstAcctGbH5KFDrL9jHg4m&amount=1&index=462&proof=AevVKzqkowztafCGDF5aZdogthQLGVfom3ceDzrovezq,dXgVjbsE1VRYwZmrzU4HJnRwdicCfhmadiU5tgXNdAx,5ChvD3QfCrEKJFMyTNuzai9FszXA2J1k6BPbHksFxhQY,CS3eh22GeSgNHSfvzwCkje6DRTiFupC5n5Lt6No7ifo1,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "pMVPcUKZqj98DRDxhxpgtrkLkkwBawA3iNzzo6ZTrUp",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=pMVPcUKZqj98DRDxhxpgtrkLkkwBawA3iNzzo6ZTrUp&amount=1&index=463&proof=8WLSjKCuBYGRovvfA5dP4zXYhiuJLRbSTnX44yr3Jqt7,dXgVjbsE1VRYwZmrzU4HJnRwdicCfhmadiU5tgXNdAx,5ChvD3QfCrEKJFMyTNuzai9FszXA2J1k6BPbHksFxhQY,CS3eh22GeSgNHSfvzwCkje6DRTiFupC5n5Lt6No7ifo1,Bz3cAtrfXomzEEd6z6mK5TZVtmeiRe2iPwWp79tRh5Tg,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "tzskTdv8if8TZaLmTmn2dq9pqfH4W3raxs4J9gaadXC",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=tzskTdv8if8TZaLmTmn2dq9pqfH4W3raxs4J9gaadXC&amount=1&index=464&proof=GVJgtTjHM12dhPQ4y4VkMcj65Ujv4zJMj14c63Dso68n,A3eRu75tNgKVAc2LzEALviioe5Hcs5CQBiVmM5KnNGNo,FV51PsvNceiDEAvg4BcTRoGKMXwpQT2L7bTsjrTEQ8Yx,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "uv1QXdBDaUfjCfjNgn1Mhn8dwfx4eY9MWETZX8MZXfr",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=uv1QXdBDaUfjCfjNgn1Mhn8dwfx4eY9MWETZX8MZXfr&amount=1&index=465&proof=8q9XfvkEghoGU1FZ786uhU5ZeUzP79NAfhbyyVNP4bad,A3eRu75tNgKVAc2LzEALviioe5Hcs5CQBiVmM5KnNGNo,FV51PsvNceiDEAvg4BcTRoGKMXwpQT2L7bTsjrTEQ8Yx,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+  {
+   "Wallet Address": "vYqTnCiSdxWVpuKTqPAs8tei2TpBPnb4rgRRjfTp9Aa",
+   "Amount": 1,
+   "Gumdrop Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=tu3XQxML7BKiBwRHxV8URZr3z5MtXo77AeMaWYMTUQq&method=wallets&handle=vYqTnCiSdxWVpuKTqPAs8tei2TpBPnb4rgRRjfTp9Aa&amount=1&index=466&proof=A1BQm5KCvk2gMPVb1ePwnzA6nFjdy9w9PUAKRnPEG8JM,FV51PsvNceiDEAvg4BcTRoGKMXwpQT2L7bTsjrTEQ8Yx,7Ms12QdPE8sDacv4NtLzUC4R1piVj9VnYBTgj5reVBzr,CFcYUvSJjRHN8VXi1GYz7TPJc6VaTx18j14TG77EW8By,CvPWXxXFobyMsEgd7jsd4pz8CndR7R8tNijiXcfkTDUs&pin=NA&tokenAcc=7QBxsqKyHKkwxUWdtxjkjqMG7ayBgpe2R8bfBBhricxi"
+  },
+    {
+     "Wallet Address": "12jddyyd5prrxnE5DemfoPZRTJz7rfbbfFBGnRU2QGj2",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=12jddyyd5prrxnE5DemfoPZRTJz7rfbbfFBGnRU2QGj2&amount=1&index=0&proof=3CsMTFmxcWq2he3Ss1981QzwgRQino79AmSMpUhdqkaK,2F9zKybmzKUNzPsPxTmFYHfNzPB3ouhJFhEVyLmb9vTf,HexvYHukAtTVBWtVmDdLUD2FbByovDrgjMP9n92E47mz,AeXmkfqaw2KmWA73se7EcnVr5iuha5fnKqmiVZmhajPC,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "13b4PzfkrMbBgxoVsMMeHpvo6oVSt6aoNs9B4DZ2Swa1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=13b4PzfkrMbBgxoVsMMeHpvo6oVSt6aoNs9B4DZ2Swa1&amount=1&index=1&proof=45SGFzoThAxryib68YPUsmeQVDQnNEyRvwLYYHb2jkPs,2F9zKybmzKUNzPsPxTmFYHfNzPB3ouhJFhEVyLmb9vTf,HexvYHukAtTVBWtVmDdLUD2FbByovDrgjMP9n92E47mz,AeXmkfqaw2KmWA73se7EcnVr5iuha5fnKqmiVZmhajPC,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "24yC9kPrNWSfMQL2KbR9Hp4o6ZEEofBdnC3uGtU5udTi",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=24yC9kPrNWSfMQL2KbR9Hp4o6ZEEofBdnC3uGtU5udTi&amount=1&index=2&proof=2Gt6pDycsN4eZu1vHipxfh1MRLLgtcCTieWtCuQ6rDhJ,37dosL6VNxafizWFpRcLFhWqrMsbgjK6UTgsMr284AbV,HexvYHukAtTVBWtVmDdLUD2FbByovDrgjMP9n92E47mz,AeXmkfqaw2KmWA73se7EcnVr5iuha5fnKqmiVZmhajPC,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "26qiu7fHGv2Bor7xRVELGudHHaxXbptimgMdDzC6D7CG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=26qiu7fHGv2Bor7xRVELGudHHaxXbptimgMdDzC6D7CG&amount=1&index=3&proof=5gn8KCNUbgdxKTcutCwUbM1pRmv5eDDgaHuoUppCox6k,37dosL6VNxafizWFpRcLFhWqrMsbgjK6UTgsMr284AbV,HexvYHukAtTVBWtVmDdLUD2FbByovDrgjMP9n92E47mz,AeXmkfqaw2KmWA73se7EcnVr5iuha5fnKqmiVZmhajPC,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "28nGMTWnmooEEo735R2btC1PeQr8qQu9BEbTTbQ7ynuu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=28nGMTWnmooEEo735R2btC1PeQr8qQu9BEbTTbQ7ynuu&amount=1&index=4&proof=5fN5B6aACNkSLA1PCfsp88NL2sUeVg52vz3vqMkv9RGe,4XReqcWj3kcCMgKh5sfNjwA8S7i7oFM26bThTDxe2SFP,3jXUWApCdauXeiXyDz3ELHDhWChJ18uB6t3fX9hEi3rX,AeXmkfqaw2KmWA73se7EcnVr5iuha5fnKqmiVZmhajPC,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2F6Pru5tMWehLERzHFJK2UzGsDtT9PxJ7FniSrv9Ktuk",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2F6Pru5tMWehLERzHFJK2UzGsDtT9PxJ7FniSrv9Ktuk&amount=1&index=5&proof=5izBscE7EBzuHgZvUNvNmyJosUuunpAEk8XHPSrawVU2,4XReqcWj3kcCMgKh5sfNjwA8S7i7oFM26bThTDxe2SFP,3jXUWApCdauXeiXyDz3ELHDhWChJ18uB6t3fX9hEi3rX,AeXmkfqaw2KmWA73se7EcnVr5iuha5fnKqmiVZmhajPC,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2hFM9jCaC5uusxFHe3KdSR2k4d3Y6XJH5uZktGeToEKz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2hFM9jCaC5uusxFHe3KdSR2k4d3Y6XJH5uZktGeToEKz&amount=1&index=6&proof=4sTgYJkHmBaGz4aRqGZYkFtgFNfRwyTkKdBWvpncWP4n,GHhoW7M9au8LfyuAnXDPmU4PQgXE3bZa5cPcB5oRwwFD,3jXUWApCdauXeiXyDz3ELHDhWChJ18uB6t3fX9hEi3rX,AeXmkfqaw2KmWA73se7EcnVr5iuha5fnKqmiVZmhajPC,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2JnqpqAyffYzeji2GjYtvJ6vsLv8neHtoAKQpwwsPUVJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2JnqpqAyffYzeji2GjYtvJ6vsLv8neHtoAKQpwwsPUVJ&amount=1&index=7&proof=4mdq783aM5aAss8jjPzkZXrB2VXmX7PN7jc6aZ4mB3tm,GHhoW7M9au8LfyuAnXDPmU4PQgXE3bZa5cPcB5oRwwFD,3jXUWApCdauXeiXyDz3ELHDhWChJ18uB6t3fX9hEi3rX,AeXmkfqaw2KmWA73se7EcnVr5iuha5fnKqmiVZmhajPC,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2mdpDcjGLtrkj6jvsHrYPU7axCpdUEUGQhGneD9uRUHH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2mdpDcjGLtrkj6jvsHrYPU7axCpdUEUGQhGneD9uRUHH&amount=1&index=8&proof=7NVR9F56SdMJZNyK27AJKxrMJ1u6p3RsFJuUWtXezqRn,DNUZP74vfabP1VQaLPx8XDGLruAfzzmEshvcWp83XFrA,D8UuyGdgxjy1wkQJVCNrbhvHM7FZTM2GjvaPNoxhWSbR,6ryu65gUC46oyexGRoL6iQ8qMGTdrZq3Pwm8NGUEEg4t,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2nCdiPCYJr3H9fy9QYEFP4nsoV8hdmACA849JhDppR1j",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2nCdiPCYJr3H9fy9QYEFP4nsoV8hdmACA849JhDppR1j&amount=1&index=9&proof=3zdNdXiXrJVFQjwHXekARhRQmmTfyNHRzyFk28qdwrLA,DNUZP74vfabP1VQaLPx8XDGLruAfzzmEshvcWp83XFrA,D8UuyGdgxjy1wkQJVCNrbhvHM7FZTM2GjvaPNoxhWSbR,6ryu65gUC46oyexGRoL6iQ8qMGTdrZq3Pwm8NGUEEg4t,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2oyJ36da7fkUwZt41FgNv7MAnW5gXsHrUeLUtKjve8n2",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2oyJ36da7fkUwZt41FgNv7MAnW5gXsHrUeLUtKjve8n2&amount=1&index=10&proof=FNpxqH9vttjD54piPBWQarECkR79z2LWcyz3xiWXsXX8,661wghHVASx2zv2vTAYwjJ68fbop3LtxWGiz7Rd3hLgQ,D8UuyGdgxjy1wkQJVCNrbhvHM7FZTM2GjvaPNoxhWSbR,6ryu65gUC46oyexGRoL6iQ8qMGTdrZq3Pwm8NGUEEg4t,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2rBZrtng29HVaTx7XjPk2vwTdnHFKZyvvuVfPt2TT2Es",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2rBZrtng29HVaTx7XjPk2vwTdnHFKZyvvuVfPt2TT2Es&amount=1&index=11&proof=4dWJuEzPLXAnG6zYx9872CTfnReDViha7cyhxdgRHTNn,661wghHVASx2zv2vTAYwjJ68fbop3LtxWGiz7Rd3hLgQ,D8UuyGdgxjy1wkQJVCNrbhvHM7FZTM2GjvaPNoxhWSbR,6ryu65gUC46oyexGRoL6iQ8qMGTdrZq3Pwm8NGUEEg4t,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2V1BfqLCP34oPUfeXiN8WtfCvfkmt8pyfjVwsBHw8yrP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2V1BfqLCP34oPUfeXiN8WtfCvfkmt8pyfjVwsBHw8yrP&amount=1&index=12&proof=6dhXs724aY11xBWzkewfRL2Jy7WeCUpsU46F3sc5YGUo,CVb9eYjVRunqbRXxsqSWDj2WuRxuZKTRCjRz1FmbmuKD,Fq8b8JePZvQgS9PkASXYntmRSjXyJV2DMHk6LmXvhhXw,6ryu65gUC46oyexGRoL6iQ8qMGTdrZq3Pwm8NGUEEg4t,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3298dgpeHfddqVyQanbSEZaqaiBjNqrGvJWUMEmX8keB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3298dgpeHfddqVyQanbSEZaqaiBjNqrGvJWUMEmX8keB&amount=1&index=13&proof=D6hpgMcba1uygnbP5RWhTD5jfGbKq6JepDbi57TuKGfK,CVb9eYjVRunqbRXxsqSWDj2WuRxuZKTRCjRz1FmbmuKD,Fq8b8JePZvQgS9PkASXYntmRSjXyJV2DMHk6LmXvhhXw,6ryu65gUC46oyexGRoL6iQ8qMGTdrZq3Pwm8NGUEEg4t,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "39TzitHRHbxQPzmnFHQAqhFanmCj3FaWY2NRVg2ztUCB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=39TzitHRHbxQPzmnFHQAqhFanmCj3FaWY2NRVg2ztUCB&amount=1&index=14&proof=5X5cwdDoywTYKPWZkw1FiJcDg4kxhNgDnrB1ZpgNzQNC,BdSadf3BZUjt4i1bbvzpYFyY22k2t2sQLNR65VD9pxbL,Fq8b8JePZvQgS9PkASXYntmRSjXyJV2DMHk6LmXvhhXw,6ryu65gUC46oyexGRoL6iQ8qMGTdrZq3Pwm8NGUEEg4t,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3cfDKehakEgCqSr97MyWUVeke9cdS7rtz9yw23geyUzJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3cfDKehakEgCqSr97MyWUVeke9cdS7rtz9yw23geyUzJ&amount=1&index=15&proof=AwAq6TPqfq8rskgUaBoRm375Yr55eqyJ3xD2KBvAbY5z,BdSadf3BZUjt4i1bbvzpYFyY22k2t2sQLNR65VD9pxbL,Fq8b8JePZvQgS9PkASXYntmRSjXyJV2DMHk6LmXvhhXw,6ryu65gUC46oyexGRoL6iQ8qMGTdrZq3Pwm8NGUEEg4t,DtXEE9s9igKJvzzstjmZa1EKKZauyBmP16DjUyBZ6QLH,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3gefzRwcfbB6Dc1JxweuMWToLjxtQE7AjKX4HXXVKXgu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3gefzRwcfbB6Dc1JxweuMWToLjxtQE7AjKX4HXXVKXgu&amount=1&index=16&proof=2t55e1gEL7WBmwoj9MaDcveu2BirqX8Qivri2UZ36eRC,56VJRyy4G8LErQZrRJkY4tpeHnrk4VHTd6pSevwStsQ1,6QGHHbsbYi1H7DiijGJo8GkqwQghjWrRA5FBSAkcn5Tp,97n3hnMCEGwoidABrBuUbsMMRJHPwy3GMr71HH7zisHA,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3h7eBo37QmRoPvRjFPNzzNdW2q8pFffimr5NDRJQaKaA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3h7eBo37QmRoPvRjFPNzzNdW2q8pFffimr5NDRJQaKaA&amount=1&index=17&proof=DHX1JjqzxnL5Le7AHpqjoZbLQn5oEncUduuaWk5ScFyP,56VJRyy4G8LErQZrRJkY4tpeHnrk4VHTd6pSevwStsQ1,6QGHHbsbYi1H7DiijGJo8GkqwQghjWrRA5FBSAkcn5Tp,97n3hnMCEGwoidABrBuUbsMMRJHPwy3GMr71HH7zisHA,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3LU7b3DuSbs1AtKSJ6EKM17jM2o77FfwytpFPdWwEX1H",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3LU7b3DuSbs1AtKSJ6EKM17jM2o77FfwytpFPdWwEX1H&amount=1&index=18&proof=F9HiaWrXmpb64AEwYgndXj17LQ93z1V4dEd2NetCFDmd,9iLrYHhczfZxzEvCbjEam6B4j98vCbCQGsB3bJJ9ppRG,6QGHHbsbYi1H7DiijGJo8GkqwQghjWrRA5FBSAkcn5Tp,97n3hnMCEGwoidABrBuUbsMMRJHPwy3GMr71HH7zisHA,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3omBjds2GLo37QYJp9mmgEQ2hoVo8AANH2SaArUv2XUU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3omBjds2GLo37QYJp9mmgEQ2hoVo8AANH2SaArUv2XUU&amount=1&index=19&proof=G7qXrBghbagsk9mqQ3a3ZBAXL1FxFDBo7e9j1v4UgeRA,9iLrYHhczfZxzEvCbjEam6B4j98vCbCQGsB3bJJ9ppRG,6QGHHbsbYi1H7DiijGJo8GkqwQghjWrRA5FBSAkcn5Tp,97n3hnMCEGwoidABrBuUbsMMRJHPwy3GMr71HH7zisHA,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3P5boUSSr75Kjwtco85XuX7g1Ra1Ad8agR5VFt66B9FP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3P5boUSSr75Kjwtco85XuX7g1Ra1Ad8agR5VFt66B9FP&amount=1&index=20&proof=HMda1iYVrz68WEutLxUsW9oaY5mWMxTp2UEMfiXe7KEP,2qJiAnE9RyytfUc2NEixVCrJQxnJ6CbKWFn39ob5BPuu,DrmExdnqwgnmQHvNTcxjvyy79mpshwYsaxbCo7nmYRmi,97n3hnMCEGwoidABrBuUbsMMRJHPwy3GMr71HH7zisHA,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3Q7MJX2Z4z8HPSubdrwqLKtQK7XZTpZXR18BHV1KRZKk",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3Q7MJX2Z4z8HPSubdrwqLKtQK7XZTpZXR18BHV1KRZKk&amount=1&index=21&proof=9H1fuZq3bNH9Npz7yxz8f3BrxCHnZZg9TNmBni8T9CZv,2qJiAnE9RyytfUc2NEixVCrJQxnJ6CbKWFn39ob5BPuu,DrmExdnqwgnmQHvNTcxjvyy79mpshwYsaxbCo7nmYRmi,97n3hnMCEGwoidABrBuUbsMMRJHPwy3GMr71HH7zisHA,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3qAP5kH8KgfTMgZqGTYWN7dnL1oFXksUQnkGzRtAfL97",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3qAP5kH8KgfTMgZqGTYWN7dnL1oFXksUQnkGzRtAfL97&amount=1&index=22&proof=FTnEcwUfeQm81Z4eBNNAt6RRvaKL91cxwJMnggZZv65f,9Qpyh6uXdB5mC6U4zygp1w5DX3gH3KHZm75LWEmzWXQF,DrmExdnqwgnmQHvNTcxjvyy79mpshwYsaxbCo7nmYRmi,97n3hnMCEGwoidABrBuUbsMMRJHPwy3GMr71HH7zisHA,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3qvackA3ZhLmx7sejTSN2gHX1XtaCqbUfRgFAuJLesYY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3qvackA3ZhLmx7sejTSN2gHX1XtaCqbUfRgFAuJLesYY&amount=1&index=23&proof=HkM9uZiU5rCKLUe11eWJUTZBh8vjURZBkfykxaMYVbcr,9Qpyh6uXdB5mC6U4zygp1w5DX3gH3KHZm75LWEmzWXQF,DrmExdnqwgnmQHvNTcxjvyy79mpshwYsaxbCo7nmYRmi,97n3hnMCEGwoidABrBuUbsMMRJHPwy3GMr71HH7zisHA,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3utAjC3LkJapeoBGMzxUr8GxVTh3f9ndy4nkQcJXtgJZ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3utAjC3LkJapeoBGMzxUr8GxVTh3f9ndy4nkQcJXtgJZ&amount=1&index=24&proof=Fq6jH9enNaPvAgHm2ZPvfo8h2kNgMLjf9TCc35cVg7sp,Cxp8LAGpWpcwHc2D6eQWGfBTvNWytVDFFyoYsoih7Jgo,4JMPRa73s75j3GsfvNgGz3L4okaWG4h2FWGrJtcD31LH,GU7E3rqWC41xFEcSR6ejod9jFNg18LE5gExoFXjTZxUE,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3X7tC6D3CRsDDBxxaaV9SWPeVy2TCpEdVWX4yPBfcPWx",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3X7tC6D3CRsDDBxxaaV9SWPeVy2TCpEdVWX4yPBfcPWx&amount=1&index=25&proof=Gf8X94KxNYc4KPsGH58YrJBN6Benwk4C6Noiyh6dMGv,Cxp8LAGpWpcwHc2D6eQWGfBTvNWytVDFFyoYsoih7Jgo,4JMPRa73s75j3GsfvNgGz3L4okaWG4h2FWGrJtcD31LH,GU7E3rqWC41xFEcSR6ejod9jFNg18LE5gExoFXjTZxUE,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "45uP6SrPUTn5XzNNak1YJXaM42Wb5xbQTrEc7kX5L5vU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=45uP6SrPUTn5XzNNak1YJXaM42Wb5xbQTrEc7kX5L5vU&amount=1&index=26&proof=4BwQCRcGobsasEMHoduFsXygdUQy3u6XEKdCsTuHRmnb,hemDYRiBQ22UmAbFi54tHKNLSPhjZbYNKTF3nA9oDJm,4JMPRa73s75j3GsfvNgGz3L4okaWG4h2FWGrJtcD31LH,GU7E3rqWC41xFEcSR6ejod9jFNg18LE5gExoFXjTZxUE,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "46yaF5CmRJzqrdYAm8mBbHLF2D8CTbko9ypU3HhtBiME",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=46yaF5CmRJzqrdYAm8mBbHLF2D8CTbko9ypU3HhtBiME&amount=1&index=27&proof=6kavVonbTaXCxcQYB2qSXca6U5RozAjpNnwoF4iV2LWJ,hemDYRiBQ22UmAbFi54tHKNLSPhjZbYNKTF3nA9oDJm,4JMPRa73s75j3GsfvNgGz3L4okaWG4h2FWGrJtcD31LH,GU7E3rqWC41xFEcSR6ejod9jFNg18LE5gExoFXjTZxUE,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4a7EUhu6hQHULJZCfTKrBwaerCvxaVcpvP4QwQygp4E3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4a7EUhu6hQHULJZCfTKrBwaerCvxaVcpvP4QwQygp4E3&amount=1&index=28&proof=3tzK5m9Wcq1vmGFzNhTNWr3qwPgDnfAnxiQtf67xRuVn,58f8XZLyJYCkCrWdrPtrGsdN2Ep4ajsauoVuXXV1cnPu,9HeAvjdUR6i4sLXMyZEQGTvYE3egpVJi7niHWwMFWn7Y,GU7E3rqWC41xFEcSR6ejod9jFNg18LE5gExoFXjTZxUE,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4a9cxMRkPveTq8LzvQNcmsYoEYPnfHgWsmPAnqyxxUof",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4a9cxMRkPveTq8LzvQNcmsYoEYPnfHgWsmPAnqyxxUof&amount=1&index=29&proof=9tse7qkF3eW7LaUWE7jHGSK6C69uK5jGAwyoxd8xtmdd,58f8XZLyJYCkCrWdrPtrGsdN2Ep4ajsauoVuXXV1cnPu,9HeAvjdUR6i4sLXMyZEQGTvYE3egpVJi7niHWwMFWn7Y,GU7E3rqWC41xFEcSR6ejod9jFNg18LE5gExoFXjTZxUE,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4bNAZv9fhRcZhNjb11qCtFGSXWjq1fp1Ws6RwRzFRqoL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4bNAZv9fhRcZhNjb11qCtFGSXWjq1fp1Ws6RwRzFRqoL&amount=1&index=30&proof=8VoMVyZ49d4whsCWRCyZvUFBFVuihUA4hS9LQWY1tGNj,5wtxcsUB1KEZU1QC85esvKeN2KUK7mG5vtEqpQBoWTmW,9HeAvjdUR6i4sLXMyZEQGTvYE3egpVJi7niHWwMFWn7Y,GU7E3rqWC41xFEcSR6ejod9jFNg18LE5gExoFXjTZxUE,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4ed8EJwkYa5RF3rcEQmgu9zAUQr2VKGMAURe4NZu4goU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4ed8EJwkYa5RF3rcEQmgu9zAUQr2VKGMAURe4NZu4goU&amount=1&index=31&proof=9z9Zw7ZWVrPBsyYXb7TK8M7sgyuDkz4PTrHbsN5qbmSV,5wtxcsUB1KEZU1QC85esvKeN2KUK7mG5vtEqpQBoWTmW,9HeAvjdUR6i4sLXMyZEQGTvYE3egpVJi7niHWwMFWn7Y,GU7E3rqWC41xFEcSR6ejod9jFNg18LE5gExoFXjTZxUE,Gi7EoUxCNFbRkM19wPtfAg7qGe3cpCquGMnarRGcHMFn,EW3cfNSSZhNWoF7wzq9dh74D8h1HRCpkktBv4gJDrT5h,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4JifSZ87cRgSXCZpAfNWrmredSSHCZdGCM1PQgaYDRdt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4JifSZ87cRgSXCZpAfNWrmredSSHCZdGCM1PQgaYDRdt&amount=1&index=32&proof=3nYeGtFAUZEvM928BqBDvu7W1WkUnXH72DXYHiAsyeFE,BZeUHsYE7bLrgFwc1KAUaT8BqJxqWt3d9NAP5c8KXvwX,Ao3pt35mtu7Udph18yvu3yuvZnL7wf9Jhb1AiQNELnt9,65DBzUuCwVYNkCpPErcVWCJRfERe1UAz78K8X1GuvFPY,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4Jxo7wq4fQpZmr7WGPhgq7aZ6Lu9DZ3PbkUdJXu2awNu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4Jxo7wq4fQpZmr7WGPhgq7aZ6Lu9DZ3PbkUdJXu2awNu&amount=1&index=33&proof=AoauZSTtrNamZqU3DJyuxvRbLDh6XodgtMqZMGp7c2pP,BZeUHsYE7bLrgFwc1KAUaT8BqJxqWt3d9NAP5c8KXvwX,Ao3pt35mtu7Udph18yvu3yuvZnL7wf9Jhb1AiQNELnt9,65DBzUuCwVYNkCpPErcVWCJRfERe1UAz78K8X1GuvFPY,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4JYd3JYXaFoMN9RRrWnnrNLN2Z9cu5NPt6BGKsBwqZ6N",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4JYd3JYXaFoMN9RRrWnnrNLN2Z9cu5NPt6BGKsBwqZ6N&amount=1&index=34&proof=4gL7dWoihosT2jDqqGS6A6uEPuUxmc4BKvxLEu7WZEP8,3VimfkyPMrCrhCQP1Qrhe7C5Cmr5iwhj9rJZ8djiDXdX,Ao3pt35mtu7Udph18yvu3yuvZnL7wf9Jhb1AiQNELnt9,65DBzUuCwVYNkCpPErcVWCJRfERe1UAz78K8X1GuvFPY,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4LdpQo6WxMzcetKvVv7MsmYsvYLCNmjZmEnRfy8wF2GA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4LdpQo6WxMzcetKvVv7MsmYsvYLCNmjZmEnRfy8wF2GA&amount=1&index=35&proof=FgbsByw3nvzvLEaNjvowPwJk438knKZr24PyKtfKHg8K,3VimfkyPMrCrhCQP1Qrhe7C5Cmr5iwhj9rJZ8djiDXdX,Ao3pt35mtu7Udph18yvu3yuvZnL7wf9Jhb1AiQNELnt9,65DBzUuCwVYNkCpPErcVWCJRfERe1UAz78K8X1GuvFPY,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4n7pavJDGMAZBBmYC9o5ZPq6ErUfTqdrjFtEAFmEZrcc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4n7pavJDGMAZBBmYC9o5ZPq6ErUfTqdrjFtEAFmEZrcc&amount=1&index=36&proof=Ae7iTfpnvGGGdKZ4aa7xEKa3qVmLhJYjnjH1ZDba8G9W,GYQHK6buudj8hPpxLCowzecHFa2rfjEpKRpLZsyjq66Q,8ZEaVzBXWwTP1vcDbKCz4CFo7bHmeEMiTvjnVepmhmFV,65DBzUuCwVYNkCpPErcVWCJRfERe1UAz78K8X1GuvFPY,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4NqRWgmKCJmFQ3Gvu2nES2kRv9FiKoZwavq2MPg7DwW2",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4NqRWgmKCJmFQ3Gvu2nES2kRv9FiKoZwavq2MPg7DwW2&amount=1&index=37&proof=5DiKBA1bLFLpyrkdCSTmvCHLu3Gp6QRTc35YTFMyySBR,GYQHK6buudj8hPpxLCowzecHFa2rfjEpKRpLZsyjq66Q,8ZEaVzBXWwTP1vcDbKCz4CFo7bHmeEMiTvjnVepmhmFV,65DBzUuCwVYNkCpPErcVWCJRfERe1UAz78K8X1GuvFPY,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4seGc18tBqjryhqU4arPV2BzBFLqK1P5yu15dENnVni9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4seGc18tBqjryhqU4arPV2BzBFLqK1P5yu15dENnVni9&amount=1&index=38&proof=GFKjnfZ98RPR19MLbftxDUDHbMQ8wkMoeGHct1oKSzqX,GEmhCceuruSqu9XUMz6axkVDwr9oLvqGBLMxzUpeGYNk,8ZEaVzBXWwTP1vcDbKCz4CFo7bHmeEMiTvjnVepmhmFV,65DBzUuCwVYNkCpPErcVWCJRfERe1UAz78K8X1GuvFPY,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4vBm1wPdPJbTRiFToV3VU6QBaeLuqKABbLirsN7h7wsg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4vBm1wPdPJbTRiFToV3VU6QBaeLuqKABbLirsN7h7wsg&amount=1&index=39&proof=DSLkeprSbH88AvVQk5ki4BVXK6zqFVhjAFnV7VyYW2Ug,GEmhCceuruSqu9XUMz6axkVDwr9oLvqGBLMxzUpeGYNk,8ZEaVzBXWwTP1vcDbKCz4CFo7bHmeEMiTvjnVepmhmFV,65DBzUuCwVYNkCpPErcVWCJRfERe1UAz78K8X1GuvFPY,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4vHok5XBUPRVaBAzwJU1QGQnHJJFiagcQZLYJGxxLoQk",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4vHok5XBUPRVaBAzwJU1QGQnHJJFiagcQZLYJGxxLoQk&amount=1&index=40&proof=tqnvf1eGoNtZqNZmnw73S5dnfryQs1CwhLKdHjr6TUu,CoVkghizSN9GxP5S1GLkkgoPKA6h3vBJidpiRTMnYeHz,7whBZxzYZQsE6LzDEy2quFM7PcViAvKR5yzs11jmYWKk,63juxcaukus32rorsFXGVFTLCmoGffUP7CCtSAxJhQCM,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4VxL1zhS4bmJKELR9PvDe8DNV9iic2hvK8cbgTV7weDF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4VxL1zhS4bmJKELR9PvDe8DNV9iic2hvK8cbgTV7weDF&amount=1&index=41&proof=9GXxKV88QatJDMRb9RLKANuynpy9j4fWmS3vXSMxkJzs,CoVkghizSN9GxP5S1GLkkgoPKA6h3vBJidpiRTMnYeHz,7whBZxzYZQsE6LzDEy2quFM7PcViAvKR5yzs11jmYWKk,63juxcaukus32rorsFXGVFTLCmoGffUP7CCtSAxJhQCM,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4W9mfGkogM3vYxemp1We5sPcCGX3Dyz756k64ei4UZ95",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4W9mfGkogM3vYxemp1We5sPcCGX3Dyz756k64ei4UZ95&amount=1&index=42&proof=2grGgKNHpaqznh4jgSAcZ4wKVzLQQXB1oZc2iyacYzJB,BdNwtxSBRq1HxX7X5AmwKM7mNJTDaAG3jTQQnDh7f9EW,7whBZxzYZQsE6LzDEy2quFM7PcViAvKR5yzs11jmYWKk,63juxcaukus32rorsFXGVFTLCmoGffUP7CCtSAxJhQCM,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4WqeBz2FYtdhoXcn6X1gg7gZ2nT72DD5dBi6cMUZi7yo",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4WqeBz2FYtdhoXcn6X1gg7gZ2nT72DD5dBi6cMUZi7yo&amount=1&index=43&proof=GCP1kRtwJ2REc8bgG5vuUndN1zbcYLfNwtdzDHwA2734,BdNwtxSBRq1HxX7X5AmwKM7mNJTDaAG3jTQQnDh7f9EW,7whBZxzYZQsE6LzDEy2quFM7PcViAvKR5yzs11jmYWKk,63juxcaukus32rorsFXGVFTLCmoGffUP7CCtSAxJhQCM,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "51VciqkD56f9rRzJ8ZRJzHkottXRJCsfYNdTCkdxhgdK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=51VciqkD56f9rRzJ8ZRJzHkottXRJCsfYNdTCkdxhgdK&amount=1&index=44&proof=B6gGcQyioiFkWaTqW35dCoUmr5i8nsGyHHu7wjmpupN4,EF59YzucKSMMUrg7gqZGMGRWs73pXo8pNhJuHWkGcR4H,BkM8Ut5EmLxU4yo2Uer4zdVet32H6z2cME7e9brq4wK,63juxcaukus32rorsFXGVFTLCmoGffUP7CCtSAxJhQCM,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "56UYmSnaUtL11Xaums933pSeZULucGQfypY9MZ5CiDpw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=56UYmSnaUtL11Xaums933pSeZULucGQfypY9MZ5CiDpw&amount=1&index=45&proof=A74XV6Mf3eiTvPQhe8dg6VY3w9TFRvYcwvw53aTTLCiB,EF59YzucKSMMUrg7gqZGMGRWs73pXo8pNhJuHWkGcR4H,BkM8Ut5EmLxU4yo2Uer4zdVet32H6z2cME7e9brq4wK,63juxcaukus32rorsFXGVFTLCmoGffUP7CCtSAxJhQCM,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "588DxMJYdKMzynVBqWxa9MEZmwKx1z7JPtPMuEK6jbjh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=588DxMJYdKMzynVBqWxa9MEZmwKx1z7JPtPMuEK6jbjh&amount=1&index=46&proof=5szFYwzDQ3hfCAM7ge17kuA9nc6QDZoZsS9geAsfWBA1,FTW5Tyzf7XhwD4jQSUHyzUrTYRYLj6K7K17sGpdpUmqe,BkM8Ut5EmLxU4yo2Uer4zdVet32H6z2cME7e9brq4wK,63juxcaukus32rorsFXGVFTLCmoGffUP7CCtSAxJhQCM,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "58fLdoHA6rcKzWKhBy2fj2Ftgh7kuuct786CmatdPpFN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=58fLdoHA6rcKzWKhBy2fj2Ftgh7kuuct786CmatdPpFN&amount=1&index=47&proof=ThQZAgaDSGrJwbskroQSkLywXPR9ecekZVty2FXkL5D,FTW5Tyzf7XhwD4jQSUHyzUrTYRYLj6K7K17sGpdpUmqe,BkM8Ut5EmLxU4yo2Uer4zdVet32H6z2cME7e9brq4wK,63juxcaukus32rorsFXGVFTLCmoGffUP7CCtSAxJhQCM,HCe4kNd1ufyWU8vfPKAwjwRqhV7xbzf6C8MPYqoAU4GS,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5bPNgxW5RnPkbHZsRyyqsX3soXujKvRF7mHZNwjd4WK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5bPNgxW5RnPkbHZsRyyqsX3soXujKvRF7mHZNwjd4WK&amount=1&index=48&proof=2jurvPypitCQ74QGtCGPXLyujwDgqx9BLGfD8L8gnn9D,3M3hPV3DDfGLNEZqa6kFEtdfsoFqWrxrxPyYuNgAvgo9,6289VFokcwUFvGcEpBAyp7w82AD5PHbkBKafuZwF5UM7,3jRSfCWA8eJLYijJdhVMJc3P9P67yQhSooRe2h5nYcTk,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5fBF2wHCk6Nibwjuci7oe1U6qLc9e6hsomxj6nqBewtj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5fBF2wHCk6Nibwjuci7oe1U6qLc9e6hsomxj6nqBewtj&amount=1&index=49&proof=2GrjK5R45nGXw7s9YfuWyiTDdp7PSa2U45LpAtB9cj94,3M3hPV3DDfGLNEZqa6kFEtdfsoFqWrxrxPyYuNgAvgo9,6289VFokcwUFvGcEpBAyp7w82AD5PHbkBKafuZwF5UM7,3jRSfCWA8eJLYijJdhVMJc3P9P67yQhSooRe2h5nYcTk,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5hgsVQCfuX2QcuzpcV92QKZakLEJimVbEzx4mD96d6RL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5hgsVQCfuX2QcuzpcV92QKZakLEJimVbEzx4mD96d6RL&amount=1&index=50&proof=97Y3GLpbySae16AErRpfHhJJhg4jUew4jCbECqcDMuc6,BZDPLPzavecHFniAFPw211LmySQNhNDHZbpdQnWdTNxr,6289VFokcwUFvGcEpBAyp7w82AD5PHbkBKafuZwF5UM7,3jRSfCWA8eJLYijJdhVMJc3P9P67yQhSooRe2h5nYcTk,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5L3MnFYx3Z81u5NiT6hy9RxBhnX6S4bhtWPkH28WuxC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5L3MnFYx3Z81u5NiT6hy9RxBhnX6S4bhtWPkH28WuxC&amount=1&index=51&proof=FDda6QyEmJuh4bmrsKMSvVruD4yKJvZcUTzsikdqeVVc,BZDPLPzavecHFniAFPw211LmySQNhNDHZbpdQnWdTNxr,6289VFokcwUFvGcEpBAyp7w82AD5PHbkBKafuZwF5UM7,3jRSfCWA8eJLYijJdhVMJc3P9P67yQhSooRe2h5nYcTk,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5Sa93DhbdwBADRcwGcGw9ogbqGvqCcKCRLzhiLtumPEa",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5Sa93DhbdwBADRcwGcGw9ogbqGvqCcKCRLzhiLtumPEa&amount=1&index=52&proof=4pe6GAXBz9PhjVyj74JHwvDYhR2CaEYzTBYgP1dLeg3h,6Q6aGsC3XMLQz9Q16aXTArKTT7uaW2HUoQVG9ZgZnuiR,9Qy9yJgTPq7vVGmUWyNifg3nng77pkDxGytnenzJTvBC,3jRSfCWA8eJLYijJdhVMJc3P9P67yQhSooRe2h5nYcTk,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5v6wKK5gHPr4VsP5PAfkyFBHZcSn2dSbg2Dsm8VurGap",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5v6wKK5gHPr4VsP5PAfkyFBHZcSn2dSbg2Dsm8VurGap&amount=1&index=53&proof=2y5hHakzML9sLJP5tYmPByy3VAis5jWkvuueq2At34Jp,6Q6aGsC3XMLQz9Q16aXTArKTT7uaW2HUoQVG9ZgZnuiR,9Qy9yJgTPq7vVGmUWyNifg3nng77pkDxGytnenzJTvBC,3jRSfCWA8eJLYijJdhVMJc3P9P67yQhSooRe2h5nYcTk,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5W5zfCHypNCPGbxqFnzQkHSpdNbnwdFVf3YsENajfA64",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5W5zfCHypNCPGbxqFnzQkHSpdNbnwdFVf3YsENajfA64&amount=1&index=54&proof=CbLVhNz3Zkhb9wVBt2xQpaMyorCM63CbSARbmiuvSfJv,29vQt3dcMHNDM65WkDXtmmF6anHRWuGa8exGYa5Bkbv8,9Qy9yJgTPq7vVGmUWyNifg3nng77pkDxGytnenzJTvBC,3jRSfCWA8eJLYijJdhVMJc3P9P67yQhSooRe2h5nYcTk,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5WEtM4fgHh8NkiU8c81w31wef5uRWCjggo7mHK4eA2d1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5WEtM4fgHh8NkiU8c81w31wef5uRWCjggo7mHK4eA2d1&amount=1&index=55&proof=88aH6EmSGiPC8Zv85212HYDR7URw9MbYTGREdLXx5MYH,29vQt3dcMHNDM65WkDXtmmF6anHRWuGa8exGYa5Bkbv8,9Qy9yJgTPq7vVGmUWyNifg3nng77pkDxGytnenzJTvBC,3jRSfCWA8eJLYijJdhVMJc3P9P67yQhSooRe2h5nYcTk,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5ytc2s9LoA7Np1wUWxoY421fyAtR4VGSnnLXiEau645Y",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5ytc2s9LoA7Np1wUWxoY421fyAtR4VGSnnLXiEau645Y&amount=1&index=56&proof=JA9dQQvZDL7ZHp2N7Dsgi5Z6EJ2kBxjXWUrM1MNzp2pM,9TLRCTntRL4fY57pGXGhzvvuhHdRem2zDYypCEEkq7gs,7fyirUXM4jQZZu1L9Tt8sTLPzGjpESfaDBXFYBYvvyUY,5ntf9AEK3VZT1hPiQaeao6Aka98SbjQjYM2e9n7EscSm,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5Z98RdkXdCrvgM5stoM58dqAZtNXWer4pagdGD3mTQcn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5Z98RdkXdCrvgM5stoM58dqAZtNXWer4pagdGD3mTQcn&amount=1&index=57&proof=5rVEk4vqJREh2r6d1ZzL69HFp9bZV19vAcdWvpfS2g1a,9TLRCTntRL4fY57pGXGhzvvuhHdRem2zDYypCEEkq7gs,7fyirUXM4jQZZu1L9Tt8sTLPzGjpESfaDBXFYBYvvyUY,5ntf9AEK3VZT1hPiQaeao6Aka98SbjQjYM2e9n7EscSm,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5ZhLevx4RUZjFq9uhyQBsXWivAFUEeHNiN2pZaGpHefz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5ZhLevx4RUZjFq9uhyQBsXWivAFUEeHNiN2pZaGpHefz&amount=1&index=58&proof=8hYpFyNVZtG3dunB7D7Vse8yYLEVFC6JrVEk4sJtVo9,85cMPHW9ffDYYGjzJ2CCQ4zvW2kknpdDA2SrXcQkr2QP,7fyirUXM4jQZZu1L9Tt8sTLPzGjpESfaDBXFYBYvvyUY,5ntf9AEK3VZT1hPiQaeao6Aka98SbjQjYM2e9n7EscSm,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5ZxR3daRG2ChhuqkDtxrWZiw8Cqg9btb6pBt77MJnGRs",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5ZxR3daRG2ChhuqkDtxrWZiw8Cqg9btb6pBt77MJnGRs&amount=1&index=59&proof=CPFVzeBZ68d8jxL1QKctU9CdYwaeFRKAZzqn5ET1EDq,85cMPHW9ffDYYGjzJ2CCQ4zvW2kknpdDA2SrXcQkr2QP,7fyirUXM4jQZZu1L9Tt8sTLPzGjpESfaDBXFYBYvvyUY,5ntf9AEK3VZT1hPiQaeao6Aka98SbjQjYM2e9n7EscSm,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "69wojnjNLpdz5C2JfKyHBMaFYfnpQyGumKBDA7SvSnNs",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=69wojnjNLpdz5C2JfKyHBMaFYfnpQyGumKBDA7SvSnNs&amount=1&index=60&proof=EaUBC4jfXD73nX2buW4vQ3JqT1gmTD36GywehNmGLhBT,5zJ3QtYzLFCprVEp5GoTmPVFVNAPcWjdNru2UxoeMi7B,FHi1vsikWKQMqeUm6gjGEvnwXQyr8MhmkmRSPQtk1YEU,5ntf9AEK3VZT1hPiQaeao6Aka98SbjQjYM2e9n7EscSm,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6AT4uyZ8Xzt5sRCrW4fN9M38BgFFnvwkcaw3GGJ3kvhX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6AT4uyZ8Xzt5sRCrW4fN9M38BgFFnvwkcaw3GGJ3kvhX&amount=1&index=61&proof=58C4auqYr1MLfPNLAdrrYmhZ4efJmJQsSYrCEffPeg6h,5zJ3QtYzLFCprVEp5GoTmPVFVNAPcWjdNru2UxoeMi7B,FHi1vsikWKQMqeUm6gjGEvnwXQyr8MhmkmRSPQtk1YEU,5ntf9AEK3VZT1hPiQaeao6Aka98SbjQjYM2e9n7EscSm,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6dZ2KqvUb1tEKXaYGy5wKx5C2nRywcHQskBrDnYSMmvj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6dZ2KqvUb1tEKXaYGy5wKx5C2nRywcHQskBrDnYSMmvj&amount=1&index=62&proof=4gp717uXSm7U4TsGuNiRKqAwrDbhQtTKPC5pmNgk3BWU,4Qe1MSVGr8TfKjFHXKtiARu6wERUConW3LimXyXHYeV5,FHi1vsikWKQMqeUm6gjGEvnwXQyr8MhmkmRSPQtk1YEU,5ntf9AEK3VZT1hPiQaeao6Aka98SbjQjYM2e9n7EscSm,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6e5Spm6N749Dmoj5vY1pVqC3VmejWykrvyGozdBcPuFA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6e5Spm6N749Dmoj5vY1pVqC3VmejWykrvyGozdBcPuFA&amount=1&index=63&proof=AUAF1ubNNV7TJRGdT2wyB4ktN6Adz5Kc3Z1DNAeVBjFF,4Qe1MSVGr8TfKjFHXKtiARu6wERUConW3LimXyXHYeV5,FHi1vsikWKQMqeUm6gjGEvnwXQyr8MhmkmRSPQtk1YEU,5ntf9AEK3VZT1hPiQaeao6Aka98SbjQjYM2e9n7EscSm,CUjW76jFH76rAGeh2RjZbsB9rc19tg1ZACgR9eodVofY,2rstQd6ww43jTd3ygtQCSpe6rKkEuzvGtHmguh622iYV,5YDQmB8jSbggKtbe1XPx1XUQQz9abfkCicEi78NHn2kr,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6fYqBU5Hanyx3SVE6trd4xXgwdKHdBK2yDPsM1Q8CHUf",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6fYqBU5Hanyx3SVE6trd4xXgwdKHdBK2yDPsM1Q8CHUf&amount=1&index=64&proof=F3CYYFXFYFTcc9d76MtXrfbePrTyaCh4RyKtV3yfy94i,Fzua7cFTfW7kRVhmHJCkqu6pGUkxCE8a1FA7RhtpAgXK,GViaFhu5LXyFFNjinDJLGPhhFDbZWYTr5MjqeRFo3Jt7,Dov7orEL2xbN8sB95ZxRNLF3FwsxPHRsyxTYCfGgGbdz,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6J9Us18HZyqNYGfabRENMgnn3xDk1d79gNf28X5zQ7K9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6J9Us18HZyqNYGfabRENMgnn3xDk1d79gNf28X5zQ7K9&amount=1&index=65&proof=5qwxqE7dbSYQWBTaFGdr1SwWPrfdySizytTMEohG9eRg,Fzua7cFTfW7kRVhmHJCkqu6pGUkxCE8a1FA7RhtpAgXK,GViaFhu5LXyFFNjinDJLGPhhFDbZWYTr5MjqeRFo3Jt7,Dov7orEL2xbN8sB95ZxRNLF3FwsxPHRsyxTYCfGgGbdz,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6LVtGK9H6TrKkgv9ANjrwv3qM8rBFCFsXPsJkKaHwKzS",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6LVtGK9H6TrKkgv9ANjrwv3qM8rBFCFsXPsJkKaHwKzS&amount=1&index=66&proof=BaAPiwkso8mzdP9Cb67nmU1FiWaF4Lnfm977BasFaQWy,B6q4FnhJoy3HmQfuFmsxTk1SG6tTWUyULSdGzyPAjRN8,GViaFhu5LXyFFNjinDJLGPhhFDbZWYTr5MjqeRFo3Jt7,Dov7orEL2xbN8sB95ZxRNLF3FwsxPHRsyxTYCfGgGbdz,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6mNGQR6B5LFuxYFJFb1cdFdDfsa8uuvxrcWZPUyBu1Jf",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6mNGQR6B5LFuxYFJFb1cdFdDfsa8uuvxrcWZPUyBu1Jf&amount=1&index=67&proof=GvzmxKVqGUiKv4KcVtQKEnNW5ETcSmTBnv63fGKJswcb,B6q4FnhJoy3HmQfuFmsxTk1SG6tTWUyULSdGzyPAjRN8,GViaFhu5LXyFFNjinDJLGPhhFDbZWYTr5MjqeRFo3Jt7,Dov7orEL2xbN8sB95ZxRNLF3FwsxPHRsyxTYCfGgGbdz,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6UdWEwN8yyH8as7AL5HRPViFzst8kvw1nJ2zj9dL5qhj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6UdWEwN8yyH8as7AL5HRPViFzst8kvw1nJ2zj9dL5qhj&amount=1&index=68&proof=E4u8qvqWdQM53hNRfFV6XVNftATE7vyWAv1eY2Qd1SXc,12qBmjcQXmzV5yfUkFn6FVCQUWwxdHSfCfD67VpEtUB,GShDgryELLh6Tpd6Pi2XJonzyHJGBEEFbRXcrZEbVaQ2,Dov7orEL2xbN8sB95ZxRNLF3FwsxPHRsyxTYCfGgGbdz,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6xxroKGwchFBzCXcvqvADUoJTXJjyzkCQcjZ48He2zZd",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6xxroKGwchFBzCXcvqvADUoJTXJjyzkCQcjZ48He2zZd&amount=1&index=69&proof=HCVjdkEBUENvFn8sxPabCfy8X9xqU9FHASySZwhj1yaC,12qBmjcQXmzV5yfUkFn6FVCQUWwxdHSfCfD67VpEtUB,GShDgryELLh6Tpd6Pi2XJonzyHJGBEEFbRXcrZEbVaQ2,Dov7orEL2xbN8sB95ZxRNLF3FwsxPHRsyxTYCfGgGbdz,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6Yi3G84mXXr8jKXGsD5meAh3u22gh139qXHq2tjt7aLJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6Yi3G84mXXr8jKXGsD5meAh3u22gh139qXHq2tjt7aLJ&amount=1&index=70&proof=CFt39VFzioDx3Gub8qbuxe54MiVw2UrKtk5H2h2s4ZWe,ER9Nr76QU7GCP43d3M1ExJLnk5i73XR4wwFtVyd7hChu,GShDgryELLh6Tpd6Pi2XJonzyHJGBEEFbRXcrZEbVaQ2,Dov7orEL2xbN8sB95ZxRNLF3FwsxPHRsyxTYCfGgGbdz,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "76sfSkxnYu6gYY1KFbK3YgnP4e9KmysSRKXzQPZtXRqr",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=76sfSkxnYu6gYY1KFbK3YgnP4e9KmysSRKXzQPZtXRqr&amount=1&index=71&proof=2DsMjNoVa2SCpwzSLHYfPnswp9J5oxfzb1Jsukh5rBwK,ER9Nr76QU7GCP43d3M1ExJLnk5i73XR4wwFtVyd7hChu,GShDgryELLh6Tpd6Pi2XJonzyHJGBEEFbRXcrZEbVaQ2,Dov7orEL2xbN8sB95ZxRNLF3FwsxPHRsyxTYCfGgGbdz,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "77aTUe1FmTZe53K7SdtF1Mpu3UxJkjceAuRzaChtNCzb",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=77aTUe1FmTZe53K7SdtF1Mpu3UxJkjceAuRzaChtNCzb&amount=1&index=72&proof=F2QzRW4kudvfBp2KLayKY3VNf9PPwZpQdRwXjVRYxYJ4,5q9BsKuK7xDvKXQMQ5JByu8XqjeSFJddGKpPGKV489rX,GJFS5PhTkQwXe9v6kbh1CMLXZBkxMRuoDnk4z3t4knc6,DMovbpqEUYkAwppzKyzdaR6YcsDGJwnNAq52Ycyp5745,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7hQuSyC1Z7JuDKBrTSVQhz5zDcQgEVs9CQrJAtFgRfSA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7hQuSyC1Z7JuDKBrTSVQhz5zDcQgEVs9CQrJAtFgRfSA&amount=1&index=73&proof=65uA3h31uVQRkcfuXC6y8exkobBHjj486nmi1BLN3cda,5q9BsKuK7xDvKXQMQ5JByu8XqjeSFJddGKpPGKV489rX,GJFS5PhTkQwXe9v6kbh1CMLXZBkxMRuoDnk4z3t4knc6,DMovbpqEUYkAwppzKyzdaR6YcsDGJwnNAq52Ycyp5745,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7JGvuFTzrdjZ77GcJNWzwug25e73AgNucZ2ePbJnDm5c",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7JGvuFTzrdjZ77GcJNWzwug25e73AgNucZ2ePbJnDm5c&amount=1&index=74&proof=J5spS44ZFKCXSrL1LMouTAJFH2QCynMfjCsunGu4e6pX,A3wmVfSPhmfBQNJQe9iaq5Ut4cc3wNrRt8aFHeUiAecX,GJFS5PhTkQwXe9v6kbh1CMLXZBkxMRuoDnk4z3t4knc6,DMovbpqEUYkAwppzKyzdaR6YcsDGJwnNAq52Ycyp5745,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7L1Fa6tk9Wm8PK3gxU9hUWkFiMdhmTsMSHmrubzZvuXa",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7L1Fa6tk9Wm8PK3gxU9hUWkFiMdhmTsMSHmrubzZvuXa&amount=1&index=75&proof=AJkrYMytNYHNiXWPuuAfK3tAxQdfef9kVZzUR3SxpYvQ,A3wmVfSPhmfBQNJQe9iaq5Ut4cc3wNrRt8aFHeUiAecX,GJFS5PhTkQwXe9v6kbh1CMLXZBkxMRuoDnk4z3t4knc6,DMovbpqEUYkAwppzKyzdaR6YcsDGJwnNAq52Ycyp5745,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7mZAqR5fZAKRfmhNesa4huB9xKWVBn4Z31ZS2WZ8sP95",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7mZAqR5fZAKRfmhNesa4huB9xKWVBn4Z31ZS2WZ8sP95&amount=1&index=76&proof=EkRdEtathMSstbUN13v4TzqheaAhmrvccszxHn3dd11D,CZ1dYeCTes5cbA3t4rXxxBQHNFR3MCyZyhFtvWVburyf,GDKvB4tdDFUQpjVs4n8ujnqiDuUJcmUBC1473FamVe7E,DMovbpqEUYkAwppzKyzdaR6YcsDGJwnNAq52Ycyp5745,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7qNbSZFYng1MkMeFT1wwjnc9MgKGv2eFfjWR7bBv3AAZ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7qNbSZFYng1MkMeFT1wwjnc9MgKGv2eFfjWR7bBv3AAZ&amount=1&index=77&proof=eryZ6wkzGHX6AMayC7DmgpSRc5r7Z2itiFHJGa5ZgeZ,CZ1dYeCTes5cbA3t4rXxxBQHNFR3MCyZyhFtvWVburyf,GDKvB4tdDFUQpjVs4n8ujnqiDuUJcmUBC1473FamVe7E,DMovbpqEUYkAwppzKyzdaR6YcsDGJwnNAq52Ycyp5745,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7rea94HXH4Pu1X47igQurqgQTX35Hya6TiLHw6Xxm2kX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7rea94HXH4Pu1X47igQurqgQTX35Hya6TiLHw6Xxm2kX&amount=1&index=78&proof=6JT31mTLbDD12wMyPj568aERwF1661ZXsim592fbnDjz,BRTQQbn3nGkMsjb3LNFSzTmiGHmzngDUbi5oCKTWeLbt,GDKvB4tdDFUQpjVs4n8ujnqiDuUJcmUBC1473FamVe7E,DMovbpqEUYkAwppzKyzdaR6YcsDGJwnNAq52Ycyp5745,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7vrBj6MUJvqdDFYTCU5YYRtH5115QN65FeuZyjCzeDoP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7vrBj6MUJvqdDFYTCU5YYRtH5115QN65FeuZyjCzeDoP&amount=1&index=79&proof=88iE4ZZdFYCQiCo3w8A8dRuH2AF2ZDdakpkdVRktfk8h,BRTQQbn3nGkMsjb3LNFSzTmiGHmzngDUbi5oCKTWeLbt,GDKvB4tdDFUQpjVs4n8ujnqiDuUJcmUBC1473FamVe7E,DMovbpqEUYkAwppzKyzdaR6YcsDGJwnNAq52Ycyp5745,85RwEoeQhf4JUXkDt7kTYArfjaWBZ6Xh5WmPcNNbZbi6,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7YZXHA6c2e3sqshaopLKNyeUXpdenhiMLRTYZiX4GqxZ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7YZXHA6c2e3sqshaopLKNyeUXpdenhiMLRTYZiX4GqxZ&amount=1&index=80&proof=GcD58ej93wToBXkdbNhvsqgRjSi9tTPJv1GvU861cJEo,8gGdYsofqPhkKBgrgUQTbu8SGKfnyDjb51hYKYZdQMNi,99JgQYJ5gkSPQSFxxbNghqDqHzsrMcSQ8G7ow7GtrVTg,4JtHRx8rNp7WivBjptK4ozKkLnFFvnKhLTBXGjNRCvfc,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7zBx8JMUGzCnPH1ET4hNLxaEJrieY49yWYv3QPHXJXuD",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7zBx8JMUGzCnPH1ET4hNLxaEJrieY49yWYv3QPHXJXuD&amount=1&index=81&proof=F8zYfjoc39RjzaMjyuZBoCRv6qWnNd3BDcXtU21oV3R4,8gGdYsofqPhkKBgrgUQTbu8SGKfnyDjb51hYKYZdQMNi,99JgQYJ5gkSPQSFxxbNghqDqHzsrMcSQ8G7ow7GtrVTg,4JtHRx8rNp7WivBjptK4ozKkLnFFvnKhLTBXGjNRCvfc,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7zS5MpraMFv3Do3Zx8igpbzXZbwqz7L69RpptZM1Shyc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7zS5MpraMFv3Do3Zx8igpbzXZbwqz7L69RpptZM1Shyc&amount=1&index=82&proof=DZeVDHUJFLibSpDjAmPGGrPMLbbjDG1fzVDBpDkdYBk8,EwTWDHKrjcURy88mG9bp4ZDn1mSSLAvZDCtSpUukxaHP,99JgQYJ5gkSPQSFxxbNghqDqHzsrMcSQ8G7ow7GtrVTg,4JtHRx8rNp7WivBjptK4ozKkLnFFvnKhLTBXGjNRCvfc,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7Zt6iPeEEPuBBmVJb9aSgqUrGJmRHvsTGaX3JgvwdxHt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7Zt6iPeEEPuBBmVJb9aSgqUrGJmRHvsTGaX3JgvwdxHt&amount=1&index=83&proof=5eyAGRv76psn3jjE6nnw5tWhFEJEn6zV4j7gDCVeiByq,EwTWDHKrjcURy88mG9bp4ZDn1mSSLAvZDCtSpUukxaHP,99JgQYJ5gkSPQSFxxbNghqDqHzsrMcSQ8G7ow7GtrVTg,4JtHRx8rNp7WivBjptK4ozKkLnFFvnKhLTBXGjNRCvfc,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "81Um4XC9wL8d9TfRuwTKYvKjwzcCrbUGrtXg7P3pMv4A",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=81Um4XC9wL8d9TfRuwTKYvKjwzcCrbUGrtXg7P3pMv4A&amount=1&index=84&proof=BwyfzGHx1wi4fwCzggb3XqcwGSV6sRSpyJZ8BMH5WzBd,5wL8gXTQnzvTvc4gbcVh6fAnv4zeV3znzGRrzQhRPw1B,AfRFtKP2sq52wy5jWaPdAPdjyrqzLCAWwTeETViFYhqr,4JtHRx8rNp7WivBjptK4ozKkLnFFvnKhLTBXGjNRCvfc,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8488ECRBCNjSKRCc7hbTcPA94VgNrmjheuCmPGUqvkBt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8488ECRBCNjSKRCc7hbTcPA94VgNrmjheuCmPGUqvkBt&amount=1&index=85&proof=2YME46mPNXD3vgvVN8d9uH33qBd2PagiwQ7kgYUh5oKR,5wL8gXTQnzvTvc4gbcVh6fAnv4zeV3znzGRrzQhRPw1B,AfRFtKP2sq52wy5jWaPdAPdjyrqzLCAWwTeETViFYhqr,4JtHRx8rNp7WivBjptK4ozKkLnFFvnKhLTBXGjNRCvfc,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "85y83gfdG1FLUKJXYGTDqtdXouWZEaX1wtRforxvu6dx",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=85y83gfdG1FLUKJXYGTDqtdXouWZEaX1wtRforxvu6dx&amount=1&index=86&proof=D9Etaesx2bjv6jDdATiF6vFqAJcPc51ro4Gk7kZA1Apx,8yVX3pYStd7c7U7ZnAJ7pC1GX3dyKqmrUVmC2CApktzw,AfRFtKP2sq52wy5jWaPdAPdjyrqzLCAWwTeETViFYhqr,4JtHRx8rNp7WivBjptK4ozKkLnFFvnKhLTBXGjNRCvfc,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8bfD5dngsjWDHBAR5vAyYGS1n5CNNUgrEUEtyF5YSBaK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8bfD5dngsjWDHBAR5vAyYGS1n5CNNUgrEUEtyF5YSBaK&amount=1&index=87&proof=4pwczbJDjo7yRHBiGt3vd6p6n1j8CuETJ9mDLJdvkbY5,8yVX3pYStd7c7U7ZnAJ7pC1GX3dyKqmrUVmC2CApktzw,AfRFtKP2sq52wy5jWaPdAPdjyrqzLCAWwTeETViFYhqr,4JtHRx8rNp7WivBjptK4ozKkLnFFvnKhLTBXGjNRCvfc,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8E7aPRSRvntk7NYQ9ESPkhT7ZYpSC2RS48aVYGWLp4CJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8E7aPRSRvntk7NYQ9ESPkhT7ZYpSC2RS48aVYGWLp4CJ&amount=1&index=88&proof=7MNJgyhpZ87v4hjo7q2LwSuKSUoZ7Th2oZZakUdny2n7,CLAaZQbELtLg8X3XDQXA3RVwCXvEZYJ95V3W3ErRp6E4,GYyppxCJihS5xxQgR3trLX6KE4bCXUeUeigVTpj42JYo,AyuNwNyiC3RgwTocRnS1v841if15gkTits1veecYBVLY,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8E7rb6fTTPGjoMS8TSxFP2a7CDxBURfehrpmxhHCwpEp",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8E7rb6fTTPGjoMS8TSxFP2a7CDxBURfehrpmxhHCwpEp&amount=1&index=89&proof=2RTSHYE1Vw185CVrfCp8WBDw8hW12XPrBfn9CCuAHsEh,CLAaZQbELtLg8X3XDQXA3RVwCXvEZYJ95V3W3ErRp6E4,GYyppxCJihS5xxQgR3trLX6KE4bCXUeUeigVTpj42JYo,AyuNwNyiC3RgwTocRnS1v841if15gkTits1veecYBVLY,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8Gf5KgJ945K4VMkDLd6rcVSjQNBPQCQ65Rgk7jJ3vwtH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8Gf5KgJ945K4VMkDLd6rcVSjQNBPQCQ65Rgk7jJ3vwtH&amount=1&index=90&proof=8ukUcyPnpP2pFq6tGFvfHSYC4L39RxrjLkEoucNuYiA9,CTDMg4scgyGwttuqiWxxrXNctKKqGaAzXSvfkKxBJT7D,GYyppxCJihS5xxQgR3trLX6KE4bCXUeUeigVTpj42JYo,AyuNwNyiC3RgwTocRnS1v841if15gkTits1veecYBVLY,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8kfvps7qVzCsb1XNSf2X4Wr4uJEgUTfaL9nRLz1DCDXk",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8kfvps7qVzCsb1XNSf2X4Wr4uJEgUTfaL9nRLz1DCDXk&amount=1&index=91&proof=DL7UqGQaHzYchXBC82KH5eWZc2k7gBYdDZDaC1zfBGdT,CTDMg4scgyGwttuqiWxxrXNctKKqGaAzXSvfkKxBJT7D,GYyppxCJihS5xxQgR3trLX6KE4bCXUeUeigVTpj42JYo,AyuNwNyiC3RgwTocRnS1v841if15gkTits1veecYBVLY,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8NumK7feqVAdEj8LYSvv33qRCw4GQAV8Wm8ysR5E78sV",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8NumK7feqVAdEj8LYSvv33qRCw4GQAV8Wm8ysR5E78sV&amount=1&index=92&proof=3UBBeaStEZnW7aY8mtPsKbaixVEX9KbbzAzcnB99aZvE,J5J4G9wyes38sVRZaRE6Zp4fLTNMa5sBGhxtNyA7zJLm,C53cUwWxKZTQqtJpc7hE8aMbYs9Fqf6rwtPniHhjKYQk,AyuNwNyiC3RgwTocRnS1v841if15gkTits1veecYBVLY,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8nzLEQD8VEm2Krv3zatEDmnKdW2jeJxD9jCYZWPrZJDb",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8nzLEQD8VEm2Krv3zatEDmnKdW2jeJxD9jCYZWPrZJDb&amount=1&index=93&proof=A4PorQCKXyWgTX7bNhLMCHGP8QBBAJYbX3gYcsNx4wY,J5J4G9wyes38sVRZaRE6Zp4fLTNMa5sBGhxtNyA7zJLm,C53cUwWxKZTQqtJpc7hE8aMbYs9Fqf6rwtPniHhjKYQk,AyuNwNyiC3RgwTocRnS1v841if15gkTits1veecYBVLY,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8Pj38rv2GuoESxCoQGJRiDG21y7GVQPuvCZ5m3ePLrpq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8Pj38rv2GuoESxCoQGJRiDG21y7GVQPuvCZ5m3ePLrpq&amount=1&index=94&proof=93FDme14dsnDpNXdx3xLsb5KmWuCLuzDYJZaVNKtAzMF,6MDtpALGgpCNcMcJYjMr6K62YyM68DnfmuVcvuGFx2FF,C53cUwWxKZTQqtJpc7hE8aMbYs9Fqf6rwtPniHhjKYQk,AyuNwNyiC3RgwTocRnS1v841if15gkTits1veecYBVLY,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8QJ6BJtwgysEviMMRov4Th3tzgYaoKdSsxwsbxDUrLwe",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8QJ6BJtwgysEviMMRov4Th3tzgYaoKdSsxwsbxDUrLwe&amount=1&index=95&proof=2VNUU3ac9F1XtErWGBKb9RN4eSGqyqwA6uRAegiHcA3A,6MDtpALGgpCNcMcJYjMr6K62YyM68DnfmuVcvuGFx2FF,C53cUwWxKZTQqtJpc7hE8aMbYs9Fqf6rwtPniHhjKYQk,AyuNwNyiC3RgwTocRnS1v841if15gkTits1veecYBVLY,2oNPzvvPNtSqtQCQKnWFQir68UGaABiqbHatmWCANwGZ,2Xm3VMsmR7PKbFwVaGs5jE34wQxuyvcQVeYfg28TyKWh,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8r6bmHZMUrM1MCmrPT1stGHU2zFaxti3h993k38Jt9RG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8r6bmHZMUrM1MCmrPT1stGHU2zFaxti3h993k38Jt9RG&amount=1&index=96&proof=CB1C4HmGW7Xj7bfSbwFZjR6n1JgAvBYggpVkjvUHozk4,7bmuxWD8dykTHXPx4jujdR6fWkdrdpUmFCDKKtMF9TNM,6Pod5yBhNLAFuv21cRsTRnag1aChquYBHyuWH4NMg7a7,H5CQwbdvSQeKqtbhrV89TBzB4ypnKUFxW13bVvixBJDZ,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8RFGiDPr3EJW3sUpby8RyU1pEyKB7R3mgi3f2WLC4oyj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8RFGiDPr3EJW3sUpby8RyU1pEyKB7R3mgi3f2WLC4oyj&amount=1&index=97&proof=3HM2rPZ6fRt68fYjYTRgj4HVS2EtMUVtEXTELZTqhY5n,7bmuxWD8dykTHXPx4jujdR6fWkdrdpUmFCDKKtMF9TNM,6Pod5yBhNLAFuv21cRsTRnag1aChquYBHyuWH4NMg7a7,H5CQwbdvSQeKqtbhrV89TBzB4ypnKUFxW13bVvixBJDZ,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8TWQe2nGCcyM6dtfMPNyVPnYiw7dsL5muCioGF6z6v8T",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8TWQe2nGCcyM6dtfMPNyVPnYiw7dsL5muCioGF6z6v8T&amount=1&index=98&proof=CiskKYP7vp9yUYWH1gtnA17hJbMJ8RFbfsZZnvbstCb,8j8aknhLLpjkgqLgxM9qjSNWMM7J2H2kLPv4sHXn3oFD,6Pod5yBhNLAFuv21cRsTRnag1aChquYBHyuWH4NMg7a7,H5CQwbdvSQeKqtbhrV89TBzB4ypnKUFxW13bVvixBJDZ,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8ugTqE7nuDo7kekVRVTdGTmu93rRF1En1XCL2bZdtTSH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8ugTqE7nuDo7kekVRVTdGTmu93rRF1En1XCL2bZdtTSH&amount=1&index=99&proof=BoJM1xcJxoxULnwFSfUz6BQLU5rmSKozbQoqQiyYeoGN,8j8aknhLLpjkgqLgxM9qjSNWMM7J2H2kLPv4sHXn3oFD,6Pod5yBhNLAFuv21cRsTRnag1aChquYBHyuWH4NMg7a7,H5CQwbdvSQeKqtbhrV89TBzB4ypnKUFxW13bVvixBJDZ,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "8z1WyL5D7XTEqKYssnucTHnu9xXAfGfNtpgxUytUayxC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=8z1WyL5D7XTEqKYssnucTHnu9xXAfGfNtpgxUytUayxC&amount=1&index=100&proof=GTk8wMPzjueRM6mPmJEhojCioikJyamXZrTE9YkMvPzh,6GpdV9B2Z6wNUhU9boTjeuV8pDdhN4bLdPtRFhVrtFrh,BSMTWDpYtqiUnFRpvcmaoaZRSQQQM76Z6mmYWuBDZ7LU,H5CQwbdvSQeKqtbhrV89TBzB4ypnKUFxW13bVvixBJDZ,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "95CyRxfGk2uKQj99vBo6uqx7rZAsCwkFvHnEPvYzhZJZ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=95CyRxfGk2uKQj99vBo6uqx7rZAsCwkFvHnEPvYzhZJZ&amount=1&index=101&proof=2yZ1vwPQTXN16wYifXtLQkg4j1LYM684pDY5WFgRgCSu,6GpdV9B2Z6wNUhU9boTjeuV8pDdhN4bLdPtRFhVrtFrh,BSMTWDpYtqiUnFRpvcmaoaZRSQQQM76Z6mmYWuBDZ7LU,H5CQwbdvSQeKqtbhrV89TBzB4ypnKUFxW13bVvixBJDZ,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "95nkyxq2unBzoqby2heKyrCYdzb8o8569M97whx8nJea",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=95nkyxq2unBzoqby2heKyrCYdzb8o8569M97whx8nJea&amount=1&index=102&proof=FxZKpuA2tf4tSgCprNwsQYcyEXHVHLKSn6XfrDw26k1d,12EEDoQkS5LGtRjgkgCUNAdFHFazgAg3kRUuu2AsRah2,BSMTWDpYtqiUnFRpvcmaoaZRSQQQM76Z6mmYWuBDZ7LU,H5CQwbdvSQeKqtbhrV89TBzB4ypnKUFxW13bVvixBJDZ,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "98SdSPhTHU41i3owGDjUYJkHHRAfcJYJoUnyNTHf9PPC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=98SdSPhTHU41i3owGDjUYJkHHRAfcJYJoUnyNTHf9PPC&amount=1&index=103&proof=39FiZEBFXFsg2kNb23LXPb234iTTfNFxsx4KQ92dyLJM,12EEDoQkS5LGtRjgkgCUNAdFHFazgAg3kRUuu2AsRah2,BSMTWDpYtqiUnFRpvcmaoaZRSQQQM76Z6mmYWuBDZ7LU,H5CQwbdvSQeKqtbhrV89TBzB4ypnKUFxW13bVvixBJDZ,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9cBsprXykShBWgzRdPvnVxL7U5ue4cTECopemVGoKnrc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9cBsprXykShBWgzRdPvnVxL7U5ue4cTECopemVGoKnrc&amount=1&index=104&proof=7z3qLozyGHrCM2XjAEAPfmyXtB66Gf9QcGzbozZ9uukJ,4xfFrhziWpwhgw96SX6BhVCa4zrNHUyvbpLmrud2fZja,5xCWo5jmxA8YNyvXrCsuKhVERYRnEKCWzgwYSXvnye1M,JDrPc62ki34nRW4bVg72GZpfkZFR2CPniSHt3CgECpE3,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9GHJ25RELpjj25V3KKzqpZkmnvYfyhzhD2zXtv7exTBX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9GHJ25RELpjj25V3KKzqpZkmnvYfyhzhD2zXtv7exTBX&amount=1&index=105&proof=9RTckixEAUnwTf4pwHmChikXGiXwn83oEKreSwnntuap,4xfFrhziWpwhgw96SX6BhVCa4zrNHUyvbpLmrud2fZja,5xCWo5jmxA8YNyvXrCsuKhVERYRnEKCWzgwYSXvnye1M,JDrPc62ki34nRW4bVg72GZpfkZFR2CPniSHt3CgECpE3,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9HNsN2y5c8fVGuS5uA8tiBohsnQtotM4uVw3eCH3TBY6",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9HNsN2y5c8fVGuS5uA8tiBohsnQtotM4uVw3eCH3TBY6&amount=1&index=106&proof=Hv9jicnCbYvgCmUkpgHM4SqAiEr8TaJ3ETdSGn3Zyys9,AsAWjxnvioT6do66kZMnmqtEcQFKdmxnydYB3PMLzDie,5xCWo5jmxA8YNyvXrCsuKhVERYRnEKCWzgwYSXvnye1M,JDrPc62ki34nRW4bVg72GZpfkZFR2CPniSHt3CgECpE3,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9Mi9YdpvCs4fq9zZY9nuaRYCTkTvWXUnRhAeJkX8JGk5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9Mi9YdpvCs4fq9zZY9nuaRYCTkTvWXUnRhAeJkX8JGk5&amount=1&index=107&proof=CCNjjHUwmnAWtp2SzuiKLbwMbNSbvmYMgtTTUHXmfEXX,AsAWjxnvioT6do66kZMnmqtEcQFKdmxnydYB3PMLzDie,5xCWo5jmxA8YNyvXrCsuKhVERYRnEKCWzgwYSXvnye1M,JDrPc62ki34nRW4bVg72GZpfkZFR2CPniSHt3CgECpE3,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9mTRdAooP7u6yE5TygTLjZuXW7tFwZjspqcFeCquAXwA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9mTRdAooP7u6yE5TygTLjZuXW7tFwZjspqcFeCquAXwA&amount=1&index=108&proof=EGBDaVGkCxWdNvkeXqfahkn45v6sqZCEX4Kga3K6WZx9,F9QfFK8wvHwNfgFY6nTDpqJEXANazkcoVYBeTzEevrof,3hFZxkvj8kA4kyWuutVkidKSHy3d11L5LHnurZx9X5rd,JDrPc62ki34nRW4bVg72GZpfkZFR2CPniSHt3CgECpE3,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9nyt6LmPYz4mcR9xHYzWzySHHyRTiF6Y19c7cwMQ2bmh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9nyt6LmPYz4mcR9xHYzWzySHHyRTiF6Y19c7cwMQ2bmh&amount=1&index=109&proof=4bRcT1PCaSA17Rm7EhSH7qLvC3SuXcQGp5dk6HnZXtNw,F9QfFK8wvHwNfgFY6nTDpqJEXANazkcoVYBeTzEevrof,3hFZxkvj8kA4kyWuutVkidKSHy3d11L5LHnurZx9X5rd,JDrPc62ki34nRW4bVg72GZpfkZFR2CPniSHt3CgECpE3,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9qEevPaVYnNTutzrDYugi3Vk7vur5qMWVFrd14wTTA8N",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9qEevPaVYnNTutzrDYugi3Vk7vur5qMWVFrd14wTTA8N&amount=1&index=110&proof=66ftaLnHrprxFjyrFsWwWaYmnM51XMK3wpAzUWXUPJKz,DcVj9h9aH5W8vQFsNRb2KgKvncy9aNDgDjjFqLKMzU95,3hFZxkvj8kA4kyWuutVkidKSHy3d11L5LHnurZx9X5rd,JDrPc62ki34nRW4bVg72GZpfkZFR2CPniSHt3CgECpE3,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9QsYSps7ULsTDSgQ8pxCofh4uccCSU4eoPgF68vYLzYb",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9QsYSps7ULsTDSgQ8pxCofh4uccCSU4eoPgF68vYLzYb&amount=1&index=111&proof=C8Dtaear5mccaTRqcRPhr7skRiDhprBACgXHRtcY81vx,DcVj9h9aH5W8vQFsNRb2KgKvncy9aNDgDjjFqLKMzU95,3hFZxkvj8kA4kyWuutVkidKSHy3d11L5LHnurZx9X5rd,JDrPc62ki34nRW4bVg72GZpfkZFR2CPniSHt3CgECpE3,3NgKngkw5LgjEuKSiPEEJ36egxoRtmb9WYNZT584QjhZ,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9ssJkqP6AfdBXLCS8pyomhnonhmjDaCtC2WoULn2nimA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9ssJkqP6AfdBXLCS8pyomhnonhmjDaCtC2WoULn2nimA&amount=1&index=112&proof=9wwtZZzJSENabXSWdLup6aSeCkUdmQfga3XCrr9cKSs8,9DVDWv9ox1txjkQq1gQ4TQkjhnFRfjf7gBvX9FXaXbCf,hk5Qn22NTqSm1fQA2LW3FepoSbNUP9eTdtEb5c1SrDk,7DBPUxD5U7zdBwMz6nwXoPLjcts2vaT7wV74cNJwf6bz,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9wH1bbJJSFEwbdpCJD8hZFnvhvgwqvuMxvEFo2hatd4M",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9wH1bbJJSFEwbdpCJD8hZFnvhvgwqvuMxvEFo2hatd4M&amount=1&index=113&proof=9q2Rz6HvdxwrHpyaAjQZEeLrHHgR6HZg893kTGKV3w1H,9DVDWv9ox1txjkQq1gQ4TQkjhnFRfjf7gBvX9FXaXbCf,hk5Qn22NTqSm1fQA2LW3FepoSbNUP9eTdtEb5c1SrDk,7DBPUxD5U7zdBwMz6nwXoPLjcts2vaT7wV74cNJwf6bz,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9xRFJinDuK7ZrhKq9nd7BJz6V1WaEkK2mdocr5pYeg5Q",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9xRFJinDuK7ZrhKq9nd7BJz6V1WaEkK2mdocr5pYeg5Q&amount=1&index=114&proof=6Vdc3uDftkUWTFK7D8HDcCrNvS4tgtBX444up9xEECjY,B8vAcqFuqJX71dX2RC6qPjFsWYR2wdE5kyZBEUED8FkP,hk5Qn22NTqSm1fQA2LW3FepoSbNUP9eTdtEb5c1SrDk,7DBPUxD5U7zdBwMz6nwXoPLjcts2vaT7wV74cNJwf6bz,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9XtuWXuaKjgVw865vxWJ43p83XdfueRsd3i39eJ6ibGf",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9XtuWXuaKjgVw865vxWJ43p83XdfueRsd3i39eJ6ibGf&amount=1&index=115&proof=23CFYkPPkjZVBCJGRVjJ2qn3Jt2tz7m4EpMLu6dnjR7M,B8vAcqFuqJX71dX2RC6qPjFsWYR2wdE5kyZBEUED8FkP,hk5Qn22NTqSm1fQA2LW3FepoSbNUP9eTdtEb5c1SrDk,7DBPUxD5U7zdBwMz6nwXoPLjcts2vaT7wV74cNJwf6bz,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9YN4jv3ozFwK5NuojydqqQcoie9nzN5BbWFjfNPexQdL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9YN4jv3ozFwK5NuojydqqQcoie9nzN5BbWFjfNPexQdL&amount=1&index=116&proof=FsQpeLVxcDgCo4t5AQBoXamfdd87dH2pLET3daaARJia,9oY2Q3m4GWG1TpMYQyRt4vqpYVJDFDAQh5VgC6MtWz9e,GmWQWS1TUJQHcaXaaT8ZjBJPngtZ7ZXDmbsqJZdCAoTn,7DBPUxD5U7zdBwMz6nwXoPLjcts2vaT7wV74cNJwf6bz,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9ZrtEk3zgtttBHpfV9Cvt6gC96QR7jyizqfPjFkNAaLL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9ZrtEk3zgtttBHpfV9Cvt6gC96QR7jyizqfPjFkNAaLL&amount=1&index=117&proof=8B8yuYd2Kj5cMZsU3PtH24iNpMEc1g8vEPinL1vsh5JP,9oY2Q3m4GWG1TpMYQyRt4vqpYVJDFDAQh5VgC6MtWz9e,GmWQWS1TUJQHcaXaaT8ZjBJPngtZ7ZXDmbsqJZdCAoTn,7DBPUxD5U7zdBwMz6nwXoPLjcts2vaT7wV74cNJwf6bz,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "9zxF8iKcnEPLLPBqDjvemcBCqgckDGUBK68FLo1dWacC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=9zxF8iKcnEPLLPBqDjvemcBCqgckDGUBK68FLo1dWacC&amount=1&index=118&proof=J5H6XFL3XhyEeCeeaN1BomKT1GrnchzBsi32eHBQZhwh,HnjTxjb5tCTrTp7Sfj3d2B9ASsNt2Zi4RA5ZSE7kXxqa,GmWQWS1TUJQHcaXaaT8ZjBJPngtZ7ZXDmbsqJZdCAoTn,7DBPUxD5U7zdBwMz6nwXoPLjcts2vaT7wV74cNJwf6bz,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "A6ovrTQLymGGb1Bsr929fm1VPScKeEcEjSckcPgzQ1mN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=A6ovrTQLymGGb1Bsr929fm1VPScKeEcEjSckcPgzQ1mN&amount=1&index=119&proof=HPAvNKPyu4pHStByX4YT4pDqVvB6Q5p6kTu749mNFhay,HnjTxjb5tCTrTp7Sfj3d2B9ASsNt2Zi4RA5ZSE7kXxqa,GmWQWS1TUJQHcaXaaT8ZjBJPngtZ7ZXDmbsqJZdCAoTn,7DBPUxD5U7zdBwMz6nwXoPLjcts2vaT7wV74cNJwf6bz,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AbvEWe7T5ZULpbwivsdu6DacrAjj2fS5SEBpNe5BR9TJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AbvEWe7T5ZULpbwivsdu6DacrAjj2fS5SEBpNe5BR9TJ&amount=1&index=120&proof=93X3Yjxu3AxBAbfp3yBtvUDiDxbxyXeVBw64rb9TspcG,HQqt5X4rnVZvtFxManCdzNDyKjSzHDhr1CG2RmntJRoU,qqYyanm366ChQvzbeDtJB5RKbD9Ep4qtgiYMDTsKHqm,Gfgvw5N9u8rTC89jPSVFLYk2iXU5YsBHfZJbAMUc4ubv,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "ABzTqyaUdNEdxJ9dKahtCdnC5fYPDedWGdRKC1WFGB2A",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=ABzTqyaUdNEdxJ9dKahtCdnC5fYPDedWGdRKC1WFGB2A&amount=1&index=121&proof=GVWo1MaH51GXjZ2ACjsNoJc1ozixcwyC44Uk7jRHJr8D,HQqt5X4rnVZvtFxManCdzNDyKjSzHDhr1CG2RmntJRoU,qqYyanm366ChQvzbeDtJB5RKbD9Ep4qtgiYMDTsKHqm,Gfgvw5N9u8rTC89jPSVFLYk2iXU5YsBHfZJbAMUc4ubv,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AEdoaJRsnFMeom4wVQPMBeEZNxrnQdWdtPCtAPNH7wey",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AEdoaJRsnFMeom4wVQPMBeEZNxrnQdWdtPCtAPNH7wey&amount=1&index=122&proof=5rU8ZzfQ5HFBz6QiCpPwiGMFsRQbtyrFn7UJA5v4kSvW,5Q95MJxkcQ2vMYAMeFG9Wtha7bjjnMd7bVBgLzvJBAax,qqYyanm366ChQvzbeDtJB5RKbD9Ep4qtgiYMDTsKHqm,Gfgvw5N9u8rTC89jPSVFLYk2iXU5YsBHfZJbAMUc4ubv,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AgZPa5Ga3vEULocrfUcgeeuGBS3Sk6dkmTBT8tstA6qQ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AgZPa5Ga3vEULocrfUcgeeuGBS3Sk6dkmTBT8tstA6qQ&amount=1&index=123&proof=7rDnrmW1B3TsKPRidsSGUQqhtFRFhtgDNUUDsVsV4gqj,5Q95MJxkcQ2vMYAMeFG9Wtha7bjjnMd7bVBgLzvJBAax,qqYyanm366ChQvzbeDtJB5RKbD9Ep4qtgiYMDTsKHqm,Gfgvw5N9u8rTC89jPSVFLYk2iXU5YsBHfZJbAMUc4ubv,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AhfkXpR4m89dQpY3LBTUybsCVPTFsVY63gSJA6rfKPyU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AhfkXpR4m89dQpY3LBTUybsCVPTFsVY63gSJA6rfKPyU&amount=1&index=124&proof=ETzqVx8cb8amkH3jtzjsAPCo8xh2uWLTK1Fnn4knxdxH,3H3CfeAS2N58kAc7iGKxeMe8HEbVAartVgidht23nj82,AME3o7HEYSViDuyshEEnv7e5ik2hSkbRjs71eNuJDsEa,Gfgvw5N9u8rTC89jPSVFLYk2iXU5YsBHfZJbAMUc4ubv,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AHUswcV4msD5Pw45DhoJk4tcm17rJtNajioPp7C15cvY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AHUswcV4msD5Pw45DhoJk4tcm17rJtNajioPp7C15cvY&amount=1&index=125&proof=4M9WU2m8kpGghWPsV5jm3fKwofpG5PGYkQ9j1vcY4xeC,3H3CfeAS2N58kAc7iGKxeMe8HEbVAartVgidht23nj82,AME3o7HEYSViDuyshEEnv7e5ik2hSkbRjs71eNuJDsEa,Gfgvw5N9u8rTC89jPSVFLYk2iXU5YsBHfZJbAMUc4ubv,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AJpuaH2Ke13VoMrk8MRCE693yMWMLyTBf2e2J48Pzz7j",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AJpuaH2Ke13VoMrk8MRCE693yMWMLyTBf2e2J48Pzz7j&amount=1&index=126&proof=ABkjc4iDNmEHGQ8KAdsMDDYgek6DuLCTWiSki2vW8qSG,FTVDgPK8JB9qdTJn1QqqV6GXVY6e6G2tBEDDVViLDrVU,AME3o7HEYSViDuyshEEnv7e5ik2hSkbRjs71eNuJDsEa,Gfgvw5N9u8rTC89jPSVFLYk2iXU5YsBHfZJbAMUc4ubv,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AmcNcKrAqSx6BAL4eezzvVWBTjy3giXu2tc1cDfABoUN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AmcNcKrAqSx6BAL4eezzvVWBTjy3giXu2tc1cDfABoUN&amount=1&index=127&proof=DE6GRyUWu55671c3Z33xD66hXP6q6nHFDXiEChEJicSW,FTVDgPK8JB9qdTJn1QqqV6GXVY6e6G2tBEDDVViLDrVU,AME3o7HEYSViDuyshEEnv7e5ik2hSkbRjs71eNuJDsEa,Gfgvw5N9u8rTC89jPSVFLYk2iXU5YsBHfZJbAMUc4ubv,6gcbXMJ5LUC8orJ6WKBtCT27mcJ8nf8VjFXVaRfW1hqE,4QGs2htxixaS4NDWx2Zca4BfaChCEebSHsSBpRAt9SaR,NhSFhosak8fJ9b5P3zezPEFJQjptUm3EBCFdqjDrwtW,5s1VPzWrj32Qf4Gug4cYAoQKXo3e1sRpXnHSBj5nkD1x,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "An4ykeQvzPoPKAQyNkZuNgzHd93tpbMpVxU26xGCkTco",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=An4ykeQvzPoPKAQyNkZuNgzHd93tpbMpVxU26xGCkTco&amount=1&index=128&proof=ACmgUoiDUmHJsMM6TTkuudqFN9shtLCXY7RCupHKndAB,4e3h3wJWcq6Ka942R3WZMAE7DrXeQez9AMCq2ch14e74,4c2Uja2h3i5Wyz1rzVTquThvhX5mJ3aBNS6PhoZW2w5w,CAkj8PkTHWspXtnCLe8JvKtXFr9dsQXWhsdgvrfT6BMU,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "aoUsjDtUehnk8DMULLC1XDFMoM71rp3bqdzQ39Ma2Ni",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=aoUsjDtUehnk8DMULLC1XDFMoM71rp3bqdzQ39Ma2Ni&amount=1&index=129&proof=AvDpBwUYjxn7c3yAmBxiY9JV3g4VFvLXcCiTxbUHQdCw,4e3h3wJWcq6Ka942R3WZMAE7DrXeQez9AMCq2ch14e74,4c2Uja2h3i5Wyz1rzVTquThvhX5mJ3aBNS6PhoZW2w5w,CAkj8PkTHWspXtnCLe8JvKtXFr9dsQXWhsdgvrfT6BMU,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AoxNFzyK4M8aHaDdfRmkgpt3381Y25du6xArwrNbT1D1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AoxNFzyK4M8aHaDdfRmkgpt3381Y25du6xArwrNbT1D1&amount=1&index=130&proof=GUeV22bdBJx6PEMA9wPUrae9sWHCmPj1dZ6PsDfu34JL,94k7DMkNfh4DByopM3W43y6dnGBgrQUqNcZecSeYfob9,4c2Uja2h3i5Wyz1rzVTquThvhX5mJ3aBNS6PhoZW2w5w,CAkj8PkTHWspXtnCLe8JvKtXFr9dsQXWhsdgvrfT6BMU,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AQWeExPi2jCfrBhc6mTo78cMsfATNSEDZTAxrMBbCfQm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AQWeExPi2jCfrBhc6mTo78cMsfATNSEDZTAxrMBbCfQm&amount=1&index=131&proof=79xJd7w3B7TcV6FxqbXnjQhWSKEjgBqeWMMUScAviAkZ,94k7DMkNfh4DByopM3W43y6dnGBgrQUqNcZecSeYfob9,4c2Uja2h3i5Wyz1rzVTquThvhX5mJ3aBNS6PhoZW2w5w,CAkj8PkTHWspXtnCLe8JvKtXFr9dsQXWhsdgvrfT6BMU,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AudQEp6AtnmxfvjMZeVnr9Q8Ko34TbMLr4KYLhdzFtzf",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AudQEp6AtnmxfvjMZeVnr9Q8Ko34TbMLr4KYLhdzFtzf&amount=1&index=132&proof=G7c1gmXx6eiz6dcuzWbeZKhxSZWsXQALXg1zT29qA5Qy,5NsQ8yJaLNZEpEAs6cmFc7kyqNC51S1uq5dvSMPgrdcc,GtZcYYHYyuHUziTQXUnd93HJ6oYspSL84KKkJHS38tKM,CAkj8PkTHWspXtnCLe8JvKtXFr9dsQXWhsdgvrfT6BMU,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AuP18YsxJ5PSmpsfkahjYBN7QFLh4NFkFWmTyHKx1sAw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AuP18YsxJ5PSmpsfkahjYBN7QFLh4NFkFWmTyHKx1sAw&amount=1&index=133&proof=4XqEAsDACz5W36hpfZ1MVs1ESz9bq5xtwg8Qq3whfLMU,5NsQ8yJaLNZEpEAs6cmFc7kyqNC51S1uq5dvSMPgrdcc,GtZcYYHYyuHUziTQXUnd93HJ6oYspSL84KKkJHS38tKM,CAkj8PkTHWspXtnCLe8JvKtXFr9dsQXWhsdgvrfT6BMU,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "AWxQ8Cmki1jim75h7T22Qxz24LGHhTBg2vb1BfTbEE7D",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=AWxQ8Cmki1jim75h7T22Qxz24LGHhTBg2vb1BfTbEE7D&amount=1&index=134&proof=6QNygQHKmKmxaCy9R6iR6bi6t6vqgsmqSALigAsvyVU7,Cp3CsQSvhsvhTvTuXRrvTM5967Qom22mg1cqa5Rqu2Tp,GtZcYYHYyuHUziTQXUnd93HJ6oYspSL84KKkJHS38tKM,CAkj8PkTHWspXtnCLe8JvKtXFr9dsQXWhsdgvrfT6BMU,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "B4Nr8T5Deq3kT9o5DMTk8vVnP783KeXZzUa7odmjHvaE",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=B4Nr8T5Deq3kT9o5DMTk8vVnP783KeXZzUa7odmjHvaE&amount=1&index=135&proof=8eKuT252ijKzo4FgjbzsQpMsKrdmqGbpmQHxGw9Ls1hw,Cp3CsQSvhsvhTvTuXRrvTM5967Qom22mg1cqa5Rqu2Tp,GtZcYYHYyuHUziTQXUnd93HJ6oYspSL84KKkJHS38tKM,CAkj8PkTHWspXtnCLe8JvKtXFr9dsQXWhsdgvrfT6BMU,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BbMsbXGqH6gWbJVyR1ivkzDZfZv5iTLUgBiKkxEJpyKp",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BbMsbXGqH6gWbJVyR1ivkzDZfZv5iTLUgBiKkxEJpyKp&amount=1&index=136&proof=9t2yybBJQ4oC5QQxToWdTW15aXNeUiyu7kXCtV5e9PZd,2phiaMeVvdpDxfYKzzVDQUFPnzezFKRrpaN4YSAWts6C,HGXgpcpwd9eaD24QCHDSFnUKBqJouczjHiUpJx9c2fjE,53Zav7nYPZCVMKxuNjpALPy6HtmevdAHZFP67zdtuZ19,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BCcVc7M7MrUgM3P3czSUe6C4hix7HN1fQJAjf7yUS171",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BCcVc7M7MrUgM3P3czSUe6C4hix7HN1fQJAjf7yUS171&amount=1&index=137&proof=Gb8NcbFHRzrVkGRH8yim7bDDDnit9pp9huH5hVtetxvo,2phiaMeVvdpDxfYKzzVDQUFPnzezFKRrpaN4YSAWts6C,HGXgpcpwd9eaD24QCHDSFnUKBqJouczjHiUpJx9c2fjE,53Zav7nYPZCVMKxuNjpALPy6HtmevdAHZFP67zdtuZ19,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BCkcvpB8UgRC4WU2fDVpnugfZ6m9JfByS6se2wm3bqPq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BCkcvpB8UgRC4WU2fDVpnugfZ6m9JfByS6se2wm3bqPq&amount=1&index=138&proof=3kQhZRWjs12BECmoYcsYwwonuGpZgsCxds9Tdqew5xCc,9xBvjBvhBZpAtLVLTQa4mMgKa9uCi2uBca4J1f2gfAhv,HGXgpcpwd9eaD24QCHDSFnUKBqJouczjHiUpJx9c2fjE,53Zav7nYPZCVMKxuNjpALPy6HtmevdAHZFP67zdtuZ19,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BeMJM6msb8grV2d31rM1jwNUmyoKLR8JxCZ3ka6xZosN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BeMJM6msb8grV2d31rM1jwNUmyoKLR8JxCZ3ka6xZosN&amount=1&index=139&proof=94Kkub9r5qmPjou9p2SSqg9FSaGutVvhcAw1r46ovByy,9xBvjBvhBZpAtLVLTQa4mMgKa9uCi2uBca4J1f2gfAhv,HGXgpcpwd9eaD24QCHDSFnUKBqJouczjHiUpJx9c2fjE,53Zav7nYPZCVMKxuNjpALPy6HtmevdAHZFP67zdtuZ19,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BkUmYnVWBWpjkRmiMKTdScieMPAwNduebHL4Le9TSX7t",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BkUmYnVWBWpjkRmiMKTdScieMPAwNduebHL4Le9TSX7t&amount=1&index=140&proof=HWZFXJKUVxTwqkLpN3MT7ckgyzhBsurdkPv9vrQKuxQn,CWrQF84yutMCgt4KzCMnuTFchLCcVLB5X2wpGp8EpGo7,CeuyKBg87TNHeWcPrcTioNgJCywcwuCS9ypnqvJkEj7H,53Zav7nYPZCVMKxuNjpALPy6HtmevdAHZFP67zdtuZ19,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BoD6wXzKiiJwQ9DwXsnAFUhxHZ8MUsQ4qWemWE6vWhkG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BoD6wXzKiiJwQ9DwXsnAFUhxHZ8MUsQ4qWemWE6vWhkG&amount=1&index=141&proof=HnfkZ4AT2Kgc9gocd4vJUwouGtNocD48ACvcakZK1ivR,CWrQF84yutMCgt4KzCMnuTFchLCcVLB5X2wpGp8EpGo7,CeuyKBg87TNHeWcPrcTioNgJCywcwuCS9ypnqvJkEj7H,53Zav7nYPZCVMKxuNjpALPy6HtmevdAHZFP67zdtuZ19,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BVzoJ6qfktTbFTRAa48VmTaVxHcNxu8XjFzKQBKXQ5Xn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BVzoJ6qfktTbFTRAa48VmTaVxHcNxu8XjFzKQBKXQ5Xn&amount=1&index=142&proof=2d5cWVrKpyDgndmBmPy68XFvKbxpUdqBmDLbLFSYCCmJ,27pKungGz361dM8srwaVtAezYbg5uVvpgaRedSGTnTNH,CeuyKBg87TNHeWcPrcTioNgJCywcwuCS9ypnqvJkEj7H,53Zav7nYPZCVMKxuNjpALPy6HtmevdAHZFP67zdtuZ19,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BWFofzTo79WF6KWaZ7NyKntjb3juFqyo1A9xnUmW9LiK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BWFofzTo79WF6KWaZ7NyKntjb3juFqyo1A9xnUmW9LiK&amount=1&index=143&proof=CFa3CybMVjYV4qYdNHcKwVXrPrDAVBgqdqBPS7QBuB58,27pKungGz361dM8srwaVtAezYbg5uVvpgaRedSGTnTNH,CeuyKBg87TNHeWcPrcTioNgJCywcwuCS9ypnqvJkEj7H,53Zav7nYPZCVMKxuNjpALPy6HtmevdAHZFP67zdtuZ19,FvsT8iA99Z8vPxoFPFWXBNo8SN7cZq2N5FwwGaJie1N,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BXmKGYcUBedskwh9YoTuPGXLWZU5aqrPtK6YJY6XVH1i",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BXmKGYcUBedskwh9YoTuPGXLWZU5aqrPtK6YJY6XVH1i&amount=1&index=144&proof=B4QzfiYFLJ13zBzX4ksHWo8cX8nKnXJBYFTbCggPXPcb,EuWUuZ6dz9bU7nBwADieu48QWGkUScW5pNcnowi6A4QA,GYmDzGX4bHtQx1qRJ2JC2aj7VmrCfE32MMcWz7ujfTmP,kA8i9VgYqZK5trnJrosnNcNDA84P2Ef3H9UYfRUoBYf,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "By3ZdHyArrDKv66g5FLpdAkztJqkcenNrDr2MrGEqPqt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=By3ZdHyArrDKv66g5FLpdAkztJqkcenNrDr2MrGEqPqt&amount=1&index=145&proof=Aim1FrpvKDxJAYsC3ggjPzzWeDzznmWhn3T9hGvjFGjV,EuWUuZ6dz9bU7nBwADieu48QWGkUScW5pNcnowi6A4QA,GYmDzGX4bHtQx1qRJ2JC2aj7VmrCfE32MMcWz7ujfTmP,kA8i9VgYqZK5trnJrosnNcNDA84P2Ef3H9UYfRUoBYf,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Bz2pFiSdZfiKtPbRnmyiQHyyRHqNxSehtBXDWduy4zCY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Bz2pFiSdZfiKtPbRnmyiQHyyRHqNxSehtBXDWduy4zCY&amount=1&index=146&proof=5XQeYjzSFwpqYnJsRbfEE6CRuDB5y2yUfb25X6iFh1nx,98ZSWhTopD1doMrfpKSAFKDuybZoMWY7HWdKEs98Hwew,GYmDzGX4bHtQx1qRJ2JC2aj7VmrCfE32MMcWz7ujfTmP,kA8i9VgYqZK5trnJrosnNcNDA84P2Ef3H9UYfRUoBYf,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BzsxkCadbwyX1Uer7zy3CNfspKnMtKb4yMtdSKvTCRFH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BzsxkCadbwyX1Uer7zy3CNfspKnMtKb4yMtdSKvTCRFH&amount=1&index=147&proof=6jXo1GFXLntw1z2Lp27daSEHNfFvp9ZAnaVRPeVLvLrE,98ZSWhTopD1doMrfpKSAFKDuybZoMWY7HWdKEs98Hwew,GYmDzGX4bHtQx1qRJ2JC2aj7VmrCfE32MMcWz7ujfTmP,kA8i9VgYqZK5trnJrosnNcNDA84P2Ef3H9UYfRUoBYf,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "BZUrj11KSxaL6druyQVsw6FQ48sF3me6DhF3EQunRjTD",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=BZUrj11KSxaL6druyQVsw6FQ48sF3me6DhF3EQunRjTD&amount=1&index=148&proof=4zaAykpeecHWYYiVeoHyGRSLcQ76bjHmucx3CFKdmG8U,9ot1kdZEZL8GH3WZRUxQCNVSfHn9f9vZvTpAoGqaLqKn,6Lv6EptrdzugSMGj7zZmnukMqHJdYsXY7tRAzyZjManE,kA8i9VgYqZK5trnJrosnNcNDA84P2Ef3H9UYfRUoBYf,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "C4mCjrq5oPFD7jkgyfkLG8LsG2jCb1k9gVuBGgKmC6k2",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=C4mCjrq5oPFD7jkgyfkLG8LsG2jCb1k9gVuBGgKmC6k2&amount=1&index=149&proof=5LpXxRXhXPfFFKbYjwZrnWcey26xjAzBuP1bYjK4PmC3,9ot1kdZEZL8GH3WZRUxQCNVSfHn9f9vZvTpAoGqaLqKn,6Lv6EptrdzugSMGj7zZmnukMqHJdYsXY7tRAzyZjManE,kA8i9VgYqZK5trnJrosnNcNDA84P2Ef3H9UYfRUoBYf,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "C5AcHvPMn6ekyvWdFKdLSpt4tJtJEZeLHy53KC8sJUG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=C5AcHvPMn6ekyvWdFKdLSpt4tJtJEZeLHy53KC8sJUG&amount=1&index=150&proof=3jNnVGY6sq5BFnhZaT3nVKJokHUrttRHz2zPxM9PKy5Y,BvpnbfA1oAoS1dG4jsqoEC3UuzCA2DBGSAoPcfBABc2J,6Lv6EptrdzugSMGj7zZmnukMqHJdYsXY7tRAzyZjManE,kA8i9VgYqZK5trnJrosnNcNDA84P2Ef3H9UYfRUoBYf,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "C5vQAdHiH9Z9xsYY65iUCfXQF4mH3gB7NVkWKPTG7eAt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=C5vQAdHiH9Z9xsYY65iUCfXQF4mH3gB7NVkWKPTG7eAt&amount=1&index=151&proof=GAxyHwuhaMNGuGkoi93FeLXsRcUVBndYG5VzM4Yqq5XH,BvpnbfA1oAoS1dG4jsqoEC3UuzCA2DBGSAoPcfBABc2J,6Lv6EptrdzugSMGj7zZmnukMqHJdYsXY7tRAzyZjManE,kA8i9VgYqZK5trnJrosnNcNDA84P2Ef3H9UYfRUoBYf,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "C79iGmuCec444WNoYhPeWGhepdM6B4mKCyTepEkJ6Kvm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=C79iGmuCec444WNoYhPeWGhepdM6B4mKCyTepEkJ6Kvm&amount=1&index=152&proof=6MN2SuuHgZhFoNgRHgFNNDjdm6f6XN546LqP5Uy9VxMT,JEJZVGAJTUfsjTft2Az1yWm3WXNhgZmU1AFR7864eGG4,91Hxi6dwVGsgDNTyPyjkMRAgrWkTiRkM7xz15ZLFJJ6,8toBCp6KWhKVC1wEmtL3G2gaE2yWBvyqqqk7ys4rTeg,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "C8asvtaN7yjq6B2EwszFwjiYfMcM4ZedQvsnxon1xUJ5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=C8asvtaN7yjq6B2EwszFwjiYfMcM4ZedQvsnxon1xUJ5&amount=1&index=153&proof=4V27KUPG9myatmzPJf4cZwyD8DQZJFzaRa19VJhuxwDG,JEJZVGAJTUfsjTft2Az1yWm3WXNhgZmU1AFR7864eGG4,91Hxi6dwVGsgDNTyPyjkMRAgrWkTiRkM7xz15ZLFJJ6,8toBCp6KWhKVC1wEmtL3G2gaE2yWBvyqqqk7ys4rTeg,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Ca1cYX7mDxozBW7mdfNo2da1ktQ32VfcgGaEMDrdNnFS",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Ca1cYX7mDxozBW7mdfNo2da1ktQ32VfcgGaEMDrdNnFS&amount=1&index=154&proof=Ak7JaJY1rHPsmCE4c3UYTvpAuytHCmfnPhn85ncbq5bY,AL8XuvX5UbT1uLJbdnkQ8aW6NFHsDUobPJHW5rJATux,91Hxi6dwVGsgDNTyPyjkMRAgrWkTiRkM7xz15ZLFJJ6,8toBCp6KWhKVC1wEmtL3G2gaE2yWBvyqqqk7ys4rTeg,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "CBQV3YR5vwGrxDrKvGkq2g3B1kggmu4NHQgY2iVveyjx",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=CBQV3YR5vwGrxDrKvGkq2g3B1kggmu4NHQgY2iVveyjx&amount=1&index=155&proof=8hLeDmZyD5miytuqf4KbMmDHsYATZD3HSX1ZC2oSgNaT,AL8XuvX5UbT1uLJbdnkQ8aW6NFHsDUobPJHW5rJATux,91Hxi6dwVGsgDNTyPyjkMRAgrWkTiRkM7xz15ZLFJJ6,8toBCp6KWhKVC1wEmtL3G2gaE2yWBvyqqqk7ys4rTeg,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Ce5rx7ZEDq5VmxW3bg7Jerd4FusC9LZDotFn1CALa3k3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Ce5rx7ZEDq5VmxW3bg7Jerd4FusC9LZDotFn1CALa3k3&amount=1&index=156&proof=29JZHsLbSWEKSNbXd1y8fZudPCEiDKZf768yG2ke1KNP,7yZGXsy6D6yG1CoEocxdsHpQwxFKQe1jQV9cuWBh3t4W,DHFSp6i8nRGz5ke8968xHrZQmwxCjCuU6zifTgMZk5LV,8toBCp6KWhKVC1wEmtL3G2gaE2yWBvyqqqk7ys4rTeg,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "CGVUuEUJVURmbW8wLp5CbDTEpVCGgNS5gXWCeVeKoLXw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=CGVUuEUJVURmbW8wLp5CbDTEpVCGgNS5gXWCeVeKoLXw&amount=1&index=157&proof=ABa1HKuYtBvhUUAgiNqNqowqc273DgpbhfTz866tgVGm,7yZGXsy6D6yG1CoEocxdsHpQwxFKQe1jQV9cuWBh3t4W,DHFSp6i8nRGz5ke8968xHrZQmwxCjCuU6zifTgMZk5LV,8toBCp6KWhKVC1wEmtL3G2gaE2yWBvyqqqk7ys4rTeg,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "CiB8t6g5Tu43B4Zqo83H1aLHbXkueWgVYH52szLYP5uV",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=CiB8t6g5Tu43B4Zqo83H1aLHbXkueWgVYH52szLYP5uV&amount=1&index=158&proof=GttpMngqHnUjioXKWMcTebvRBNNmTC1Yx7N3KpShR3RR,8BJJVzcTgvxrN9Qa6pEMMd8xdTYEepp2uAxGVupASa8v,DHFSp6i8nRGz5ke8968xHrZQmwxCjCuU6zifTgMZk5LV,8toBCp6KWhKVC1wEmtL3G2gaE2yWBvyqqqk7ys4rTeg,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Cj7Cyn9FvHEQgp2wPszDSuv7HvDWKcXnm2KRB7jTxvis",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Cj7Cyn9FvHEQgp2wPszDSuv7HvDWKcXnm2KRB7jTxvis&amount=1&index=159&proof=7scJVV91EFTjBke6bLUKnuvCXiVL9sQMSFqU9JukxSLM,8BJJVzcTgvxrN9Qa6pEMMd8xdTYEepp2uAxGVupASa8v,DHFSp6i8nRGz5ke8968xHrZQmwxCjCuU6zifTgMZk5LV,8toBCp6KWhKVC1wEmtL3G2gaE2yWBvyqqqk7ys4rTeg,HF8BRh8FC81GrtAdMYT6boJLCCAKRVdqDp4SCzvC7Fyb,5KPjyJycuCcRXv9HPf1Y5w8nhd54NRYcrFf6QM6Np2v9,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "CpBezEbJo97r5tiMv7pDwVRF2mcnpFWxV1fZFSEnWBmw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=CpBezEbJo97r5tiMv7pDwVRF2mcnpFWxV1fZFSEnWBmw&amount=1&index=160&proof=GHexzB2XypFH8Ha6V63p6AgJ39FeJibzxuw6WcFS45cJ,6nrkHDwKgCvX373vjQ9i54CsTufWKGc7rsCosfs6GxxW,GuqQmuoHH7y6rxpt9H4su1kpouXDbZ8yhX6aaHvPKuUD,EChVjHQMV2FjUsA9sehGcv39V5dtxe3ciDWRehmYLo7m,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Cr2A3h3c6G3SZDQagNr47ToxgWrUyUTMjAaximiuP4iY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Cr2A3h3c6G3SZDQagNr47ToxgWrUyUTMjAaximiuP4iY&amount=1&index=161&proof=78afL1Eg6DBc6xW7ZAkGxn6gysR4KNHRG45Uwkny6w2v,6nrkHDwKgCvX373vjQ9i54CsTufWKGc7rsCosfs6GxxW,GuqQmuoHH7y6rxpt9H4su1kpouXDbZ8yhX6aaHvPKuUD,EChVjHQMV2FjUsA9sehGcv39V5dtxe3ciDWRehmYLo7m,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "CTxhKrz1D5d4wkwouygmBW151fs6FM2cLgJy2v7yLEzB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=CTxhKrz1D5d4wkwouygmBW151fs6FM2cLgJy2v7yLEzB&amount=1&index=162&proof=EWBCVRuarHRwBA53TJZjghx9o6JQcnB6WCyi2E7hNKc6,4318hiKCGbed8GKqRrunVHJsyNkksgmH3fkk37QS4Xtm,GuqQmuoHH7y6rxpt9H4su1kpouXDbZ8yhX6aaHvPKuUD,EChVjHQMV2FjUsA9sehGcv39V5dtxe3ciDWRehmYLo7m,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "CuPhDDqB3N4Wvsj5CDM3hb12YFiU5JM9ivKTWU9CdY79",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=CuPhDDqB3N4Wvsj5CDM3hb12YFiU5JM9ivKTWU9CdY79&amount=1&index=163&proof=DoJ6ugsQrTVnyrdWWTRuNS7hTX33Ab8z1F6vFd6jgYk2,4318hiKCGbed8GKqRrunVHJsyNkksgmH3fkk37QS4Xtm,GuqQmuoHH7y6rxpt9H4su1kpouXDbZ8yhX6aaHvPKuUD,EChVjHQMV2FjUsA9sehGcv39V5dtxe3ciDWRehmYLo7m,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "CVZ9kUA34ccE2S9rV1hm6mbjy7u8Auiz6E7zX6hZHsoq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=CVZ9kUA34ccE2S9rV1hm6mbjy7u8Auiz6E7zX6hZHsoq&amount=1&index=164&proof=3ncLYvTUqqabsf2VWojRRVCpPqtAwQ1U27HqqDqDfFn5,4ke2D8fP9oCwbC6oLoWoRLfKnnCK9fEU4DjoZGcUxGDt,C2u7a2BT8YcPkyseT94uUwjzPjBYvXvJrCCVw9CQCBSu,EChVjHQMV2FjUsA9sehGcv39V5dtxe3ciDWRehmYLo7m,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "CYsCgxuJ6qVKJ5h7apHDS9qoHgWRdUrwyNV2fnd7HFEz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=CYsCgxuJ6qVKJ5h7apHDS9qoHgWRdUrwyNV2fnd7HFEz&amount=1&index=165&proof=8uiTzENSVB1Fubykru8yXJzgqkQKZ48QWQfAKCZXwqk4,4ke2D8fP9oCwbC6oLoWoRLfKnnCK9fEU4DjoZGcUxGDt,C2u7a2BT8YcPkyseT94uUwjzPjBYvXvJrCCVw9CQCBSu,EChVjHQMV2FjUsA9sehGcv39V5dtxe3ciDWRehmYLo7m,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "CzsCPSPsC9hvuagtSERHk5HZC4wjseRz1Sts3rHNnRUE",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=CzsCPSPsC9hvuagtSERHk5HZC4wjseRz1Sts3rHNnRUE&amount=1&index=166&proof=6SZSjXk9nbdRVr3H47QNLG92is9tWhEpN89qeNZNK33v,VQ6kha3AVE2cN6JrTqtVvvS6GX5Yk9yxu2CBsLXwWh9,C2u7a2BT8YcPkyseT94uUwjzPjBYvXvJrCCVw9CQCBSu,EChVjHQMV2FjUsA9sehGcv39V5dtxe3ciDWRehmYLo7m,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Db8dJ3ibeL3H2fePjoCHS2pwox1jrv5eSh6Hsjm9uEJC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Db8dJ3ibeL3H2fePjoCHS2pwox1jrv5eSh6Hsjm9uEJC&amount=1&index=167&proof=44ngFH4NJe5L7mrNbRD8v1MoQovWDYitRS8q9fhz1b2B,VQ6kha3AVE2cN6JrTqtVvvS6GX5Yk9yxu2CBsLXwWh9,C2u7a2BT8YcPkyseT94uUwjzPjBYvXvJrCCVw9CQCBSu,EChVjHQMV2FjUsA9sehGcv39V5dtxe3ciDWRehmYLo7m,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DbfXhysyJf6HwPZpCWsarxYrVhZgt6YeCTbHGhg5qdfg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DbfXhysyJf6HwPZpCWsarxYrVhZgt6YeCTbHGhg5qdfg&amount=1&index=168&proof=DW2CNVbw4eLU8ABcfuwf65q4MaUJcJXzn2Y3xKPSuXt9,D4TrCoC6HXayXP9U2DUzJs2fmwjZJaUFAXB5ANUHeHJE,356HJLjaUnWSMA5sBXciQ3UQzQCLNtirt9qDpkTb1tkM,A9KVbWmSV3iZPhy7frpc1azsvJezCppH4nu9U5uQ2s1u,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DDDW56Nkirt72N22gbW9h2H9s2uz6aH4Ac8agcE2wszm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DDDW56Nkirt72N22gbW9h2H9s2uz6aH4Ac8agcE2wszm&amount=1&index=169&proof=C8hx5se5n5XmKhiDUEnNoNtPD3dXot3WH7FBcUQWmGVo,D4TrCoC6HXayXP9U2DUzJs2fmwjZJaUFAXB5ANUHeHJE,356HJLjaUnWSMA5sBXciQ3UQzQCLNtirt9qDpkTb1tkM,A9KVbWmSV3iZPhy7frpc1azsvJezCppH4nu9U5uQ2s1u,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DEzqygZXUvvwLeodqWQ4wDLVMeV9SVCPqnYQ1n86B96L",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DEzqygZXUvvwLeodqWQ4wDLVMeV9SVCPqnYQ1n86B96L&amount=1&index=170&proof=GTDFGRdzDbQ32gnxNDqvvdfyHoxrHdftm3u7sxuvW7LS,Dong9xDVhZYYtCEMYsuMx59ugAYwGhxhhgF6m4fS7wgr,356HJLjaUnWSMA5sBXciQ3UQzQCLNtirt9qDpkTb1tkM,A9KVbWmSV3iZPhy7frpc1azsvJezCppH4nu9U5uQ2s1u,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DH16d7oXnQ7MCNGDN5e3bWHP5Lv3Ax92kDJcDuLyRxuf",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DH16d7oXnQ7MCNGDN5e3bWHP5Lv3Ax92kDJcDuLyRxuf&amount=1&index=171&proof=8YtGTgVQDKkC8VEoxgQDXRCib3xVZZmD2upDU9mh4cbr,Dong9xDVhZYYtCEMYsuMx59ugAYwGhxhhgF6m4fS7wgr,356HJLjaUnWSMA5sBXciQ3UQzQCLNtirt9qDpkTb1tkM,A9KVbWmSV3iZPhy7frpc1azsvJezCppH4nu9U5uQ2s1u,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DJWwZAGoMTHVq3t64suNfBZ3UjjH16f1n7LnXuMBk9Rq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DJWwZAGoMTHVq3t64suNfBZ3UjjH16f1n7LnXuMBk9Rq&amount=1&index=172&proof=7jhjuXqhg3gmqGKJhNXLCC2DFuZgt2f7NzbxXZ71GNSi,9RZq8XJbhJrut7W45CzvtvcZSUdRdWj98W43q9eFUtcb,EnRopumFCQUzYGxpc3eEFp6DznVy87PkNBCx6z3MRqAV,A9KVbWmSV3iZPhy7frpc1azsvJezCppH4nu9U5uQ2s1u,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DkGt7RzmEn7h6U4uYHCfKJJhpb1rizQhWijnkYApQdJm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DkGt7RzmEn7h6U4uYHCfKJJhpb1rizQhWijnkYApQdJm&amount=1&index=173&proof=E9fBmbyEw3KLMox6yYWT8Kebfpsysg6v2W5s2MuMufad,9RZq8XJbhJrut7W45CzvtvcZSUdRdWj98W43q9eFUtcb,EnRopumFCQUzYGxpc3eEFp6DznVy87PkNBCx6z3MRqAV,A9KVbWmSV3iZPhy7frpc1azsvJezCppH4nu9U5uQ2s1u,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DPNzPTodViPzjDBkmEYo94uBaHCWnDmhiDLhze2xFxfD",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DPNzPTodViPzjDBkmEYo94uBaHCWnDmhiDLhze2xFxfD&amount=1&index=174&proof=EJBSMPCc3vm2vuquq1csbFyyuzZ2CWN87v1X3SWUqw5x,FL65Xuj4MmZpHrhPJE6DFKeRdwjmCcw1FdKEmH4QKTXS,EnRopumFCQUzYGxpc3eEFp6DznVy87PkNBCx6z3MRqAV,A9KVbWmSV3iZPhy7frpc1azsvJezCppH4nu9U5uQ2s1u,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DpWfsqk6PJHzZsu3o65Kf1aEsEtoFaZVHxW17dVR7W6R",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DpWfsqk6PJHzZsu3o65Kf1aEsEtoFaZVHxW17dVR7W6R&amount=1&index=175&proof=GjBL1Tgwb5LBYE3SxVg348nnAj9biHRMzxRxR8udM2Aj,FL65Xuj4MmZpHrhPJE6DFKeRdwjmCcw1FdKEmH4QKTXS,EnRopumFCQUzYGxpc3eEFp6DznVy87PkNBCx6z3MRqAV,A9KVbWmSV3iZPhy7frpc1azsvJezCppH4nu9U5uQ2s1u,1U5HMhJhKhQbmFSCpShB3pWiw9GLuAYAg8U3L9KarQ9,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DqR2Pgv1PXmmXk9gbkHf3Y4Yjf5qa6ppyiNDMRyB33rL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DqR2Pgv1PXmmXk9gbkHf3Y4Yjf5qa6ppyiNDMRyB33rL&amount=1&index=176&proof=CyB92HRxDED93AHM8Ryj8iawmb4UVthwrY8uoBJv6p4h,4R1yDohkwHQ6ruC7igoAXuk5WgemjFxs1RzhXQ9CuVvt,EGmKfv6qbJQjBiPU9twUJLgYjCghS9ETQXHynW1HYzEs,AvA1BUWhHHGFaoKP5jqyBEzgCfYqaLX7Ey47WGgKxHZu,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Dvuwb8cLArHQw4hyA1hQRkPworcgd1HeCQcR6BvmS4A3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Dvuwb8cLArHQw4hyA1hQRkPworcgd1HeCQcR6BvmS4A3&amount=1&index=177&proof=GxhUn4MP6yPpmHNETxKavRjn9vw11dmMgrjGDtf3twmi,4R1yDohkwHQ6ruC7igoAXuk5WgemjFxs1RzhXQ9CuVvt,EGmKfv6qbJQjBiPU9twUJLgYjCghS9ETQXHynW1HYzEs,AvA1BUWhHHGFaoKP5jqyBEzgCfYqaLX7Ey47WGgKxHZu,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DVYerXLxzRNfVtu2dAVi8ZhM6u5x7deVmWGS45fLdBr4",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DVYerXLxzRNfVtu2dAVi8ZhM6u5x7deVmWGS45fLdBr4&amount=1&index=178&proof=563ZZLfk6mgetrsRyWkCMwGrMFGk3kvtDvPqF2EtB4nq,D5bpKuVkoRcF95T9aps9YHkmtuEU8XL4Cd5SMQACoaAW,EGmKfv6qbJQjBiPU9twUJLgYjCghS9ETQXHynW1HYzEs,AvA1BUWhHHGFaoKP5jqyBEzgCfYqaLX7Ey47WGgKxHZu,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "DycZiS6pLxphcKnumPM1r1eoqpejxN9rJCzoa61pXuhT",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=DycZiS6pLxphcKnumPM1r1eoqpejxN9rJCzoa61pXuhT&amount=1&index=179&proof=FsUd5oXqfPKgAXyenuhc7WeM3Tk1sDzrjb1fFQFnFBTv,D5bpKuVkoRcF95T9aps9YHkmtuEU8XL4Cd5SMQACoaAW,EGmKfv6qbJQjBiPU9twUJLgYjCghS9ETQXHynW1HYzEs,AvA1BUWhHHGFaoKP5jqyBEzgCfYqaLX7Ey47WGgKxHZu,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "E44HGNX2krAfTdRBHc11coArLVip2T8iRWoLCZa44Vqu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=E44HGNX2krAfTdRBHc11coArLVip2T8iRWoLCZa44Vqu&amount=1&index=180&proof=9DVQmkkWwUPYz8sME1uzomFeZ69ZchjUdNRphkgU1TQj,DQqcMu49dq4UNqnFDkAA4G631T1qAUfodhZweWQHb5Cs,4cRJTHrBhkNGwFLAvM237dsis2kDu6VneZHcYQ3QTT4L,AvA1BUWhHHGFaoKP5jqyBEzgCfYqaLX7Ey47WGgKxHZu,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "E8cm452Csjs17F18fpiTqwWhi35mKv8L5A23LsNUpfmj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=E8cm452Csjs17F18fpiTqwWhi35mKv8L5A23LsNUpfmj&amount=1&index=181&proof=6oT4nsQnpMNTELHjJi6dvP1CLLJQaVLjVTTYZu7bBw8J,DQqcMu49dq4UNqnFDkAA4G631T1qAUfodhZweWQHb5Cs,4cRJTHrBhkNGwFLAvM237dsis2kDu6VneZHcYQ3QTT4L,AvA1BUWhHHGFaoKP5jqyBEzgCfYqaLX7Ey47WGgKxHZu,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "E8TCHSMN2c5TZgteJyKE16TsC6HAsQvyr3yFZb4v3RFW",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=E8TCHSMN2c5TZgteJyKE16TsC6HAsQvyr3yFZb4v3RFW&amount=1&index=182&proof=9ZUaRQCqDqGkqoL6TBJtKZtKSUt8jL8qHr8V9d56phVf,2yD7QZXRdMEk2Xd6KSTj6VKcNE37QFqv4ZG4UZzCAGn7,4cRJTHrBhkNGwFLAvM237dsis2kDu6VneZHcYQ3QTT4L,AvA1BUWhHHGFaoKP5jqyBEzgCfYqaLX7Ey47WGgKxHZu,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "E9sVWvbFfwRXDANfQKr2mEXVxg2gioXswjBBb3feUdiq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=E9sVWvbFfwRXDANfQKr2mEXVxg2gioXswjBBb3feUdiq&amount=1&index=183&proof=HsVr3QUFiT72AurngXuZzZh65tPm3AuAvPCsBFRp6bY9,2yD7QZXRdMEk2Xd6KSTj6VKcNE37QFqv4ZG4UZzCAGn7,4cRJTHrBhkNGwFLAvM237dsis2kDu6VneZHcYQ3QTT4L,AvA1BUWhHHGFaoKP5jqyBEzgCfYqaLX7Ey47WGgKxHZu,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "EaVw8azLWr5WaPY13W61bLdkq9UFQEZooox6Fz5wUwf9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=EaVw8azLWr5WaPY13W61bLdkq9UFQEZooox6Fz5wUwf9&amount=1&index=184&proof=7ffhL4fuQ6Sor9MoA8YViB7bYewrRSZAE37q6aSGyMd4,B7X2sKo6hgwTQhUZRZmMBK7nVC4BhYNkN6RSdkqoz23u,8363NcdvGK7v2YWH4jJ3VHCo88gGPQit7hvmqg4Antf6,AYBkzagEes5i3Rxrf4P2hnPsD9F7uVYkPTzMuoqB6z3f,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "EH5o8SfShZemTcjCowhPjf7xK3yqAkoK3ngZtRRnzJgW",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=EH5o8SfShZemTcjCowhPjf7xK3yqAkoK3ngZtRRnzJgW&amount=1&index=185&proof=EcvsFnJvBdwjzvi772McyBYgSr9NFh17ZZRHSrDJDrnK,B7X2sKo6hgwTQhUZRZmMBK7nVC4BhYNkN6RSdkqoz23u,8363NcdvGK7v2YWH4jJ3VHCo88gGPQit7hvmqg4Antf6,AYBkzagEes5i3Rxrf4P2hnPsD9F7uVYkPTzMuoqB6z3f,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "EhaWwLKFpozV7cupYCiCq6CVWucAB1H9wK5KyjoiRkJU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=EhaWwLKFpozV7cupYCiCq6CVWucAB1H9wK5KyjoiRkJU&amount=1&index=186&proof=DwSTrLYRTpS98C5hAQDSCzHeqa54uHAsf1tfYcC5eWXv,Cug7xoxRQ7EgwZ1zr1i5F4gHWzomyvwHAD38Cvu2ujpJ,8363NcdvGK7v2YWH4jJ3VHCo88gGPQit7hvmqg4Antf6,AYBkzagEes5i3Rxrf4P2hnPsD9F7uVYkPTzMuoqB6z3f,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Ej56yQSGCtrqSDkpwtNbe6KkgfAWN2p7rYUENCUPgGmy",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Ej56yQSGCtrqSDkpwtNbe6KkgfAWN2p7rYUENCUPgGmy&amount=1&index=187&proof=AnzGaGrL595qRhXgGGtPt3B7Jzn6nUs1RMY5jxMCtn8S,Cug7xoxRQ7EgwZ1zr1i5F4gHWzomyvwHAD38Cvu2ujpJ,8363NcdvGK7v2YWH4jJ3VHCo88gGPQit7hvmqg4Antf6,AYBkzagEes5i3Rxrf4P2hnPsD9F7uVYkPTzMuoqB6z3f,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "EjYk1wrpCsDKuqs3DRcFKsMDZ1smiAhhm52EBKuX95G8",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=EjYk1wrpCsDKuqs3DRcFKsMDZ1smiAhhm52EBKuX95G8&amount=1&index=188&proof=GGmuYXiyGRnr7m2PmYmq96vwr92iYcYHsabGkErM5sGW,727QymbqsqUkyR4XKwhrYuB96cV24VD23uQgwkVBzdD1,6dfkYqbkLesBiWd58DrMbW1J2izJdFoAknXdBQ5YXjfe,AYBkzagEes5i3Rxrf4P2hnPsD9F7uVYkPTzMuoqB6z3f,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "EnRZXyZsUTCaz4d4P1KAnhvQsS8siigY1u4HB6rVNEmm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=EnRZXyZsUTCaz4d4P1KAnhvQsS8siigY1u4HB6rVNEmm&amount=1&index=189&proof=4N5q3yHoyxc65nQNYJcmpHaD9uae64Zd42NqJvGVr5ze,727QymbqsqUkyR4XKwhrYuB96cV24VD23uQgwkVBzdD1,6dfkYqbkLesBiWd58DrMbW1J2izJdFoAknXdBQ5YXjfe,AYBkzagEes5i3Rxrf4P2hnPsD9F7uVYkPTzMuoqB6z3f,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "ERKEGh4FapVpu8vQuaqsiA6zaWVcu2SaLCB9yxbeqm19",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=ERKEGh4FapVpu8vQuaqsiA6zaWVcu2SaLCB9yxbeqm19&amount=1&index=190&proof=3XeGD8WSnnGWQBHrh1XVindSZ7KAxDWnf3JjcX9qjN3a,5K99um6my7xYaFnzJN28b3gsKyxbgPKtB1FfVTQsW684,6dfkYqbkLesBiWd58DrMbW1J2izJdFoAknXdBQ5YXjfe,AYBkzagEes5i3Rxrf4P2hnPsD9F7uVYkPTzMuoqB6z3f,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "EsQcdRhhdQDsrsiPtCqaFgS8fKuCi8AzSiMskLJkZG12",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=EsQcdRhhdQDsrsiPtCqaFgS8fKuCi8AzSiMskLJkZG12&amount=1&index=191&proof=BHcKXVCfnksCMgG8ag3QqTS69kE3zaZchCnCkfRyG2rz,5K99um6my7xYaFnzJN28b3gsKyxbgPKtB1FfVTQsW684,6dfkYqbkLesBiWd58DrMbW1J2izJdFoAknXdBQ5YXjfe,AYBkzagEes5i3Rxrf4P2hnPsD9F7uVYkPTzMuoqB6z3f,6U3xdJMD2vybxwNJ3FySvRVMpEPqJoJKeMnse67Ec3eL,G5euTZorg9XqrCjYsJXqyYP8FstVg1AHCTm6nB5qo2E8,HWmsPKnacA5fUpS34mLpdWZK237bx7hYvRQik4LhfXVA,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "EXFDwFtfWUWPcEa1898APAGF2MEFGwhyCpMnNYU7Taa7",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=EXFDwFtfWUWPcEa1898APAGF2MEFGwhyCpMnNYU7Taa7&amount=1&index=192&proof=CwVUYJy3KM53iGEekqWC5pbjxum75NZacjMx9QhYXgxd,8GkhzTzSZtHiVPhDpU7nZx9vivRyF8dxukzPjEdffBSw,8uZqvf9eYQXxzD75CVAZ3LU3yPQPgq7ufssZf8zFmy4Y,Cm4jezvXRoGMkhuRoKgna1kkgxc3TtqaQYF1Gt1PLNY,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "F3g7cNAsWLkFHBYxsgPjPRNtRVMszX4XfdywadJfuNxX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=F3g7cNAsWLkFHBYxsgPjPRNtRVMszX4XfdywadJfuNxX&amount=1&index=193&proof=4Qc7eJNZfcVfnpxE415LoafQJBcqkASVkzqLFqGxVJcc,8GkhzTzSZtHiVPhDpU7nZx9vivRyF8dxukzPjEdffBSw,8uZqvf9eYQXxzD75CVAZ3LU3yPQPgq7ufssZf8zFmy4Y,Cm4jezvXRoGMkhuRoKgna1kkgxc3TtqaQYF1Gt1PLNY,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "F8br7CjQm4Uo7vPEK7Sawp6F5vxcoxp5wedyit1x3EUg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=F8br7CjQm4Uo7vPEK7Sawp6F5vxcoxp5wedyit1x3EUg&amount=1&index=194&proof=Cfrz7aeui4G4X1Gzgy63sP8zDf4TVHAb9kw3mRq2Q5Eg,J32tHzxMptjFXC9WBu6Ba1LWRGQe7s13KgvS8uH7QKK5,8uZqvf9eYQXxzD75CVAZ3LU3yPQPgq7ufssZf8zFmy4Y,Cm4jezvXRoGMkhuRoKgna1kkgxc3TtqaQYF1Gt1PLNY,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FAD9HQA4UHfdvXuNfxPDfXFLkJVxMDSc4gEXerB2X9SF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FAD9HQA4UHfdvXuNfxPDfXFLkJVxMDSc4gEXerB2X9SF&amount=1&index=195&proof=H3zAajdwaX2ou7sQW1jPXvgT2UuU1Fci6n91YiMeANwu,J32tHzxMptjFXC9WBu6Ba1LWRGQe7s13KgvS8uH7QKK5,8uZqvf9eYQXxzD75CVAZ3LU3yPQPgq7ufssZf8zFmy4Y,Cm4jezvXRoGMkhuRoKgna1kkgxc3TtqaQYF1Gt1PLNY,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FB9F9rZyBBMwyuE6xeKRQinMqAxtXLpC2Ggajtj6UuB3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FB9F9rZyBBMwyuE6xeKRQinMqAxtXLpC2Ggajtj6UuB3&amount=1&index=196&proof=ASQkxrsYauX9DdSiv2BPFSopYHpNfJ4LD4WyDhgBL6Qs,35YhaP8WmHuzjJUEicAYBXysVTjD4QyZp49cVSf1mxvR,AwpESNNLKtSpbYs8F7ePKBAorgWCjV13XZ7pSYSuqwsE,Cm4jezvXRoGMkhuRoKgna1kkgxc3TtqaQYF1Gt1PLNY,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FcCFJAS7N57tc7QsXsSTZ57sTnCzssSMSaHbgLFq6Vnh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FcCFJAS7N57tc7QsXsSTZ57sTnCzssSMSaHbgLFq6Vnh&amount=1&index=197&proof=26FYYJJzoB18Y46ehzqJnPEcXjhF2279AZpMXTXAmokp,35YhaP8WmHuzjJUEicAYBXysVTjD4QyZp49cVSf1mxvR,AwpESNNLKtSpbYs8F7ePKBAorgWCjV13XZ7pSYSuqwsE,Cm4jezvXRoGMkhuRoKgna1kkgxc3TtqaQYF1Gt1PLNY,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FchkoaNWHoGiEKrvXrDjVjpXGm5cTKuFQJM5Gy2SpHQh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FchkoaNWHoGiEKrvXrDjVjpXGm5cTKuFQJM5Gy2SpHQh&amount=1&index=198&proof=2fh9zpToM1PdcYExnhnDqkgsErbzwkwrKyiz7wFm78nk,BAUbDLQaFhPm4b9SEiHdVQGDfHsukRZ5Jtogk91JZA7h,AwpESNNLKtSpbYs8F7ePKBAorgWCjV13XZ7pSYSuqwsE,Cm4jezvXRoGMkhuRoKgna1kkgxc3TtqaQYF1Gt1PLNY,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FDaotMKYHkX2mJwzMUKBAsSQV1g1oKkbZVtkYohRHWCX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FDaotMKYHkX2mJwzMUKBAsSQV1g1oKkbZVtkYohRHWCX&amount=1&index=199&proof=WmxCJmUvw8TFYE1Q8j6YxFTTpwDMFkXnYoPtSnCSTNQ,BAUbDLQaFhPm4b9SEiHdVQGDfHsukRZ5Jtogk91JZA7h,AwpESNNLKtSpbYs8F7ePKBAorgWCjV13XZ7pSYSuqwsE,Cm4jezvXRoGMkhuRoKgna1kkgxc3TtqaQYF1Gt1PLNY,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FHK9YtXJr5CWmZmhZ8tBCx9YkRVGukyxjWUr7q4W3XuL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FHK9YtXJr5CWmZmhZ8tBCx9YkRVGukyxjWUr7q4W3XuL&amount=1&index=200&proof=Da9N1C8jQQoKgRiKCmjaALxVSFKdPJA2Euade4VhMhRK,7dZHjarHew6LfqdWNp8wruT2RDuaDSxVUhEFPCPnnfQd,5Uf5fVujr4U3kSudx6rmrNMrPUkTX5pzvX5x9idTRp47,EwVN5ERGJ4JhGHhqW6sdgLG6HfxPxrpTEz9jwZfh65NB,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FkDiR3pGH1pq91aQnXS71r2nuqB2b1321x9g5M5d5uxb",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FkDiR3pGH1pq91aQnXS71r2nuqB2b1321x9g5M5d5uxb&amount=1&index=201&proof=FHgfhVDVfntEseP1TdTT4VvTj1NwZf6TDuRk3irWjEoJ,7dZHjarHew6LfqdWNp8wruT2RDuaDSxVUhEFPCPnnfQd,5Uf5fVujr4U3kSudx6rmrNMrPUkTX5pzvX5x9idTRp47,EwVN5ERGJ4JhGHhqW6sdgLG6HfxPxrpTEz9jwZfh65NB,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FMkMaugMhvyy1MSE5uBzxNtMevXqyUuVCavLE5RnGUM1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FMkMaugMhvyy1MSE5uBzxNtMevXqyUuVCavLE5RnGUM1&amount=1&index=202&proof=94dESNjQAdyHBPsXEVrh43giWUjcrPQ28rgMepnb4ER,6VZu4JabRx5b2eVaPjum14hFiCL2FvDRyf1zVvWwMRYS,5Uf5fVujr4U3kSudx6rmrNMrPUkTX5pzvX5x9idTRp47,EwVN5ERGJ4JhGHhqW6sdgLG6HfxPxrpTEz9jwZfh65NB,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FRRbeyaAhvT9JidqLtt6fX8iEzeMfQGzkQVqNTF2rKGc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FRRbeyaAhvT9JidqLtt6fX8iEzeMfQGzkQVqNTF2rKGc&amount=1&index=203&proof=5abxijFn1RfEVBzoz5D67DggtcJgBgm4L5njufPyCxN4,6VZu4JabRx5b2eVaPjum14hFiCL2FvDRyf1zVvWwMRYS,5Uf5fVujr4U3kSudx6rmrNMrPUkTX5pzvX5x9idTRp47,EwVN5ERGJ4JhGHhqW6sdgLG6HfxPxrpTEz9jwZfh65NB,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FsL6mmTF9ZvLeKEpmdyjJRGBYLTiTyp44fx1NdEjRHSm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FsL6mmTF9ZvLeKEpmdyjJRGBYLTiTyp44fx1NdEjRHSm&amount=1&index=204&proof=4FVaBkhGovkCXQTtHQTQyK4qBotqH7QRiwrEMRwmkpjF,6HuzZW4bSShP5MLJSHQtmBtMNcJwsrevPAdca7uCjx6g,Aoh5aTqacSAk6ZHMvQhgtsJ9M8K9V6n1rsiNkYuE9bKn,EwVN5ERGJ4JhGHhqW6sdgLG6HfxPxrpTEz9jwZfh65NB,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FSVrDsYEyz2cv4X6FAjWszib2DRF2iVhMLJpesoBTx7a",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FSVrDsYEyz2cv4X6FAjWszib2DRF2iVhMLJpesoBTx7a&amount=1&index=205&proof=AqKcYikJFxGKN142cHQZfn3ao56esHj4orPP2FveiL1b,6HuzZW4bSShP5MLJSHQtmBtMNcJwsrevPAdca7uCjx6g,Aoh5aTqacSAk6ZHMvQhgtsJ9M8K9V6n1rsiNkYuE9bKn,EwVN5ERGJ4JhGHhqW6sdgLG6HfxPxrpTEz9jwZfh65NB,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FtgG9PJbBHk6R1gryGifCj38tVjnR8goSSPt6drFaHtZ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FtgG9PJbBHk6R1gryGifCj38tVjnR8goSSPt6drFaHtZ&amount=1&index=206&proof=e3eksKKbQbb34CdgEcrWBshmV8QRb2xz9MvoQHABKiQ,BC9xWwa69dSwtZFieovXhfBB9QPFbkqkpVdZEVxoLynT,Aoh5aTqacSAk6ZHMvQhgtsJ9M8K9V6n1rsiNkYuE9bKn,EwVN5ERGJ4JhGHhqW6sdgLG6HfxPxrpTEz9jwZfh65NB,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FW2D9oDDVsR3czDkFEJoByBwzx24uiA6HZMMe9Tpc8Nx",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FW2D9oDDVsR3czDkFEJoByBwzx24uiA6HZMMe9Tpc8Nx&amount=1&index=207&proof=6LpGZVDyw3G7WxAvPftCfpgBdmGHNwjvW3SCLMtdqJEb,BC9xWwa69dSwtZFieovXhfBB9QPFbkqkpVdZEVxoLynT,Aoh5aTqacSAk6ZHMvQhgtsJ9M8K9V6n1rsiNkYuE9bKn,EwVN5ERGJ4JhGHhqW6sdgLG6HfxPxrpTEz9jwZfh65NB,5QyvWSZA4RG8fRANo287tHNr5YJUqDA64ex6eWYJ7Ni9,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "FXZaAweM6p8xbrUA9YohaEieGeZNAedi3JGK4AShAQYt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=FXZaAweM6p8xbrUA9YohaEieGeZNAedi3JGK4AShAQYt&amount=1&index=208&proof=DeGZrVmzS7yLAumLMXvydGHhGii724oZwCZm4GQF2dPu,4UD4JTeHfiibksP4gvB3StpAwQ33n3v2UHeEjvUWkbAY,DkPRhJBbgni3LrdsUpW36CU9KRGKxVyCbZ9nWRNir2Us,4VxoDgjaPixpmWvdrAk5sBAKYUjAMxMATTEjiZ38Q7Bi,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Fzkih4zSTEK1qrVSZ7oiveyw35pSbb83sof1KEA7gtoy",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Fzkih4zSTEK1qrVSZ7oiveyw35pSbb83sof1KEA7gtoy&amount=1&index=209&proof=7hpv4jLuQRpjV9wVnk7zCRXSccXGGHRjxjQSHBRhqTqu,4UD4JTeHfiibksP4gvB3StpAwQ33n3v2UHeEjvUWkbAY,DkPRhJBbgni3LrdsUpW36CU9KRGKxVyCbZ9nWRNir2Us,4VxoDgjaPixpmWvdrAk5sBAKYUjAMxMATTEjiZ38Q7Bi,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "G32NMqfHTZE4xvz1V3WqkWDUHYjau412xYocKJyefcQU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=G32NMqfHTZE4xvz1V3WqkWDUHYjau412xYocKJyefcQU&amount=1&index=210&proof=9jtiDnTqkH8EvyqZbGDbpLu1tMP36LXLApnNR5Mm5myZ,HdFFW96HgnmcEGCaP32omJtVieLLEAxv2cQVTLWKHqhJ,DkPRhJBbgni3LrdsUpW36CU9KRGKxVyCbZ9nWRNir2Us,4VxoDgjaPixpmWvdrAk5sBAKYUjAMxMATTEjiZ38Q7Bi,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "G3XRa4BbBLY95FiMJjCjoWAd2PssQwEsfKkbcZtBmqn7",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=G3XRa4BbBLY95FiMJjCjoWAd2PssQwEsfKkbcZtBmqn7&amount=1&index=211&proof=3HGggz9smG7t2V6rkdn8EbJvjpQmXYjn9751cGnu9p7j,HdFFW96HgnmcEGCaP32omJtVieLLEAxv2cQVTLWKHqhJ,DkPRhJBbgni3LrdsUpW36CU9KRGKxVyCbZ9nWRNir2Us,4VxoDgjaPixpmWvdrAk5sBAKYUjAMxMATTEjiZ38Q7Bi,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "G4PZXXxDPiKYqAoQvEwGTqvKhojJkWQ7XNBgezUCkMur",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=G4PZXXxDPiKYqAoQvEwGTqvKhojJkWQ7XNBgezUCkMur&amount=1&index=212&proof=E7cC43ANNsYvxVGVN7cToX3D1L3wemTEJ8teWYFHmGgo,GpT7KgSDb7vNYJQH4zF7KHj4gQHBaXh4wj8meT2t1MtF,JAthMTv9qWeKpWRyq1BhB6arL9weawnjVUi6vFm4LCYr,4VxoDgjaPixpmWvdrAk5sBAKYUjAMxMATTEjiZ38Q7Bi,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "G5hiXbf8ekKpyV2Wz227k2LY8aTzQaV33MD6Xu1Xs4Ce",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=G5hiXbf8ekKpyV2Wz227k2LY8aTzQaV33MD6Xu1Xs4Ce&amount=1&index=213&proof=3qTGmkkuVy5Yj66KfBqpfuLuCr5db8WMcUp6ZG1265BG,GpT7KgSDb7vNYJQH4zF7KHj4gQHBaXh4wj8meT2t1MtF,JAthMTv9qWeKpWRyq1BhB6arL9weawnjVUi6vFm4LCYr,4VxoDgjaPixpmWvdrAk5sBAKYUjAMxMATTEjiZ38Q7Bi,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "G5HL8MFXMfrVNFjBMmQSnuJFtfTEPrvX8AsAs75HYj4e",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=G5HL8MFXMfrVNFjBMmQSnuJFtfTEPrvX8AsAs75HYj4e&amount=1&index=214&proof=4WXR12rqurFsVfMFc7ndBigG81vi5jax5ysMEwCWctNR,DaaJLt3x42v49cQYMK4nZM3nxus199XVHYG3yob5wd4M,JAthMTv9qWeKpWRyq1BhB6arL9weawnjVUi6vFm4LCYr,4VxoDgjaPixpmWvdrAk5sBAKYUjAMxMATTEjiZ38Q7Bi,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "G8e6ZFsBEgNJdkGaYXbYXevsjG1Qv9RqT74NE6CB1yC1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=G8e6ZFsBEgNJdkGaYXbYXevsjG1Qv9RqT74NE6CB1yC1&amount=1&index=215&proof=GYmDFu36auHJJq3bciBoPtzThtm9XXqPJsmfRNG5Vcqi,DaaJLt3x42v49cQYMK4nZM3nxus199XVHYG3yob5wd4M,JAthMTv9qWeKpWRyq1BhB6arL9weawnjVUi6vFm4LCYr,4VxoDgjaPixpmWvdrAk5sBAKYUjAMxMATTEjiZ38Q7Bi,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "G8p4cF6heVGxGeMUXkGYzzqufp6asuXjuJGyDT5CA8Ea",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=G8p4cF6heVGxGeMUXkGYzzqufp6asuXjuJGyDT5CA8Ea&amount=1&index=216&proof=DDWxA9wTvn5vt6Vf6CVJsjSVppJCn48QxcEDir1NW6C1,Du69qbHpPt86hUm2sf48pPhZ1WpKkKaLMCryS2TAP55i,9Y5bPosJXWZDAndh7N7Y7xeb48ws9YUJHvySWzxXtrBg,7MeeMqyeHxRos36ky7kQJMj8t4s16yaXLixPdztAadBV,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GLT2BeeRoj6NXEJb3abYVzMWMJGk2DTdgoJML7H6mgnM",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GLT2BeeRoj6NXEJb3abYVzMWMJGk2DTdgoJML7H6mgnM&amount=1&index=217&proof=6BznaaGn9NDnbBK1Dq1pAKtUDVgWoTysvAJfXkApnZmk,Du69qbHpPt86hUm2sf48pPhZ1WpKkKaLMCryS2TAP55i,9Y5bPosJXWZDAndh7N7Y7xeb48ws9YUJHvySWzxXtrBg,7MeeMqyeHxRos36ky7kQJMj8t4s16yaXLixPdztAadBV,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GmCRAxJ5qtDsctMsmNDGmAVXmt2UUxtXMv7AZwidniWJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GmCRAxJ5qtDsctMsmNDGmAVXmt2UUxtXMv7AZwidniWJ&amount=1&index=218&proof=6SDuPqgRY2zMNvK4ixVFhXqwZBpNdVBaTfQeFKDRkQQb,JA7ZH7Fze6tMDeNm9JjGKo7TSbktasMULuct7WNsJvMu,9Y5bPosJXWZDAndh7N7Y7xeb48ws9YUJHvySWzxXtrBg,7MeeMqyeHxRos36ky7kQJMj8t4s16yaXLixPdztAadBV,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Gmd5FWPH1xB6kGwawWMfb6CsFEq8m2c3VL8wUoFdcqmu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Gmd5FWPH1xB6kGwawWMfb6CsFEq8m2c3VL8wUoFdcqmu&amount=1&index=219&proof=D87W2ZTkBFudH5xnief4ZrwwBbNVNVMdbwnATwTYtfLo,JA7ZH7Fze6tMDeNm9JjGKo7TSbktasMULuct7WNsJvMu,9Y5bPosJXWZDAndh7N7Y7xeb48ws9YUJHvySWzxXtrBg,7MeeMqyeHxRos36ky7kQJMj8t4s16yaXLixPdztAadBV,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GNpJVmJ6tGXvNg568LSMLFaWxMPoMSNTJF6L7vk7Fp2y",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GNpJVmJ6tGXvNg568LSMLFaWxMPoMSNTJF6L7vk7Fp2y&amount=1&index=220&proof=F1z5TodXA2Z3zcHS4bmLZUzhUNawmZRnX9cMEhrqSKNw,BCZhogiTTVbkLcvZjXyXn83Z4qsnExKCv5MPYMcqtqFr,6GQDUp3BZCRErDZjrKERtbLntF6JMhjAJjhbitbm9yMe,7MeeMqyeHxRos36ky7kQJMj8t4s16yaXLixPdztAadBV,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GNqScy7SERhCFTba7PRuM33wq9M4XabT78h28fKAb6zM",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GNqScy7SERhCFTba7PRuM33wq9M4XabT78h28fKAb6zM&amount=1&index=221&proof=Bqntv8K9wCLv4X939DGrN9kdX4Bk8PQjka6ktWvcZsMx,BCZhogiTTVbkLcvZjXyXn83Z4qsnExKCv5MPYMcqtqFr,6GQDUp3BZCRErDZjrKERtbLntF6JMhjAJjhbitbm9yMe,7MeeMqyeHxRos36ky7kQJMj8t4s16yaXLixPdztAadBV,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GoTLJ4nnHvQkd9aqdnRfhgzmmg6Lw9yH4QTrCZDfTgeR",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GoTLJ4nnHvQkd9aqdnRfhgzmmg6Lw9yH4QTrCZDfTgeR&amount=1&index=222&proof=Fhdzn5iphYSfUG1SuAPMPWAeFhLqQbUUvvUZnnGxNvw,8c5wortfHdp7obmfuwPAntVGvZTrnDkmbbDDU9YzE9ZL,6GQDUp3BZCRErDZjrKERtbLntF6JMhjAJjhbitbm9yMe,7MeeMqyeHxRos36ky7kQJMj8t4s16yaXLixPdztAadBV,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GPDrgDabCRgLhdR5Y4HSS2uwymFAyM8zXw14WvVgmD9z",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GPDrgDabCRgLhdR5Y4HSS2uwymFAyM8zXw14WvVgmD9z&amount=1&index=223&proof=4Z1eM7fm8NR1oXjFgqHo6f5zTkSWmYcWaCXrWNTT1Xzd,8c5wortfHdp7obmfuwPAntVGvZTrnDkmbbDDU9YzE9ZL,6GQDUp3BZCRErDZjrKERtbLntF6JMhjAJjhbitbm9yMe,7MeeMqyeHxRos36ky7kQJMj8t4s16yaXLixPdztAadBV,7Kft3X4PCf8rtQiPuzft7KaDiFwLRmqqjKLxu9g2U2nV,6oXTTgpWdJLo37QyMnkF5LmFx5AQWkCdFtFKTz6eBTqt,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Gqa5MwF3Qx4iyo171Y6wUbVPecp7kZNAUxdpeb14ZLmm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Gqa5MwF3Qx4iyo171Y6wUbVPecp7kZNAUxdpeb14ZLmm&amount=1&index=224&proof=BVa8NWGwizUAnBLrQeVPAhyY2H6CfAZkN9JLu5x6pYA2,3GLLbeC6YiwFRDg3CLp1xwWgcxbrXRaGfENgVcC8BRXA,3ZXVev52ZmiLgbZTtqDfw3Cp2TZMJr8mokcS5iiV8gui,Cn1vanF1DYnExGgSJYE4Vd9iDCeVkdvyNHVTwG3z2GUB,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GrdZjahzBeR4B1DySnFpdHpspBRpEa2WSVQMTecXoGf9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GrdZjahzBeR4B1DySnFpdHpspBRpEa2WSVQMTecXoGf9&amount=1&index=225&proof=9uLee3SsjDXmtfE7YA4oAdgWcPJrKNQ4bv4qXePnZZPo,3GLLbeC6YiwFRDg3CLp1xwWgcxbrXRaGfENgVcC8BRXA,3ZXVev52ZmiLgbZTtqDfw3Cp2TZMJr8mokcS5iiV8gui,Cn1vanF1DYnExGgSJYE4Vd9iDCeVkdvyNHVTwG3z2GUB,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GupZ27sr8eMEQ4Zt2DeBt4iLXt8hQiGj4nfx7KFoZHmv",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GupZ27sr8eMEQ4Zt2DeBt4iLXt8hQiGj4nfx7KFoZHmv&amount=1&index=226&proof=Hpz4yAzhrKhHymy31L5TLkYxbBUVaT4UVoRfQQcuZeST,4QMjH14B7qJPsaxWEKSDgJU3qYRPH8c1Q5cdxEZXWvkE,3ZXVev52ZmiLgbZTtqDfw3Cp2TZMJr8mokcS5iiV8gui,Cn1vanF1DYnExGgSJYE4Vd9iDCeVkdvyNHVTwG3z2GUB,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GWtsmAiQENSRNNNv3pXJCmUXxPZKCC5yYfp4EgoP9oY6",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GWtsmAiQENSRNNNv3pXJCmUXxPZKCC5yYfp4EgoP9oY6&amount=1&index=227&proof=AvvT8X5YHPY7Y7XCiYrQySA7pzAX6WFVFhzprxgyoDu1,4QMjH14B7qJPsaxWEKSDgJU3qYRPH8c1Q5cdxEZXWvkE,3ZXVev52ZmiLgbZTtqDfw3Cp2TZMJr8mokcS5iiV8gui,Cn1vanF1DYnExGgSJYE4Vd9iDCeVkdvyNHVTwG3z2GUB,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GXfNgBT4yqovfmBuKY4iJUszjKUiKwMPc2P25XmDVFg6",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GXfNgBT4yqovfmBuKY4iJUszjKUiKwMPc2P25XmDVFg6&amount=1&index=228&proof=75kG5yEXWAgfWBkj1FVC6GyfFJ7iU2EDEin26MPUgarb,3hGBCWihDsnya27QHcUd1KADXZypddZ5XZA3jg3Sxyr1,HmW2JpqWKCr5uytbFNUYi4Gw9EhF7GeAxvddYxPybH5c,Cn1vanF1DYnExGgSJYE4Vd9iDCeVkdvyNHVTwG3z2GUB,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GyEZdXr836gKCcYU81LwomuUzzKCZEp19rW7MLDigShD",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GyEZdXr836gKCcYU81LwomuUzzKCZEp19rW7MLDigShD&amount=1&index=229&proof=AS7k8Lat49ubJfqG5uSrH7ZsMAXZtvVVtLvyHbv7RMEM,3hGBCWihDsnya27QHcUd1KADXZypddZ5XZA3jg3Sxyr1,HmW2JpqWKCr5uytbFNUYi4Gw9EhF7GeAxvddYxPybH5c,Cn1vanF1DYnExGgSJYE4Vd9iDCeVkdvyNHVTwG3z2GUB,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "GYKnWF8ihJ5z2huxyS3DvmenjCunqCffQZ4bDvMeWVGZ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=GYKnWF8ihJ5z2huxyS3DvmenjCunqCffQZ4bDvMeWVGZ&amount=1&index=230&proof=27K3QNCFFnDMeC3CnDK8iLRT8cDScjQMvpej78rTKx8R,BtWJyjXMxZsTT5mPenQ3zD9kKAzvCteeqrqVSJTjksyi,HmW2JpqWKCr5uytbFNUYi4Gw9EhF7GeAxvddYxPybH5c,Cn1vanF1DYnExGgSJYE4Vd9iDCeVkdvyNHVTwG3z2GUB,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "H8tRVbHnEWCHpcrzA7dd21ChkeFVich38MfAX6rCohwn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=H8tRVbHnEWCHpcrzA7dd21ChkeFVich38MfAX6rCohwn&amount=1&index=231&proof=BvRLHjDsSeEK51U8at31PvvHcLumN1GzSiR8NK2mUqUC,BtWJyjXMxZsTT5mPenQ3zD9kKAzvCteeqrqVSJTjksyi,HmW2JpqWKCr5uytbFNUYi4Gw9EhF7GeAxvddYxPybH5c,Cn1vanF1DYnExGgSJYE4Vd9iDCeVkdvyNHVTwG3z2GUB,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "HBzoskTFFvNBHBqYcJrKU45ZHm6uDqahsvTLeqA4X7gj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=HBzoskTFFvNBHBqYcJrKU45ZHm6uDqahsvTLeqA4X7gj&amount=1&index=232&proof=5yTAKfc7xPoRHZMFuUxatwLppkpPsGY6C5JKG7hxHntC,AMg7qzxrsTR9xAsec3xa15R58SE8Ej6DgqtnEStGWjtY,7Vkm9abEcmWLgHiRHs5rj5CDvJp6GU3XVHLfg224mYyj,7qociABtm19xMvdNxgSfBPqM2sJ9HozfoHCcx9bzDPVc,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "HcbYbGRAnGs7GDUxgWrVRRPdnXF397rUzpQHq3nCma3f",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=HcbYbGRAnGs7GDUxgWrVRRPdnXF397rUzpQHq3nCma3f&amount=1&index=233&proof=GHpoXLMofA44yYhuKuCxJqih4PDJjQUh2irQXDaTXpAr,AMg7qzxrsTR9xAsec3xa15R58SE8Ej6DgqtnEStGWjtY,7Vkm9abEcmWLgHiRHs5rj5CDvJp6GU3XVHLfg224mYyj,7qociABtm19xMvdNxgSfBPqM2sJ9HozfoHCcx9bzDPVc,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "HQhnTqnR42abrDc63QGgqMcCR4byALwHmMqmLG9rhRmB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=HQhnTqnR42abrDc63QGgqMcCR4byALwHmMqmLG9rhRmB&amount=1&index=234&proof=9svV7Qw4NmBLozzcBCh8KBLhRWUFwcyiYS3J7Ep6m4dp,AfmsBU193p9dPrpeMSNKWyoeoJGb2TjDmhWhELg9hdrH,7Vkm9abEcmWLgHiRHs5rj5CDvJp6GU3XVHLfg224mYyj,7qociABtm19xMvdNxgSfBPqM2sJ9HozfoHCcx9bzDPVc,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "HQSTio2JGSBTb4kizfNd9qkNZrbR95EJmfYJbtwJ2Y15",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=HQSTio2JGSBTb4kizfNd9qkNZrbR95EJmfYJbtwJ2Y15&amount=1&index=235&proof=HJmZHEjS9uMQ5R7C7Y8eXQ4w2RLuMRAWBU7M16ezzA4h,AfmsBU193p9dPrpeMSNKWyoeoJGb2TjDmhWhELg9hdrH,7Vkm9abEcmWLgHiRHs5rj5CDvJp6GU3XVHLfg224mYyj,7qociABtm19xMvdNxgSfBPqM2sJ9HozfoHCcx9bzDPVc,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Hrd544rgqQDXbfjQMSQ4R63Ltcze4Xznc3265Rm3YcKS",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Hrd544rgqQDXbfjQMSQ4R63Ltcze4Xznc3265Rm3YcKS&amount=1&index=236&proof=8m8dEujbDYWjPmWjxn7Avp5UGkncGFVpCJvtdFdJu6GQ,EH6Bd26K7ZNSneKeCEM8vgTqmX93hByamNMHkBfsvM5i,52J8dd7mDasg4Q574tA2PEMqCcLQkha3Z9KDQLZvD4M3,7qociABtm19xMvdNxgSfBPqM2sJ9HozfoHCcx9bzDPVc,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "HuoTyiNuVVqDH2oKAk2jhwXZbxMurA8sgna3bLiT7dXE",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=HuoTyiNuVVqDH2oKAk2jhwXZbxMurA8sgna3bLiT7dXE&amount=1&index=237&proof=AfYtHkwS8r33Q2quK43H76rLCdiKPYXo2Tv3FSu7caSA,EH6Bd26K7ZNSneKeCEM8vgTqmX93hByamNMHkBfsvM5i,52J8dd7mDasg4Q574tA2PEMqCcLQkha3Z9KDQLZvD4M3,7qociABtm19xMvdNxgSfBPqM2sJ9HozfoHCcx9bzDPVc,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "HuYjAMvRiFjSyNxjrqtpChrHU2pjGSupZSRQuWBPMUmj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=HuYjAMvRiFjSyNxjrqtpChrHU2pjGSupZSRQuWBPMUmj&amount=1&index=238&proof=CnLxxpBgHP2h7oBboZfdberRf7ZeAqqRNdSQmYtCc9A2,HqD4MzAdqKjV7Qs59xHWjmWwinrY9TnfgqQ7wUsxuyUb,52J8dd7mDasg4Q574tA2PEMqCcLQkha3Z9KDQLZvD4M3,7qociABtm19xMvdNxgSfBPqM2sJ9HozfoHCcx9bzDPVc,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "HvXZeM1CL5FWoqC3exrapYX756QMmjHPX2oeqT6vEmEt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=HvXZeM1CL5FWoqC3exrapYX756QMmjHPX2oeqT6vEmEt&amount=1&index=239&proof=6iFHpRpex4JGG8NsLwiYTcWXZCFGdcnTgMGTXRcRgUnv,HqD4MzAdqKjV7Qs59xHWjmWwinrY9TnfgqQ7wUsxuyUb,52J8dd7mDasg4Q574tA2PEMqCcLQkha3Z9KDQLZvD4M3,7qociABtm19xMvdNxgSfBPqM2sJ9HozfoHCcx9bzDPVc,CeefePPZTWpqKCNd1BLHPPE7MFsNniSALY3a3TTaS7zQ,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "HyiWdPF4nzi5mXh8LQPA7NBYnXzWeQ28aJDJz8cRfkGq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=HyiWdPF4nzi5mXh8LQPA7NBYnXzWeQ28aJDJz8cRfkGq&amount=1&index=240&proof=DDjnPsqxBWPuMhYN8u6VEc58JV7WCHq3mnrfPhSxHseY,A57QL51HDGxSRH18BS1NJAuYaaMXGrqwBhXhjHUW1Hvb,22i457VTWjpNKpEaFBhfx1DaWSxzuNVYWMATDS9pzVLz,H7C3agQ9Zw2jS4cmW743zgssC2JJGN4WA3xrHh3DZZ9d,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "HZ4JtzCWgsnox3393LjnUu1SfBez8X3guYXcj7FAuhjb",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=HZ4JtzCWgsnox3393LjnUu1SfBez8X3guYXcj7FAuhjb&amount=1&index=241&proof=5EeeTDxkqspFk8nxgbxHUSmKPHoA6bKjLVqY3D3kUB8L,A57QL51HDGxSRH18BS1NJAuYaaMXGrqwBhXhjHUW1Hvb,22i457VTWjpNKpEaFBhfx1DaWSxzuNVYWMATDS9pzVLz,H7C3agQ9Zw2jS4cmW743zgssC2JJGN4WA3xrHh3DZZ9d,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "HZDqWszbZvyumMTJLnipviJx8AE5gZZ4hHhvUuUVwpor",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=HZDqWszbZvyumMTJLnipviJx8AE5gZZ4hHhvUuUVwpor&amount=1&index=242&proof=3kAutJzdrMvENLHXJHE7SXnixG5VQskM55TmmiPRh9tH,GhzVKEhCqRU9KDCbXEhN7kr9JQFS1JMFshYXDMYiYYfv,22i457VTWjpNKpEaFBhfx1DaWSxzuNVYWMATDS9pzVLz,H7C3agQ9Zw2jS4cmW743zgssC2JJGN4WA3xrHh3DZZ9d,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "J1sFjvcmhAxiYS5oerp167VDCu1u76csG5bXkkgijVJn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=J1sFjvcmhAxiYS5oerp167VDCu1u76csG5bXkkgijVJn&amount=1&index=243&proof=2mQH93zHTLmQccmLpdLUAUhVSuKMvL176KxospPA5mJW,GhzVKEhCqRU9KDCbXEhN7kr9JQFS1JMFshYXDMYiYYfv,22i457VTWjpNKpEaFBhfx1DaWSxzuNVYWMATDS9pzVLz,H7C3agQ9Zw2jS4cmW743zgssC2JJGN4WA3xrHh3DZZ9d,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "J6V9FzG8pNWa62HsLUaQJ7ebeyw6RwNSjsxidmndQZ1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=J6V9FzG8pNWa62HsLUaQJ7ebeyw6RwNSjsxidmndQZ1&amount=1&index=244&proof=8iC4RLQkyqKiCNhPXKKzHixJCWGjwBb5ETfwxZUkgg6X,65mVgT2PrZphTYG6PBZALYor2MSc5BfB8Ep1WUFJGwqF,FYaQjqLUcPjYe9JTsMfh6f3dfMHxU2GpMfMMr3jWQpG2,H7C3agQ9Zw2jS4cmW743zgssC2JJGN4WA3xrHh3DZZ9d,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "J79UTScUhTbiVEiszsk4puR31yViEKrWVPshsVojzVJG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=J79UTScUhTbiVEiszsk4puR31yViEKrWVPshsVojzVJG&amount=1&index=245&proof=BXjtivv4WoDtfNEWfqBvWaobEaY8dkXYCvLN2JJHWs4x,65mVgT2PrZphTYG6PBZALYor2MSc5BfB8Ep1WUFJGwqF,FYaQjqLUcPjYe9JTsMfh6f3dfMHxU2GpMfMMr3jWQpG2,H7C3agQ9Zw2jS4cmW743zgssC2JJGN4WA3xrHh3DZZ9d,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "JBP3udZvP13ZarKQxzggvMH7p2Jn8GoUFzbDfJFF6FCo",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=JBP3udZvP13ZarKQxzggvMH7p2Jn8GoUFzbDfJFF6FCo&amount=1&index=246&proof=4AeTLF535qR34SFmZwciMVU1HU4XeXzzTNeC1SRmwqoe,5iugvkZXgTskEjH3YFxptSS5AoZkDBiV4EQCGGEKL5MJ,FYaQjqLUcPjYe9JTsMfh6f3dfMHxU2GpMfMMr3jWQpG2,H7C3agQ9Zw2jS4cmW743zgssC2JJGN4WA3xrHh3DZZ9d,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "KKxFkts5tAc8CwUXRNZ5eKNfv7MQTiKZmosD18PuEry",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=KKxFkts5tAc8CwUXRNZ5eKNfv7MQTiKZmosD18PuEry&amount=1&index=247&proof=DaTa3GR9nkuTDABL9aQBcEq5YwnMgfjQs1fAw3Mw3mQE,5iugvkZXgTskEjH3YFxptSS5AoZkDBiV4EQCGGEKL5MJ,FYaQjqLUcPjYe9JTsMfh6f3dfMHxU2GpMfMMr3jWQpG2,H7C3agQ9Zw2jS4cmW743zgssC2JJGN4WA3xrHh3DZZ9d,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "Nd4G68mVaDNyY5WzwBYBT9FR8Tb7UxPsgL6uoQMb5gN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=Nd4G68mVaDNyY5WzwBYBT9FR8Tb7UxPsgL6uoQMb5gN&amount=1&index=248&proof=BK3SPg5ADSLZghgWpRRTnPfTUKBQrfL7mgz6NTvoGGZT,HTLV5tneRvenfMghjmHsggmNPpuFwzYxG8pNo2QbdKEm,BPE1zcfXHavxzFW7qDRSd7fp5T2mqma5xY9HWzsFUzaF,Fd9SHTcXKRud2s3GJRPmQX7AUkiSnYuCXwnJRDzVdMod,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "NKnn4bvN5spd8xRHvodfVpBfbrYwSVaDzSwYaCRjJqr",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=NKnn4bvN5spd8xRHvodfVpBfbrYwSVaDzSwYaCRjJqr&amount=1&index=249&proof=8DWYKhcYXQZaP9mBcbrTS2MxRcMBWskRSmFXT2tDSjBR,HTLV5tneRvenfMghjmHsggmNPpuFwzYxG8pNo2QbdKEm,BPE1zcfXHavxzFW7qDRSd7fp5T2mqma5xY9HWzsFUzaF,Fd9SHTcXKRud2s3GJRPmQX7AUkiSnYuCXwnJRDzVdMod,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "nriMVaBAxXzHonSGiiqxrVxXnyuytoQrNkFXqxgAvmt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=nriMVaBAxXzHonSGiiqxrVxXnyuytoQrNkFXqxgAvmt&amount=1&index=250&proof=7PD81W7jJ6U3aF99khZyK4KbtBbTf9XyCepvGvjWw9KG,B1K8bZ6jeDEvbUq62bsKEAAKtJGg2xGcLCb1r5dcuypU,BPE1zcfXHavxzFW7qDRSd7fp5T2mqma5xY9HWzsFUzaF,Fd9SHTcXKRud2s3GJRPmQX7AUkiSnYuCXwnJRDzVdMod,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "oz7V52YgDFGzK9M9cngPtZWALknN1EMoq6t74ayyCNd",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=oz7V52YgDFGzK9M9cngPtZWALknN1EMoq6t74ayyCNd&amount=1&index=251&proof=BbPjf6DFyRp1m3kCMViXKnYKFDvDuUJFB4iUmHMx4eQ5,B1K8bZ6jeDEvbUq62bsKEAAKtJGg2xGcLCb1r5dcuypU,BPE1zcfXHavxzFW7qDRSd7fp5T2mqma5xY9HWzsFUzaF,Fd9SHTcXKRud2s3GJRPmQX7AUkiSnYuCXwnJRDzVdMod,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "rqarMzttWuU3Ezces488AJc9sCE8g17ia48APNRYpat",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=rqarMzttWuU3Ezces488AJc9sCE8g17ia48APNRYpat&amount=1&index=252&proof=4McvncWcMHq4uqey2kqCbvC8Pd3MXcwBc5MS8etpa6JZ,5bMBMtb5JymjcTEguyNBiwdRvvbc7Vv9eeqj9EZdj27f,637CQzEJgbRfpU2ygHwWaQjakUveuaU9NiQUW9GY1pVN,Fd9SHTcXKRud2s3GJRPmQX7AUkiSnYuCXwnJRDzVdMod,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "U9BNgdbE3jbUsaQv9Sq4c8K6VvX5x6RmV3Vbypy2jfF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=U9BNgdbE3jbUsaQv9Sq4c8K6VvX5x6RmV3Vbypy2jfF&amount=1&index=253&proof=3zG1nBz46E8kzCiakvijSoTrke7NSFG1mo8rrpMdD6zF,5bMBMtb5JymjcTEguyNBiwdRvvbc7Vv9eeqj9EZdj27f,637CQzEJgbRfpU2ygHwWaQjakUveuaU9NiQUW9GY1pVN,Fd9SHTcXKRud2s3GJRPmQX7AUkiSnYuCXwnJRDzVdMod,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "uFosKw3Teb1he49uDZco8RMao4tMA4iG2RE9iKu7th1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=uFosKw3Teb1he49uDZco8RMao4tMA4iG2RE9iKu7th1&amount=1&index=254&proof=GKJL8nuoGQ8oQckwtdzhdfrv4Bc996crCMP7P6ZyL5Fy,2vkUSExarG8aczZDmZBhTcDTGRQRRoNznUFUKmnv2YSD,637CQzEJgbRfpU2ygHwWaQjakUveuaU9NiQUW9GY1pVN,Fd9SHTcXKRud2s3GJRPmQX7AUkiSnYuCXwnJRDzVdMod,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "wjgKv6Pz92QHShLuksiAQwSSTP2bTwm99cju6amp3ny",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=wjgKv6Pz92QHShLuksiAQwSSTP2bTwm99cju6amp3ny&amount=1&index=255&proof=BrSeULDXX7BknNFhrQiorCKtZkygDK4f1ewaPiP4MNLT,2vkUSExarG8aczZDmZBhTcDTGRQRRoNznUFUKmnv2YSD,637CQzEJgbRfpU2ygHwWaQjakUveuaU9NiQUW9GY1pVN,Fd9SHTcXKRud2s3GJRPmQX7AUkiSnYuCXwnJRDzVdMod,7sNnEQGarc6ABdPPC5795NY3bdPyZaJJuuth7MPQGp5L,DTK7CqCBT7uRpoooXG9fjzTEk7YXjMDUZVLXMtQdqUc1,4ckWiAibTmmERtdVsKnHrfZzgBoGHnUavo9xhtt19UQn,EtaaySsoXJa3Rf4Jhp2V4a4vJAzYAJam9e3GBZfTVeg6,35eCnhcGLW8UKjFohV948PFAZZZTY3NGcaXcp9c2SP4s,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "wVmRHEGAJ6otqP21C4Z4KX9RQ8mE5zVMRzAhy28MZKC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=wVmRHEGAJ6otqP21C4Z4KX9RQ8mE5zVMRzAhy28MZKC&amount=1&index=256&proof=ABwYu9Xw5Z9mCsRa11AhYBjUc412H5Q7PVsWbwSvZHzR,kBazaYddRRkWJjWuk2BZGW7CiPH36iig2YN52we8tVR,Chikig5EYVaY6kazVANXJwpFrgjfDQkbHzoge5wLpSeX,8XY9cSt2HNHfcVbHBKTTiDhtXKbg8VLiJQsuPtSEzu8f,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "XR2Z7YYypcPi9tNDQgZanff3iXfadGjo3QB37U8TQQh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=XR2Z7YYypcPi9tNDQgZanff3iXfadGjo3QB37U8TQQh&amount=1&index=257&proof=8iU6uFuuUGRDsw9Xgn34tQirNuxiyk7bXGXQZZPc7wWn,kBazaYddRRkWJjWuk2BZGW7CiPH36iig2YN52we8tVR,Chikig5EYVaY6kazVANXJwpFrgjfDQkbHzoge5wLpSeX,8XY9cSt2HNHfcVbHBKTTiDhtXKbg8VLiJQsuPtSEzu8f,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "yvqGAPEEGgNF7rwcvyy6J94PKP5W4i3EbN39F3CwT5f",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=yvqGAPEEGgNF7rwcvyy6J94PKP5W4i3EbN39F3CwT5f&amount=1&index=258&proof=7Ba9CGR1NuzSiT7esk35ohMrDmt9trvEYyp4puS1oRi,9Ax6T81Z7jzQxNhtQ3k3i2QJkXbA6xqK4BktAoRHH4LU,Chikig5EYVaY6kazVANXJwpFrgjfDQkbHzoge5wLpSeX,8XY9cSt2HNHfcVbHBKTTiDhtXKbg8VLiJQsuPtSEzu8f,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "127RvkGb5PjfkYX5Ae9T37TAm4yzPqstziu5VkhPt7LN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=127RvkGb5PjfkYX5Ae9T37TAm4yzPqstziu5VkhPt7LN&amount=1&index=259&proof=9KNbhfZK68QpppiJdGY3hRr96mPJDDaFCJcNdhvTZ5SF,9Ax6T81Z7jzQxNhtQ3k3i2QJkXbA6xqK4BktAoRHH4LU,Chikig5EYVaY6kazVANXJwpFrgjfDQkbHzoge5wLpSeX,8XY9cSt2HNHfcVbHBKTTiDhtXKbg8VLiJQsuPtSEzu8f,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "12pY1r2HdN77zSMnRfrGuWUvC31cpVV7Cx8tLx8w6K88",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=12pY1r2HdN77zSMnRfrGuWUvC31cpVV7Cx8tLx8w6K88&amount=1&index=260&proof=DzWReinTeB59z9ZLtRXyKJpncHiMCuM2vkdoXQEqswLb,3L1xg7qoBM7bAbPJJRKLLJgV2XnLZEt3Gbmpfh6d56dE,7V5z5phkeEDX5VgeArSk9MdzioYtQGVL6fut8xnS8pqT,8XY9cSt2HNHfcVbHBKTTiDhtXKbg8VLiJQsuPtSEzu8f,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "136BvpY8U6MmUAv6nG6qDrkvT4ExNqi4uM7mPpechYQi",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=136BvpY8U6MmUAv6nG6qDrkvT4ExNqi4uM7mPpechYQi&amount=1&index=261&proof=83idTSh9jx93RP1hivKCUweUTz6BjU3Yofyq4yirT3wf,3L1xg7qoBM7bAbPJJRKLLJgV2XnLZEt3Gbmpfh6d56dE,7V5z5phkeEDX5VgeArSk9MdzioYtQGVL6fut8xnS8pqT,8XY9cSt2HNHfcVbHBKTTiDhtXKbg8VLiJQsuPtSEzu8f,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "13KYNhK3JVr14dyusQeAF419qaKGbN9yUBsjPtD2byds",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=13KYNhK3JVr14dyusQeAF419qaKGbN9yUBsjPtD2byds&amount=1&index=262&proof=FbvqUjQ1LSkqZ7DhzRSaSqBhnbRWaVXHvBqpT38gjk3n,3LtVEWq5uz7MoFFZCE2cu5FeR6sX1oySGqduMurvqdp4,7V5z5phkeEDX5VgeArSk9MdzioYtQGVL6fut8xnS8pqT,8XY9cSt2HNHfcVbHBKTTiDhtXKbg8VLiJQsuPtSEzu8f,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "21r7rYup7cBEtUj2kq469xorR7q2W1Vyb7yCLZNVxxrq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=21r7rYup7cBEtUj2kq469xorR7q2W1Vyb7yCLZNVxxrq&amount=1&index=263&proof=HUFhY21SvNa7hqJzM3eYZHrgM6scZcPEGfWtMjcLtjk3,3LtVEWq5uz7MoFFZCE2cu5FeR6sX1oySGqduMurvqdp4,7V5z5phkeEDX5VgeArSk9MdzioYtQGVL6fut8xnS8pqT,8XY9cSt2HNHfcVbHBKTTiDhtXKbg8VLiJQsuPtSEzu8f,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "241ViXrZL8nzfHf2wyLYkhNZL3vuqENyAKvTaWFeCw2R",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=241ViXrZL8nzfHf2wyLYkhNZL3vuqENyAKvTaWFeCw2R&amount=1&index=264&proof=DTqHoJfz1CXG4Z3tuQpa68vaKdo499zhyW65ZfepXVt8,7VrttF6QXf9VUkj2y6ZiCnXASTwF4p4zPJF6C9veFwmF,AKLRtRfAkQkm9dJmqnb6F2N2YoBLCMPgksxSM8rkyGnE,C4QowAKwP8vteeUogMRM6P1auSq4A6Sh7xNin92hajBQ,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "244XTHa6ypqkm4iYV3YCed8hgFeYGgVjrX6s5D82iMf3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=244XTHa6ypqkm4iYV3YCed8hgFeYGgVjrX6s5D82iMf3&amount=1&index=265&proof=8ErGsYVcgJyyLSDuZZ6NcPUwtxePFKkTENPgDHbeQgSb,7VrttF6QXf9VUkj2y6ZiCnXASTwF4p4zPJF6C9veFwmF,AKLRtRfAkQkm9dJmqnb6F2N2YoBLCMPgksxSM8rkyGnE,C4QowAKwP8vteeUogMRM6P1auSq4A6Sh7xNin92hajBQ,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "24XKqg75umVdYb8qEUPXTeGTuJWumvR1GHGUh3D4EnZ5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=24XKqg75umVdYb8qEUPXTeGTuJWumvR1GHGUh3D4EnZ5&amount=1&index=266&proof=2RUXjRWj1Eex8pYumkiT9ceNjJ9Z3wqR7Bwfcbvk4Z3D,8hZSf4S9YcURHyCer5t9V3VLuoQh4v4oUdhcjgDY6z4X,AKLRtRfAkQkm9dJmqnb6F2N2YoBLCMPgksxSM8rkyGnE,C4QowAKwP8vteeUogMRM6P1auSq4A6Sh7xNin92hajBQ,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "25Cf8zTmv1qetRjFmnXx93Jo9AR349Xh6kuWxL2iZP6M",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=25Cf8zTmv1qetRjFmnXx93Jo9AR349Xh6kuWxL2iZP6M&amount=1&index=267&proof=73BtRikxBw4A2wKPjqXU2fhUsT2RTrQzyt1eC3CvwiSE,8hZSf4S9YcURHyCer5t9V3VLuoQh4v4oUdhcjgDY6z4X,AKLRtRfAkQkm9dJmqnb6F2N2YoBLCMPgksxSM8rkyGnE,C4QowAKwP8vteeUogMRM6P1auSq4A6Sh7xNin92hajBQ,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "264Y3PxpUH9C3Xp6i1wdbUrp9RGwke64yuQoWGZeGUGt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=264Y3PxpUH9C3Xp6i1wdbUrp9RGwke64yuQoWGZeGUGt&amount=1&index=268&proof=C3gE6v8G5mkX9yT8TQK1XgSZYjc4KgUwecxwdQnq39py,FfVqrpVePEg6Q8jwe5YwMYGoB6vq4NdmxmWQ1fwgKDng,J5SAquG2D5boWLHqTKPygbE7bP2JJcXXLJzqU19pUUcy,C4QowAKwP8vteeUogMRM6P1auSq4A6Sh7xNin92hajBQ,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "271c4SejFwWysn8gdk1MYRhbKecknapQX9jeVxcEPDJG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=271c4SejFwWysn8gdk1MYRhbKecknapQX9jeVxcEPDJG&amount=1&index=269&proof=Bbwzmqu5f38dHbb4CQpJNNzHt3vX8J8sYeHsk8GEejdv,FfVqrpVePEg6Q8jwe5YwMYGoB6vq4NdmxmWQ1fwgKDng,J5SAquG2D5boWLHqTKPygbE7bP2JJcXXLJzqU19pUUcy,C4QowAKwP8vteeUogMRM6P1auSq4A6Sh7xNin92hajBQ,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "27gpp41jdLWMueKMT76wuWiszvaBPLEMGcvbMSP6jKeL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=27gpp41jdLWMueKMT76wuWiszvaBPLEMGcvbMSP6jKeL&amount=1&index=270&proof=8PVSDPcCmsA5iF2Zwgp6Rey14tiXpaQddgjxgFD9Z3bx,G2D9r7frPFsDiCdDagDGZgDfkXdT8aSvD1vzPrjYcWJy,J5SAquG2D5boWLHqTKPygbE7bP2JJcXXLJzqU19pUUcy,C4QowAKwP8vteeUogMRM6P1auSq4A6Sh7xNin92hajBQ,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "284GqheCbGEh56oa2Lo3Szn5FZDA7tMg8So8mwGrcBnf",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=284GqheCbGEh56oa2Lo3Szn5FZDA7tMg8So8mwGrcBnf&amount=1&index=271&proof=BjWLbLKBKfzVGtJuzctutEMVyi8MGwYZcvKPeusMLZoh,G2D9r7frPFsDiCdDagDGZgDfkXdT8aSvD1vzPrjYcWJy,J5SAquG2D5boWLHqTKPygbE7bP2JJcXXLJzqU19pUUcy,C4QowAKwP8vteeUogMRM6P1auSq4A6Sh7xNin92hajBQ,DBT6Gt82nPueb3Mey9sAPvrZDFcYjvozdaAFtyBwnUSu,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "28JL4FierhVSHP5hPeA3ZFNyZA5KHe9xHRTBBJrHvhmo",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=28JL4FierhVSHP5hPeA3ZFNyZA5KHe9xHRTBBJrHvhmo&amount=1&index=272&proof=GkzCBWbZV6NapqRnXoBXCJsTiELNuZ2VAiPKDjbcykN9,45CpDYfERKWRX6zPzQGPkGZhCA2SGn8h4n8SWHXqbNEh,HfDyz4wzvbS6kR9op4eUmNE3RRU4romL7PrQNqUVW4nC,s8qbEVYVB7BoUQjmJEaxLHud9KUQUaN3TWfN4kTtq9R,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "28NmQQUYNfAwQfq8U5EXFeVjsXMbVPWms9kz3Aqd63NA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=28NmQQUYNfAwQfq8U5EXFeVjsXMbVPWms9kz3Aqd63NA&amount=1&index=273&proof=4gT4h9hrfxbTzJSB1UrysbdgiCsDqsQ7RMTch6MbSvd7,45CpDYfERKWRX6zPzQGPkGZhCA2SGn8h4n8SWHXqbNEh,HfDyz4wzvbS6kR9op4eUmNE3RRU4romL7PrQNqUVW4nC,s8qbEVYVB7BoUQjmJEaxLHud9KUQUaN3TWfN4kTtq9R,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "28vWJ752N6vCTTerLNt39AuqbMRsut6SdsxT1vWGA1LE",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=28vWJ752N6vCTTerLNt39AuqbMRsut6SdsxT1vWGA1LE&amount=1&index=274&proof=2VGckfZDsufXBWLzepHrZEBu7LoHZVb5mfLjvBqSg8PP,HZirs1TAcaBn8mGasTbi3qNkyCJ29EMyuFK39wiYyAk6,HfDyz4wzvbS6kR9op4eUmNE3RRU4romL7PrQNqUVW4nC,s8qbEVYVB7BoUQjmJEaxLHud9KUQUaN3TWfN4kTtq9R,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "28Xrneu428nHihxgXsPSpnLm2TgfgAGLWULwHp16eGFm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=28Xrneu428nHihxgXsPSpnLm2TgfgAGLWULwHp16eGFm&amount=1&index=275&proof=HBqbx5ocFYKXKTstwur2dEqyUvQNYjFdk7eNPzJ4HKiY,HZirs1TAcaBn8mGasTbi3qNkyCJ29EMyuFK39wiYyAk6,HfDyz4wzvbS6kR9op4eUmNE3RRU4romL7PrQNqUVW4nC,s8qbEVYVB7BoUQjmJEaxLHud9KUQUaN3TWfN4kTtq9R,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2A73zYJ5rJy9bujbn1yLFb3cGtjdfjDRFbtcLbGrYYKC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2A73zYJ5rJy9bujbn1yLFb3cGtjdfjDRFbtcLbGrYYKC&amount=1&index=276&proof=GtWEgmf59v1NPjakCyguy3PdBarhfEirNMPv6XN7gjvW,4oMoRndM7zqHh7YDAkWNLMuSrzJAYspzEkabgzuYgw2K,FgN6dzhAi9EomDBa5JjsiQrAGcqqyGUHndDaPq6ho8SD,s8qbEVYVB7BoUQjmJEaxLHud9KUQUaN3TWfN4kTtq9R,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2AcS78LjxKKgCg2KWUqxMEKRGzksHJrkjuXR7GB8S7rJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2AcS78LjxKKgCg2KWUqxMEKRGzksHJrkjuXR7GB8S7rJ&amount=1&index=277&proof=5EeJmqT2BEMqUMZ8DTnK28AxZqfcWfvwhVAGpWioq8rc,4oMoRndM7zqHh7YDAkWNLMuSrzJAYspzEkabgzuYgw2K,FgN6dzhAi9EomDBa5JjsiQrAGcqqyGUHndDaPq6ho8SD,s8qbEVYVB7BoUQjmJEaxLHud9KUQUaN3TWfN4kTtq9R,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2Afot8rjRw6Vd47771YGmdhJSQZdmRM4NwQQ6vppz933",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2Afot8rjRw6Vd47771YGmdhJSQZdmRM4NwQQ6vppz933&amount=1&index=278&proof=6PzUPPutC63Xg4Lq1h9dSWsYKa4S8asQ1hipLTwGNduz,6TJgVvvS2NJsPLnWfk2Y5WkoMcGdrAwXVNtjxwnPjJZf,FgN6dzhAi9EomDBa5JjsiQrAGcqqyGUHndDaPq6ho8SD,s8qbEVYVB7BoUQjmJEaxLHud9KUQUaN3TWfN4kTtq9R,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2Avh45xRDobf4K2To2JzZK49HdxWvYZa4b4bSMZohCQz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2Avh45xRDobf4K2To2JzZK49HdxWvYZa4b4bSMZohCQz&amount=1&index=279&proof=3rfXMPiEUu4WuN6ovTadx23Qb6HiECdKBCpc556p9C6h,6TJgVvvS2NJsPLnWfk2Y5WkoMcGdrAwXVNtjxwnPjJZf,FgN6dzhAi9EomDBa5JjsiQrAGcqqyGUHndDaPq6ho8SD,s8qbEVYVB7BoUQjmJEaxLHud9KUQUaN3TWfN4kTtq9R,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2BBjXKxJvRYPWvTd7Y4hfRQpaqNRn4TsP6bUEWP8ui82",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2BBjXKxJvRYPWvTd7Y4hfRQpaqNRn4TsP6bUEWP8ui82&amount=1&index=280&proof=Dhn5WBDTdGms3RNXUgr7EuxQpkTZih7ehDiepVUxCt6V,3msGyLNqpocpKiC75mvB79LC7tkbdQn67CCkK2fYSnJ1,9eWTXkLZRd8VRkNHr2KmGwU498GkJ7w9K5zC5R6HbMLZ,7HQMmMFDXhherkJ1DmXBvxeFRWc2hu5UU8Cwgp6tgvgL,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2BdaY4wx1KRBGxvNECGb7SCtvCiF9gZfWa2EZRQCBnts",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2BdaY4wx1KRBGxvNECGb7SCtvCiF9gZfWa2EZRQCBnts&amount=1&index=281&proof=AmDn6pwy6FNRz9eDqJWn9z1Y9fVe5ExjFXgpponRUcnJ,3msGyLNqpocpKiC75mvB79LC7tkbdQn67CCkK2fYSnJ1,9eWTXkLZRd8VRkNHr2KmGwU498GkJ7w9K5zC5R6HbMLZ,7HQMmMFDXhherkJ1DmXBvxeFRWc2hu5UU8Cwgp6tgvgL,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2bgysHBTErJKGj9ZVsvKK8KKNfUrC45SB8p7Xj7fwjRo",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2bgysHBTErJKGj9ZVsvKK8KKNfUrC45SB8p7Xj7fwjRo&amount=1&index=282&proof=Ed8NX9D4EkRRCQDrU4m1wbxmVGTPSnramyC9X6VfpVbD,3f6SMnL7Fg1zFXQYqv96nCett6QTDNZ6ZcMwm8Zz3gaS,9eWTXkLZRd8VRkNHr2KmGwU498GkJ7w9K5zC5R6HbMLZ,7HQMmMFDXhherkJ1DmXBvxeFRWc2hu5UU8Cwgp6tgvgL,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2bkVrvLQGBm13NjP4Sa2RzpW2uZSaEZpQVBtvF3pzLEq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2bkVrvLQGBm13NjP4Sa2RzpW2uZSaEZpQVBtvF3pzLEq&amount=1&index=283&proof=CFYPatCFRV6MgaK8HyzPk45jSdRKc3xPvoPj4pyV9wSH,3f6SMnL7Fg1zFXQYqv96nCett6QTDNZ6ZcMwm8Zz3gaS,9eWTXkLZRd8VRkNHr2KmGwU498GkJ7w9K5zC5R6HbMLZ,7HQMmMFDXhherkJ1DmXBvxeFRWc2hu5UU8Cwgp6tgvgL,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2bnf9rsBPgyRSS3uKV1eSpV8hhMcHjyYBkKrn8RJ39cC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2bnf9rsBPgyRSS3uKV1eSpV8hhMcHjyYBkKrn8RJ39cC&amount=1&index=284&proof=FkfurAzNh1HX8GM8KGMzuaHWwGvakDeLNAiBmJEupGYp,23KxUKDnMV2B6X3oYPRJHT78q4wXiUqTDwESZnq3ykBD,C9yQ7knu2bVDqvNWLbSsof5SA9b5idDFpk3wX9c27W7J,7HQMmMFDXhherkJ1DmXBvxeFRWc2hu5UU8Cwgp6tgvgL,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2Bzq1Ta1d6yybgPyrzamvvRH99P9q7yCn1XSkrsg99Sg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2Bzq1Ta1d6yybgPyrzamvvRH99P9q7yCn1XSkrsg99Sg&amount=1&index=285&proof=BoDAqX8grVdaCUozu8EFT5W6kx3SPA8HnwifZ8DWArJQ,23KxUKDnMV2B6X3oYPRJHT78q4wXiUqTDwESZnq3ykBD,C9yQ7knu2bVDqvNWLbSsof5SA9b5idDFpk3wX9c27W7J,7HQMmMFDXhherkJ1DmXBvxeFRWc2hu5UU8Cwgp6tgvgL,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2CbGtgwQtGvCYENijRHs2qZid82dQ3trChKs8r7JcoiJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2CbGtgwQtGvCYENijRHs2qZid82dQ3trChKs8r7JcoiJ&amount=1&index=286&proof=3ZyduP6KNFyKuRVUx3oo1znDYRnAoG8QjKz38NhxHmCp,AN9fD8oFD6U4v8oDujF63XiSMdo6CRT9yaSPUWvTZFeJ,C9yQ7knu2bVDqvNWLbSsof5SA9b5idDFpk3wX9c27W7J,7HQMmMFDXhherkJ1DmXBvxeFRWc2hu5UU8Cwgp6tgvgL,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2co61PfqkRSGJFew2D8y13oCyZf18JdCdstBQPAJD81Q",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2co61PfqkRSGJFew2D8y13oCyZf18JdCdstBQPAJD81Q&amount=1&index=287&proof=ATxsa4uGZrWwsad1uDTBGrL5PCPysX4kFDhbZmE2w7W5,AN9fD8oFD6U4v8oDujF63XiSMdo6CRT9yaSPUWvTZFeJ,C9yQ7knu2bVDqvNWLbSsof5SA9b5idDFpk3wX9c27W7J,7HQMmMFDXhherkJ1DmXBvxeFRWc2hu5UU8Cwgp6tgvgL,8AZ4fgUHVVtKQEYZVcEjwgPo2LpzB5pX3cgtXs1Bkqzq,44nRc6kXtFfknxF1enFYDyQALoNW87atdgZsdeN4JRXg,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2eLtJzWHVRjrAyrJizLeT3f5FGGMfDDzPNEqLdCNa8cN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2eLtJzWHVRjrAyrJizLeT3f5FGGMfDDzPNEqLdCNa8cN&amount=1&index=288&proof=944TKzFGjfQqve9pjJ4UpKLBSgs6Y1iLBjB432Q3AME2,BWa9np4RrSL9VjaHeLVihghWdQJWoSdKWyWHvK7U86Uh,6tmyvMLtvFXRqZJEmQSpW1i6BcNzQ9u26i64LiNS6tDh,FPbxP59gSshQhumKi7xb4UdDVrGkqn59pKZFATRq4ajp,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2EPXWPnKcZ593QfYMYLVKh2pn4zDpw1kDEmGZCSKgyro",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2EPXWPnKcZ593QfYMYLVKh2pn4zDpw1kDEmGZCSKgyro&amount=1&index=289&proof=GS8PAXayRLjH97ZYjdTtMK93hGtappqgahpPwvDhKmEt,BWa9np4RrSL9VjaHeLVihghWdQJWoSdKWyWHvK7U86Uh,6tmyvMLtvFXRqZJEmQSpW1i6BcNzQ9u26i64LiNS6tDh,FPbxP59gSshQhumKi7xb4UdDVrGkqn59pKZFATRq4ajp,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2eZXaG1jCPEgzhoRNMuKRhCAnVVKig8AHnDj4my9bHF8",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2eZXaG1jCPEgzhoRNMuKRhCAnVVKig8AHnDj4my9bHF8&amount=1&index=290&proof=9Lnkts8sn9t2B8g9SkG8QipvLHVxWm4oPbLLsMWDfxNN,6w3hy5oPDktSaW1ZC4t8EmrfKm3Ue2gKeAWGEsqiqwCF,6tmyvMLtvFXRqZJEmQSpW1i6BcNzQ9u26i64LiNS6tDh,FPbxP59gSshQhumKi7xb4UdDVrGkqn59pKZFATRq4ajp,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2f1nqPe3t5CFFmV7PzijdLouNdNFrdWjSyyo7bBD5dMr",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2f1nqPe3t5CFFmV7PzijdLouNdNFrdWjSyyo7bBD5dMr&amount=1&index=291&proof=49qKZSPeuTrRzC5gqayq3qGATP531r1foJEJ8BmLK7Xk,6w3hy5oPDktSaW1ZC4t8EmrfKm3Ue2gKeAWGEsqiqwCF,6tmyvMLtvFXRqZJEmQSpW1i6BcNzQ9u26i64LiNS6tDh,FPbxP59gSshQhumKi7xb4UdDVrGkqn59pKZFATRq4ajp,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2F2YvUZrnGyNa9gWLDiEjhB7BEuPxCMqqLCYqJ7ppS5Z",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2F2YvUZrnGyNa9gWLDiEjhB7BEuPxCMqqLCYqJ7ppS5Z&amount=1&index=292&proof=CYa7ZSHawru8QWQnhRe19eiDHkcyyWgVwC8YD7W1gFVm,68X3RWjV1MMfbXQPMBnDGLhxdH9Mgrf2bDhUosEGXZkw,6vfR6nS9YK9ADEQeMdDGAFZBipmExvjjv16q27xtGuPt,FPbxP59gSshQhumKi7xb4UdDVrGkqn59pKZFATRq4ajp,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2FA8XCfSG5uTQTd8Z3TBbhYXyLhgKqRrNvaGdeuio7HB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2FA8XCfSG5uTQTd8Z3TBbhYXyLhgKqRrNvaGdeuio7HB&amount=1&index=293&proof=3SnBwdPj6DXwyXvTnVsmaFVENjFF9PCcVitLFboY2QKm,68X3RWjV1MMfbXQPMBnDGLhxdH9Mgrf2bDhUosEGXZkw,6vfR6nS9YK9ADEQeMdDGAFZBipmExvjjv16q27xtGuPt,FPbxP59gSshQhumKi7xb4UdDVrGkqn59pKZFATRq4ajp,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2GCpaDkaBvZy5dfwgQSoLkSRDGiAE7PVP9o7d5PtG9vm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2GCpaDkaBvZy5dfwgQSoLkSRDGiAE7PVP9o7d5PtG9vm&amount=1&index=294&proof=7uJux5Ez7atSCHeSt3Md33P6qy8n3aBXabMEcsdKzS1h,HYyYmpTUb58Lye2Lz8aveECKDSE1MfHqUEeMZYjtUwkG,6vfR6nS9YK9ADEQeMdDGAFZBipmExvjjv16q27xtGuPt,FPbxP59gSshQhumKi7xb4UdDVrGkqn59pKZFATRq4ajp,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2GNPgRJfy79LFcm6Eo8BePh7UhWH3AVJs4uK4SesXDZo",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2GNPgRJfy79LFcm6Eo8BePh7UhWH3AVJs4uK4SesXDZo&amount=1&index=295&proof=5nRXt7Dh5L836Pe2Vp9XL6X5myjquJmiMSLndd5rAHt6,HYyYmpTUb58Lye2Lz8aveECKDSE1MfHqUEeMZYjtUwkG,6vfR6nS9YK9ADEQeMdDGAFZBipmExvjjv16q27xtGuPt,FPbxP59gSshQhumKi7xb4UdDVrGkqn59pKZFATRq4ajp,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2HfMP2BmCFWA5DzqjGJQrhvGqy7zU66wcPj7toqdZdj8",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2HfMP2BmCFWA5DzqjGJQrhvGqy7zU66wcPj7toqdZdj8&amount=1&index=296&proof=CMqiAYQB6bwN6R3tX432nURaEaQXgP2D3qsVNsd1XUUJ,Ev8BAwx4r743rK4wTMnuh4DSfuQt4rRfiUhz9MzyHi6c,E5GWvXfNhwEYxLwk1EwJFqwsLcaM2cHvNVzAUXWzKHgw,F8vNr6Emk6YNfmYv1eF9maWeuR9kupe87RSthRKfs5e7,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2HGUt4iGgJTSVLkhjNFTmQon3cC2btvD2NheEAV78U6y",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2HGUt4iGgJTSVLkhjNFTmQon3cC2btvD2NheEAV78U6y&amount=1&index=297&proof=FKRGTXTpb49VupcbiBZGi9DpLjCVhtrrRQBKxKhhUrHX,Ev8BAwx4r743rK4wTMnuh4DSfuQt4rRfiUhz9MzyHi6c,E5GWvXfNhwEYxLwk1EwJFqwsLcaM2cHvNVzAUXWzKHgw,F8vNr6Emk6YNfmYv1eF9maWeuR9kupe87RSthRKfs5e7,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2HoKHSePLwVfmPrkgKp1G2PGMSSpu7p3TZumQhNSx66D",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2HoKHSePLwVfmPrkgKp1G2PGMSSpu7p3TZumQhNSx66D&amount=1&index=298&proof=D3nEqFyHwBfsXPSJAg2PNhLkkutWoBUmc1c9EeZCgN8R,Bz7JRzpjeEntHpve22YNyEn7yYkhaEtm47bcgqp8MGTh,E5GWvXfNhwEYxLwk1EwJFqwsLcaM2cHvNVzAUXWzKHgw,F8vNr6Emk6YNfmYv1eF9maWeuR9kupe87RSthRKfs5e7,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2hPaMY3hBHUtD6NVzEvaiGTpKF4Y7eSGJsuuotefgCMa",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2hPaMY3hBHUtD6NVzEvaiGTpKF4Y7eSGJsuuotefgCMa&amount=1&index=299&proof=4WSe9yh2SmqVL1Sbae15RZGXx2D2gg6nQkz1rBJ5EPTP,Bz7JRzpjeEntHpve22YNyEn7yYkhaEtm47bcgqp8MGTh,E5GWvXfNhwEYxLwk1EwJFqwsLcaM2cHvNVzAUXWzKHgw,F8vNr6Emk6YNfmYv1eF9maWeuR9kupe87RSthRKfs5e7,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2hs3zYBoDGXKt37e3trGAQc6Jr1V1Qn4nfNHKdjDbJBn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2hs3zYBoDGXKt37e3trGAQc6Jr1V1Qn4nfNHKdjDbJBn&amount=1&index=300&proof=8YYzuwgxyCZAxNqewWQCDLPTMQ5cP1ScVwywtSxKp9xs,7taVJvvP9m8HcjE1ckw6a66ov2k3HGcSJTM1cRYXCb9h,CfGh53cAmpVAGVk95zJRnMdZEcYZksvzh8qHFsUL35uP,F8vNr6Emk6YNfmYv1eF9maWeuR9kupe87RSthRKfs5e7,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2iVg8nydF3KgdoLd4o7ATUgcHyaQUwhMsHg4zY2H5nxu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2iVg8nydF3KgdoLd4o7ATUgcHyaQUwhMsHg4zY2H5nxu&amount=1&index=301&proof=H5HL6CDVCH7xHMTtarfJ9tJm7i8VzmtWg681QrDR6gQc,7taVJvvP9m8HcjE1ckw6a66ov2k3HGcSJTM1cRYXCb9h,CfGh53cAmpVAGVk95zJRnMdZEcYZksvzh8qHFsUL35uP,F8vNr6Emk6YNfmYv1eF9maWeuR9kupe87RSthRKfs5e7,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2J7cLmM9R37HCGqgKW81HTDfwwnKPkaZvPM6BaZpqgjG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2J7cLmM9R37HCGqgKW81HTDfwwnKPkaZvPM6BaZpqgjG&amount=1&index=302&proof=HGhMEbtjLwu7P9D89yaZpYsP2h5FhwvusZcgihdes3ZX,EJ8pTZskLKQY8VLmKtWxvohcDoDxQ2JrHrirSXgtLkgB,CfGh53cAmpVAGVk95zJRnMdZEcYZksvzh8qHFsUL35uP,F8vNr6Emk6YNfmYv1eF9maWeuR9kupe87RSthRKfs5e7,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2JM6xNBxbvuYcKMgedfd9d5UeEoMLVGLqJ92R2HgGrbz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2JM6xNBxbvuYcKMgedfd9d5UeEoMLVGLqJ92R2HgGrbz&amount=1&index=303&proof=56Ad3m2ZGJN1GmWwoKdeyojz5iyrn4XLK8XEj8fdkGYf,EJ8pTZskLKQY8VLmKtWxvohcDoDxQ2JrHrirSXgtLkgB,CfGh53cAmpVAGVk95zJRnMdZEcYZksvzh8qHFsUL35uP,F8vNr6Emk6YNfmYv1eF9maWeuR9kupe87RSthRKfs5e7,DN79WoVH6ZNxXgm3hMUhPrr8hgmg8X3QkxzNh6FJteSL,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2JN6SvvwHq54XBrrD6RPJf8EeKER7NEctp6meCrw5pZc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2JN6SvvwHq54XBrrD6RPJf8EeKER7NEctp6meCrw5pZc&amount=1&index=304&proof=6u9VbmQE4fUBxP8kZDEanhWcbw9jasZUQgDUnrx1zsJS,HE6Tjs3kwQGcX572iFiw6Xfmcnkh6AvpJQzWP1mygWJY,7J47t9NQBnVm9NfzAB2GiK8AKux6eYT3ihgw2ykL2uL2,8MbpLpcAPj8WgdS4jcRE6FqiYWjiDakvzCsgWXm4nYJV,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2Kc1zrJnjKBa51YM8BGS65Cg3bcAzT5RYrV7nFDwxLfm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2Kc1zrJnjKBa51YM8BGS65Cg3bcAzT5RYrV7nFDwxLfm&amount=1&index=305&proof=7iFLgwyPezBrDaYVRZRP1WZ6tx59iYUq156Bn1YNwzgM,HE6Tjs3kwQGcX572iFiw6Xfmcnkh6AvpJQzWP1mygWJY,7J47t9NQBnVm9NfzAB2GiK8AKux6eYT3ihgw2ykL2uL2,8MbpLpcAPj8WgdS4jcRE6FqiYWjiDakvzCsgWXm4nYJV,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2KTvoRTmJx6e1opDVSvoyXNkxqfecBZgTpGqto6BinuT",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2KTvoRTmJx6e1opDVSvoyXNkxqfecBZgTpGqto6BinuT&amount=1&index=306&proof=EycudRXFbRdhBS3kDucEtT1DMZpiXVoSAW5wQ6dEy6QU,DAbgc8fRgCySmBude7m2jQPSrYwtirdtD5ySqabXcfTa,7J47t9NQBnVm9NfzAB2GiK8AKux6eYT3ihgw2ykL2uL2,8MbpLpcAPj8WgdS4jcRE6FqiYWjiDakvzCsgWXm4nYJV,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2kXribYdhnMeLiuX5FfJPA9juCzpg1uNHHEp2rFNArHe",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2kXribYdhnMeLiuX5FfJPA9juCzpg1uNHHEp2rFNArHe&amount=1&index=307&proof=Cek2CANWatBfpwyMXRWv7k975QRqCyrbz7wHxfuS4V4o,DAbgc8fRgCySmBude7m2jQPSrYwtirdtD5ySqabXcfTa,7J47t9NQBnVm9NfzAB2GiK8AKux6eYT3ihgw2ykL2uL2,8MbpLpcAPj8WgdS4jcRE6FqiYWjiDakvzCsgWXm4nYJV,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2Ky7Epv6uSzR6Wwg4n4GUiDjfPmmsAfqUNipufHHvbSX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2Ky7Epv6uSzR6Wwg4n4GUiDjfPmmsAfqUNipufHHvbSX&amount=1&index=308&proof=2nJAFtiLcPt5SWuG6dXceEFRa67mfCdhvpCwA5NKfxfU,FoFQ2LBiF7eqU2ddjqpatB9GbZzGNDFYt19W1tpJBRfY,7qyiXfZuxp4VMLuNoggKy3ZPPgirnTB7kzPEKGRESzoW,8MbpLpcAPj8WgdS4jcRE6FqiYWjiDakvzCsgWXm4nYJV,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2M1UQA2rgvMidB17T4YRxdu3kaQxNXusMtzToMdjERDj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2M1UQA2rgvMidB17T4YRxdu3kaQxNXusMtzToMdjERDj&amount=1&index=309&proof=9XtjrkAhcVYxhUKWbRraJhPcZVyC1PTUEuMQQSXKTFJD,FoFQ2LBiF7eqU2ddjqpatB9GbZzGNDFYt19W1tpJBRfY,7qyiXfZuxp4VMLuNoggKy3ZPPgirnTB7kzPEKGRESzoW,8MbpLpcAPj8WgdS4jcRE6FqiYWjiDakvzCsgWXm4nYJV,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2M7pBaEwynq6XnzNBwxbuvUvBf6dxx1FGmbqJVeEn5ZF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2M7pBaEwynq6XnzNBwxbuvUvBf6dxx1FGmbqJVeEn5ZF&amount=1&index=310&proof=cuAGYHMA3EervgJG8Q52Sgk45ac5BHq89nunaAXNWDw,AypAUYAj6S9BBwQFtLAjvgiorZeDmv7RGmCzN4eosirM,7qyiXfZuxp4VMLuNoggKy3ZPPgirnTB7kzPEKGRESzoW,8MbpLpcAPj8WgdS4jcRE6FqiYWjiDakvzCsgWXm4nYJV,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2oZ8dFRjCAubZQbpXeieFK7r3UFgR9UP4VmcNHrp6sdp",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2oZ8dFRjCAubZQbpXeieFK7r3UFgR9UP4VmcNHrp6sdp&amount=1&index=311&proof=AEsYxyctRjE2UiSr2LWC3DZbYgqLK9KBhp78MaekkYr2,AypAUYAj6S9BBwQFtLAjvgiorZeDmv7RGmCzN4eosirM,7qyiXfZuxp4VMLuNoggKy3ZPPgirnTB7kzPEKGRESzoW,8MbpLpcAPj8WgdS4jcRE6FqiYWjiDakvzCsgWXm4nYJV,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2P9Mbaw9ybXTSiGF2moC6Vx5Y4cZ2tCXfzjYQeEcUsKN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2P9Mbaw9ybXTSiGF2moC6Vx5Y4cZ2tCXfzjYQeEcUsKN&amount=1&index=312&proof=MicGWsWW5hfH2kG6X7YzF71CbF2Y9KYA5nqoQvNdnpm,9ma4V6NaLyRMetqw8hPj656BdFgAnyriT8oUDpaeuE3J,G4DPty7cRyjJB1EW2QTEjYQ2pEfs1p7e4Wr48sE1EM51,DwYUeLdyJ9pW3unTrn73Ks3PJtMmdZZyjsXE2oYgr2Qr,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2pngKZ8hkUMXNoUtpNnmPrq2A6tx9DZmvDbfYAYTgjLL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2pngKZ8hkUMXNoUtpNnmPrq2A6tx9DZmvDbfYAYTgjLL&amount=1&index=313&proof=P3CEfcLkCvKCvsU4XzhSTyfgpd3qevfLjbSsUdA66Pk,9ma4V6NaLyRMetqw8hPj656BdFgAnyriT8oUDpaeuE3J,G4DPty7cRyjJB1EW2QTEjYQ2pEfs1p7e4Wr48sE1EM51,DwYUeLdyJ9pW3unTrn73Ks3PJtMmdZZyjsXE2oYgr2Qr,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2qEnqH6BCP7phdomVrVajSAFr63ywRQfvAxpVs8SLZCG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2qEnqH6BCP7phdomVrVajSAFr63ywRQfvAxpVs8SLZCG&amount=1&index=314&proof=DSxNZVEm496QhGm2c19oXDvPtW7vyB2F5TY7zWLff2XU,9toWaGjwesXC61TYLpeubeegAbVsfb9tcYXKwq3aSkhW,G4DPty7cRyjJB1EW2QTEjYQ2pEfs1p7e4Wr48sE1EM51,DwYUeLdyJ9pW3unTrn73Ks3PJtMmdZZyjsXE2oYgr2Qr,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2qNC25UsvZdGpYmCsbfwtSwFRCyZHdYBSLCZSMxdb3WP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2qNC25UsvZdGpYmCsbfwtSwFRCyZHdYBSLCZSMxdb3WP&amount=1&index=315&proof=HKs1a47XBWMmNmwViN7TySxMbRouoSHQEWwaSS2pkfR1,9toWaGjwesXC61TYLpeubeegAbVsfb9tcYXKwq3aSkhW,G4DPty7cRyjJB1EW2QTEjYQ2pEfs1p7e4Wr48sE1EM51,DwYUeLdyJ9pW3unTrn73Ks3PJtMmdZZyjsXE2oYgr2Qr,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2r9JJCnrP8dHhnuU7eam9rWiXyGKaT6dQipsUPW5NmKv",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2r9JJCnrP8dHhnuU7eam9rWiXyGKaT6dQipsUPW5NmKv&amount=1&index=316&proof=BGQ3871QFVm5iAbLcHT681XkS6vYKAeKpxeSizkNeAhH,6DuqsNc5BiVHy8p97FF4zxEooSeyYw7tHYZd3vyWXzBw,GCDt89555iDXagjXqcU3itTa5wjZnwHn9JFoThrP83x6,DwYUeLdyJ9pW3unTrn73Ks3PJtMmdZZyjsXE2oYgr2Qr,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2RbF6ZNEvuy1YrYRe2Bf2Zmb8t65kbdX1HaZXT6aRpnp",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2RbF6ZNEvuy1YrYRe2Bf2Zmb8t65kbdX1HaZXT6aRpnp&amount=1&index=317&proof=9XvzBBBr7mHxK4sexNVg8s1R2Hr2TuHvPpgXYU4EngFf,6DuqsNc5BiVHy8p97FF4zxEooSeyYw7tHYZd3vyWXzBw,GCDt89555iDXagjXqcU3itTa5wjZnwHn9JFoThrP83x6,DwYUeLdyJ9pW3unTrn73Ks3PJtMmdZZyjsXE2oYgr2Qr,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2Rrtj1AArr5eVyS2Tk72Yp25uWHzdc8vSfMvXiFET1k7",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2Rrtj1AArr5eVyS2Tk72Yp25uWHzdc8vSfMvXiFET1k7&amount=1&index=318&proof=ErpH1Acr85nQK3jJ767BoMNsqKsRz9FLSrLX34a2BmMB,9y74Y82Tw9VRPhfhSKrQemgXahBFGxJNVq7BwF7rQU7k,GCDt89555iDXagjXqcU3itTa5wjZnwHn9JFoThrP83x6,DwYUeLdyJ9pW3unTrn73Ks3PJtMmdZZyjsXE2oYgr2Qr,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2SDDPzkUBXePWhvkDxxLeb7RrhE8BePV46tooXwSLVRn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2SDDPzkUBXePWhvkDxxLeb7RrhE8BePV46tooXwSLVRn&amount=1&index=319&proof=8urC1UZPd15MFwf28AqwCVNAL2rtn9X7sNbpatQdLNjp,9y74Y82Tw9VRPhfhSKrQemgXahBFGxJNVq7BwF7rQU7k,GCDt89555iDXagjXqcU3itTa5wjZnwHn9JFoThrP83x6,DwYUeLdyJ9pW3unTrn73Ks3PJtMmdZZyjsXE2oYgr2Qr,6etWpTkm6UdAm86A4ZCnmi82MCY7gLmtgQQfpzczhFsf,8VXGxwETPLxn6dYmJKjEbMuRTgNCsynDBK6w8kz9r6VQ,8CUi66BYSSAppDoRq6nVs1K6hUPEvud58uJ2jyHDVxUa,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2SFJ1PbEoyDkHPMt9tVKT2xq7rcYK2GW8RL8QyTsDGSW",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2SFJ1PbEoyDkHPMt9tVKT2xq7rcYK2GW8RL8QyTsDGSW&amount=1&index=320&proof=GDabHBdrHH2BJ3GPY6Uxp7ahQ9t5nP56f7jGQJR3iHaL,88dwtLx5Rik9oKgAhgwp57FE4Dj3EnguzQdkiqioJGm5,8JoDL84QKvevRYsGuy8DjpsQn3rGuUp6sA4azABFpPEf,4xBpJHFUgtpC5hga3DtJpQUjrHyPZ1DFhNxS9w9rMpdD,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2Sn1NHbBZ3455FRrMMjqS9cuRfmMB9AzyoXvnVmKXXwM",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2Sn1NHbBZ3455FRrMMjqS9cuRfmMB9AzyoXvnVmKXXwM&amount=1&index=321&proof=55wAb9vJ2EehHtsFu9VU2grwoc9rWgWQjTTSt7BxG1VP,88dwtLx5Rik9oKgAhgwp57FE4Dj3EnguzQdkiqioJGm5,8JoDL84QKvevRYsGuy8DjpsQn3rGuUp6sA4azABFpPEf,4xBpJHFUgtpC5hga3DtJpQUjrHyPZ1DFhNxS9w9rMpdD,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2SwpjRvd7L1MqHURV9SZXcphkM1JV38crehJrqWfSo6g",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2SwpjRvd7L1MqHURV9SZXcphkM1JV38crehJrqWfSo6g&amount=1&index=322&proof=HBgXHVrzrkT8wk6Ja6VApV5s9HvbMAyev9QLmo8vLUz1,Hq1EV2qa7sYs8Fa5wU6qwibzdD8WVCBvu5hmSYBPvUnE,8JoDL84QKvevRYsGuy8DjpsQn3rGuUp6sA4azABFpPEf,4xBpJHFUgtpC5hga3DtJpQUjrHyPZ1DFhNxS9w9rMpdD,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2tBVzVsqpHzfof2UbKv6NjjV4YyPtYV1T7vg5BJyAc8T",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2tBVzVsqpHzfof2UbKv6NjjV4YyPtYV1T7vg5BJyAc8T&amount=1&index=323&proof=D5NJyvGCp2YhMfi3dfNarydbmNY232qTVWBgnmB1nN9h,Hq1EV2qa7sYs8Fa5wU6qwibzdD8WVCBvu5hmSYBPvUnE,8JoDL84QKvevRYsGuy8DjpsQn3rGuUp6sA4azABFpPEf,4xBpJHFUgtpC5hga3DtJpQUjrHyPZ1DFhNxS9w9rMpdD,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2Tp5cqp79wTNW1t4VXhNgPQvE3wfKUsC65qNsQfaAoXg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2Tp5cqp79wTNW1t4VXhNgPQvE3wfKUsC65qNsQfaAoXg&amount=1&index=324&proof=CpMMxjp3VgCbXgtwxzKhMrJP8hfJm2hwP3MDDN5P615d,JC1tjn8AnSHsLUD3idGfLU2tNgBX7d3ekrFohpKwB1sY,6C4zU5syjemJBJRuNNKUeiFRUzzJKFZAWi58kX45cNg4,4xBpJHFUgtpC5hga3DtJpQUjrHyPZ1DFhNxS9w9rMpdD,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2u7mJYGX1DhTorWqcAyygoZ8FrXPkfi8H2ytq5mW1A3o",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2u7mJYGX1DhTorWqcAyygoZ8FrXPkfi8H2ytq5mW1A3o&amount=1&index=325&proof=49nv6sQfzgFspbf1Y7cWCmY2xBNF4XDMrcbxwDtAA2AW,JC1tjn8AnSHsLUD3idGfLU2tNgBX7d3ekrFohpKwB1sY,6C4zU5syjemJBJRuNNKUeiFRUzzJKFZAWi58kX45cNg4,4xBpJHFUgtpC5hga3DtJpQUjrHyPZ1DFhNxS9w9rMpdD,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2UhbcxQYcWosJ8CmY5hk1bTbHBnCkC3XjHH6ZVqVBxPK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2UhbcxQYcWosJ8CmY5hk1bTbHBnCkC3XjHH6ZVqVBxPK&amount=1&index=326&proof=7HoRMtoEUiEDrpiZC7jxrWTAZNPZRAoPSD1LabFiRXfW,HPNhPTDDwX9ABf85cgU3X1NnoBQvmDRtr7CfkEny8uSc,6C4zU5syjemJBJRuNNKUeiFRUzzJKFZAWi58kX45cNg4,4xBpJHFUgtpC5hga3DtJpQUjrHyPZ1DFhNxS9w9rMpdD,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2UmNwjMbTAqjFdvfiPy9cHRqMw1pBr3gLx1wQxoU58ha",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2UmNwjMbTAqjFdvfiPy9cHRqMw1pBr3gLx1wQxoU58ha&amount=1&index=327&proof=5V6xLjjmjdg8SKtPae8WvTULb8SjtqdQJwy7pym7gfCa,HPNhPTDDwX9ABf85cgU3X1NnoBQvmDRtr7CfkEny8uSc,6C4zU5syjemJBJRuNNKUeiFRUzzJKFZAWi58kX45cNg4,4xBpJHFUgtpC5hga3DtJpQUjrHyPZ1DFhNxS9w9rMpdD,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2uq9TsRf8Urb4E4qQxHe9AmRDBGYVcdC2UmVa3p9ZUMK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2uq9TsRf8Urb4E4qQxHe9AmRDBGYVcdC2UmVa3p9ZUMK&amount=1&index=328&proof=5kUdHLYde35d3v4yjczAf13rGn6REwbon5B6pAZQ1cTz,BA7hyogKkWSRRPxbDKrwRA5ENH7SNJnyL5PuxCvfKHq2,BP1q2pqxDW3LgtxDu1hCmKGJCPpitYtgL9HWSt7LNDo8,F2oBAEwX1PdJRADwqcSxT9KFgua7zAS6HbGzV5KRa9GT,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2UYR7GhUary9xSC3ro5C364Ruafyp7hLozvavirueRTn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2UYR7GhUary9xSC3ro5C364Ruafyp7hLozvavirueRTn&amount=1&index=329&proof=GyE1fczvt1en7B4MKwwRqtLgmFgWY2FGqn1Nyw3KWboS,BA7hyogKkWSRRPxbDKrwRA5ENH7SNJnyL5PuxCvfKHq2,BP1q2pqxDW3LgtxDu1hCmKGJCPpitYtgL9HWSt7LNDo8,F2oBAEwX1PdJRADwqcSxT9KFgua7zAS6HbGzV5KRa9GT,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2VC2pZVjqvmSRKxE4afT7MwK9MZMvxUV4JEMhp7QTJ15",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2VC2pZVjqvmSRKxE4afT7MwK9MZMvxUV4JEMhp7QTJ15&amount=1&index=330&proof=8ExtWytfsiNn7Nv9CqSW24W2t7gskVuZBpiQ1BPeZsrk,4d9n6cn2xmhccPPVizq8z4pEVesqMK2Chrg94C7LLgkY,BP1q2pqxDW3LgtxDu1hCmKGJCPpitYtgL9HWSt7LNDo8,F2oBAEwX1PdJRADwqcSxT9KFgua7zAS6HbGzV5KRa9GT,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2vvutWyCvoknJ7t2H2iLTrKU2H97NXE71MmNaAEtv1bV",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2vvutWyCvoknJ7t2H2iLTrKU2H97NXE71MmNaAEtv1bV&amount=1&index=331&proof=EG4rd9TpixU8n85qtX5zWBNMQm6q8PfiQgfiK2oSe1op,4d9n6cn2xmhccPPVizq8z4pEVesqMK2Chrg94C7LLgkY,BP1q2pqxDW3LgtxDu1hCmKGJCPpitYtgL9HWSt7LNDo8,F2oBAEwX1PdJRADwqcSxT9KFgua7zAS6HbGzV5KRa9GT,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2WFxEKYjcT9PzhoPVdarjp1uaiFEbvt3gzX64KUzo2NQ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2WFxEKYjcT9PzhoPVdarjp1uaiFEbvt3gzX64KUzo2NQ&amount=1&index=332&proof=Bj2rV2nu2ue7W9Me5hBecn4gYdK4GpL9zU7YxdYVFZPe,3pkZhDa7wA99ERKP7Gvu4MkiGr6eUw1ctC1GvqVJ6M6Y,G1iByvHyib32vYb32VU9S9UR8F8VhSB4jdAnKAywMUxa,F2oBAEwX1PdJRADwqcSxT9KFgua7zAS6HbGzV5KRa9GT,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2WWxStScTUYHbfBbWT4WoEsaoqxT7JkkSKC7sGrYFCx4",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2WWxStScTUYHbfBbWT4WoEsaoqxT7JkkSKC7sGrYFCx4&amount=1&index=333&proof=DgNQ8ngeAu4maK7TEEzZBkkv2cUhh3yGVCm1tp8RkWbt,3pkZhDa7wA99ERKP7Gvu4MkiGr6eUw1ctC1GvqVJ6M6Y,G1iByvHyib32vYb32VU9S9UR8F8VhSB4jdAnKAywMUxa,F2oBAEwX1PdJRADwqcSxT9KFgua7zAS6HbGzV5KRa9GT,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2XgNvAuEsc43cqcKVQSrGJBLh5V3MXsnYLmZjgaY9NFn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2XgNvAuEsc43cqcKVQSrGJBLh5V3MXsnYLmZjgaY9NFn&amount=1&index=334&proof=7DPVHyzqE91vcgrp9U7gj4cxgxhBzLPq5cSoAJbi1m3z,3MgEXqqXSV3JRLEXrWqJ4pZYqrTCFA1h2wTouT2Je1Hu,G1iByvHyib32vYb32VU9S9UR8F8VhSB4jdAnKAywMUxa,F2oBAEwX1PdJRADwqcSxT9KFgua7zAS6HbGzV5KRa9GT,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2XjHgRiCryK81hahWMU8B1nYnKYAMAb5jzrDC8kHtGVm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2XjHgRiCryK81hahWMU8B1nYnKYAMAb5jzrDC8kHtGVm&amount=1&index=335&proof=FiVdVfySsvYFCKr6JVUaqjpoc8H8mgFXKJ94E5TRxVAo,3MgEXqqXSV3JRLEXrWqJ4pZYqrTCFA1h2wTouT2Je1Hu,G1iByvHyib32vYb32VU9S9UR8F8VhSB4jdAnKAywMUxa,F2oBAEwX1PdJRADwqcSxT9KFgua7zAS6HbGzV5KRa9GT,Gio2x2tVLpoRcZKBs79urMfnLGB6kz4VGsV6qDmmbkKi,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2YEoftfGiwE5BucPDkCn6ibyqtUXpDf3FCBtnfNZoYjs",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2YEoftfGiwE5BucPDkCn6ibyqtUXpDf3FCBtnfNZoYjs&amount=1&index=336&proof=CzXgbJCDxgc37vgtvWwbTXUJ8JYGsGGLR15LKXP7GBZN,8CKNAr6hrSPiiGY8du2XRn8ZJxpZegXBUBgtUqe5c5MX,BsLXWYr9cyyJKTvArDsfaKYi4WMsyf3ZJZ2Z45fR5CCA,CM6zvqKQeLuodswUafXDCtLFkTTrR7XJuSZnqLXVHrqy,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2YrWVbZ4RitjNXrCmNqT87JwggXh7nyuurauB3b5T3te",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2YrWVbZ4RitjNXrCmNqT87JwggXh7nyuurauB3b5T3te&amount=1&index=337&proof=Gh8JN5ZtqSczp5SrnuAY5gtQk4WGNExPEmQKa8y2W2sH,8CKNAr6hrSPiiGY8du2XRn8ZJxpZegXBUBgtUqe5c5MX,BsLXWYr9cyyJKTvArDsfaKYi4WMsyf3ZJZ2Z45fR5CCA,CM6zvqKQeLuodswUafXDCtLFkTTrR7XJuSZnqLXVHrqy,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2yTe7nZGPDJqPFeUzAJrNmd9H5VJ9a6VvZDCUtW5b69N",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2yTe7nZGPDJqPFeUzAJrNmd9H5VJ9a6VvZDCUtW5b69N&amount=1&index=338&proof=8eWu93NmBmw5XqpPFGKe318o3oeE92J3shrxyjUgZLdz,D5JffrBbeJrdzVhLiHr2Pxp3R899aTdi5bdcNzqqr2XB,BsLXWYr9cyyJKTvArDsfaKYi4WMsyf3ZJZ2Z45fR5CCA,CM6zvqKQeLuodswUafXDCtLFkTTrR7XJuSZnqLXVHrqy,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2z9n7Bh7UMn5X6X1K8e9Suxu8TVQtNZtrypWvRq3EuWZ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2z9n7Bh7UMn5X6X1K8e9Suxu8TVQtNZtrypWvRq3EuWZ&amount=1&index=339&proof=H6cZsGyMsZECXZQRyMDmNG9jjheZXu4v4css6dfpwutU,D5JffrBbeJrdzVhLiHr2Pxp3R899aTdi5bdcNzqqr2XB,BsLXWYr9cyyJKTvArDsfaKYi4WMsyf3ZJZ2Z45fR5CCA,CM6zvqKQeLuodswUafXDCtLFkTTrR7XJuSZnqLXVHrqy,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "2ZYoYFaCCmsreeZpAc8FG5GrogR1Ni8RHCbPMDEqjbZH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=2ZYoYFaCCmsreeZpAc8FG5GrogR1Ni8RHCbPMDEqjbZH&amount=1&index=340&proof=BGw4D1qdLxfhjhHWEwatHQU7RWo9L7kaLyMA2qpLkE2v,92CNn9zk3P29ZuwmdFuEfoyMQsQoqiwPnFfKAb1HCuH8,D63TBxfSKNpSU9FdsgEiQjuuGxz2to5FmZnLp47QvHx4,CM6zvqKQeLuodswUafXDCtLFkTTrR7XJuSZnqLXVHrqy,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "311e75bA6Gp9foZdFL3epUcDHgmT6zsJ7a8vntSZXxCW",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=311e75bA6Gp9foZdFL3epUcDHgmT6zsJ7a8vntSZXxCW&amount=1&index=341&proof=EqkkeP2uRZfme3L6Y1vHwAMUe3rnwq163sYsrpZ2QPo9,92CNn9zk3P29ZuwmdFuEfoyMQsQoqiwPnFfKAb1HCuH8,D63TBxfSKNpSU9FdsgEiQjuuGxz2to5FmZnLp47QvHx4,CM6zvqKQeLuodswUafXDCtLFkTTrR7XJuSZnqLXVHrqy,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "32g7fqsFx6Pgs3d2JRVq73RRbpH7yo1grVByKpPpiRqd",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=32g7fqsFx6Pgs3d2JRVq73RRbpH7yo1grVByKpPpiRqd&amount=1&index=342&proof=CoxkkVJphzR1NQyhikd4RUothzMzvQr5mdUxUBSupRQ8,DYkhnJEbLiYyB3VcB8VrojybzcHffdsfbygKu3MYKAMG,D63TBxfSKNpSU9FdsgEiQjuuGxz2to5FmZnLp47QvHx4,CM6zvqKQeLuodswUafXDCtLFkTTrR7XJuSZnqLXVHrqy,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "33bqPKQEDMLnaM1MVaHQKCgSVGZN4Y2jYgEEz685Zp7F",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=33bqPKQEDMLnaM1MVaHQKCgSVGZN4Y2jYgEEz685Zp7F&amount=1&index=343&proof=34URbNJsnVTJwjQAComhzDPm8dFgdExBGKyE6SYmQXFd,DYkhnJEbLiYyB3VcB8VrojybzcHffdsfbygKu3MYKAMG,D63TBxfSKNpSU9FdsgEiQjuuGxz2to5FmZnLp47QvHx4,CM6zvqKQeLuodswUafXDCtLFkTTrR7XJuSZnqLXVHrqy,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "34ST7ELkEJJufeM8Qfqd7WTUmKGss1rLyFDRoDaySgTa",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=34ST7ELkEJJufeM8Qfqd7WTUmKGss1rLyFDRoDaySgTa&amount=1&index=344&proof=EwzLL91vpm34EagUdFpJ1L4rFje49Pg3guWNN9AaXt73,4bNjenjeSzVDgy3hLTVFmoTjMDxFEp58p3aWxmfeqBPJ,2YJWKZZuECjHVKHHPuhe8SHYoe9ZLdADi8PLTEiPQcF9,2TDaqTgHENqKF161v7ixxLmmbeBkUxLfYSYvLMysTEmc,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "35djmEHvA8soWDKyWpY3mVucV5zyj2rxRLJ9Yw27Mc6E",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=35djmEHvA8soWDKyWpY3mVucV5zyj2rxRLJ9Yw27Mc6E&amount=1&index=345&proof=6aJvApcnzESqkxXzQV1mR3tPtxeoYPL6ntiv3knnTc2H,4bNjenjeSzVDgy3hLTVFmoTjMDxFEp58p3aWxmfeqBPJ,2YJWKZZuECjHVKHHPuhe8SHYoe9ZLdADi8PLTEiPQcF9,2TDaqTgHENqKF161v7ixxLmmbeBkUxLfYSYvLMysTEmc,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "36qmQWZvuKniF3cKHuMvcQZcXJp2LtLMTHkVmxZSZBd6",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=36qmQWZvuKniF3cKHuMvcQZcXJp2LtLMTHkVmxZSZBd6&amount=1&index=346&proof=DsVNJDmp1UzhmW7MUxv5qbAAA5mFyuCVBEjgGpXUq7s4,Dv1C1c65BqjPUeaXwzo9JpiB2i8vdUfPUWduieU91p6X,2YJWKZZuECjHVKHHPuhe8SHYoe9ZLdADi8PLTEiPQcF9,2TDaqTgHENqKF161v7ixxLmmbeBkUxLfYSYvLMysTEmc,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "36xLgeZ8zkBBHxhbUZYgwGoXuCFZgKbLbbcq9UQhKE7p",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=36xLgeZ8zkBBHxhbUZYgwGoXuCFZgKbLbbcq9UQhKE7p&amount=1&index=347&proof=E3WL8afpoRkzun2dd1oxb3yTvi4VBq3YLVzGMybVneUc,Dv1C1c65BqjPUeaXwzo9JpiB2i8vdUfPUWduieU91p6X,2YJWKZZuECjHVKHHPuhe8SHYoe9ZLdADi8PLTEiPQcF9,2TDaqTgHENqKF161v7ixxLmmbeBkUxLfYSYvLMysTEmc,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "37QeTwgXJiJS1VMgGY7Xa9W1DcknwdebgvxKoxLft4pm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=37QeTwgXJiJS1VMgGY7Xa9W1DcknwdebgvxKoxLft4pm&amount=1&index=348&proof=7PsgU1cfbc8yQnoHSjVmVDDNTD6xP9MxQ7ttQs2GYbLe,Cog23QuEvJu4iKRZtB1JLvz7TN7saAuMETy3DJzHdPAw,GzVmKUSFLhaWrxESSiaZycB4Wszfi14kPtLxKm2MfwXq,2TDaqTgHENqKF161v7ixxLmmbeBkUxLfYSYvLMysTEmc,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "37S54p6PiKPAM6828Jk6jLMLbrXA2HKKaZLQ5JxGes1f",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=37S54p6PiKPAM6828Jk6jLMLbrXA2HKKaZLQ5JxGes1f&amount=1&index=349&proof=GkvSbPrPm3FZDiDDqxBoxRX6gYfWST6Xmqpv5Q3JQtWQ,Cog23QuEvJu4iKRZtB1JLvz7TN7saAuMETy3DJzHdPAw,GzVmKUSFLhaWrxESSiaZycB4Wszfi14kPtLxKm2MfwXq,2TDaqTgHENqKF161v7ixxLmmbeBkUxLfYSYvLMysTEmc,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "37w5dM1uoPqeXGEMR4tcUfi3jdTdFiak64r2PmVjdnqs",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=37w5dM1uoPqeXGEMR4tcUfi3jdTdFiak64r2PmVjdnqs&amount=1&index=350&proof=9yXc27qEWKw5iWSxeW71tF9JKHrb5jFrrEopNFFW4xee,Hziz7E4NGHrerK6xxJG3AkcMA3dmZ8hHNpbPTSe545V7,GzVmKUSFLhaWrxESSiaZycB4Wszfi14kPtLxKm2MfwXq,2TDaqTgHENqKF161v7ixxLmmbeBkUxLfYSYvLMysTEmc,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "39CxpWzKDwEhCJzPEX4uCE93GPbfEUwLkaQ7xKspVwjU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=39CxpWzKDwEhCJzPEX4uCE93GPbfEUwLkaQ7xKspVwjU&amount=1&index=351&proof=7hiAWak2isoosZy3yq9JFa8qqqY8yMGqLb1Ldb9jKhxq,Hziz7E4NGHrerK6xxJG3AkcMA3dmZ8hHNpbPTSe545V7,GzVmKUSFLhaWrxESSiaZycB4Wszfi14kPtLxKm2MfwXq,2TDaqTgHENqKF161v7ixxLmmbeBkUxLfYSYvLMysTEmc,PGoAaJzERaQ4i3ZupmmhFufdjYGVGzibgSFDrpPc32G,ABVQvXrAvBvJ6i38yDqdovXamXc62LCKWhbPdYqQRVD2,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3aDqmjobWhdDWi9LwWQM9hhbvpuGMdCg1GywCigSeswy",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3aDqmjobWhdDWi9LwWQM9hhbvpuGMdCg1GywCigSeswy&amount=1&index=352&proof=2Sqs3aRdTSrARUwvpqoPcnittXeWPLWRCba4KrDSkkBU,2T9pQhNy8MX2jxfB4fyGjFTv3ahBNkTjhGyttcdzHPpD,2aesWnUhV6yzPK8jnQCsmyFAqhGS2kgawtXyHGUzLapH,FjAFsDQf7HPss1WHQnTGQU3uFh37PYVsuZ2XnQrgjYso,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3ALX4UkhyUrtsJsP6yK3NKM2bN2m2oiziCjSdsDevTjh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3ALX4UkhyUrtsJsP6yK3NKM2bN2m2oiziCjSdsDevTjh&amount=1&index=353&proof=HP6pAoWwoN1WsijZnmfQShf9t4MRqiDhhSJs9USDvxST,2T9pQhNy8MX2jxfB4fyGjFTv3ahBNkTjhGyttcdzHPpD,2aesWnUhV6yzPK8jnQCsmyFAqhGS2kgawtXyHGUzLapH,FjAFsDQf7HPss1WHQnTGQU3uFh37PYVsuZ2XnQrgjYso,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3An48yWwUzaSvJKs4HPiPjmwrg4avaefRGgcfZypyZwt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3An48yWwUzaSvJKs4HPiPjmwrg4avaefRGgcfZypyZwt&amount=1&index=354&proof=9EnVV8XtcLMtGhppJXqciyYumua9LZZxRWCuoPGwYFuh,hqyaTJoLnnirPXLmUFM3ckC6Na8jAuNRrNxj3zAEt3L,2aesWnUhV6yzPK8jnQCsmyFAqhGS2kgawtXyHGUzLapH,FjAFsDQf7HPss1WHQnTGQU3uFh37PYVsuZ2XnQrgjYso,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3arpCe8JgU1mGuA69e6SLsgKWb6QNNQaptt16okqXdWr",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3arpCe8JgU1mGuA69e6SLsgKWb6QNNQaptt16okqXdWr&amount=1&index=355&proof=8U11nBuR5CozmMkzMiGH2BhMPm5jp2t5eXh4gEiGPg7U,hqyaTJoLnnirPXLmUFM3ckC6Na8jAuNRrNxj3zAEt3L,2aesWnUhV6yzPK8jnQCsmyFAqhGS2kgawtXyHGUzLapH,FjAFsDQf7HPss1WHQnTGQU3uFh37PYVsuZ2XnQrgjYso,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3b74Ez4WjBnh9GYsjg9e8M9VcnQMhLoC2WhMcfQexoVe",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3b74Ez4WjBnh9GYsjg9e8M9VcnQMhLoC2WhMcfQexoVe&amount=1&index=356&proof=4wk1jfjmYMPcaDMHmq5nfMmt814DUt1yGWqxN6LxrKaS,3ViRbuqHVzxyKxcT6TySnvFFQbMwJFiuy45ucBPpcicb,7gGoPTQikh8AsXx25SKNS6MRiwGb7LvYhLK19JWF28o1,FjAFsDQf7HPss1WHQnTGQU3uFh37PYVsuZ2XnQrgjYso,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3BeMx9Hra2JfcYdjb9XddmqoVEP4LeztVaR2QcnP4VYu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3BeMx9Hra2JfcYdjb9XddmqoVEP4LeztVaR2QcnP4VYu&amount=1&index=357&proof=3X6R8XBfzzLJDXHep7XtA6oWAH8jgb9sm4HK1vp1cAza,3ViRbuqHVzxyKxcT6TySnvFFQbMwJFiuy45ucBPpcicb,7gGoPTQikh8AsXx25SKNS6MRiwGb7LvYhLK19JWF28o1,FjAFsDQf7HPss1WHQnTGQU3uFh37PYVsuZ2XnQrgjYso,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3bSZm19QSQRKP4D3sECWQpvcScWxJW52GMVdqDMejiTX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3bSZm19QSQRKP4D3sECWQpvcScWxJW52GMVdqDMejiTX&amount=1&index=358&proof=HrScqenhjDXXos7FFeqnPzommeaBTTb1ksvQoYwY11SX,2mpC4dPYEHXFvMjXPL4NwumH28WmkfXKQgcmSisHNrkC,7gGoPTQikh8AsXx25SKNS6MRiwGb7LvYhLK19JWF28o1,FjAFsDQf7HPss1WHQnTGQU3uFh37PYVsuZ2XnQrgjYso,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3cKo4s5pgGUzEGokHaYbxFwbFggPoG1m5mjdMQog9R1M",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3cKo4s5pgGUzEGokHaYbxFwbFggPoG1m5mjdMQog9R1M&amount=1&index=359&proof=DVzgZHF3dSa2jAzEmVLi3XGpGib2pFaXZxip29b4TsMu,2mpC4dPYEHXFvMjXPL4NwumH28WmkfXKQgcmSisHNrkC,7gGoPTQikh8AsXx25SKNS6MRiwGb7LvYhLK19JWF28o1,FjAFsDQf7HPss1WHQnTGQU3uFh37PYVsuZ2XnQrgjYso,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3cqmHaPTPnF5doXdjcuahrrxfy3d1GhLmKXWcm6P3xAn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3cqmHaPTPnF5doXdjcuahrrxfy3d1GhLmKXWcm6P3xAn&amount=1&index=360&proof=F1EXZmspS5vJADgZznsmtKNEpKhmPs8GbmkhdGH1pw6h,3dgne8QCGRGb4ywMGzkysSXYiTRYx6QHUwZ5Au1LhKns,EQzpafZCo4F7qAXkPkedSjmoHFCaoNcHrsMEXkvTea6G,CNZCJkEfX1hrDnKKJ9mXYSKe5f8XRUCyuABTkcz9YkqR,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3D49QorJyNaL4rcpiynbuS3pRH4Y7EXEM6v6ZGaqfFGK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3D49QorJyNaL4rcpiynbuS3pRH4Y7EXEM6v6ZGaqfFGK&amount=1&index=361&proof=82qfzpygcRD9XBwLX5Wp2ShyBKASDG7AWHfZhh2EJnRM,3dgne8QCGRGb4ywMGzkysSXYiTRYx6QHUwZ5Au1LhKns,EQzpafZCo4F7qAXkPkedSjmoHFCaoNcHrsMEXkvTea6G,CNZCJkEfX1hrDnKKJ9mXYSKe5f8XRUCyuABTkcz9YkqR,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3dk9W9kDtsc5qUG4G35YeuA5oHh6QxDeNTFSqw9HrK5G",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3dk9W9kDtsc5qUG4G35YeuA5oHh6QxDeNTFSqw9HrK5G&amount=1&index=362&proof=Gjr8mh36yC4tVaJx6EUrmJnHDYU8n5fzxpaMCBUJTpxe,AgjtPLoLcBwUCTfsyqktirF2TuNYN1To9HSdoBAjG6zG,EQzpafZCo4F7qAXkPkedSjmoHFCaoNcHrsMEXkvTea6G,CNZCJkEfX1hrDnKKJ9mXYSKe5f8XRUCyuABTkcz9YkqR,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3dUk8GpXmtPSRyHqtryuwL6tNEXo6u26FH9WfmWHiUz5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3dUk8GpXmtPSRyHqtryuwL6tNEXo6u26FH9WfmWHiUz5&amount=1&index=363&proof=F1hTv2YYdmwX7xwYVopFtH86dWmP3mGveZsiKKG6k6wx,AgjtPLoLcBwUCTfsyqktirF2TuNYN1To9HSdoBAjG6zG,EQzpafZCo4F7qAXkPkedSjmoHFCaoNcHrsMEXkvTea6G,CNZCJkEfX1hrDnKKJ9mXYSKe5f8XRUCyuABTkcz9YkqR,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3dyydDhZnwpoTCXiPuB8BmFYbEuva2ekfLQHHDf3o53t",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3dyydDhZnwpoTCXiPuB8BmFYbEuva2ekfLQHHDf3o53t&amount=1&index=364&proof=DFuHWGGcH1wKjb9FWtsSK7seUmgFp3gSvreHdvx1nipm,898unacjoQcJSVJDcwKtB2YA11trddg6Qt3EfDHFdhi3,2DcFBkLBL9Fne5qwVpzxFyQvh6bA1azXpiyxLsTwqQS2,CNZCJkEfX1hrDnKKJ9mXYSKe5f8XRUCyuABTkcz9YkqR,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3EK5xHxmTLdVZAiofWVbHhAVqzJ1jAj8PqLo9k1ay95U",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3EK5xHxmTLdVZAiofWVbHhAVqzJ1jAj8PqLo9k1ay95U&amount=1&index=365&proof=Ghd6FkctzzPBNGxVH7TYypUXzYEhvdNfG7HA75M9Weuu,898unacjoQcJSVJDcwKtB2YA11trddg6Qt3EfDHFdhi3,2DcFBkLBL9Fne5qwVpzxFyQvh6bA1azXpiyxLsTwqQS2,CNZCJkEfX1hrDnKKJ9mXYSKe5f8XRUCyuABTkcz9YkqR,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3EQSDKKYcuiDt4krULuH9FejRztepzcpDH161sYA28o1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3EQSDKKYcuiDt4krULuH9FejRztepzcpDH161sYA28o1&amount=1&index=366&proof=BtY3cHCETgxavAviJ4Wh5XS4MupZ6VvY6G3yu6TXAQ9F,3KyRXev5B3K6w6cTipymvk4DRyZCDuxL7moTkxVRUwAu,2DcFBkLBL9Fne5qwVpzxFyQvh6bA1azXpiyxLsTwqQS2,CNZCJkEfX1hrDnKKJ9mXYSKe5f8XRUCyuABTkcz9YkqR,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3EsNUS4DqJzLoZr8Fucg2yKZnnRgkBdvZ31ALEBLz7kb",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3EsNUS4DqJzLoZr8Fucg2yKZnnRgkBdvZ31ALEBLz7kb&amount=1&index=367&proof=FPypPovY1QdwTJyXK88KkFrfnvNXCNPDZQDVom9Aa6tV,3KyRXev5B3K6w6cTipymvk4DRyZCDuxL7moTkxVRUwAu,2DcFBkLBL9Fne5qwVpzxFyQvh6bA1azXpiyxLsTwqQS2,CNZCJkEfX1hrDnKKJ9mXYSKe5f8XRUCyuABTkcz9YkqR,83R7UAqMdhAT9hXU7hGb9ZvaPtkY9YmpNhdkmDjsCpwU,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3FpsbweV2hjLvCativX8hjxAodAjZb4UX6MWgmCRJkd9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3FpsbweV2hjLvCativX8hjxAodAjZb4UX6MWgmCRJkd9&amount=1&index=368&proof=9piXxfzL3JXA5BXGDLRm7Ym8yYAWcVD3wU7XDQ68ttjS,FUmdMroKv36L677ifXL6ocbRQkB3k4dUFi23iZJnvLkn,J1FQgPtkYLf99h9HS2hBkatYkaL4HsCgUhhNj7A8zcLZ,EFQx9p6GG8u6Cz7Wzqabj17Q2UtbJtt42qMB31FET6Jk,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3FSvQVn9GrMEwKjhJGRLssFGse1uPzDUi6heeMmQRZeH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3FSvQVn9GrMEwKjhJGRLssFGse1uPzDUi6heeMmQRZeH&amount=1&index=369&proof=B6R48GvF32yxcUbEGCwGyPmVi2szyHv8TENPduAjFbFt,FUmdMroKv36L677ifXL6ocbRQkB3k4dUFi23iZJnvLkn,J1FQgPtkYLf99h9HS2hBkatYkaL4HsCgUhhNj7A8zcLZ,EFQx9p6GG8u6Cz7Wzqabj17Q2UtbJtt42qMB31FET6Jk,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3G5oPUd9RwuiJWAX1iWiLsBbeyGTao9iBLdUPvvCRqoe",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3G5oPUd9RwuiJWAX1iWiLsBbeyGTao9iBLdUPvvCRqoe&amount=1&index=370&proof=Dz51o62HuDNp5vsdvq2hmoQCZssj2gc7iXMfK5vDdB3j,EuYpCSeAv1ScNqzp8LPpdGJSPLJbSpWcsGPsow8snsXP,J1FQgPtkYLf99h9HS2hBkatYkaL4HsCgUhhNj7A8zcLZ,EFQx9p6GG8u6Cz7Wzqabj17Q2UtbJtt42qMB31FET6Jk,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3Gpn6SD3ggaKJ5KPqCEX1iUaqimcHqB8xCBMKKtb7Gpm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3Gpn6SD3ggaKJ5KPqCEX1iUaqimcHqB8xCBMKKtb7Gpm&amount=1&index=371&proof=F7MrNNaMMSiS8LYDoriPNng8misVGCcp54UwB1RgkcG,EuYpCSeAv1ScNqzp8LPpdGJSPLJbSpWcsGPsow8snsXP,J1FQgPtkYLf99h9HS2hBkatYkaL4HsCgUhhNj7A8zcLZ,EFQx9p6GG8u6Cz7Wzqabj17Q2UtbJtt42qMB31FET6Jk,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3gqsd3ZmDv639UHrSY2esU9Fc3rfm1fqWP72oGWRLpk9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3gqsd3ZmDv639UHrSY2esU9Fc3rfm1fqWP72oGWRLpk9&amount=1&index=372&proof=2Zd8WQDhLBqWU7qZsJAha7GGeeocXjZ8kfF2vjDVe32s,55MGxih2vLfEBNZsVrHhiwPuQ29n6AZtyH1K9jviejBQ,HkmnjTDuHhRCGGtb6whfWyaLV2xD6e1s5WBQctqE4vvi,EFQx9p6GG8u6Cz7Wzqabj17Q2UtbJtt42qMB31FET6Jk,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3h1QqfpERoQDg7jE7wdQKsXUzKUF12y3EcuZFo6Xc3cC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3h1QqfpERoQDg7jE7wdQKsXUzKUF12y3EcuZFo6Xc3cC&amount=1&index=373&proof=BodwGUxPu46pffZLXRVGEpyaxXfnBVQqkNiXY3QoxJmH,55MGxih2vLfEBNZsVrHhiwPuQ29n6AZtyH1K9jviejBQ,HkmnjTDuHhRCGGtb6whfWyaLV2xD6e1s5WBQctqE4vvi,EFQx9p6GG8u6Cz7Wzqabj17Q2UtbJtt42qMB31FET6Jk,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3HdGz6aaK51f9xmYR6iiGvztzkiRAC5vC4L4VR63uV1D",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3HdGz6aaK51f9xmYR6iiGvztzkiRAC5vC4L4VR63uV1D&amount=1&index=374&proof=8T84MBYUC4Jbw4Nppx6WPyHffc1S1aWzhFTjLwc4ksf4,ovHRufqVg3fxUsk7GP3BzrviMAb3AUj3hzuqjFdqovp,HkmnjTDuHhRCGGtb6whfWyaLV2xD6e1s5WBQctqE4vvi,EFQx9p6GG8u6Cz7Wzqabj17Q2UtbJtt42qMB31FET6Jk,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3HjqkwAjKAWzw8UiRpZKMGQEHgiy27accCEjMEEBRFxN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3HjqkwAjKAWzw8UiRpZKMGQEHgiy27accCEjMEEBRFxN&amount=1&index=375&proof=E43zBD56kBeUTteS7kRgjzyJRHR1rEJZ4QTSsdF8KBLb,ovHRufqVg3fxUsk7GP3BzrviMAb3AUj3hzuqjFdqovp,HkmnjTDuHhRCGGtb6whfWyaLV2xD6e1s5WBQctqE4vvi,EFQx9p6GG8u6Cz7Wzqabj17Q2UtbJtt42qMB31FET6Jk,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3izfxFU8Rv7Rs5VBN5bUWRyFzGb9XSV2wBMweEXFrd6M",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3izfxFU8Rv7Rs5VBN5bUWRyFzGb9XSV2wBMweEXFrd6M&amount=1&index=376&proof=5kVtTnHhh2HxheAHh86xUfgMC8ths4SwJUSFpKQFKnTE,GM5x1fC6zY4mkfn4pnbhLG9JvKMES2is7KXQnBuVLTiK,58wEcxMWn439jFK8cDn5hyVDtuqDqN4M3dM7ezPMN4iK,CAs7U5Bc8riiA42wrSKAKv83mYE4io8WdVMqeQUaq6r1,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3JnFXUFHiSkboBiLcaQfsiopAgLzw9Hikogo63vFdjCX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3JnFXUFHiSkboBiLcaQfsiopAgLzw9Hikogo63vFdjCX&amount=1&index=377&proof=DqZKESveX4DVR4r9Xg1F9kSfEDKKwb4HobeFdco5ddMT,GM5x1fC6zY4mkfn4pnbhLG9JvKMES2is7KXQnBuVLTiK,58wEcxMWn439jFK8cDn5hyVDtuqDqN4M3dM7ezPMN4iK,CAs7U5Bc8riiA42wrSKAKv83mYE4io8WdVMqeQUaq6r1,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3JNyz1txVBpxm5YX8i7zrAaj6EPUVG1tqjU82E1Enhn6",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3JNyz1txVBpxm5YX8i7zrAaj6EPUVG1tqjU82E1Enhn6&amount=1&index=378&proof=9UvfyBLfaAjjEUFqmmgRpdudMiXUPeD1DxUZcog1k4PP,J83zwJ2UZWj64zaHp43SoMZbt7M6EFfno7KCT4G2ZXPf,58wEcxMWn439jFK8cDn5hyVDtuqDqN4M3dM7ezPMN4iK,CAs7U5Bc8riiA42wrSKAKv83mYE4io8WdVMqeQUaq6r1,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3JvYCTiKwTTweteE8LdHsFoRXrRRr5HGcyqHkEq2hq7V",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3JvYCTiKwTTweteE8LdHsFoRXrRRr5HGcyqHkEq2hq7V&amount=1&index=379&proof=799ZsHxmgPGWJR8eVsGmmmJMJnNaDcYy8HJyTkzf8hVg,J83zwJ2UZWj64zaHp43SoMZbt7M6EFfno7KCT4G2ZXPf,58wEcxMWn439jFK8cDn5hyVDtuqDqN4M3dM7ezPMN4iK,CAs7U5Bc8riiA42wrSKAKv83mYE4io8WdVMqeQUaq6r1,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3L49nZDRrWfMwcy15ikaSHxLJ254HhPwvxhb6A2otLdr",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3L49nZDRrWfMwcy15ikaSHxLJ254HhPwvxhb6A2otLdr&amount=1&index=380&proof=HQuHM3QTh5kUsvzPPFEowcyLY1sYoAnuwbPMTKenysrW,ECjSmuP1XqM8crUTnEnna8mExEpYHopfNVEhtc1ozSC5,HCHcGi1duXNZtb4VaQGsf7rxKK4mHzEdj8pasXCK61wg,CAs7U5Bc8riiA42wrSKAKv83mYE4io8WdVMqeQUaq6r1,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3mDMzkriYTBEHDJdZ8Egxcp9fp1zQvZ7kkSPPNjruybk",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3mDMzkriYTBEHDJdZ8Egxcp9fp1zQvZ7kkSPPNjruybk&amount=1&index=381&proof=6Tmz2NmG3HTH7gDNn5P1sSEAnKe4QHY6AeqYMaPHxmWG,ECjSmuP1XqM8crUTnEnna8mExEpYHopfNVEhtc1ozSC5,HCHcGi1duXNZtb4VaQGsf7rxKK4mHzEdj8pasXCK61wg,CAs7U5Bc8riiA42wrSKAKv83mYE4io8WdVMqeQUaq6r1,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3muSnSZaYhg7Js7q28HopnWw3SA77YhGojHusywNRdsr",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3muSnSZaYhg7Js7q28HopnWw3SA77YhGojHusywNRdsr&amount=1&index=382&proof=34hLmTko7WdodgT3GGLmD4qAJLniaoU6SkN6c5LMaAsR,Aq7N7fFcsUC5Ga7d83iMkqfRy8y5PEjpa8Vm4GQ4hGBK,HCHcGi1duXNZtb4VaQGsf7rxKK4mHzEdj8pasXCK61wg,CAs7U5Bc8riiA42wrSKAKv83mYE4io8WdVMqeQUaq6r1,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3nBoVETQsBUUN5gfTRt3eohVnFG1pZz76kU9acouEFab",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3nBoVETQsBUUN5gfTRt3eohVnFG1pZz76kU9acouEFab&amount=1&index=383&proof=9yS9j7kFrmB3xU33dhfsskN68DnqjCPPTWRkFSDc4N1V,Aq7N7fFcsUC5Ga7d83iMkqfRy8y5PEjpa8Vm4GQ4hGBK,HCHcGi1duXNZtb4VaQGsf7rxKK4mHzEdj8pasXCK61wg,CAs7U5Bc8riiA42wrSKAKv83mYE4io8WdVMqeQUaq6r1,Fx2hRxobPimKWVthBWdPTxbKp65tXwXsc13kpksSRWhN,C5HLVY2C2veSKjpdpXEqh6mWwi4ampubvnweTnDAYgt5,85shEfAatnnQTBDirLAtHwB2soHwSMK1oW2wr3k3J7Nb,572qJm5RPwqyY1XmN82MEtj41Z71HuZEtpBsVmxTJAZv,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3nWPn69KDDuPYE6vdne381W4TpURdjZAtEBN855QojHF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3nWPn69KDDuPYE6vdne381W4TpURdjZAtEBN855QojHF&amount=1&index=384&proof=GpiKyqscXAQcJ5gbQZMnavhuJ241Dn6aRMxRcnJofUYw,Fc6M1gTwmYyxv6NVee9yes8uxAtF8hj5N7RySzhUQEzy,Cs3Mue6UdbjWYGqxbmrrNiCMSWHasUqKe4N2swBuir2y,4NYEAgLHLyg3Ubx7re7LR3hSd8fLYaxX1RW8VMj5CjZL,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3NwtZeVjpN6d9bptccbMxGBiw6Rj7GRAm4L815Px76LK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3NwtZeVjpN6d9bptccbMxGBiw6Rj7GRAm4L815Px76LK&amount=1&index=385&proof=Fk9MnsB8wdSunbtpcn3pCZ3ysRqV9asWohZkHE9sR9Hb,Fc6M1gTwmYyxv6NVee9yes8uxAtF8hj5N7RySzhUQEzy,Cs3Mue6UdbjWYGqxbmrrNiCMSWHasUqKe4N2swBuir2y,4NYEAgLHLyg3Ubx7re7LR3hSd8fLYaxX1RW8VMj5CjZL,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3onJMbGLZxF6tUEVd6J1BPgsMLXX2W9zDf3fEoYMf1xh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3onJMbGLZxF6tUEVd6J1BPgsMLXX2W9zDf3fEoYMf1xh&amount=1&index=386&proof=GcFt4A9dCJwSCh2Hu8sTiXKrSdncNjCjDfYCaHJed6hK,37sRmZLSAmiY3S7ETssNmgG6bQAgF8E8kU1sxMYoNuef,Cs3Mue6UdbjWYGqxbmrrNiCMSWHasUqKe4N2swBuir2y,4NYEAgLHLyg3Ubx7re7LR3hSd8fLYaxX1RW8VMj5CjZL,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3oqaVbC8U1HnPsREVvie2YsTih6TCrcQUTfvfecx5E48",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3oqaVbC8U1HnPsREVvie2YsTih6TCrcQUTfvfecx5E48&amount=1&index=387&proof=8eXvjey8fQnhxK1BWrbbc1FS7sbKbjHeoc9nxnzRcXMJ,37sRmZLSAmiY3S7ETssNmgG6bQAgF8E8kU1sxMYoNuef,Cs3Mue6UdbjWYGqxbmrrNiCMSWHasUqKe4N2swBuir2y,4NYEAgLHLyg3Ubx7re7LR3hSd8fLYaxX1RW8VMj5CjZL,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3P1muoZL8gLpKTuQLfMAmZife1mfSw3cPGZKASXLaBVh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3P1muoZL8gLpKTuQLfMAmZife1mfSw3cPGZKASXLaBVh&amount=1&index=388&proof=99HmT5iRZDee8re79AL2KVSayMoU5e46fgrPwfPoDjp4,G8jYCpPwG4At66fP4PEzD7SWC3bVdoVtnFrR8pbf4BoU,6GDkbEGP11Lfxk3jWPQxKZ3oWUPB8q1UaUPcy3XyiJqF,4NYEAgLHLyg3Ubx7re7LR3hSd8fLYaxX1RW8VMj5CjZL,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3P5hgFxH5XMnHNF51w5ufDimmGetau3ZhqTobbBarA3E",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3P5hgFxH5XMnHNF51w5ufDimmGetau3ZhqTobbBarA3E&amount=1&index=389&proof=aFT9XQ89gQPKSsMznhTUuMVo2MVtTAVpAUMcEnBw7vF,G8jYCpPwG4At66fP4PEzD7SWC3bVdoVtnFrR8pbf4BoU,6GDkbEGP11Lfxk3jWPQxKZ3oWUPB8q1UaUPcy3XyiJqF,4NYEAgLHLyg3Ubx7re7LR3hSd8fLYaxX1RW8VMj5CjZL,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3P8uqzbSSrciXxFs1bx5zZ2xi7ZcEbViCRXaUASUAHzx",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3P8uqzbSSrciXxFs1bx5zZ2xi7ZcEbViCRXaUASUAHzx&amount=1&index=390&proof=ALf2sQvYFB3WuE4DMatmTa1kAKQ5yKjwDX7FTHXAkDqp,C4F2cPpTrxA19vJSSFqMYJyZfLz5VJs3vKno79q6idTo,6GDkbEGP11Lfxk3jWPQxKZ3oWUPB8q1UaUPcy3XyiJqF,4NYEAgLHLyg3Ubx7re7LR3hSd8fLYaxX1RW8VMj5CjZL,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3Pue69f7eKVr3LRPFBKvphdBY2sQBMiafZdg6r9uDjw1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3Pue69f7eKVr3LRPFBKvphdBY2sQBMiafZdg6r9uDjw1&amount=1&index=391&proof=CVAEjXNhGdZKJFJvVKQJEBCYrzWWXjPuhscEW9fEJTYG,C4F2cPpTrxA19vJSSFqMYJyZfLz5VJs3vKno79q6idTo,6GDkbEGP11Lfxk3jWPQxKZ3oWUPB8q1UaUPcy3XyiJqF,4NYEAgLHLyg3Ubx7re7LR3hSd8fLYaxX1RW8VMj5CjZL,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3QRadj8nzQmFpgjfvACcQTQ4TbK5pzmpTw6HwpjEg6pY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3QRadj8nzQmFpgjfvACcQTQ4TbK5pzmpTw6HwpjEg6pY&amount=1&index=392&proof=2PpZHYG6XtymstxFibePKfncznQAoCUjJ5eDfXL7NKPP,AyxDHtQWKCvy1666ZAx8eCUCHKyUdgEUxry4pkCUp6Zn,6DA9WFAKABX6jxeadrBB6vmhthJ32UR373a4RGWNhid9,CxeYF4QcyM91X8yp5sVbWesFJiBtiGgvtQwpEBbghgS1,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3S6oCBcMQZyZRBQx9sFnT7CXP632gtMyMoi4Y2xmTAYU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3S6oCBcMQZyZRBQx9sFnT7CXP632gtMyMoi4Y2xmTAYU&amount=1&index=393&proof=6RahjdxN1W69GDSspZ9SkNViX6g7QnBxQa5qTawdA3Md,AyxDHtQWKCvy1666ZAx8eCUCHKyUdgEUxry4pkCUp6Zn,6DA9WFAKABX6jxeadrBB6vmhthJ32UR373a4RGWNhid9,CxeYF4QcyM91X8yp5sVbWesFJiBtiGgvtQwpEBbghgS1,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3s8e8vXBT43fTtH7QgZxwuoL462AYWhT5XjUNmuZX4SG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3s8e8vXBT43fTtH7QgZxwuoL462AYWhT5XjUNmuZX4SG&amount=1&index=394&proof=AieYn19qkEjFpWAgg2GnZeqTU7rg8QZZbYvasawUWrvU,Abkb9mAWBkfUbK36z9geqLsojtdpwaVarVZUeYKvsLiT,6DA9WFAKABX6jxeadrBB6vmhthJ32UR373a4RGWNhid9,CxeYF4QcyM91X8yp5sVbWesFJiBtiGgvtQwpEBbghgS1,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3SKZL1tdcqnBFuSdmQwBHNubdEphFWW9mM6MF518zNt5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3SKZL1tdcqnBFuSdmQwBHNubdEphFWW9mM6MF518zNt5&amount=1&index=395&proof=6hqusf7kdJGiFxUGG3pzn9nkLsv7iVqnnCXf1jLnrBwc,Abkb9mAWBkfUbK36z9geqLsojtdpwaVarVZUeYKvsLiT,6DA9WFAKABX6jxeadrBB6vmhthJ32UR373a4RGWNhid9,CxeYF4QcyM91X8yp5sVbWesFJiBtiGgvtQwpEBbghgS1,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3sRqwGru2w2yXYJS69rRRXSNms7gtTnNgPH5uUTtn3py",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3sRqwGru2w2yXYJS69rRRXSNms7gtTnNgPH5uUTtn3py&amount=1&index=396&proof=F59oHyRyCfLaAbJexyXBRGZEtXyXesvnzhS625q1X7GA,AVs4CBDdYxzx1dzzgozco5iDYiGiv82SiqakxiPF1J2U,A7CQSEVMcpynKjdq3UQuxfGm4FEXvT7MZVuj55jTwb62,CxeYF4QcyM91X8yp5sVbWesFJiBtiGgvtQwpEBbghgS1,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3tbjesi9y1Uc8npWX85NbQUL4JPSygedByD7y5Z2FVR7",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3tbjesi9y1Uc8npWX85NbQUL4JPSygedByD7y5Z2FVR7&amount=1&index=397&proof=F4dJ7WgxcLuaPcLXwgpUw8rtkgjpkZCR65ivRmikbqCB,AVs4CBDdYxzx1dzzgozco5iDYiGiv82SiqakxiPF1J2U,A7CQSEVMcpynKjdq3UQuxfGm4FEXvT7MZVuj55jTwb62,CxeYF4QcyM91X8yp5sVbWesFJiBtiGgvtQwpEBbghgS1,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3tXnzobTinyWPEPUJ2dF3eDMRkDTr4kSciyf17T6LCdy",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3tXnzobTinyWPEPUJ2dF3eDMRkDTr4kSciyf17T6LCdy&amount=1&index=398&proof=BqTJqFEmMQJhMDXL4KA9fqedeCUUmT5MdCN82GuYqD8h,BuQYUFa9UiiTwXZZevHdqMH7nfCckHQ5FaUekWfXBFi1,A7CQSEVMcpynKjdq3UQuxfGm4FEXvT7MZVuj55jTwb62,CxeYF4QcyM91X8yp5sVbWesFJiBtiGgvtQwpEBbghgS1,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3u4AnWdVzaD7vicMTq57tBkfKWbyJFWghgJsUowY3eH1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3u4AnWdVzaD7vicMTq57tBkfKWbyJFWghgJsUowY3eH1&amount=1&index=399&proof=3kaHDYrrGzJBhDDmQhdJh8sCdjk7bEphGjajvB3hrM77,BuQYUFa9UiiTwXZZevHdqMH7nfCckHQ5FaUekWfXBFi1,A7CQSEVMcpynKjdq3UQuxfGm4FEXvT7MZVuj55jTwb62,CxeYF4QcyM91X8yp5sVbWesFJiBtiGgvtQwpEBbghgS1,9DY8ehukKS7sTFsXAYDE58xtjzfdTVqnJa5Yd3FhHFWv,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3UAHoCqP5U3i41nVbGRJiaAF5pNatXW2q67BXWtcCdtD",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3UAHoCqP5U3i41nVbGRJiaAF5pNatXW2q67BXWtcCdtD&amount=1&index=400&proof=7MmNQ1WiqKKCDc8ePNJ9LEezBaFyxbQupXZHgmsFmCT3,BgXjbNSyQa2f9RXBbNRBmkBhfiuZYhyBp4cXGseJ46M,3HedYZS1GmhBCWuKBGDFqGji3uH46J98Fy7SDQJX8E91,6EqJVb7g8JVKArM8xAeZuQR2iDd3MhvLGEPVebWY29As,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3uimoCjHEQYk8qxqt7SREsdsRFEwHdA7PeG9w86kTnS9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3uimoCjHEQYk8qxqt7SREsdsRFEwHdA7PeG9w86kTnS9&amount=1&index=401&proof=DwTZ8uxcpVQKugd2c2iDZTyJsR7zKgF7uyuSvT3GuKXY,BgXjbNSyQa2f9RXBbNRBmkBhfiuZYhyBp4cXGseJ46M,3HedYZS1GmhBCWuKBGDFqGji3uH46J98Fy7SDQJX8E91,6EqJVb7g8JVKArM8xAeZuQR2iDd3MhvLGEPVebWY29As,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3UuX5tXHHhamCzhfB2n9nDHZecmkMBgcBdQpodVMKdzw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3UuX5tXHHhamCzhfB2n9nDHZecmkMBgcBdQpodVMKdzw&amount=1&index=402&proof=6C4pJngmqWhVpGR2p7ZtTXVWdeNZEGeJQsGu4gukz2Bq,5thVXcNoQy9XmDqHmbuzftNKUZ8QHCCwUMiSuwnt8p8X,3HedYZS1GmhBCWuKBGDFqGji3uH46J98Fy7SDQJX8E91,6EqJVb7g8JVKArM8xAeZuQR2iDd3MhvLGEPVebWY29As,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3uYXP5rz21mEp7a1xtpXrmRz96XrrHzSaKSfesCWeirF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3uYXP5rz21mEp7a1xtpXrmRz96XrrHzSaKSfesCWeirF&amount=1&index=403&proof=4pN3349bWDaT2Af9P6Ev2583YzZGEM7vGEcVbV9VtcEH,5thVXcNoQy9XmDqHmbuzftNKUZ8QHCCwUMiSuwnt8p8X,3HedYZS1GmhBCWuKBGDFqGji3uH46J98Fy7SDQJX8E91,6EqJVb7g8JVKArM8xAeZuQR2iDd3MhvLGEPVebWY29As,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3UzC1F3AvaNYLLrwTac8bjPFWRLnEfpSmmSC6sMENjwy",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3UzC1F3AvaNYLLrwTac8bjPFWRLnEfpSmmSC6sMENjwy&amount=1&index=404&proof=3Ha2w86c913Mzn9h55nUhZLPhdwQk2SJJjs8WW5CVkJX,Dk1B7cvPKMzDt5sx44oUtkULwU42aPAKH1BbL4ukwMmC,33dcbY5NA8Y3GBqtfLLGT17Qgau9pQBGyufNcZSg6o7K,6EqJVb7g8JVKArM8xAeZuQR2iDd3MhvLGEPVebWY29As,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3V9ovUnm8rX2hm6pgM1PmJqRapVSrPECQGfZ9tuyv9io",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3V9ovUnm8rX2hm6pgM1PmJqRapVSrPECQGfZ9tuyv9io&amount=1&index=405&proof=B97Fqit7cm4ZRrcz67bDAQvX4Dh692c94m4YKZNTv5r3,Dk1B7cvPKMzDt5sx44oUtkULwU42aPAKH1BbL4ukwMmC,33dcbY5NA8Y3GBqtfLLGT17Qgau9pQBGyufNcZSg6o7K,6EqJVb7g8JVKArM8xAeZuQR2iDd3MhvLGEPVebWY29As,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3WAVCsVUjZMsF6d2sKeEj9U94Zv4QYyNz8y3gkkDuqyc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3WAVCsVUjZMsF6d2sKeEj9U94Zv4QYyNz8y3gkkDuqyc&amount=1&index=406&proof=G17uJtDX8G2okevQV1xAcaDKMd47uZcXagH5Ps8rYA7a,EQyYPpQxJDge8sRZhcs4qmRh3KvMSPUnqJoFfy9Y8Jfo,33dcbY5NA8Y3GBqtfLLGT17Qgau9pQBGyufNcZSg6o7K,6EqJVb7g8JVKArM8xAeZuQR2iDd3MhvLGEPVebWY29As,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3WEkvd7GDMHKWutc4ao7Pn3UzxZ6U6sK1H4qBkj1EGTZ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3WEkvd7GDMHKWutc4ao7Pn3UzxZ6U6sK1H4qBkj1EGTZ&amount=1&index=407&proof=H4aeaDwj6qg4b2nmYr1uCzJYbaz4GQebHQZupbHb6Awc,EQyYPpQxJDge8sRZhcs4qmRh3KvMSPUnqJoFfy9Y8Jfo,33dcbY5NA8Y3GBqtfLLGT17Qgau9pQBGyufNcZSg6o7K,6EqJVb7g8JVKArM8xAeZuQR2iDd3MhvLGEPVebWY29As,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3WMan1xJs9VeNQofA3o5oKnEvCjsn3WnuTiHTYqFMY2Y",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3WMan1xJs9VeNQofA3o5oKnEvCjsn3WnuTiHTYqFMY2Y&amount=1&index=408&proof=G6tTwAswMXp9jtbqCrvU67jFMNDuDNZZgJhmBHCWPWwL,mMhkbjK7okXyJ3LGWwA818GYEK97fCfwq4DzJjYxVSE,512prYoXomdd1vNFxEybw9QSfypUF74kAT8medBHFYQ1,2m7vPMe2RcbJS3otB5aR7rzTLKPA9t3J4Qe7SVRpktv6,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3WUv3yXazvcJryAZinoz7B4EMbVEMH1qfqHmHusKZki6",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3WUv3yXazvcJryAZinoz7B4EMbVEMH1qfqHmHusKZki6&amount=1&index=409&proof=3KzTKEr3rVzn3XbFBaKqZtkGG16BtYVRvg9GCVz3E19w,mMhkbjK7okXyJ3LGWwA818GYEK97fCfwq4DzJjYxVSE,512prYoXomdd1vNFxEybw9QSfypUF74kAT8medBHFYQ1,2m7vPMe2RcbJS3otB5aR7rzTLKPA9t3J4Qe7SVRpktv6,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3XcHEsJzBGNKtwXvbjyWRdkSpE974hzRdkSm94vcZyG6",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3XcHEsJzBGNKtwXvbjyWRdkSpE974hzRdkSm94vcZyG6&amount=1&index=410&proof=CCYH87EbJ63mXP33HLJiJaPkC5PaFC2dmwbxMDg7Ljac,4beD7ACbvhkETmmnjJhSRkG8uTSpvtsuoDXcVUaEXGVx,512prYoXomdd1vNFxEybw9QSfypUF74kAT8medBHFYQ1,2m7vPMe2RcbJS3otB5aR7rzTLKPA9t3J4Qe7SVRpktv6,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3xKR2hF6K2huwaZJzWfN7rYVbAeDCqck5zjjKfQJfBwL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3xKR2hF6K2huwaZJzWfN7rYVbAeDCqck5zjjKfQJfBwL&amount=1&index=411&proof=EaspswL7BwUDU2hqmZxU6MgSr2nPMtdRdZtFFw5d6Cdx,4beD7ACbvhkETmmnjJhSRkG8uTSpvtsuoDXcVUaEXGVx,512prYoXomdd1vNFxEybw9QSfypUF74kAT8medBHFYQ1,2m7vPMe2RcbJS3otB5aR7rzTLKPA9t3J4Qe7SVRpktv6,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3xSsbf1drG4GiYjgpHAJevDRXPYgTD3DzQC8R2QYBwR4",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3xSsbf1drG4GiYjgpHAJevDRXPYgTD3DzQC8R2QYBwR4&amount=1&index=412&proof=Dqar5jqbUjSzxus1ApZoiZx1yQLybizimtXjLxgLdHUy,DoFmQE9zh9M5ASy9g6fHaq7xhZ9huYFWoRQ48dmwaYnt,2LuWhKMrwLEMPNUpcFYPdDBHsRtmrf4AWT6v9TBQDVXJ,2m7vPMe2RcbJS3otB5aR7rzTLKPA9t3J4Qe7SVRpktv6,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3XZKxZxFKU6Z1mn7ycpnjhMTaj2pXzhqGvz2dyrD6Fms",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3XZKxZxFKU6Z1mn7ycpnjhMTaj2pXzhqGvz2dyrD6Fms&amount=1&index=413&proof=EeWk2ZJ4kaWvRAsKH5WhKT1GAjxMdv1Tow39QJ6Tiuvu,DoFmQE9zh9M5ASy9g6fHaq7xhZ9huYFWoRQ48dmwaYnt,2LuWhKMrwLEMPNUpcFYPdDBHsRtmrf4AWT6v9TBQDVXJ,2m7vPMe2RcbJS3otB5aR7rzTLKPA9t3J4Qe7SVRpktv6,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3ypjJrimL5kZvt4FwXvNxS7NPNApr4KxTbuGEk5LaecB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3ypjJrimL5kZvt4FwXvNxS7NPNApr4KxTbuGEk5LaecB&amount=1&index=414&proof=7BpF13s3nxGokSvShzULF9sUCccKtW2EsDuA1L93cHog,5LgWCJgyGuAuikD7gwToLGS5QNFQ6KCqZArZCkn9KE3e,2LuWhKMrwLEMPNUpcFYPdDBHsRtmrf4AWT6v9TBQDVXJ,2m7vPMe2RcbJS3otB5aR7rzTLKPA9t3J4Qe7SVRpktv6,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "3zRfwH5R6NXy1wEAf5MtcwzHCxkDTPSxxgqRcztv64wW",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=3zRfwH5R6NXy1wEAf5MtcwzHCxkDTPSxxgqRcztv64wW&amount=1&index=415&proof=DmCZuDjKJgCMcaLYf2SkfDVYgDUiFYutEfxUwMMtZxGA,5LgWCJgyGuAuikD7gwToLGS5QNFQ6KCqZArZCkn9KE3e,2LuWhKMrwLEMPNUpcFYPdDBHsRtmrf4AWT6v9TBQDVXJ,2m7vPMe2RcbJS3otB5aR7rzTLKPA9t3J4Qe7SVRpktv6,3sFuNVi61Ab7QEGZ5exB9gxP2BVrXW3excgUqWuDJDMc,9oU4yHbJPtyEM1ZvbR1qYgpFWWVF6jBaLnaLRnQDFiW8,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "43LKxY7vCg5F5k31Y45724gNEStJV5Yfc6Twus1WDT2p",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=43LKxY7vCg5F5k31Y45724gNEStJV5Yfc6Twus1WDT2p&amount=1&index=416&proof=7XWEf9oDccf2kAVxyiTb2xmoAdF91apJUxh9BnsmTx1v,8gty821dbmNErF5j1csQVYh1HW39LGNMiyAFWBQwZ1tW,7uepNq6FrTSh9YxDYxTgMRLyTKkZfzFL8uEf6pcAtcDX,Az23siRXfqSbHhyGxZmTEVeqreNq45ZVtU1JHr3kRKqc,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "44pgygi6YvaaUEMmW692AWkqTBxxMA678FHXsSFaDJWs",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=44pgygi6YvaaUEMmW692AWkqTBxxMA678FHXsSFaDJWs&amount=1&index=417&proof=9AyyA2zcXmM1Goy3EyTELHSinkgtaVKhUNbainrbDGwG,8gty821dbmNErF5j1csQVYh1HW39LGNMiyAFWBQwZ1tW,7uepNq6FrTSh9YxDYxTgMRLyTKkZfzFL8uEf6pcAtcDX,Az23siRXfqSbHhyGxZmTEVeqreNq45ZVtU1JHr3kRKqc,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "45HfG8RaC5dKou9PyuvvRDUZasYQFv4k6qria4nhZsEC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=45HfG8RaC5dKou9PyuvvRDUZasYQFv4k6qria4nhZsEC&amount=1&index=418&proof=7xVcxzBaG9hcrVD9aKrZP3ucjFLH3YQyjYUumSPmVy4u,GEiyMrqDN5yA7Cxbm3dSsaGt6zjN3PMSzdNEwNEpxest,7uepNq6FrTSh9YxDYxTgMRLyTKkZfzFL8uEf6pcAtcDX,Az23siRXfqSbHhyGxZmTEVeqreNq45ZVtU1JHr3kRKqc,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "45KXnVNqntEc5CrRTCLKarVi59whwwEdfiLpYpX84Hqa",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=45KXnVNqntEc5CrRTCLKarVi59whwwEdfiLpYpX84Hqa&amount=1&index=419&proof=EY9ZpqQT6Q2WeyurVVhbyiapp6YagdDBA4Wx8ZLpz3xF,GEiyMrqDN5yA7Cxbm3dSsaGt6zjN3PMSzdNEwNEpxest,7uepNq6FrTSh9YxDYxTgMRLyTKkZfzFL8uEf6pcAtcDX,Az23siRXfqSbHhyGxZmTEVeqreNq45ZVtU1JHr3kRKqc,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "46tQqDY96vecYYPPokFa5YKLBi7Barf92RC83sQVCm6Z",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=46tQqDY96vecYYPPokFa5YKLBi7Barf92RC83sQVCm6Z&amount=1&index=420&proof=FxTSmWnAcwjWxFYBqcvPtuem9AspW8W2NDL9rtHBwjw2,At8pTN7V3Kc6FxjySpMZNMTxctXKUciP9vvEb12DD1e,4jSNA35WcZkP9zBDKsES2kQoGt5JbZrE15xPdvvkwKEo,Az23siRXfqSbHhyGxZmTEVeqreNq45ZVtU1JHr3kRKqc,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "46VXEEmXjTCWPXRDsRzNZuqFYP3XeFH3tRzSA9in7Pq2",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=46VXEEmXjTCWPXRDsRzNZuqFYP3XeFH3tRzSA9in7Pq2&amount=1&index=421&proof=9i1qTbHWZEoCrCuz4VodGeaX3TygPxur8irxNbxefaFk,At8pTN7V3Kc6FxjySpMZNMTxctXKUciP9vvEb12DD1e,4jSNA35WcZkP9zBDKsES2kQoGt5JbZrE15xPdvvkwKEo,Az23siRXfqSbHhyGxZmTEVeqreNq45ZVtU1JHr3kRKqc,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "46XrK4y2RGD38Jaa9dpnAP12gKJNXGrvnPo893K7uxQv",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=46XrK4y2RGD38Jaa9dpnAP12gKJNXGrvnPo893K7uxQv&amount=1&index=422&proof=2AUQNDQDNY81eFS2eDwV4t2zAEuL3MGgeRkWoE4Q8HZc,31ULqTunWAqfM2zB6TmmiuSDQT9F4dX6WtZ5Gjg8Ww52,4jSNA35WcZkP9zBDKsES2kQoGt5JbZrE15xPdvvkwKEo,Az23siRXfqSbHhyGxZmTEVeqreNq45ZVtU1JHr3kRKqc,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4723SXSdwv95hgrT5EGeUa2Si9zDkGE7c6kg6AvYMU5K",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4723SXSdwv95hgrT5EGeUa2Si9zDkGE7c6kg6AvYMU5K&amount=1&index=423&proof=4taA4kKJ9LfPtn7gEBL94Lakte4WkX534GVqmesvkWXU,31ULqTunWAqfM2zB6TmmiuSDQT9F4dX6WtZ5Gjg8Ww52,4jSNA35WcZkP9zBDKsES2kQoGt5JbZrE15xPdvvkwKEo,Az23siRXfqSbHhyGxZmTEVeqreNq45ZVtU1JHr3kRKqc,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "47Jqbioa3ftyurPXMchGmLEDsBhY5Y2ftuvx3sZKtPcQ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=47Jqbioa3ftyurPXMchGmLEDsBhY5Y2ftuvx3sZKtPcQ&amount=1&index=424&proof=HNxTaBdKPFGMrprEYmXGYejPfRGBV4asKb2SDjR2CCd9,Cw9CfSQzb3T7JYV3YC3oAnBvKcd6gLGjBfgAmCM9a4Zw,7UazRcZSX4cTRNCwFWTRhqyQBgQYupzeXwgSKShhnNww,Em42wXguKd2qyjDL9HwBUamyAk6edohkBPcd3k7YYvwq,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "47o3YbM8e75CtZ2gxpZkMB4mEEFKDJTrVMS9VURU8G7R",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=47o3YbM8e75CtZ2gxpZkMB4mEEFKDJTrVMS9VURU8G7R&amount=1&index=425&proof=2NZYvFj8T9WuCcZnR56zAjTqJzGK8kW7wRD1AMdLRMhZ,Cw9CfSQzb3T7JYV3YC3oAnBvKcd6gLGjBfgAmCM9a4Zw,7UazRcZSX4cTRNCwFWTRhqyQBgQYupzeXwgSKShhnNww,Em42wXguKd2qyjDL9HwBUamyAk6edohkBPcd3k7YYvwq,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "47toiUSgVWyqywNZBjKVigkKyRWgGdFUakRBVZLRNsyF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=47toiUSgVWyqywNZBjKVigkKyRWgGdFUakRBVZLRNsyF&amount=1&index=426&proof=3wHTriaptLiCQdZaV2i6nYrdzGKPFDgPNZvmYDtoJdX3,BcgHiAphu8HHPofUYfRFo6NvUjkqe2gUgKuNgVRtgHyD,7UazRcZSX4cTRNCwFWTRhqyQBgQYupzeXwgSKShhnNww,Em42wXguKd2qyjDL9HwBUamyAk6edohkBPcd3k7YYvwq,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "48fwEcqDTAN1SEyzefGtfWskMFapkYSVKETzLTiPFnHw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=48fwEcqDTAN1SEyzefGtfWskMFapkYSVKETzLTiPFnHw&amount=1&index=427&proof=A3NDw9U4whCJZZtZ1wi8bs3iDQ5Kh8oDEG7jUGrzger8,BcgHiAphu8HHPofUYfRFo6NvUjkqe2gUgKuNgVRtgHyD,7UazRcZSX4cTRNCwFWTRhqyQBgQYupzeXwgSKShhnNww,Em42wXguKd2qyjDL9HwBUamyAk6edohkBPcd3k7YYvwq,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "48m7BWH74hTEouWAwHcyAzV7z8HLXDgZNi1p3xTL7YK4",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=48m7BWH74hTEouWAwHcyAzV7z8HLXDgZNi1p3xTL7YK4&amount=1&index=428&proof=45oZWYy6Mf3Zc3ktpQBfGfSJy2nn81ZGryp1M8j1qeFR,4qEeWANvFzmjRcRwxydLJ248vJ8fcWMFVVNZAuzZtmj2,BB9psJs1P7oN1fDvf9frhhq2Ubxy7YbazYoHnd1hiePB,Em42wXguKd2qyjDL9HwBUamyAk6edohkBPcd3k7YYvwq,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "49ZAwFvXWzZQuhn6sDJ5MpXcwFXQ1C7DPhrpVFC9y4Yx",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=49ZAwFvXWzZQuhn6sDJ5MpXcwFXQ1C7DPhrpVFC9y4Yx&amount=1&index=429&proof=924Z72Y3Ynvx4YEJKjUhH59KXvUb2a8eZUGBBPtf9UnS,4qEeWANvFzmjRcRwxydLJ248vJ8fcWMFVVNZAuzZtmj2,BB9psJs1P7oN1fDvf9frhhq2Ubxy7YbazYoHnd1hiePB,Em42wXguKd2qyjDL9HwBUamyAk6edohkBPcd3k7YYvwq,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4ahVALSjD7q6TnaLWpWAgkQXK9r3GcT9VW31ZAPFYRgo",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4ahVALSjD7q6TnaLWpWAgkQXK9r3GcT9VW31ZAPFYRgo&amount=1&index=430&proof=CwMc4ejP97PqW8AZdL7FWZFisqNm5TaNugVgN9AGb57s,B1Mfjf5zgWCuyHGGz6MbQJ4eTcgqkRG76eFNEsPRf2dW,BB9psJs1P7oN1fDvf9frhhq2Ubxy7YbazYoHnd1hiePB,Em42wXguKd2qyjDL9HwBUamyAk6edohkBPcd3k7YYvwq,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4B5wQU4C4TCw71JL5uiVqQeVwwyPdYMLoF47DPcovj9q",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4B5wQU4C4TCw71JL5uiVqQeVwwyPdYMLoF47DPcovj9q&amount=1&index=431&proof=EsKtcXrYAQ71e3xRB44ikFGot95BH2nVku5y5bEJsRFw,B1Mfjf5zgWCuyHGGz6MbQJ4eTcgqkRG76eFNEsPRf2dW,BB9psJs1P7oN1fDvf9frhhq2Ubxy7YbazYoHnd1hiePB,Em42wXguKd2qyjDL9HwBUamyAk6edohkBPcd3k7YYvwq,5Mf3bnbdDpGfdQzNSAbreH6ViXfyzX6j9bdMKKF1jFkW,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4b6qaK4Ka4g8a9RhiDQcuNxo1Wp5iyprqTpt4Yuwcrjs",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4b6qaK4Ka4g8a9RhiDQcuNxo1Wp5iyprqTpt4Yuwcrjs&amount=1&index=432&proof=6v2Dj7ys991N1VgqGNzUnwgJPQehHfQfwJKorsNRaN7w,2aKzrbmbz23U1RC84XWS25DmvnkxJvhiEmi2X4ZRAmey,AMx7aRxrviatbTZE2Rjaxp4t5smK5W9dndLqVEP81G31,BmTk82GKGc8XMB1FeTwFvKFQspykT6HW2CaNZAB9hvVg,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4BkaqhL9ncb4r91UhJbrM1UjZnSD7s9fr12FVoJh35iY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4BkaqhL9ncb4r91UhJbrM1UjZnSD7s9fr12FVoJh35iY&amount=1&index=433&proof=31bZASHyexCXhUHshRnjzMLLrZMCgep8D4UTMWBJwowV,2aKzrbmbz23U1RC84XWS25DmvnkxJvhiEmi2X4ZRAmey,AMx7aRxrviatbTZE2Rjaxp4t5smK5W9dndLqVEP81G31,BmTk82GKGc8XMB1FeTwFvKFQspykT6HW2CaNZAB9hvVg,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4bKCiJgT7nvEi3ZKoBNApw5JUhNfynF6dnXmpZ9aVRLf",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4bKCiJgT7nvEi3ZKoBNApw5JUhNfynF6dnXmpZ9aVRLf&amount=1&index=434&proof=AtUm8qFY1zgda3TLBMNEzbiLpyYNRknv6zuy7U2ZjWsx,5NE7VJCpJeWBiZjnxfxGLScLiXRFkBHkRa8vU84atmpV,AMx7aRxrviatbTZE2Rjaxp4t5smK5W9dndLqVEP81G31,BmTk82GKGc8XMB1FeTwFvKFQspykT6HW2CaNZAB9hvVg,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4bUjDtdiFi3gmyYDSxL6f4pbZGGrfq1Vy77ZYc1ySm6r",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4bUjDtdiFi3gmyYDSxL6f4pbZGGrfq1Vy77ZYc1ySm6r&amount=1&index=435&proof=HT8ruidxFpkms3bcf2v3ngDiQ4RxwKjj8GRvyZ145RQw,5NE7VJCpJeWBiZjnxfxGLScLiXRFkBHkRa8vU84atmpV,AMx7aRxrviatbTZE2Rjaxp4t5smK5W9dndLqVEP81G31,BmTk82GKGc8XMB1FeTwFvKFQspykT6HW2CaNZAB9hvVg,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4c53sWEPaUn2wmFmWAkBmGkUi5EEWB3wJhvUg4QzYuEU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4c53sWEPaUn2wmFmWAkBmGkUi5EEWB3wJhvUg4QzYuEU&amount=1&index=436&proof=9pNjmLc7DUzJuWyn1cy6Q8KYboR1Uznpd1G2Dpok8zND,FVLzo7dtYjULYoKUXF2FmGs7KYVXDHtusSfRMD1Aq67e,4rV2r1kVxGhz6gx4CUnWZFpJe8rPEW9bdv42EbTGR89e,BmTk82GKGc8XMB1FeTwFvKFQspykT6HW2CaNZAB9hvVg,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4coWuJZAVg1zbJZ7p8ctbHEahXfQus6neT4u1bskur7T",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4coWuJZAVg1zbJZ7p8ctbHEahXfQus6neT4u1bskur7T&amount=1&index=437&proof=99PnzAPn8p1WVjh5ZbJqJ2LJ66BXJ4KMYmYGDVhz5VME,FVLzo7dtYjULYoKUXF2FmGs7KYVXDHtusSfRMD1Aq67e,4rV2r1kVxGhz6gx4CUnWZFpJe8rPEW9bdv42EbTGR89e,BmTk82GKGc8XMB1FeTwFvKFQspykT6HW2CaNZAB9hvVg,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4cQcnBPFMydjr18sNs7dUecnfKFRAYMGyzX4gZgBJFfF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4cQcnBPFMydjr18sNs7dUecnfKFRAYMGyzX4gZgBJFfF&amount=1&index=438&proof=4R9FdcaR81Z1D5AgzapGR5Kkfmxeve6zwyBTcfi7tVrg,Ekk6yQGa8DRcbxV8jtJ24CUvuiEHRCcA6aRh4pBCQqy6,4rV2r1kVxGhz6gx4CUnWZFpJe8rPEW9bdv42EbTGR89e,BmTk82GKGc8XMB1FeTwFvKFQspykT6HW2CaNZAB9hvVg,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4Dd8JReDsPQ2Yf2GK3gB2sPaJ3jqadh1EsfWiVHjA1k3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4Dd8JReDsPQ2Yf2GK3gB2sPaJ3jqadh1EsfWiVHjA1k3&amount=1&index=439&proof=27iZ9vk6tRPoMpcQEiuHNfF14CEGhjn9yWKAhsfmbxbw,Ekk6yQGa8DRcbxV8jtJ24CUvuiEHRCcA6aRh4pBCQqy6,4rV2r1kVxGhz6gx4CUnWZFpJe8rPEW9bdv42EbTGR89e,BmTk82GKGc8XMB1FeTwFvKFQspykT6HW2CaNZAB9hvVg,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4DKzZhrc3rEdviu9RAUG46BA9QrmBw5fYGjytALCeVZM",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4DKzZhrc3rEdviu9RAUG46BA9QrmBw5fYGjytALCeVZM&amount=1&index=440&proof=EmU9fCf8yqgBqRhAJ3keUQw2ZbFxNVvsQxx21PUAin8T,D2WBoxgxjGjgHZiY2dRMvXootZnGhgfTa3rik62iXxSq,E1Ef6XiSND6c6Cyxvh4XsovzZPVHinjvPMJ2j5rmcawa,EoNibZ3kLmbxijmqTR3ePhgVXNMpTeXAgTWiu5K2Cm2z,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4DPcfb2K5YzEF2Upy8ak1uBqwHpg2vxdhPUf42NBnspu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4DPcfb2K5YzEF2Upy8ak1uBqwHpg2vxdhPUf42NBnspu&amount=1&index=441&proof=9SxqX8aCVFbs1Fis4CppQkAGD6VCuZwrZRmmQ5gBe5do,D2WBoxgxjGjgHZiY2dRMvXootZnGhgfTa3rik62iXxSq,E1Ef6XiSND6c6Cyxvh4XsovzZPVHinjvPMJ2j5rmcawa,EoNibZ3kLmbxijmqTR3ePhgVXNMpTeXAgTWiu5K2Cm2z,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4drMYc3ShV9nDKBc64oWCm149EEFyAsJYCuNRK3VZNf9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4drMYc3ShV9nDKBc64oWCm149EEFyAsJYCuNRK3VZNf9&amount=1&index=442&proof=3bw2ku9vm99y7msbbea1NNBW8YcjXGRK2HoSTwfvCRpF,BCgLMVQ9Vp2Zo64jd7CTLB6dbYEi5koZU8ibTgiiKN3H,E1Ef6XiSND6c6Cyxvh4XsovzZPVHinjvPMJ2j5rmcawa,EoNibZ3kLmbxijmqTR3ePhgVXNMpTeXAgTWiu5K2Cm2z,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4G3jXi7wrEi2HDj13rmo6Wsxpx5NmXEF5S7rmgQ4nMLi",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4G3jXi7wrEi2HDj13rmo6Wsxpx5NmXEF5S7rmgQ4nMLi&amount=1&index=443&proof=DrRR3W7ngxrSWUusvcgMVAnSsp7erK3oakq8yHxjaK3A,BCgLMVQ9Vp2Zo64jd7CTLB6dbYEi5koZU8ibTgiiKN3H,E1Ef6XiSND6c6Cyxvh4XsovzZPVHinjvPMJ2j5rmcawa,EoNibZ3kLmbxijmqTR3ePhgVXNMpTeXAgTWiu5K2Cm2z,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4gNXPhPUZLqtFj6HjEsHf4Uv5cPGGgcpyGnLziy7hwwB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4gNXPhPUZLqtFj6HjEsHf4Uv5cPGGgcpyGnLziy7hwwB&amount=1&index=444&proof=D6S5qawEvp7yzeNXsuCVkYjWFmjyQsAhV4cajFUXPLr7,98sUc9jyGRDhc3UzHdG5f9pD3nYwsjxpGWe3D6NjiBSL,FoTvQAxFet5nT9NiBjKSMMPz4R6ehSFjkTW7mUnteeLX,EoNibZ3kLmbxijmqTR3ePhgVXNMpTeXAgTWiu5K2Cm2z,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4hKTPChmnZHtVQDbjthaFyTgEW9NPBpBbiytEUyGLJ3i",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4hKTPChmnZHtVQDbjthaFyTgEW9NPBpBbiytEUyGLJ3i&amount=1&index=445&proof=9A5xfDMzFeEyR1xvc3iBoVMhTohuHK5ZsGQvtJbB1zsQ,98sUc9jyGRDhc3UzHdG5f9pD3nYwsjxpGWe3D6NjiBSL,FoTvQAxFet5nT9NiBjKSMMPz4R6ehSFjkTW7mUnteeLX,EoNibZ3kLmbxijmqTR3ePhgVXNMpTeXAgTWiu5K2Cm2z,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4igW3A9cJ26A24AnMu83cQmFZtEsdZb7mgHAN4M2UaXH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4igW3A9cJ26A24AnMu83cQmFZtEsdZb7mgHAN4M2UaXH&amount=1&index=446&proof=9WMWJCFUH3rnY1BUXFaha5xU4njDmb8FqeGnrrc4QdkX,3L8hXyFj5qVaBpcjvBXq7f3ttGEq35J75tsJwJkmUthd,FoTvQAxFet5nT9NiBjKSMMPz4R6ehSFjkTW7mUnteeLX,EoNibZ3kLmbxijmqTR3ePhgVXNMpTeXAgTWiu5K2Cm2z,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4iQGETQ3zWusYCGBEHzoM7msixE8R8oMmCojQGQqFvbV",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4iQGETQ3zWusYCGBEHzoM7msixE8R8oMmCojQGQqFvbV&amount=1&index=447&proof=Gsgo13CdDRBF1Uf4BGzoZJbAvv3g83nfr1KpWHQSrERS,3L8hXyFj5qVaBpcjvBXq7f3ttGEq35J75tsJwJkmUthd,FoTvQAxFet5nT9NiBjKSMMPz4R6ehSFjkTW7mUnteeLX,EoNibZ3kLmbxijmqTR3ePhgVXNMpTeXAgTWiu5K2Cm2z,2RzXNcp6DSYYQgYgbvNLid7vGbCG1w1uRh76t8y9Q9gx,86GJ11W7hacN5m4h1GPdYvBcjTB8KSNmeUkXbVMWMTMH,6nPiRiicPxL8fsoFuTKKYJt4BNA46QXN5GS9nuts5qcE,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4j8hXkV7fskqM98g6gCkyLrJXXaHgzwkBfKtSrmatPvc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4j8hXkV7fskqM98g6gCkyLrJXXaHgzwkBfKtSrmatPvc&amount=1&index=448&proof=G4oEKvXEMuiy1vqdVL7t6Qm5uj74JfPmySvdqftdGR7,DqC3Yb3GJAFyp8ijnpp16prjirzt55paZXTsfitZCYDE,H4x1wFzEL27Vv9jtRYsaXmc8w2mwGVJZXFGxwooAbMtf,AGoWowFUo95pNn3TAKQiUg1Gqz43XFWxcZbj4spdgEs,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4JLr1fMHH6yU4C248jFaRAb4t5mvNjhEUJKCYqkZJkGw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4JLr1fMHH6yU4C248jFaRAb4t5mvNjhEUJKCYqkZJkGw&amount=1&index=449&proof=67fxHhVdL96tYmWZe8XN961TNa7gNaMZaKXQ84TNJEBK,DqC3Yb3GJAFyp8ijnpp16prjirzt55paZXTsfitZCYDE,H4x1wFzEL27Vv9jtRYsaXmc8w2mwGVJZXFGxwooAbMtf,AGoWowFUo95pNn3TAKQiUg1Gqz43XFWxcZbj4spdgEs,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4JoRLLVfGXfnPHPwLdn8XaRzgw9JuMYf4mDoGbFrHbkm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4JoRLLVfGXfnPHPwLdn8XaRzgw9JuMYf4mDoGbFrHbkm&amount=1&index=450&proof=8dSJh4KTY9RWn4LicP52hVE1MUjEyfYi8Tnk4iApxduR,C1cXn4fB4K53P9JwYVBeviX3PKgEBPbq3Uw1XEAwr2FT,H4x1wFzEL27Vv9jtRYsaXmc8w2mwGVJZXFGxwooAbMtf,AGoWowFUo95pNn3TAKQiUg1Gqz43XFWxcZbj4spdgEs,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4KjoTnpaNyPjBYo5jiDDjXaNYH1sHBYiq2Jbty3UZhea",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4KjoTnpaNyPjBYo5jiDDjXaNYH1sHBYiq2Jbty3UZhea&amount=1&index=451&proof=HhvDyUqyvqstiKjLw39Eup8dR3SRMQPeRgJHxwWABFmL,C1cXn4fB4K53P9JwYVBeviX3PKgEBPbq3Uw1XEAwr2FT,H4x1wFzEL27Vv9jtRYsaXmc8w2mwGVJZXFGxwooAbMtf,AGoWowFUo95pNn3TAKQiUg1Gqz43XFWxcZbj4spdgEs,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4LYbUA4cSAwPuPLaZ8STVKaA1HzP3LQAn8HTLBjggwsn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4LYbUA4cSAwPuPLaZ8STVKaA1HzP3LQAn8HTLBjggwsn&amount=1&index=452&proof=Eh4wW42QWzi2VMTmmCRH9pjp8fyho27eNz4t5CNmB73a,2RZyKwRcDrfZYGm4G6dEzJM3SbMuRyDTdMQTwdf5CXMM,AGFmfV5aLSqbP4qZJCf7WN5hke2Q3ZRJdxFRBbuLL2VU,AGoWowFUo95pNn3TAKQiUg1Gqz43XFWxcZbj4spdgEs,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4MnoBJeSLUkdY3fV5goWDeWBbUA7ifgFU4k5GuTB3W6e",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4MnoBJeSLUkdY3fV5goWDeWBbUA7ifgFU4k5GuTB3W6e&amount=1&index=453&proof=8orvHfzGNp21L3JKwnuL8MNVHKw5X3AT5AAnhZkBqeC2,2RZyKwRcDrfZYGm4G6dEzJM3SbMuRyDTdMQTwdf5CXMM,AGFmfV5aLSqbP4qZJCf7WN5hke2Q3ZRJdxFRBbuLL2VU,AGoWowFUo95pNn3TAKQiUg1Gqz43XFWxcZbj4spdgEs,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4n6iDxujNzZUbHiFAqrCFjtsMnQkkjqhNCDdpjMSAEzL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4n6iDxujNzZUbHiFAqrCFjtsMnQkkjqhNCDdpjMSAEzL&amount=1&index=454&proof=AWKjofksMiRMPYyRRrfNadciBCFoMMsKzqLA8tesYLQp,BXFkBqZRYqAUjjtZuyv3z1RBWAih93QGQYmii59uXN8T,AGFmfV5aLSqbP4qZJCf7WN5hke2Q3ZRJdxFRBbuLL2VU,AGoWowFUo95pNn3TAKQiUg1Gqz43XFWxcZbj4spdgEs,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4N7JdXeTbEzttY5vs8f9TeZGfoSvqhWhSHmxh8Zgx1Qs",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4N7JdXeTbEzttY5vs8f9TeZGfoSvqhWhSHmxh8Zgx1Qs&amount=1&index=455&proof=3hKrZd59MzvpPnJVCbZsmkCRHyb5YENb1dZaMyA3Jkw8,BXFkBqZRYqAUjjtZuyv3z1RBWAih93QGQYmii59uXN8T,AGFmfV5aLSqbP4qZJCf7WN5hke2Q3ZRJdxFRBbuLL2VU,AGoWowFUo95pNn3TAKQiUg1Gqz43XFWxcZbj4spdgEs,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4Nf3jS1x7t2t2mxbR4Re2L1qxSfxPLN7E4an4LMU8gPc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4Nf3jS1x7t2t2mxbR4Re2L1qxSfxPLN7E4an4LMU8gPc&amount=1&index=456&proof=3hvBQBrJw7dkqUjYk5n7UWfhxYF5ZTnonbHShShNrVrP,ASfbsAHYGQa9fxWNRKuWSbycKbDFMYEExdzcCqrDBv8A,bdYp7tqnWqLTKAry4kcUu9jeyVZ1Ref9kwDCNo4j7gj,4hxD7KNUCVrtK43cTT52AV6VYWHms1utpGNvXQVzYN4m,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4nK1YV5v5MbKr5aRWrdyjMSpjnNpvsi2XYBKcKAL99q1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4nK1YV5v5MbKr5aRWrdyjMSpjnNpvsi2XYBKcKAL99q1&amount=1&index=457&proof=HMdtCWJLeeVgewtFEuDF3VNV7VUarmdo9G8mWgfqNs8Z,ASfbsAHYGQa9fxWNRKuWSbycKbDFMYEExdzcCqrDBv8A,bdYp7tqnWqLTKAry4kcUu9jeyVZ1Ref9kwDCNo4j7gj,4hxD7KNUCVrtK43cTT52AV6VYWHms1utpGNvXQVzYN4m,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4nNQvp6dwo26FVxvFjgZQm66QjwkihPgeW33Z24HaU2T",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4nNQvp6dwo26FVxvFjgZQm66QjwkihPgeW33Z24HaU2T&amount=1&index=458&proof=AwbZJzMex1oy65ekt1iYfZxN7Cf4RWJQ4L1nBK2WkSFm,69rRHSedqcaiFXYH97Pvmv9jcmRR5xeBeaqfCzruwibg,bdYp7tqnWqLTKAry4kcUu9jeyVZ1Ref9kwDCNo4j7gj,4hxD7KNUCVrtK43cTT52AV6VYWHms1utpGNvXQVzYN4m,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4onVAtYAxBEkyLFptWonSLUTXZFRZfJiaZva9zSLPfSs",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4onVAtYAxBEkyLFptWonSLUTXZFRZfJiaZva9zSLPfSs&amount=1&index=459&proof=CNPd2C5dQ4A9UwMw5YgQLVwv1FKPbzy7jJN9n6UxQHtY,69rRHSedqcaiFXYH97Pvmv9jcmRR5xeBeaqfCzruwibg,bdYp7tqnWqLTKAry4kcUu9jeyVZ1Ref9kwDCNo4j7gj,4hxD7KNUCVrtK43cTT52AV6VYWHms1utpGNvXQVzYN4m,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4P3nVLY8jaravGhEG7hEU3zCMLwQTKkgnrUsckMbTa7a",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4P3nVLY8jaravGhEG7hEU3zCMLwQTKkgnrUsckMbTa7a&amount=1&index=460&proof=7kNuXAioQXiFUMbZgHnxBmbZkqmZMbSwc4snMMGqAo1S,XxLacuNGNUxkGQk3Dp5YCLDXu2EpfN6L8wh57odB7oT,A5H5d32XwUKdsTXXc3aZk8Fcdh95zSGzVBfmk8MVKya5,4hxD7KNUCVrtK43cTT52AV6VYWHms1utpGNvXQVzYN4m,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4pgB4r6crzASt29DbfeeSWKyjrZLSvg1FAMnUGBuabw3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4pgB4r6crzASt29DbfeeSWKyjrZLSvg1FAMnUGBuabw3&amount=1&index=461&proof=21N2Wdm2oFpuYeyWo5J6hHYKexb3Z4hH32E6AvcjECKu,XxLacuNGNUxkGQk3Dp5YCLDXu2EpfN6L8wh57odB7oT,A5H5d32XwUKdsTXXc3aZk8Fcdh95zSGzVBfmk8MVKya5,4hxD7KNUCVrtK43cTT52AV6VYWHms1utpGNvXQVzYN4m,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4pPqxVdS8cNxyFvrPmFoPiN97BowQDt8FJ9ZjjWYvdVD",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4pPqxVdS8cNxyFvrPmFoPiN97BowQDt8FJ9ZjjWYvdVD&amount=1&index=462&proof=7bgpJZUM7Fi7U3Fe7MjJFpWpgR6G6agmLauBAbfHkcKK,Hcjm4r2cVpztZnYVfHk9m5NwRtAB92Kgw1U4xXUa6c4u,A5H5d32XwUKdsTXXc3aZk8Fcdh95zSGzVBfmk8MVKya5,4hxD7KNUCVrtK43cTT52AV6VYWHms1utpGNvXQVzYN4m,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4pq2ndjk2KiXqCQ5VD7tj8v2gYZg2zgzQVM4m5g62qMq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4pq2ndjk2KiXqCQ5VD7tj8v2gYZg2zgzQVM4m5g62qMq&amount=1&index=463&proof=C5NVfEdhDYogBPy52p4PFHpUex23bBUQDroWy9cq8LuU,Hcjm4r2cVpztZnYVfHk9m5NwRtAB92Kgw1U4xXUa6c4u,A5H5d32XwUKdsTXXc3aZk8Fcdh95zSGzVBfmk8MVKya5,4hxD7KNUCVrtK43cTT52AV6VYWHms1utpGNvXQVzYN4m,Gqdxq2anTfezow5HSV5AAhS16myQWg9PMNAYWeB45389,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4QCcRE2m4CsG54uFFNSN35qSKjNqo77GCkp83RAGM7cc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4QCcRE2m4CsG54uFFNSN35qSKjNqo77GCkp83RAGM7cc&amount=1&index=464&proof=7fQt5oo7V3Bx4dgfnb9VEYqcfM1eKNqr2TfEcXfjbioZ,qh9y1ZWJ34BYMbEx8YEzSt6Wsymc23zErwjXewJQNC8,3oRB1kzdUJriTg6CGSki9B4ib5DTNAesUvMRaaFwBSF3,AC2MEBS352kSzqPAyDPFaSWhetGS5rTCxw9uDpXF6Sep,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4QN4oNTb2Ze2Uhbqx8tBqbeUZtLbfVj5yTDbzHmi381T",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4QN4oNTb2Ze2Uhbqx8tBqbeUZtLbfVj5yTDbzHmi381T&amount=1&index=465&proof=8Ju3FgJaWSnx9CyxN2AxG1McmZPrgppjguk7EcrMkWpu,qh9y1ZWJ34BYMbEx8YEzSt6Wsymc23zErwjXewJQNC8,3oRB1kzdUJriTg6CGSki9B4ib5DTNAesUvMRaaFwBSF3,AC2MEBS352kSzqPAyDPFaSWhetGS5rTCxw9uDpXF6Sep,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4QznPDfP8qhSsscmqphxmXFrZfsyU3BFN1Wqfgkv719p",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4QznPDfP8qhSsscmqphxmXFrZfsyU3BFN1Wqfgkv719p&amount=1&index=466&proof=9KKoG4sSTc9skZhWFPzFAH5Cus7kHNL8Y8M4QmmxPFTu,GbxS5QkF5tjTtoQBsvWFwZ5cDF6kqGP7czYAq4SM3Moh,3oRB1kzdUJriTg6CGSki9B4ib5DTNAesUvMRaaFwBSF3,AC2MEBS352kSzqPAyDPFaSWhetGS5rTCxw9uDpXF6Sep,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4r2w9AsFpjhwCYk5mdRKXfnaHRg6nRQyT9aXpJshrBXN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4r2w9AsFpjhwCYk5mdRKXfnaHRg6nRQyT9aXpJshrBXN&amount=1&index=467&proof=AJeUUHeUUFcgkHP25EMKju4jm5gxAnNwcDUMUDzLgoh6,GbxS5QkF5tjTtoQBsvWFwZ5cDF6kqGP7czYAq4SM3Moh,3oRB1kzdUJriTg6CGSki9B4ib5DTNAesUvMRaaFwBSF3,AC2MEBS352kSzqPAyDPFaSWhetGS5rTCxw9uDpXF6Sep,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4rPDvbggb75RpH74QCS6NxG8CC3tJE9bZpMfuYWN2Cs3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4rPDvbggb75RpH74QCS6NxG8CC3tJE9bZpMfuYWN2Cs3&amount=1&index=468&proof=GJWGxXST75fjTPpwRCYCeeJx91bdAhDoGafeWhjFJGeC,3gBkvJrDAPSUteNtPb5DevzjCJQkQ5MNm5dmd897mity,3EJ54ZQ5nzJzwuH1b2VKjBRoDsKVhYmvrAGg9MJ3SJfV,AC2MEBS352kSzqPAyDPFaSWhetGS5rTCxw9uDpXF6Sep,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4RtrnPGJZ1Gc1NjVz6eSEvGUtmobQRj9psDuk2rHR5Lz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4RtrnPGJZ1Gc1NjVz6eSEvGUtmobQRj9psDuk2rHR5Lz&amount=1&index=469&proof=CWtFzoK2EUKF8WiUD5ZB7Mr97qpdCsd4Rq3R5fDSqS2S,3gBkvJrDAPSUteNtPb5DevzjCJQkQ5MNm5dmd897mity,3EJ54ZQ5nzJzwuH1b2VKjBRoDsKVhYmvrAGg9MJ3SJfV,AC2MEBS352kSzqPAyDPFaSWhetGS5rTCxw9uDpXF6Sep,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4S9CjRe1k2oXazA7UgrGppN6QgxNguRTEQXN58PTiZjd",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4S9CjRe1k2oXazA7UgrGppN6QgxNguRTEQXN58PTiZjd&amount=1&index=470&proof=KHCDbwu7h8ENfSMAcCZXcxSBr88fTFJ7b3sd3c4mCNG,AUuPpzh5y8W5FvafuPrf2nMm8VcdgUHn8qxmGkCWonX7,3EJ54ZQ5nzJzwuH1b2VKjBRoDsKVhYmvrAGg9MJ3SJfV,AC2MEBS352kSzqPAyDPFaSWhetGS5rTCxw9uDpXF6Sep,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4TiTSbhdBRiSmiNC4SmLJsDZxBRFBVLYccgVLvVX7me2",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4TiTSbhdBRiSmiNC4SmLJsDZxBRFBVLYccgVLvVX7me2&amount=1&index=471&proof=BX3JioxfpjFNddndz9MRgEc6rrY79kyh7Fges9gWp8kq,AUuPpzh5y8W5FvafuPrf2nMm8VcdgUHn8qxmGkCWonX7,3EJ54ZQ5nzJzwuH1b2VKjBRoDsKVhYmvrAGg9MJ3SJfV,AC2MEBS352kSzqPAyDPFaSWhetGS5rTCxw9uDpXF6Sep,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4UsN2KTuVdaPqoJw5Se3w6jYJ2bTYYRkoqjdxqiD78XV",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4UsN2KTuVdaPqoJw5Se3w6jYJ2bTYYRkoqjdxqiD78XV&amount=1&index=472&proof=rTTqgcUJgPgnktifCtjRMQW2yZL5dbvDXVEawTPtvJP,CU1QwWRXXWuQfxcYegGNXA74WQdJCfN6swyb5wfjphsj,6vFwcCNf2gMFsX4ApuRgT7ajpPsbFww2jczBWWDm5J4n,8UaRNjXevqJQU2kjrwf1uZsFmsSTK8sM6gzByLAeP8MC,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4UVmgM1K8iBXCsFYj2h6pur9hLNVAEfFQkdeieD4spMg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4UVmgM1K8iBXCsFYj2h6pur9hLNVAEfFQkdeieD4spMg&amount=1&index=473&proof=7aoq8TGcame7Lj2Vzn6FzRcVCGhdrBSKq4GrYWC6mFHe,CU1QwWRXXWuQfxcYegGNXA74WQdJCfN6swyb5wfjphsj,6vFwcCNf2gMFsX4ApuRgT7ajpPsbFww2jczBWWDm5J4n,8UaRNjXevqJQU2kjrwf1uZsFmsSTK8sM6gzByLAeP8MC,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4V5vo4QuXkCq4hyisqgeQJv3LzTGUdXNs6nqXxNVcjnN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4V5vo4QuXkCq4hyisqgeQJv3LzTGUdXNs6nqXxNVcjnN&amount=1&index=474&proof=sjc7EY5eKkhFixJZPwh2XczdVDCL3hvGytgFqYxP7WA,HHnAB4EKdABYMER5U5tmL9BP9an4H47qib1cE2w3HZhx,6vFwcCNf2gMFsX4ApuRgT7ajpPsbFww2jczBWWDm5J4n,8UaRNjXevqJQU2kjrwf1uZsFmsSTK8sM6gzByLAeP8MC,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4visVEPioUknRSfS1ZRHj2eAcfDYBJoZZ2pTtCegGVMc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4visVEPioUknRSfS1ZRHj2eAcfDYBJoZZ2pTtCegGVMc&amount=1&index=475&proof=YEjZ13MdKFUtrJTNwWLDUCWJzCPUg6gF8FLbeQPBHgF,HHnAB4EKdABYMER5U5tmL9BP9an4H47qib1cE2w3HZhx,6vFwcCNf2gMFsX4ApuRgT7ajpPsbFww2jczBWWDm5J4n,8UaRNjXevqJQU2kjrwf1uZsFmsSTK8sM6gzByLAeP8MC,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4VPmSVYtwt2M4SQB2qcaGsAUscNtNq5conKiH5osSphJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4VPmSVYtwt2M4SQB2qcaGsAUscNtNq5conKiH5osSphJ&amount=1&index=476&proof=6FpSJbkXiV8P7L94yi3DmjtwrRiwD71juWwyobY8fijs,2jGyzSNgUZu2asTESH9KSNSXhupwwhVcTmJoiYj6k8QM,ke6pgQkNo3ogwxuqvMFoviszjcT98YUN6g2unNTEyq1,8UaRNjXevqJQU2kjrwf1uZsFmsSTK8sM6gzByLAeP8MC,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4VqR6cEVdGXuUnGhhEH1ujN7AdALiHFy7n4EVwuLD9qY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4VqR6cEVdGXuUnGhhEH1ujN7AdALiHFy7n4EVwuLD9qY&amount=1&index=477&proof=DH9ymL7USwyVkdeBMCXq8Pd9Pw7cVwsfFWFjMKBMBP4q,2jGyzSNgUZu2asTESH9KSNSXhupwwhVcTmJoiYj6k8QM,ke6pgQkNo3ogwxuqvMFoviszjcT98YUN6g2unNTEyq1,8UaRNjXevqJQU2kjrwf1uZsFmsSTK8sM6gzByLAeP8MC,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4XeXf9KeX52sz7EX5U2TgjMwHBV3iy1Scn3dsRjMkKJN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4XeXf9KeX52sz7EX5U2TgjMwHBV3iy1Scn3dsRjMkKJN&amount=1&index=478&proof=GndhKqYgJVLkHE9vuUqySdZ2jxtkda1VzB9z79RuER4p,EMtpr6bHRv2pMZJa8erSQe8fx2UC8pgBM31bv73PzwJK,ke6pgQkNo3ogwxuqvMFoviszjcT98YUN6g2unNTEyq1,8UaRNjXevqJQU2kjrwf1uZsFmsSTK8sM6gzByLAeP8MC,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4XrLL4nT5oPV8496Lc2WeaHkdCirDJVbywMMQFVRyyc1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4XrLL4nT5oPV8496Lc2WeaHkdCirDJVbywMMQFVRyyc1&amount=1&index=479&proof=H1cyKLoyeAukbDyBYEaPB1fNyDVDaPCirCXb3KK6175K,EMtpr6bHRv2pMZJa8erSQe8fx2UC8pgBM31bv73PzwJK,ke6pgQkNo3ogwxuqvMFoviszjcT98YUN6g2unNTEyq1,8UaRNjXevqJQU2kjrwf1uZsFmsSTK8sM6gzByLAeP8MC,2Mg4ioGGbVkZWoNe3AYW5zMkGMnGC2zPjbyb2C5jwBNn,3nHhx1yypn4DGhgedTWGxk4CmsL9C2PRoBQzDCnTZo21,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4yk94NQcvzmTwZMAPGViEwELYk2tAerLoZUZ1g6PKWPo",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4yk94NQcvzmTwZMAPGViEwELYk2tAerLoZUZ1g6PKWPo&amount=1&index=480&proof=AoLCXBLjap2TajuCgnq81vnGY9P1PNKS6uWSLygX9LMV,55RAPzcCYL35oLrTfaVFtMpydy2tTRu6rh4GNnexsvUV,KJcz42rf3nbbRDFfHza4szTU9uMJ7wyuWcXvAHmGmSi,H3k5AQMdTkHvzVwp7dkaKcHCYVUXCd5pcSGG3txJpijr,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "4ZkaxvcLgwVSBFL94bQBnp8PXhHxZfiFQABUWDttxrRA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=4ZkaxvcLgwVSBFL94bQBnp8PXhHxZfiFQABUWDttxrRA&amount=1&index=481&proof=DmfSDCKURYdmJRsBBj388vYzo8sn8VJkKm1HxiL1pwZK,55RAPzcCYL35oLrTfaVFtMpydy2tTRu6rh4GNnexsvUV,KJcz42rf3nbbRDFfHza4szTU9uMJ7wyuWcXvAHmGmSi,H3k5AQMdTkHvzVwp7dkaKcHCYVUXCd5pcSGG3txJpijr,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "52McFURsstdNcCs1WCL5WFERD3q8qgV5k2R1RgBVhnHY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=52McFURsstdNcCs1WCL5WFERD3q8qgV5k2R1RgBVhnHY&amount=1&index=482&proof=34PKQ1Mj6ZR4mJw3fi9eEkQZgP2VLN94Xed17f5XSgbN,GB8uQX6f38xURU2NsCE39G7X2uR7YczqyGYreSFpMoyQ,KJcz42rf3nbbRDFfHza4szTU9uMJ7wyuWcXvAHmGmSi,H3k5AQMdTkHvzVwp7dkaKcHCYVUXCd5pcSGG3txJpijr,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "52qGL3EHvASC7y33B3H7LSSSGvvZzAXqPvokfb98kLLQ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=52qGL3EHvASC7y33B3H7LSSSGvvZzAXqPvokfb98kLLQ&amount=1&index=483&proof=3bXnpuchzQJps3jct39DwQqF4wiNqKN6oiR9nQfDSobR,GB8uQX6f38xURU2NsCE39G7X2uR7YczqyGYreSFpMoyQ,KJcz42rf3nbbRDFfHza4szTU9uMJ7wyuWcXvAHmGmSi,H3k5AQMdTkHvzVwp7dkaKcHCYVUXCd5pcSGG3txJpijr,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "534qYxXHuDyrKk8FTBi15HQiYyA98FKrDtkTdvKcMESv",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=534qYxXHuDyrKk8FTBi15HQiYyA98FKrDtkTdvKcMESv&amount=1&index=484&proof=7Ha9nyJCAw3iQPxiEbYrroVP7cEfPqzw6to2c1RiqXTK,3bimANves5w2G4rKA5Rxv6YZnVC5Ni8YqdCztfzAcp7n,6cnwiyPyTiuYJfaSz19Y4QKrwMByCg8BeqSACp67pCFr,H3k5AQMdTkHvzVwp7dkaKcHCYVUXCd5pcSGG3txJpijr,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "53k4F6tw1r3SSDQeu6y6FgTDaHh7E1BK9SKUCRREWKUV",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=53k4F6tw1r3SSDQeu6y6FgTDaHh7E1BK9SKUCRREWKUV&amount=1&index=485&proof=B1wgohkiTrR2Q7Nkn4GAZGsoM1iprKH1S7kw4KnN9Q6G,3bimANves5w2G4rKA5Rxv6YZnVC5Ni8YqdCztfzAcp7n,6cnwiyPyTiuYJfaSz19Y4QKrwMByCg8BeqSACp67pCFr,H3k5AQMdTkHvzVwp7dkaKcHCYVUXCd5pcSGG3txJpijr,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "54jC7wsgtFKQo75NXMcLJuH33gjcig1oK9pE38WExPGP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=54jC7wsgtFKQo75NXMcLJuH33gjcig1oK9pE38WExPGP&amount=1&index=486&proof=4Y3yXPHwAhscHj7SvFAoWs4h6rYDRRZp22ZGbHvww1Ek,7UAjJurYYPUypogickffMnAtcV97LDDAqvTyAT1QA7Ry,6cnwiyPyTiuYJfaSz19Y4QKrwMByCg8BeqSACp67pCFr,H3k5AQMdTkHvzVwp7dkaKcHCYVUXCd5pcSGG3txJpijr,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "54xwRZCNh8mMdJTnpsxFaA8ETAZnpAbzEwHgrUPQubbC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=54xwRZCNh8mMdJTnpsxFaA8ETAZnpAbzEwHgrUPQubbC&amount=1&index=487&proof=BZKwdMcppd6onvgchizPC5Udf4uSFxcdoCAhJd4aZT11,7UAjJurYYPUypogickffMnAtcV97LDDAqvTyAT1QA7Ry,6cnwiyPyTiuYJfaSz19Y4QKrwMByCg8BeqSACp67pCFr,H3k5AQMdTkHvzVwp7dkaKcHCYVUXCd5pcSGG3txJpijr,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "557nQufABsNo9TLV5f2trqSbK82XYQ9bo1StpTfzXLvF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=557nQufABsNo9TLV5f2trqSbK82XYQ9bo1StpTfzXLvF&amount=1&index=488&proof=J3t3SdhBBzPrbh2KMhG38y8SXvMbaBwP3fcP2UoX2D5q,3Hyy2X5XkULxKqpKSFcQkegeAfEBEWpWzGdjuhbE6WkN,FHYLb7v7HVwVoQ4CvQnSVFxLP7dc2nuTVBMC6hmewhjH,GvNq3wJKMtyonTuA1gsuMRCVhm15NNrLkH3nrLKXxeYS,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "55es9KUkmAPw8U5jkFL8uQEfiWszX5W6xBmw22DpnrmS",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=55es9KUkmAPw8U5jkFL8uQEfiWszX5W6xBmw22DpnrmS&amount=1&index=489&proof=9k2srWg2ba2Sv9zVMxryLVMeBai3ngscZzpwkrF5gSZ9,3Hyy2X5XkULxKqpKSFcQkegeAfEBEWpWzGdjuhbE6WkN,FHYLb7v7HVwVoQ4CvQnSVFxLP7dc2nuTVBMC6hmewhjH,GvNq3wJKMtyonTuA1gsuMRCVhm15NNrLkH3nrLKXxeYS,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "55s9DQYeCAKNvudpSrxdp2drTATrDvo1reZW1chFTFHY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=55s9DQYeCAKNvudpSrxdp2drTATrDvo1reZW1chFTFHY&amount=1&index=490&proof=2KLD3wQ6nvws5Zb6YzVzng4Rcoamszu7jk7SohpioP3k,Hxv6iVBNx9BZxERtMLArF5fGmQLE6bjGLrVHQrdRnTaA,FHYLb7v7HVwVoQ4CvQnSVFxLP7dc2nuTVBMC6hmewhjH,GvNq3wJKMtyonTuA1gsuMRCVhm15NNrLkH3nrLKXxeYS,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "55tSHQ1U3TJJDGwP4Z4HrjujiVC8JxWjTC2zgG4VSWS6",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=55tSHQ1U3TJJDGwP4Z4HrjujiVC8JxWjTC2zgG4VSWS6&amount=1&index=491&proof=DcE8VRxEny2ZDLoCqFssWdZSJqRawcMvaF3CQv87VT9c,Hxv6iVBNx9BZxERtMLArF5fGmQLE6bjGLrVHQrdRnTaA,FHYLb7v7HVwVoQ4CvQnSVFxLP7dc2nuTVBMC6hmewhjH,GvNq3wJKMtyonTuA1gsuMRCVhm15NNrLkH3nrLKXxeYS,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "55v4hRBGCmW9UAnYwqhcnnk7UAEJKhFaaWpmr4354G53",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=55v4hRBGCmW9UAnYwqhcnnk7UAEJKhFaaWpmr4354G53&amount=1&index=492&proof=DLVWkPYhAEe4g61YQ5XsF7s5iNyaSNT2jwzkj5daSoot,BwAREiaE7iaHU5yWbKsTijt3XsMk3158QK7pH65WYBaq,56wRLCAgGCMyEEUdnYLxAVhswUiqnBLZ5caipisLVnY,GvNq3wJKMtyonTuA1gsuMRCVhm15NNrLkH3nrLKXxeYS,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "578QFG2gKLjyKDiMCd49Xziv8mjhSAv2PZxHuZMeDfjz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=578QFG2gKLjyKDiMCd49Xziv8mjhSAv2PZxHuZMeDfjz&amount=1&index=493&proof=CAfzbXhWazNf2GGeB5cbKQGmezsHnL6RmnvqLgdcyT5A,BwAREiaE7iaHU5yWbKsTijt3XsMk3158QK7pH65WYBaq,56wRLCAgGCMyEEUdnYLxAVhswUiqnBLZ5caipisLVnY,GvNq3wJKMtyonTuA1gsuMRCVhm15NNrLkH3nrLKXxeYS,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5882nduQPGE21KT4NMFkBCyjunLG6bD3B7g4kYD4W1Hz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5882nduQPGE21KT4NMFkBCyjunLG6bD3B7g4kYD4W1Hz&amount=1&index=494&proof=8UseXHT3QvFGRQWLxQCKZuBqStuWCzzNXZ7Hw9wfiVwo,E5RGexyw2jufnQjfQnLmVBgjkZ8gPDuPG8aTWaJGC6J4,56wRLCAgGCMyEEUdnYLxAVhswUiqnBLZ5caipisLVnY,GvNq3wJKMtyonTuA1gsuMRCVhm15NNrLkH3nrLKXxeYS,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "59onNwj75abjjwkYE6Hj9cSvVfdUJ6VoNvKYUz7RTYF7",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=59onNwj75abjjwkYE6Hj9cSvVfdUJ6VoNvKYUz7RTYF7&amount=1&index=495&proof=CGN4APc4YxafugwVPpaTkHX7UhoP624R3EBgU7snyLS7,E5RGexyw2jufnQjfQnLmVBgjkZ8gPDuPG8aTWaJGC6J4,56wRLCAgGCMyEEUdnYLxAVhswUiqnBLZ5caipisLVnY,GvNq3wJKMtyonTuA1gsuMRCVhm15NNrLkH3nrLKXxeYS,EEMjckCt2e6Pa3tAVAGfLBTojypYe6vNJMfwjt9S5N8u,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "59SD8b6ZXsQsX3iPVXorxu5169gtaFMaEsqu1BM8eYK8",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=59SD8b6ZXsQsX3iPVXorxu5169gtaFMaEsqu1BM8eYK8&amount=1&index=496&proof=47PdHD8Fa3kq47LqbUiFhku7xTvwoE4989pUedXskpK6,AkSLW7G7SVSV2Y1c1L2zXNpukv92v4xVpysGdjG7VeaY,8iMjET76fUA6uLCf3f4WYZQcCssUh23aFB4AkHkAtmRD,7oxTm9Nc2xoHzXvaxEfAXsevjmU3iJuqtNPvGSTEmamX,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "59zw6jvEXXBbbfHangAxqHJnmyyLXMgeKz9hkCLpCt7m",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=59zw6jvEXXBbbfHangAxqHJnmyyLXMgeKz9hkCLpCt7m&amount=1&index=497&proof=F2eSskhuNePBqm6JBst7vA3LBQhhe7E4MaUGP1qC9Bxh,AkSLW7G7SVSV2Y1c1L2zXNpukv92v4xVpysGdjG7VeaY,8iMjET76fUA6uLCf3f4WYZQcCssUh23aFB4AkHkAtmRD,7oxTm9Nc2xoHzXvaxEfAXsevjmU3iJuqtNPvGSTEmamX,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5A8jxwaMyRF2kHJq9XiwKip3Lj2jNXFgNMf4dQ7qMUkb",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5A8jxwaMyRF2kHJq9XiwKip3Lj2jNXFgNMf4dQ7qMUkb&amount=1&index=498&proof=26VepmMx1qBa8AyLg6M1AsPPs2wH5b9kL9hFL2dNUR8f,2UEc9Jq1njPxe6pRjqzZESdg5AyLeXEZ7johVrwrEs7i,8iMjET76fUA6uLCf3f4WYZQcCssUh23aFB4AkHkAtmRD,7oxTm9Nc2xoHzXvaxEfAXsevjmU3iJuqtNPvGSTEmamX,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5A8ovo91ZbQerz6pKV4PtNGNDmVxAwvye4qzj8MReXhp",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5A8ovo91ZbQerz6pKV4PtNGNDmVxAwvye4qzj8MReXhp&amount=1&index=499&proof=DTB5r4YqBbAwdQZjiUH2MLZMtAStWDJYZ8zZvyHk1b86,2UEc9Jq1njPxe6pRjqzZESdg5AyLeXEZ7johVrwrEs7i,8iMjET76fUA6uLCf3f4WYZQcCssUh23aFB4AkHkAtmRD,7oxTm9Nc2xoHzXvaxEfAXsevjmU3iJuqtNPvGSTEmamX,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5aAxwiYuJQoCFjxsVToX4k76frJngkB8KuPxcbnMjER8",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5aAxwiYuJQoCFjxsVToX4k76frJngkB8KuPxcbnMjER8&amount=1&index=500&proof=3JCBfJzTrRXSeXrWTagQxmVGSTzHX1TctsUHygWRnm5p,GKow2vnY62bSCxNegzWp5CAegTQWbZBeh4WbfDcg1vJg,29PywfXkUJTneBg1EyXEdkk71B6VRpxN8qMGkXi5ku8P,7oxTm9Nc2xoHzXvaxEfAXsevjmU3iJuqtNPvGSTEmamX,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5aJEbkszsjwvpwwazsEo1EcqNsN2JVVyesnAjfVhiQgu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5aJEbkszsjwvpwwazsEo1EcqNsN2JVVyesnAjfVhiQgu&amount=1&index=501&proof=43JLrpyxiVk1zRCez5Yf2s4BRxPHo3PNe22aq5VpNRxJ,GKow2vnY62bSCxNegzWp5CAegTQWbZBeh4WbfDcg1vJg,29PywfXkUJTneBg1EyXEdkk71B6VRpxN8qMGkXi5ku8P,7oxTm9Nc2xoHzXvaxEfAXsevjmU3iJuqtNPvGSTEmamX,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5AnTAnzcCxMnw9ixcmboEwzPsbZ5iz6z3WKvfbc5kVwk",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5AnTAnzcCxMnw9ixcmboEwzPsbZ5iz6z3WKvfbc5kVwk&amount=1&index=502&proof=A4TqChU4Kdv1D2MHeiY8dCXMCW9HrBbbz4axiE5D5qfV,29YP8LBpyG8UeCoTG626YPG4zTAJWyUUViW8cVxLWdGh,29PywfXkUJTneBg1EyXEdkk71B6VRpxN8qMGkXi5ku8P,7oxTm9Nc2xoHzXvaxEfAXsevjmU3iJuqtNPvGSTEmamX,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5azpZkSKndvc2FMdcw58oWWV3EEfpmKb6WUsSVa2AkKB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5azpZkSKndvc2FMdcw58oWWV3EEfpmKb6WUsSVa2AkKB&amount=1&index=503&proof=A2u3VkFsvQitjMtPCfGpKGPW9fDEK6FUhcMEFaPWnmX7,29YP8LBpyG8UeCoTG626YPG4zTAJWyUUViW8cVxLWdGh,29PywfXkUJTneBg1EyXEdkk71B6VRpxN8qMGkXi5ku8P,7oxTm9Nc2xoHzXvaxEfAXsevjmU3iJuqtNPvGSTEmamX,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5brfBLQBjX5duWtJfVDEaMz5DGGnCeqjhAGxCrzCH1Bz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5brfBLQBjX5duWtJfVDEaMz5DGGnCeqjhAGxCrzCH1Bz&amount=1&index=504&proof=Cfk6kqa6zXW1SvoYitvNBtva8GU7ZUe15tXF83AdeRGy,DAZuBMTdS2igRFQRd5TH7Cjfxhwg6MTw9hv7wUSbTc53,3Nek9ALBfwRW4ni76xo92nEHjSRAvNvSqNakYN6V3mg3,CjBwNdGDGnkQnsq2GvAPKiy2Q3qf2QrHSwzdrhEumXso,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5da3kMMrDsEtscppFGSyqDot2wLbsexAK51dpWXfw4EG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5da3kMMrDsEtscppFGSyqDot2wLbsexAK51dpWXfw4EG&amount=1&index=505&proof=CZXHoxL1E2wgtWDa384bZMSmV6ptDPZ6bZmPdir5bFtz,DAZuBMTdS2igRFQRd5TH7Cjfxhwg6MTw9hv7wUSbTc53,3Nek9ALBfwRW4ni76xo92nEHjSRAvNvSqNakYN6V3mg3,CjBwNdGDGnkQnsq2GvAPKiy2Q3qf2QrHSwzdrhEumXso,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5DEKVzhC5WCYPspDhQLQA7TkVkqhca9M9PVEezPV1BvP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5DEKVzhC5WCYPspDhQLQA7TkVkqhca9M9PVEezPV1BvP&amount=1&index=506&proof=ErCz4DCFr5hAq554MBQv5rRFf6oXhvkP5A2XD7sj8NVM,5hXhHoNVz3UmmKRPQRsjT6o6fynmxWdMrW8cTFuRcm3C,3Nek9ALBfwRW4ni76xo92nEHjSRAvNvSqNakYN6V3mg3,CjBwNdGDGnkQnsq2GvAPKiy2Q3qf2QrHSwzdrhEumXso,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5dtmVCcaaiCkbamFzxaJQ28dqg8V7M8X81AP2EUB3ymA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5dtmVCcaaiCkbamFzxaJQ28dqg8V7M8X81AP2EUB3ymA&amount=1&index=507&proof=5j2PvZU3F6HdTm9MaNaxhMG8rBRXe2ZBbXaCWSC8qjAr,5hXhHoNVz3UmmKRPQRsjT6o6fynmxWdMrW8cTFuRcm3C,3Nek9ALBfwRW4ni76xo92nEHjSRAvNvSqNakYN6V3mg3,CjBwNdGDGnkQnsq2GvAPKiy2Q3qf2QrHSwzdrhEumXso,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5Fce6YKXJyDaQhfFsgmvxwC1i5PrXoi85sDtyij1iwp5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5Fce6YKXJyDaQhfFsgmvxwC1i5PrXoi85sDtyij1iwp5&amount=1&index=508&proof=3R8GpKAvKYSDRGHYThWEh1fhFHVNmGoHkLkiZ5NSuvQF,CHkMzmQreFYdvQp4Km2SzTto8yK4fWYP5StxT99rJAdB,g3FN3HMWaAppHNLicPthAoKSanAZnA7xZEYpxQbkFh9,CjBwNdGDGnkQnsq2GvAPKiy2Q3qf2QrHSwzdrhEumXso,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5g4n5cbZWmnR7s8anSHNT2AbjnJP7vc7P6e25sYQqnbh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5g4n5cbZWmnR7s8anSHNT2AbjnJP7vc7P6e25sYQqnbh&amount=1&index=509&proof=GnmTZogFFxm9mDWM47yFgsaadcDdnHJY7suNRqMMjjp2,CHkMzmQreFYdvQp4Km2SzTto8yK4fWYP5StxT99rJAdB,g3FN3HMWaAppHNLicPthAoKSanAZnA7xZEYpxQbkFh9,CjBwNdGDGnkQnsq2GvAPKiy2Q3qf2QrHSwzdrhEumXso,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5G4r9piqDgha9SbAL5ZYPtFB2TeJqFvgUmExd8kz7Kom",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5G4r9piqDgha9SbAL5ZYPtFB2TeJqFvgUmExd8kz7Kom&amount=1&index=510&proof=UEQgMrK42pf9aDEyVfuCH5JzRBj1g4zNq7TEue9EXPd,HvzwhNkrLKBVTydg1n6cnPPtszmy4AK7xtT9uq5rv5SU,g3FN3HMWaAppHNLicPthAoKSanAZnA7xZEYpxQbkFh9,CjBwNdGDGnkQnsq2GvAPKiy2Q3qf2QrHSwzdrhEumXso,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5GLWdXmz2YQc8RxTN6uzK3eNm3wGyXgPSrMkt1WzhjcR",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5GLWdXmz2YQc8RxTN6uzK3eNm3wGyXgPSrMkt1WzhjcR&amount=1&index=511&proof=5hTozu4d3JNrpnjy2uK6tf3SihBms2XQhmcKtkhCTTi4,HvzwhNkrLKBVTydg1n6cnPPtszmy4AK7xtT9uq5rv5SU,g3FN3HMWaAppHNLicPthAoKSanAZnA7xZEYpxQbkFh9,CjBwNdGDGnkQnsq2GvAPKiy2Q3qf2QrHSwzdrhEumXso,8XH9UTqFbnpJbuHPmrnX4ZyBUXhqNqNHf9fieJU5bmRe,34bRcJjeRdNdAeNqCxp12gPeRAtrb6dGmGP94xN8GR3K,BuCug9DBjQ59Fom33Gcas6ZwWfVJkABzz81yQRcPCcXh,4jppUoFquoUzBMKmRmMJR9uLQGzbNGmD5W7y2iSmeb5S,BsNZ7p8EW3N34ZFsQoTpSuQk3TEZ58N4MWcEFEAFFVsd,D1XzQeepJq7ZJtPMx8ok7uHn5q4hTWTZeZyz7myXCds6&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5GNUgLvrhyvmjHQnyvUGgZnSt93cJyFBzLX4BfUJzPd9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5GNUgLvrhyvmjHQnyvUGgZnSt93cJyFBzLX4BfUJzPd9&amount=1&index=512&proof=5AnpYZt1fuQJDWv5TiknMxst6TgTBGjQatjWKt75t5xX,56qox238SKQvQKbyG5xm5afQZe1xgdNfWZWF5cFoFRui,2LSq5JWkn23qq6LMVUHh3yEpBtvHRqUGmAZuMszUyF4e,8pLqHbhVWSkLVb8cmqLDn38jguqAQVkSEmwBkfG6gYqt,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5GRKyps69TsAkiZTR5MEdT76pzHoRpztjCmxkFA4WMbc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5GRKyps69TsAkiZTR5MEdT76pzHoRpztjCmxkFA4WMbc&amount=1&index=513&proof=BksKowaSfuhuHhLVtauXQ3MzhSfhjZMEQq1ZozK7hkK1,56qox238SKQvQKbyG5xm5afQZe1xgdNfWZWF5cFoFRui,2LSq5JWkn23qq6LMVUHh3yEpBtvHRqUGmAZuMszUyF4e,8pLqHbhVWSkLVb8cmqLDn38jguqAQVkSEmwBkfG6gYqt,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5gxZNCCWKNTp1jcRs6FKcSS4WE7NiKaeyKB74rMi54dL",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5gxZNCCWKNTp1jcRs6FKcSS4WE7NiKaeyKB74rMi54dL&amount=1&index=514&proof=BBM5hf8vh1yNEwG7LDt9JPcYomP4wMmxJLaHMWfWYdXV,GggYYzkjJVezkpDd4weDozqfPiz7e3xFBZGRFrpMHJWR,2LSq5JWkn23qq6LMVUHh3yEpBtvHRqUGmAZuMszUyF4e,8pLqHbhVWSkLVb8cmqLDn38jguqAQVkSEmwBkfG6gYqt,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5h4Zakur3FVQqMGryJN9H6hYQ7qy58eRU7jCccUZYT42",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5h4Zakur3FVQqMGryJN9H6hYQ7qy58eRU7jCccUZYT42&amount=1&index=515&proof=3vmdxBPdEwEPPVNKAEqbRLkCbUj7gh1crhcRF3vHcpTp,GggYYzkjJVezkpDd4weDozqfPiz7e3xFBZGRFrpMHJWR,2LSq5JWkn23qq6LMVUHh3yEpBtvHRqUGmAZuMszUyF4e,8pLqHbhVWSkLVb8cmqLDn38jguqAQVkSEmwBkfG6gYqt,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5h5oiuHZVkWEhfFJHPeunwGKZeG9Ui7wkxwVfrWefXFK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5h5oiuHZVkWEhfFJHPeunwGKZeG9Ui7wkxwVfrWefXFK&amount=1&index=516&proof=FJvNRCcHzaNdtaZPqEPQck6jSyoeTAkjqRajyAaRcxnP,FPKjF86Wrn5gXdDbqX8oe1ysd48n4oBGvPvGRhwwXXYw,B3ouwcwRADcuZsc849ezC15cLKoioAkDAVzNpGSKqiDn,8pLqHbhVWSkLVb8cmqLDn38jguqAQVkSEmwBkfG6gYqt,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5hVLfjgz6pShARXN5hSUNMTGijNXLpbtpxoy341J4F6j",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5hVLfjgz6pShARXN5hSUNMTGijNXLpbtpxoy341J4F6j&amount=1&index=517&proof=TyaEa327vLrNzUfXouRTh2s7wMZGsKqXSNqPueagCok,FPKjF86Wrn5gXdDbqX8oe1ysd48n4oBGvPvGRhwwXXYw,B3ouwcwRADcuZsc849ezC15cLKoioAkDAVzNpGSKqiDn,8pLqHbhVWSkLVb8cmqLDn38jguqAQVkSEmwBkfG6gYqt,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5iZvA3nnMkjteiPQ9N8m7YbV9J6rsmxQp5KrSBvBx7Pn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5iZvA3nnMkjteiPQ9N8m7YbV9J6rsmxQp5KrSBvBx7Pn&amount=1&index=518&proof=5fPRYebPAaNCWNf71hQYZgPMrGUeW2LhPKe8gDQEsiU8,HMJqpGgup71J4EDA5JYUDj1HWWue3KB3prjtmEWDoPqT,B3ouwcwRADcuZsc849ezC15cLKoioAkDAVzNpGSKqiDn,8pLqHbhVWSkLVb8cmqLDn38jguqAQVkSEmwBkfG6gYqt,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5j1oi954yy3svU56tVEMQfZrBNyzTuxrvz2MZp73qrh1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5j1oi954yy3svU56tVEMQfZrBNyzTuxrvz2MZp73qrh1&amount=1&index=519&proof=DPnXsXFFBRAgCKurd5U58ZZtWwbNExz2rJMgWUue6Zy7,HMJqpGgup71J4EDA5JYUDj1HWWue3KB3prjtmEWDoPqT,B3ouwcwRADcuZsc849ezC15cLKoioAkDAVzNpGSKqiDn,8pLqHbhVWSkLVb8cmqLDn38jguqAQVkSEmwBkfG6gYqt,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5j3G9vtjaasP4GVPamTcLuF2ZDHV5ijZ1FFsmUBwS1WG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5j3G9vtjaasP4GVPamTcLuF2ZDHV5ijZ1FFsmUBwS1WG&amount=1&index=520&proof=FqWJeDgnLQLD42s9kKjDTgXkAhvqRSwq921UMX4zyiyv,4GYn41zJ9kyiNNLwCqpjVEHDHkKaEjUxiugrt6y7zzyv,4kcXaCc2nuRaiTqETjXq9AkBJ6fiwcMv2U59ac4JTzS7,56uUWrZbiHq1Hfd3gfNjhW92UZ8SaMZADFU6wQCK4vJ5,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5J7BhwwjW4WtHgNeRsST4HopRNW2uWdoBfYqXtZ7PRHQ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5J7BhwwjW4WtHgNeRsST4HopRNW2uWdoBfYqXtZ7PRHQ&amount=1&index=521&proof=CLo64B4zR8wBSaq4jwir61nR8nA4cGk5bTrRnRh7EnC3,4GYn41zJ9kyiNNLwCqpjVEHDHkKaEjUxiugrt6y7zzyv,4kcXaCc2nuRaiTqETjXq9AkBJ6fiwcMv2U59ac4JTzS7,56uUWrZbiHq1Hfd3gfNjhW92UZ8SaMZADFU6wQCK4vJ5,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5jgGEqCUdVawQnBJiPehSp6ZoLaRYYDyyg8MEz7NBg1t",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5jgGEqCUdVawQnBJiPehSp6ZoLaRYYDyyg8MEz7NBg1t&amount=1&index=522&proof=HQZf99Yks1wgBuV9nNHrDQMgmh2pRc2wruyEXphjZJGF,4uQQY1jB2Y98kXiXEgZZXuN4XEtxtwRYy9JRixFZjtFi,4kcXaCc2nuRaiTqETjXq9AkBJ6fiwcMv2U59ac4JTzS7,56uUWrZbiHq1Hfd3gfNjhW92UZ8SaMZADFU6wQCK4vJ5,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5jm4AcVA127NqHxTri7kMm719xxBRFGaUXHPjCJwcBsu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5jm4AcVA127NqHxTri7kMm719xxBRFGaUXHPjCJwcBsu&amount=1&index=523&proof=6YTxp9iJ2EyGuDSjr8XPQQb4PQdeghSLZDFXHBFGtDnS,4uQQY1jB2Y98kXiXEgZZXuN4XEtxtwRYy9JRixFZjtFi,4kcXaCc2nuRaiTqETjXq9AkBJ6fiwcMv2U59ac4JTzS7,56uUWrZbiHq1Hfd3gfNjhW92UZ8SaMZADFU6wQCK4vJ5,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5KU8EPFvaUcParAat1z5vuToSSN5VQmF3r5s9v3JfGky",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5KU8EPFvaUcParAat1z5vuToSSN5VQmF3r5s9v3JfGky&amount=1&index=524&proof=HYiVpkp2sbNtsCpGaX2ifxjfBhqRhZoWoFuzXZg4aZac,G2QBY4mGUMcKbfnoUSKRa5KsSiDEJWJsPGk2WLmfHXZg,3UZbVWdRWdkdtiSAxSRg9b6GXZfM86WCMkEwzceZZBKY,56uUWrZbiHq1Hfd3gfNjhW92UZ8SaMZADFU6wQCK4vJ5,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5kZo3FPJWD7HPVemqLDFgGmLvdTD1vDEqYLaAgMVbXKo",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5kZo3FPJWD7HPVemqLDFgGmLvdTD1vDEqYLaAgMVbXKo&amount=1&index=525&proof=8HSKbdnFdbawSj45Hs1TM8gFttvi7U8xUbcg1bq9wjde,G2QBY4mGUMcKbfnoUSKRa5KsSiDEJWJsPGk2WLmfHXZg,3UZbVWdRWdkdtiSAxSRg9b6GXZfM86WCMkEwzceZZBKY,56uUWrZbiHq1Hfd3gfNjhW92UZ8SaMZADFU6wQCK4vJ5,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5mkuLoqBWRDHfyQVsrtidvH1GaKsHXxzdF1h5WDiHpHG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5mkuLoqBWRDHfyQVsrtidvH1GaKsHXxzdF1h5WDiHpHG&amount=1&index=526&proof=6emtDT3myBfZeLGmMsgivLELQLUYJ3tB2LX1FBktXVTK,BFUTPhxo1UUGNvEF3zWmBYkjcTSzVA7kWNqy74wdPCGV,3UZbVWdRWdkdtiSAxSRg9b6GXZfM86WCMkEwzceZZBKY,56uUWrZbiHq1Hfd3gfNjhW92UZ8SaMZADFU6wQCK4vJ5,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5mscNwMmK32nVE1pNE45CSMLgBTUEEZbnj2iiHjKiMEN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5mscNwMmK32nVE1pNE45CSMLgBTUEEZbnj2iiHjKiMEN&amount=1&index=527&proof=D44vmPRLLuL3X8vPYwbsLFXpymFDnCfP7jB8U2GtptxV,BFUTPhxo1UUGNvEF3zWmBYkjcTSzVA7kWNqy74wdPCGV,3UZbVWdRWdkdtiSAxSRg9b6GXZfM86WCMkEwzceZZBKY,56uUWrZbiHq1Hfd3gfNjhW92UZ8SaMZADFU6wQCK4vJ5,6CQgn2c5yjVt37noZ25Fnft1Nz25TK3fewzdA4fPg3pH,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5mV7xmU5rgk1n31QRkr6m1kK76HZm6u9yRyiy3RnQVTf",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5mV7xmU5rgk1n31QRkr6m1kK76HZm6u9yRyiy3RnQVTf&amount=1&index=528&proof=4QHcccE6sfhrupCqbjJH37sgLWtu5xxoxH2tkgD6otDj,9vtNfQ9KXSYZ7YU7thBzPUBtCkA15BxiFK4Zfy2MkpRJ,EEuugpUuMVgkdodwNFph2HKCz7BGvFa1iwRDjCQ6rAPd,F8rja3CsmhS5Aic2sH95zhTiTP2nDg2SPR9SgsZp7F9X,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5NvQjUosh6AugBunovNFWQjXm2LMrPBCKcozzTzB3cZq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5NvQjUosh6AugBunovNFWQjXm2LMrPBCKcozzTzB3cZq&amount=1&index=529&proof=GARk5exWmC6cZscS98XvZhLkZPwWo51GGpg1ehsVXbNN,9vtNfQ9KXSYZ7YU7thBzPUBtCkA15BxiFK4Zfy2MkpRJ,EEuugpUuMVgkdodwNFph2HKCz7BGvFa1iwRDjCQ6rAPd,F8rja3CsmhS5Aic2sH95zhTiTP2nDg2SPR9SgsZp7F9X,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5o3s8Q1CLviMLr65qbwFyr9geL6Z5GiaDzBghMStzQUH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5o3s8Q1CLviMLr65qbwFyr9geL6Z5GiaDzBghMStzQUH&amount=1&index=530&proof=GvQDKYqqBLtmPazaaTEEVvh33FWoXa9MWPkTs5Uh9oz8,Fx8xTB4hDhLbc6jUP6r2zapBSoeYS73oe1hizmtB9F5j,EEuugpUuMVgkdodwNFph2HKCz7BGvFa1iwRDjCQ6rAPd,F8rja3CsmhS5Aic2sH95zhTiTP2nDg2SPR9SgsZp7F9X,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5PT2Wdcap9MKqTxqJrHn9zi1xyFmwvHET1WXd6zM7dn2",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5PT2Wdcap9MKqTxqJrHn9zi1xyFmwvHET1WXd6zM7dn2&amount=1&index=531&proof=4aQnYcbjNs7hhDAnQEqHnPyHEBBE2X83nUCGVcJ69rLN,Fx8xTB4hDhLbc6jUP6r2zapBSoeYS73oe1hizmtB9F5j,EEuugpUuMVgkdodwNFph2HKCz7BGvFa1iwRDjCQ6rAPd,F8rja3CsmhS5Aic2sH95zhTiTP2nDg2SPR9SgsZp7F9X,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5PW6dJR6ZXxk3PCVdyY1UsfgN158kfTgwGGpSBbhE7VN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5PW6dJR6ZXxk3PCVdyY1UsfgN158kfTgwGGpSBbhE7VN&amount=1&index=532&proof=8M8pjyygwVsQ1ody7m9KU1PJRB55ANCBmWt1EMGFafxB,BB2VfLbFZV6AujQP6KRqoZoQe8j8LdDaXnDN657raUw3,9564xq6Fc4SL99oe29CmUVGRSewb2oafQ6qxvhRydMjN,F8rja3CsmhS5Aic2sH95zhTiTP2nDg2SPR9SgsZp7F9X,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5PWRh7qHXSanZ8M1jYcZgSjR7ZovscD8CVkk6ro6p5bH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5PWRh7qHXSanZ8M1jYcZgSjR7ZovscD8CVkk6ro6p5bH&amount=1&index=533&proof=C75FuertnA7StF7AEcyq3AMgk6WBFbussWrGA7fS77G7,BB2VfLbFZV6AujQP6KRqoZoQe8j8LdDaXnDN657raUw3,9564xq6Fc4SL99oe29CmUVGRSewb2oafQ6qxvhRydMjN,F8rja3CsmhS5Aic2sH95zhTiTP2nDg2SPR9SgsZp7F9X,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5PyYHAUA7jaDxqqerRNwC13hN3pkqrA4qQhta3XxZKm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5PyYHAUA7jaDxqqerRNwC13hN3pkqrA4qQhta3XxZKm&amount=1&index=534&proof=ABQMsdD6P5wZurTd8KYqG2sPcAKQuP533JVcqrJrhuBm,2soo7eVZD2RaxjXek5Vci5Nu32ztWaKnMvuVHSN5A7W9,9564xq6Fc4SL99oe29CmUVGRSewb2oafQ6qxvhRydMjN,F8rja3CsmhS5Aic2sH95zhTiTP2nDg2SPR9SgsZp7F9X,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5q3C5aJZzho4MGCBpkXzqAN2S9YyoKPQCv6Tb96ZbdLD",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5q3C5aJZzho4MGCBpkXzqAN2S9YyoKPQCv6Tb96ZbdLD&amount=1&index=535&proof=HKZ1A5wZSz3dqGgGgT6iLeDm3j5cdwRTLAhfRUpdRCJM,2soo7eVZD2RaxjXek5Vci5Nu32ztWaKnMvuVHSN5A7W9,9564xq6Fc4SL99oe29CmUVGRSewb2oafQ6qxvhRydMjN,F8rja3CsmhS5Aic2sH95zhTiTP2nDg2SPR9SgsZp7F9X,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5qBBYumT8pnKwQo2KfJN6H4cDudKr3Ratrc7RXAJviAT",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5qBBYumT8pnKwQo2KfJN6H4cDudKr3Ratrc7RXAJviAT&amount=1&index=536&proof=G32TzMZgAom1jqJ73a5b57XqGX6sRkpS4UFcVTrH44X3,7ymfVppQqT18x4EzXXk6wgvdDXPq4Ptcz5eTptJy5sdF,8bvvKMtzrQgcsoXGuGaAKVrYxLCj1oQvCovgebc9ZL5R,5mRax75xnHRviYUyxkJQDjuhzzmZUK4eYD1aSW1JCYWs,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5QqPJf2cjxYXT46EdHLkEiFyyrSQfKpU5n3Z6gp3Jq3e",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5QqPJf2cjxYXT46EdHLkEiFyyrSQfKpU5n3Z6gp3Jq3e&amount=1&index=537&proof=Fu8Rqnmtv8hEBp2HRecitnAtqSDkH97GzYN1Kg843qBA,7ymfVppQqT18x4EzXXk6wgvdDXPq4Ptcz5eTptJy5sdF,8bvvKMtzrQgcsoXGuGaAKVrYxLCj1oQvCovgebc9ZL5R,5mRax75xnHRviYUyxkJQDjuhzzmZUK4eYD1aSW1JCYWs,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5qurQ5KKCwz6JoiadGR2PaY1QcxyiM7g8C1cSa5tKWD2",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5qurQ5KKCwz6JoiadGR2PaY1QcxyiM7g8C1cSa5tKWD2&amount=1&index=538&proof=BymkdxQKKkmVyJLcFxgBXh7ixnhcuA9MuMwh1ymZn8j9,CAfsRNWTqLthofdfp9axhdD3RYBkAL2h5GG45nxWbHDA,8bvvKMtzrQgcsoXGuGaAKVrYxLCj1oQvCovgebc9ZL5R,5mRax75xnHRviYUyxkJQDjuhzzmZUK4eYD1aSW1JCYWs,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5r1oLW6FoEM4N64CCqZGuLwrQzC5pEEKd4ty1RXRpPNw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5r1oLW6FoEM4N64CCqZGuLwrQzC5pEEKd4ty1RXRpPNw&amount=1&index=539&proof=Cy8cLMVpDZXK54XaWQ2u4myACLAR2U4U5u2W6qLtBQJi,CAfsRNWTqLthofdfp9axhdD3RYBkAL2h5GG45nxWbHDA,8bvvKMtzrQgcsoXGuGaAKVrYxLCj1oQvCovgebc9ZL5R,5mRax75xnHRviYUyxkJQDjuhzzmZUK4eYD1aSW1JCYWs,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5rBewbNXVE8n9frJrfhPtQTmZtiJh1FEohMXpUFqtCJi",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5rBewbNXVE8n9frJrfhPtQTmZtiJh1FEohMXpUFqtCJi&amount=1&index=540&proof=6QHjktKWbwm31pSWd2q9q7hqzKssevAFws9wRDJGyoEt,A7h1qZPAbpTdYKGUfsd7QVUNMdaYE6Utn6rzNBvE7duX,vFXXhzWX25xssVxftfrsLN3F2ftopHNKpqzmaTJ57yp,5mRax75xnHRviYUyxkJQDjuhzzmZUK4eYD1aSW1JCYWs,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5rhrCfbn9iysWkhSGWdT1v9rtckEevbjpsKFwPWJcc6o",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5rhrCfbn9iysWkhSGWdT1v9rtckEevbjpsKFwPWJcc6o&amount=1&index=541&proof=HQ71eyLojYcQHuXQhqf9GGnu9awzTjtD7R1hrSyuTqKU,A7h1qZPAbpTdYKGUfsd7QVUNMdaYE6Utn6rzNBvE7duX,vFXXhzWX25xssVxftfrsLN3F2ftopHNKpqzmaTJ57yp,5mRax75xnHRviYUyxkJQDjuhzzmZUK4eYD1aSW1JCYWs,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5rLSSw4y9hCd5wdHxv2PbJrsTsShxYvnot1yT6AqTVE7",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5rLSSw4y9hCd5wdHxv2PbJrsTsShxYvnot1yT6AqTVE7&amount=1&index=542&proof=FBj6v5XWauwbFrejHdHfKCX45evScjHs3pVEqV2RmERH,VZi6HhcxcHdesLSRgnDMWMC4SMiRx8RbbpdZXtPiTkM,vFXXhzWX25xssVxftfrsLN3F2ftopHNKpqzmaTJ57yp,5mRax75xnHRviYUyxkJQDjuhzzmZUK4eYD1aSW1JCYWs,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5RVDSnmc4z7ULvNb9HARZ3DcnSdyBcSGZouEkegBfaaM",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5RVDSnmc4z7ULvNb9HARZ3DcnSdyBcSGZouEkegBfaaM&amount=1&index=543&proof=CK7WbjZmbscSgpjwzrrGWcBxNQyUqjGVSCtqwr9nfUZ3,VZi6HhcxcHdesLSRgnDMWMC4SMiRx8RbbpdZXtPiTkM,vFXXhzWX25xssVxftfrsLN3F2ftopHNKpqzmaTJ57yp,5mRax75xnHRviYUyxkJQDjuhzzmZUK4eYD1aSW1JCYWs,856HvmAYCGDhDsVyztozREYHGtC7XiybyQGjJmRf9EPa,GuERG6q4GYKbPNDTe6U8ciVdqZQq7ZCidp77QFBhyxRs,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5s529ZBVWPKzKsdiQWsPm4jzKdYUpfqR1rEHt7KNK8bN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5s529ZBVWPKzKsdiQWsPm4jzKdYUpfqR1rEHt7KNK8bN&amount=1&index=544&proof=Farr4MT3kiB7FGcgKJdggk3ajJBJpc8dMQ91h1StPjey,9Qkn2nQHuU8UEiYKyi1sQGkdB1Rd3auw6b5sb1D73BZL,83ZoXWJnvL3t5anibXoKWnYqHaBGSCcS6bHcAKW7vJNY,DHNoSvo9bGt4CaBwiWKc9As9zXsq9kP8WCaRbNP9rk5Y,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5TaaWEKHTYuddPaaxLAarr6aRTRTLpww1gArrgTr2sKT",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5TaaWEKHTYuddPaaxLAarr6aRTRTLpww1gArrgTr2sKT&amount=1&index=545&proof=Betk49HPQp2M6dGcrf8fpUgCrGwqRL961EDVM5Rqjgvz,9Qkn2nQHuU8UEiYKyi1sQGkdB1Rd3auw6b5sb1D73BZL,83ZoXWJnvL3t5anibXoKWnYqHaBGSCcS6bHcAKW7vJNY,DHNoSvo9bGt4CaBwiWKc9As9zXsq9kP8WCaRbNP9rk5Y,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5te4N7uhfUuKYn55gntLfpAcwB1Ma8LedAEMMdt1M7Vv",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5te4N7uhfUuKYn55gntLfpAcwB1Ma8LedAEMMdt1M7Vv&amount=1&index=546&proof=G9ukd4ppLE3NbUjpzQPkKfUu1LJs8qb3FDbXdnMxeCLV,6a1ikNWJkesBtmPtipL9wJrQKpMybm7BoHSetNhb73P5,83ZoXWJnvL3t5anibXoKWnYqHaBGSCcS6bHcAKW7vJNY,DHNoSvo9bGt4CaBwiWKc9As9zXsq9kP8WCaRbNP9rk5Y,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5TG6H7gouJnpU2cHktCeodgghEuToifMBU6NVZTa98GX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5TG6H7gouJnpU2cHktCeodgghEuToifMBU6NVZTa98GX&amount=1&index=547&proof=Cy3Dgv1Zhe6YVLzkF7zRsi28gAVT9HgXVSQYaQsKhpdu,6a1ikNWJkesBtmPtipL9wJrQKpMybm7BoHSetNhb73P5,83ZoXWJnvL3t5anibXoKWnYqHaBGSCcS6bHcAKW7vJNY,DHNoSvo9bGt4CaBwiWKc9As9zXsq9kP8WCaRbNP9rk5Y,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5UJZQT2Z92XgA15cpKWR13uz9VrCsAsBU4bXtHz6uoYj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5UJZQT2Z92XgA15cpKWR13uz9VrCsAsBU4bXtHz6uoYj&amount=1&index=548&proof=FNzWC9Mj5ZundJcE74s58yZJQRkhUHCBvHFPHbTdcA59,3T7nRHXzymf6sewZ7jpmT1dhLw7Hx3iyWyRJoGSjBw3R,CW2CuZku5W4PgrmiW2TrsrkCwgTjEPaZPJTumzMN4RdD,DHNoSvo9bGt4CaBwiWKc9As9zXsq9kP8WCaRbNP9rk5Y,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5uPvQvrNv4v6TRqpf84iauJkhRuUvBGLabmgndMzu69i",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5uPvQvrNv4v6TRqpf84iauJkhRuUvBGLabmgndMzu69i&amount=1&index=549&proof=457C754YjhwP8vcTf1WiVpFHMqYJ4mkcJZR95yTovLww,3T7nRHXzymf6sewZ7jpmT1dhLw7Hx3iyWyRJoGSjBw3R,CW2CuZku5W4PgrmiW2TrsrkCwgTjEPaZPJTumzMN4RdD,DHNoSvo9bGt4CaBwiWKc9As9zXsq9kP8WCaRbNP9rk5Y,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5VqeCqk1CMbEWkLohoY41MpjuDDEZ9u841sgKM3KBiLH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5VqeCqk1CMbEWkLohoY41MpjuDDEZ9u841sgKM3KBiLH&amount=1&index=550&proof=fyApAZDxkja5hS1z7Xn5Bxpsz7zfKywJchJxkanTzk7,BxELPuvJUxrUx2SWZHpUjZvXuJxUEN8uxNiG6YLxhqPA,CW2CuZku5W4PgrmiW2TrsrkCwgTjEPaZPJTumzMN4RdD,DHNoSvo9bGt4CaBwiWKc9As9zXsq9kP8WCaRbNP9rk5Y,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5wkoYgAA6Vyma7wUaV2cDAbj42m3Zy3259CvVxQ53g6y",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5wkoYgAA6Vyma7wUaV2cDAbj42m3Zy3259CvVxQ53g6y&amount=1&index=551&proof=AGhyCGvb5VS5scwH5numV2wvP87oiR7ENzqANFaahB83,BxELPuvJUxrUx2SWZHpUjZvXuJxUEN8uxNiG6YLxhqPA,CW2CuZku5W4PgrmiW2TrsrkCwgTjEPaZPJTumzMN4RdD,DHNoSvo9bGt4CaBwiWKc9As9zXsq9kP8WCaRbNP9rk5Y,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5wTpuHC2bWpGx8fgzWd94EtNmeqE7oP27L4J8cGppnPh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5wTpuHC2bWpGx8fgzWd94EtNmeqE7oP27L4J8cGppnPh&amount=1&index=552&proof=H2QLGnyBnHxLfWk2YGSUtq3q8X4mf2rfbKq9qNxviutL,8utEKy8vPDfPg4mgLr8vf3tUn6Cyf8PoF4Vp5MAHoUfZ,9g8DKwtyHpoM7rq4CKwmBsdubRfd3XcFxSXVdQkAJ2AW,HdfeKofZrivPiBB5NTEEUF3P2LFLeL9kTcCNWi664fzF,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5wuyw6kmhTfaxL3nVHk63Grjd9vLJhE9Xe4fxHmAfZsd",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5wuyw6kmhTfaxL3nVHk63Grjd9vLJhE9Xe4fxHmAfZsd&amount=1&index=553&proof=4cHmQxLL7UF9nVDNkgpjAdooYbyjSDMJnhsDLg66Qnmg,8utEKy8vPDfPg4mgLr8vf3tUn6Cyf8PoF4Vp5MAHoUfZ,9g8DKwtyHpoM7rq4CKwmBsdubRfd3XcFxSXVdQkAJ2AW,HdfeKofZrivPiBB5NTEEUF3P2LFLeL9kTcCNWi664fzF,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5WWZyBWMc4fTP3bXQb1FNajJ7ANY1oAeG85LeBTMuunF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5WWZyBWMc4fTP3bXQb1FNajJ7ANY1oAeG85LeBTMuunF&amount=1&index=554&proof=HK4qaUKwmKNAprgzviUaA3VymbDoj7afR1qgmo2BmRgz,2vUC5BiUXAh5Fun5TTHLH4wLJ21T8whYavZBaL3g9wpA,9g8DKwtyHpoM7rq4CKwmBsdubRfd3XcFxSXVdQkAJ2AW,HdfeKofZrivPiBB5NTEEUF3P2LFLeL9kTcCNWi664fzF,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5XofHTQE1Q7DkXXy4xLfM3XRpXHRKz9sfHP8UtLMj7Pm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5XofHTQE1Q7DkXXy4xLfM3XRpXHRKz9sfHP8UtLMj7Pm&amount=1&index=555&proof=9QgSyoTnMeTU7iPQzvFkJZ8UaLkq1t2hccei4Y6Fx2Ci,2vUC5BiUXAh5Fun5TTHLH4wLJ21T8whYavZBaL3g9wpA,9g8DKwtyHpoM7rq4CKwmBsdubRfd3XcFxSXVdQkAJ2AW,HdfeKofZrivPiBB5NTEEUF3P2LFLeL9kTcCNWi664fzF,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5XvdqF5dqK8XL92Bn7nf9qzPM1o7QJu95zyy9GA8Yb3k",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5XvdqF5dqK8XL92Bn7nf9qzPM1o7QJu95zyy9GA8Yb3k&amount=1&index=556&proof=3PvGNCFRTLLVucRzTr4gufiNQh9TRQU8XdHJdBKs4Nr1,DHuwA9m9F4CLPxM4toMrcbiVVnZ9zh6M21Zt6qJErcRU,EQA5bZZQLfY9kohss9f5jKRtD1f1gZ636R86AhUjDGMF,HdfeKofZrivPiBB5NTEEUF3P2LFLeL9kTcCNWi664fzF,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5xZfvm5aNBLtpDzKMgGKf4YDfvwPvWqUQwgDvGPZ3MxY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5xZfvm5aNBLtpDzKMgGKf4YDfvwPvWqUQwgDvGPZ3MxY&amount=1&index=557&proof=CHBgvgquDfBXVRayzzLE8M37DFxYFv6XRRQBYGY41ywt,DHuwA9m9F4CLPxM4toMrcbiVVnZ9zh6M21Zt6qJErcRU,EQA5bZZQLfY9kohss9f5jKRtD1f1gZ636R86AhUjDGMF,HdfeKofZrivPiBB5NTEEUF3P2LFLeL9kTcCNWi664fzF,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5y3asPbGo6kvp5LpAK8mGKHNSFQFjzN7SAdHqED1Kf1x",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5y3asPbGo6kvp5LpAK8mGKHNSFQFjzN7SAdHqED1Kf1x&amount=1&index=558&proof=HNLyPU8ydNYRM14HwZfiTTpBRXHVrJCPpWfZeQn3tUZ4,64NUM5Se64WEfTyQ2ZmMJHgZDkPLu2WaEffy7Q4vXF79,EQA5bZZQLfY9kohss9f5jKRtD1f1gZ636R86AhUjDGMF,HdfeKofZrivPiBB5NTEEUF3P2LFLeL9kTcCNWi664fzF,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5YcwY4iAQGMyLzCJjEFbJh8SkTYEmVEvouURL3kw8hzs",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5YcwY4iAQGMyLzCJjEFbJh8SkTYEmVEvouURL3kw8hzs&amount=1&index=559&proof=8fnoKvWLBz6WxWUP5ZvC5RkWjvMz4rPn8vSp7iNuM4gB,64NUM5Se64WEfTyQ2ZmMJHgZDkPLu2WaEffy7Q4vXF79,EQA5bZZQLfY9kohss9f5jKRtD1f1gZ636R86AhUjDGMF,HdfeKofZrivPiBB5NTEEUF3P2LFLeL9kTcCNWi664fzF,77aLnCsDYDXymyxvFhs8fjD5NNb2t6ERWyTrpGweANoP,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5yncCnXRQrG8WyUvpDMhe4EupEjfCyCWRMsxj7QJQmMK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5yncCnXRQrG8WyUvpDMhe4EupEjfCyCWRMsxj7QJQmMK&amount=1&index=560&proof=7TAGDRFNwErgHNzKJLkbrxHeh46HvGkv5fVBRKParDLn,5153jCa4ND2Jf9Px3SkSbrZhEZsVS1GeSS7S6Qgu2Mqm,GtAK5WwS86vnxUtQF1ni6oaxPzPJuE55RLQrg521AwL5,GWKA43fL7zZaRdo4Ggi4zf3ehNDUVtEbnML5unQVnEa6,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5YnEg9eFbtT2NmngBJTYnU9nNX66eXWxhza8x2k3DJwg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5YnEg9eFbtT2NmngBJTYnU9nNX66eXWxhza8x2k3DJwg&amount=1&index=561&proof=G78CVpvN3sFDrwqeMErbojaAsN4qjvqXaZ6DMpqycLrJ,5153jCa4ND2Jf9Px3SkSbrZhEZsVS1GeSS7S6Qgu2Mqm,GtAK5WwS86vnxUtQF1ni6oaxPzPJuE55RLQrg521AwL5,GWKA43fL7zZaRdo4Ggi4zf3ehNDUVtEbnML5unQVnEa6,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5zeSTB9b1hQY8hgDgLfVBTkzmeSN4nXvbX7Qi7soc8gh",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5zeSTB9b1hQY8hgDgLfVBTkzmeSN4nXvbX7Qi7soc8gh&amount=1&index=562&proof=HBzPa5qvw7C6avu7VFfriqQ24K4t8NLvMxttLkw8pF2c,G4fhd8c7cnsW2pKrmdF6wRJ6KFQaa8YPP23cXE9eq9Ss,GtAK5WwS86vnxUtQF1ni6oaxPzPJuE55RLQrg521AwL5,GWKA43fL7zZaRdo4Ggi4zf3ehNDUVtEbnML5unQVnEa6,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5ZgHrKB1PsGmzu6AZKxvb5qAKZ8yzWBub9pbWWNi2tg8",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5ZgHrKB1PsGmzu6AZKxvb5qAKZ8yzWBub9pbWWNi2tg8&amount=1&index=563&proof=8XNj8QjWm8PGnakruDZcPSebzDSNAqjHLmJAwmHE3J6T,G4fhd8c7cnsW2pKrmdF6wRJ6KFQaa8YPP23cXE9eq9Ss,GtAK5WwS86vnxUtQF1ni6oaxPzPJuE55RLQrg521AwL5,GWKA43fL7zZaRdo4Ggi4zf3ehNDUVtEbnML5unQVnEa6,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "5zkWa8zJYqtdeZJBPmHLDUcvhkqnPP1LecgRkfJktHzm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=5zkWa8zJYqtdeZJBPmHLDUcvhkqnPP1LecgRkfJktHzm&amount=1&index=564&proof=51GNExzaNkPrrmoHX62HGuouQkVk78xhJdD2VUDeqtVq,GF53179BUDYk4V9DcT8wcTaJgQDpinzLCkqCWqEkkxC8,5EinaGEKR6LrwWYrUnofmRhb4CK2JnCgiwAfnQdGzyYE,GWKA43fL7zZaRdo4Ggi4zf3ehNDUVtEbnML5unQVnEa6,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "66Vea421RDgPD6W5wsdAwb66f54DQHir13b9ot3zFFCj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=66Vea421RDgPD6W5wsdAwb66f54DQHir13b9ot3zFFCj&amount=1&index=565&proof=Eav6tqeEcqumXu5fVnAqmZHs8U6p9ZeLtL3PSP887qA9,GF53179BUDYk4V9DcT8wcTaJgQDpinzLCkqCWqEkkxC8,5EinaGEKR6LrwWYrUnofmRhb4CK2JnCgiwAfnQdGzyYE,GWKA43fL7zZaRdo4Ggi4zf3ehNDUVtEbnML5unQVnEa6,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "68tQ9TL6BRx1vg2ADsPZkPs8XZBoRqzTG4Jgde9ia8zo",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=68tQ9TL6BRx1vg2ADsPZkPs8XZBoRqzTG4Jgde9ia8zo&amount=1&index=566&proof=HCsxbJpnj9SNQEochsk49VaHm2tXXaKfXcDwq1YhsEG4,J549C9GmqkHEE4JgLR3Pc4Z91LtgktQZWSMJwjHQkKD2,5EinaGEKR6LrwWYrUnofmRhb4CK2JnCgiwAfnQdGzyYE,GWKA43fL7zZaRdo4Ggi4zf3ehNDUVtEbnML5unQVnEa6,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "69mdpkxbyp1egEn4oVFJUz7nF5BEWmqUwj7n4q5qiqUK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=69mdpkxbyp1egEn4oVFJUz7nF5BEWmqUwj7n4q5qiqUK&amount=1&index=567&proof=3uQtGfF3DVoTXZm7wr8xiLxfc8XuHvaMhNY7Zj2qXXYU,J549C9GmqkHEE4JgLR3Pc4Z91LtgktQZWSMJwjHQkKD2,5EinaGEKR6LrwWYrUnofmRhb4CK2JnCgiwAfnQdGzyYE,GWKA43fL7zZaRdo4Ggi4zf3ehNDUVtEbnML5unQVnEa6,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "69qLtKNu7xZezLMdobmjrstxkDja2bEkjTfgBKpCmKT4",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=69qLtKNu7xZezLMdobmjrstxkDja2bEkjTfgBKpCmKT4&amount=1&index=568&proof=2Qkc4r2fMRUZnL1EkY6yxgRN6BSSXDjjPCxLMokB3dEi,9epf42UQ8mUr4VYSFpMgbq4k8zU7RgcZkC2KnXv2yzxA,AWT7c6S8vRuAsP3p9DiPej7Y6WZtKtnbSm3xub87czX1,D7A46JVTZTyxrkAina9HFFBZYSNrVGXBq9FDMCkt8QFb,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6A6U1nysbBU6c6FRZASDAs7daS9rYRtP9GfBxRxW7yii",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6A6U1nysbBU6c6FRZASDAs7daS9rYRtP9GfBxRxW7yii&amount=1&index=569&proof=79QeTeNMStU7RKRC82wmqDrBng8FWqqP3grEzEcw1Z66,9epf42UQ8mUr4VYSFpMgbq4k8zU7RgcZkC2KnXv2yzxA,AWT7c6S8vRuAsP3p9DiPej7Y6WZtKtnbSm3xub87czX1,D7A46JVTZTyxrkAina9HFFBZYSNrVGXBq9FDMCkt8QFb,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6aCTQQqqiTyPhWydy33DsMVhJiQjfJQQLShuhC5ZNVyw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6aCTQQqqiTyPhWydy33DsMVhJiQjfJQQLShuhC5ZNVyw&amount=1&index=570&proof=FuhkDyC8rvv4XjiD2avKKEHdia7wVDBWazgqw74t4A7S,84VXr9FMG4FGjywgiNWSnkwQ8JrrJrqZx6JbFJr8cV7Z,AWT7c6S8vRuAsP3p9DiPej7Y6WZtKtnbSm3xub87czX1,D7A46JVTZTyxrkAina9HFFBZYSNrVGXBq9FDMCkt8QFb,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6BJSV4Ny67uEArpjzU8G8tZPdtPuUG8bc3JmoznJi8ZW",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6BJSV4Ny67uEArpjzU8G8tZPdtPuUG8bc3JmoznJi8ZW&amount=1&index=571&proof=8zi8jwci7Yv7c1knkY6k3WKdsXcCgSKbt7uK5FESsqmy,84VXr9FMG4FGjywgiNWSnkwQ8JrrJrqZx6JbFJr8cV7Z,AWT7c6S8vRuAsP3p9DiPej7Y6WZtKtnbSm3xub87czX1,D7A46JVTZTyxrkAina9HFFBZYSNrVGXBq9FDMCkt8QFb,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6BTH9z5va6SRjnjic5qG4Vk5rUWiFPE16WbeGi8CjdCe",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6BTH9z5va6SRjnjic5qG4Vk5rUWiFPE16WbeGi8CjdCe&amount=1&index=572&proof=8QJxDJ7Ycu6c4JtX3Kn72Yc5kEZzrWi8RMnQaf9sRWsQ,GVCRkpswaybWRVEgL73PU4YWL1MC1uULbGXuBpa8Q9x6,DZtH3YDgyW7XZiTPdTAefRe7BWcAiNDGuvWhgZYDDxLJ,D7A46JVTZTyxrkAina9HFFBZYSNrVGXBq9FDMCkt8QFb,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6bwNifehxSeT5QJfbJzJ2YTWTFjesmTZvqmnUpeq7yjC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6bwNifehxSeT5QJfbJzJ2YTWTFjesmTZvqmnUpeq7yjC&amount=1&index=573&proof=EFiw98FCu87p2jFTCoG8dsejX7bMfYwZ3JmTXb7zmwdK,GVCRkpswaybWRVEgL73PU4YWL1MC1uULbGXuBpa8Q9x6,DZtH3YDgyW7XZiTPdTAefRe7BWcAiNDGuvWhgZYDDxLJ,D7A46JVTZTyxrkAina9HFFBZYSNrVGXBq9FDMCkt8QFb,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6CNwZd6VsUJbsqjeUHDBbf6SJBqzVojreg2KKoQbrJwG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6CNwZd6VsUJbsqjeUHDBbf6SJBqzVojreg2KKoQbrJwG&amount=1&index=574&proof=7NcvKCNn9H8tYSGbw7D8xAvDcSJRegDbfUYv69Pe9Hhu,9c1VU6qAdmnWqAjAtHd9aR6JDFcd5G772y1Z9EjjDLxv,DZtH3YDgyW7XZiTPdTAefRe7BWcAiNDGuvWhgZYDDxLJ,D7A46JVTZTyxrkAina9HFFBZYSNrVGXBq9FDMCkt8QFb,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6cwCyXYEeh4xE213igKZAczDpRWyXXVnbzVKnM3sviXm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6cwCyXYEeh4xE213igKZAczDpRWyXXVnbzVKnM3sviXm&amount=1&index=575&proof=Dki177uK4f8M9uETdnJfNtbEZupVJhuQEtdYsSZyd9Fo,9c1VU6qAdmnWqAjAtHd9aR6JDFcd5G772y1Z9EjjDLxv,DZtH3YDgyW7XZiTPdTAefRe7BWcAiNDGuvWhgZYDDxLJ,D7A46JVTZTyxrkAina9HFFBZYSNrVGXBq9FDMCkt8QFb,3wTBDvaUaeKpLweFof8yAhZJVcLz7X3qEpQihFqsqRjS,DJ8Wrpjn4rcKaDcJXSuMvMMEDmHHqXYdSr3rsW3bhHPQ,FmcqAghAugSnvgULmS4DNiWeDWG5t5criJ7cHnVb2qG,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6CxAqVYENUVCfwT2L62S12YtLLeyBj2uJfAGbtdmQkox",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6CxAqVYENUVCfwT2L62S12YtLLeyBj2uJfAGbtdmQkox&amount=1&index=576&proof=FjoZeqchmGeWKgJy8VTau5YjECNLvgR2A3dYjZxUviom,2mR5QUR2Xyvazsjuou2xcDBR1ZhAa42XMghZFxddw2LZ,4K1MpXDiu9HUgMCEQz64tD6fDuN2aLi5JBeJRiKJCXSa,BHYZmvy7ukFedz6rBpHajmCEhzyMKNhDfc6mXAuVrn9B,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6D6L3DS1nGMzX6u6Z3KgCdVg6bBxsX11aDJDv6awcgDE",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6D6L3DS1nGMzX6u6Z3KgCdVg6bBxsX11aDJDv6awcgDE&amount=1&index=577&proof=DMk7Lsaw5fTxv32xRKjqZ3MtuY2WVsJyDCWcuCKnpv1D,2mR5QUR2Xyvazsjuou2xcDBR1ZhAa42XMghZFxddw2LZ,4K1MpXDiu9HUgMCEQz64tD6fDuN2aLi5JBeJRiKJCXSa,BHYZmvy7ukFedz6rBpHajmCEhzyMKNhDfc6mXAuVrn9B,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6daih2s4zaQALK1gH4mZGgX642itNroWLMmyuAHBrWCa",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6daih2s4zaQALK1gH4mZGgX642itNroWLMmyuAHBrWCa&amount=1&index=578&proof=3829sP6Zyar8vJ4dBFaQrqhQFwf8kzbKeJNHn8unDDTc,ANq9QqYHVzPtFTm5y542MEhHB6EaxofsGosCFwyBwmgm,4K1MpXDiu9HUgMCEQz64tD6fDuN2aLi5JBeJRiKJCXSa,BHYZmvy7ukFedz6rBpHajmCEhzyMKNhDfc6mXAuVrn9B,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6dFY1Dtc14K7x7yQ3Lw7vC7sdu4XRBagY8bENP6KWNhn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6dFY1Dtc14K7x7yQ3Lw7vC7sdu4XRBagY8bENP6KWNhn&amount=1&index=579&proof=7U1c99Z9x2d2Svbk2ZwLJTHN6Q4wi97LL5SgDwVdqhNU,ANq9QqYHVzPtFTm5y542MEhHB6EaxofsGosCFwyBwmgm,4K1MpXDiu9HUgMCEQz64tD6fDuN2aLi5JBeJRiKJCXSa,BHYZmvy7ukFedz6rBpHajmCEhzyMKNhDfc6mXAuVrn9B,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6dqtsm8kosh4HiHxgaX2Y9quwWaFmdAboGq18zDFnM8Y",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6dqtsm8kosh4HiHxgaX2Y9quwWaFmdAboGq18zDFnM8Y&amount=1&index=580&proof=4hWPkFyF3xFufYcXD5JFQyA96RScefwKSnb4pxrH23HR,EavzfvEM74y5AYV9svHtcqc4pZpKMWPcz7Ej3yynHKeF,FKT9jwZ2bGgQy7KorAAgceAGLkDB8LByExZQSeJ2bBiA,BHYZmvy7ukFedz6rBpHajmCEhzyMKNhDfc6mXAuVrn9B,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6e2X4gH4sNmWSLuL3Pg7PdgURvdCNPDgdLY2MGLbe2AZ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6e2X4gH4sNmWSLuL3Pg7PdgURvdCNPDgdLY2MGLbe2AZ&amount=1&index=581&proof=4tRuJRaHeP59y14yct65TezkfGUapFgTrg9djENaexFn,EavzfvEM74y5AYV9svHtcqc4pZpKMWPcz7Ej3yynHKeF,FKT9jwZ2bGgQy7KorAAgceAGLkDB8LByExZQSeJ2bBiA,BHYZmvy7ukFedz6rBpHajmCEhzyMKNhDfc6mXAuVrn9B,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6E7FfvQjWEL8U2o6ziG6AJmcUGSsxycfar4wRbfjJh7o",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6E7FfvQjWEL8U2o6ziG6AJmcUGSsxycfar4wRbfjJh7o&amount=1&index=582&proof=8wq5JC6iSi9XqZJznfD5sXJaeiSw7MQhy2H9BQ1qVFqC,7FCkf6NqwymqAvnNumh74oaJiNxt25k4kuF5iM3qmadW,FKT9jwZ2bGgQy7KorAAgceAGLkDB8LByExZQSeJ2bBiA,BHYZmvy7ukFedz6rBpHajmCEhzyMKNhDfc6mXAuVrn9B,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6EkgZwMcyGPtoMRtemeGgh9QqPoVreG5DCMrhjyTDZnF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6EkgZwMcyGPtoMRtemeGgh9QqPoVreG5DCMrhjyTDZnF&amount=1&index=583&proof=4UpFCesL6Cm7PuQiEEp7TcaHmtfdF9taoRR66KyARAZw,7FCkf6NqwymqAvnNumh74oaJiNxt25k4kuF5iM3qmadW,FKT9jwZ2bGgQy7KorAAgceAGLkDB8LByExZQSeJ2bBiA,BHYZmvy7ukFedz6rBpHajmCEhzyMKNhDfc6mXAuVrn9B,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6EqTUAqVr6mPYRjr244gMgEPARiXhrJyHgrn9Gr9KY6d",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6EqTUAqVr6mPYRjr244gMgEPARiXhrJyHgrn9Gr9KY6d&amount=1&index=584&proof=64QVQSfy2w4BjwA6p3FDka1n7EzFZdGdwyeodF74YR4B,cvzJifYyxagpgMDHhDanrm4pKKd4562VsmwYiL56nm4,3GLAGj41BsAVzndRRV3b6otCWBnf3G7J4xqiXQk6fAaF,BMFJCFrG7UmGmXbrKPjjwSn7REpRTeMBxH4ASfK7V8fM,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6f66Sh1wQxotQoVvRtdSdSXgTipA2TFV37jG1iGbGwrb",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6f66Sh1wQxotQoVvRtdSdSXgTipA2TFV37jG1iGbGwrb&amount=1&index=585&proof=8hiVMwC1FS7wtGDndX7rTgtEyRq3ootSm2Z4Lbm3kaZm,cvzJifYyxagpgMDHhDanrm4pKKd4562VsmwYiL56nm4,3GLAGj41BsAVzndRRV3b6otCWBnf3G7J4xqiXQk6fAaF,BMFJCFrG7UmGmXbrKPjjwSn7REpRTeMBxH4ASfK7V8fM,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6fkdJCFUfWUgBE7w3FRuGgbp3CeQB9wVAuj9eW6rdhnX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6fkdJCFUfWUgBE7w3FRuGgbp3CeQB9wVAuj9eW6rdhnX&amount=1&index=586&proof=14M3Tprc1vr712aWGfb72uSZVPXPAzzViwxM2UfTXhnQ,9oY4DMqYkEKj1hBjxf2s7ZChGihmsxVdW4QnKtXfdbZg,3GLAGj41BsAVzndRRV3b6otCWBnf3G7J4xqiXQk6fAaF,BMFJCFrG7UmGmXbrKPjjwSn7REpRTeMBxH4ASfK7V8fM,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6FU8Me94C1PRr9BvrX8bqz4468kfBfALHf3kGPazQFVY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6FU8Me94C1PRr9BvrX8bqz4468kfBfALHf3kGPazQFVY&amount=1&index=587&proof=HWjf8AZK7y35NkwnPcDnXe46WJ1Q5n3HV4WLis3Qts5L,9oY4DMqYkEKj1hBjxf2s7ZChGihmsxVdW4QnKtXfdbZg,3GLAGj41BsAVzndRRV3b6otCWBnf3G7J4xqiXQk6fAaF,BMFJCFrG7UmGmXbrKPjjwSn7REpRTeMBxH4ASfK7V8fM,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6fxWQw5771XkmmuBpik73B7svcAJpXddV4tYGZPWN5Zg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6fxWQw5771XkmmuBpik73B7svcAJpXddV4tYGZPWN5Zg&amount=1&index=588&proof=5sQiFv5jQJuBoUCzRY9unhhPzThYYUBNfbQryZ1usRtL,GTgJyPC824ZEcnkFwqcTMmFr3EdBKRSLZNhUPF6EELkt,DonQNMFyy2xXwFuVAtJozUSMragWNurz4dRzy3qmPUA9,BMFJCFrG7UmGmXbrKPjjwSn7REpRTeMBxH4ASfK7V8fM,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6Gr6wWfLi6ewKJ1CZYsbN3eA3GhFbWBc2ZR532EAdYL5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6Gr6wWfLi6ewKJ1CZYsbN3eA3GhFbWBc2ZR532EAdYL5&amount=1&index=589&proof=7SNDNo7TCCh3ApkRV62pGkwgfzzziVzNaJFYo6GREVMU,GTgJyPC824ZEcnkFwqcTMmFr3EdBKRSLZNhUPF6EELkt,DonQNMFyy2xXwFuVAtJozUSMragWNurz4dRzy3qmPUA9,BMFJCFrG7UmGmXbrKPjjwSn7REpRTeMBxH4ASfK7V8fM,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6GRdTBAmfHpZGLETMUEaJMqzrxTVXmnvgkJkyDU1NuKW",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6GRdTBAmfHpZGLETMUEaJMqzrxTVXmnvgkJkyDU1NuKW&amount=1&index=590&proof=957KrBEvuDe2j9GLxwxbW6q57WMLnWgN5dvu6E3rRCVw,8Ugjjnwb13HyosNfikbMBhhCK4qvaPNd9cCiskRrnFoU,DonQNMFyy2xXwFuVAtJozUSMragWNurz4dRzy3qmPUA9,BMFJCFrG7UmGmXbrKPjjwSn7REpRTeMBxH4ASfK7V8fM,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6hHbfsFwXXGo9qWpVwk6d6asC6R9kVUTgUoLYDgseQc8",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6hHbfsFwXXGo9qWpVwk6d6asC6R9kVUTgUoLYDgseQc8&amount=1&index=591&proof=At7cuCnsSMW16bgfKyEwYcwET9R4ssGzHzc8fU3JkPGL,8Ugjjnwb13HyosNfikbMBhhCK4qvaPNd9cCiskRrnFoU,DonQNMFyy2xXwFuVAtJozUSMragWNurz4dRzy3qmPUA9,BMFJCFrG7UmGmXbrKPjjwSn7REpRTeMBxH4ASfK7V8fM,8v8RhHwUMfVFDxgWhs5hvyeMdHgjqRHn6ivvCxvBXHSL,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6Hk7rAnYU1NQjoxQTknNLnBmF3TMFrWHzjzVWt8FX8vt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6Hk7rAnYU1NQjoxQTknNLnBmF3TMFrWHzjzVWt8FX8vt&amount=1&index=592&proof=BEQFLkmQL5Vg1ADxPGiEQAFy5AXTiwxKeYuGo5CegUXW,DC3KbDxK9bq66gLEYphwXoCqiELbVV5R5mx6DU8tqQ6s,N6fxrmPJuZx6g8CopaW7eM3Eipo854C1M1ouChwb8is,GXpK5xmi6oaM56RvF8nqpG9UNUGqqfpoUNb95gS421aD,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6ikzYVNsLCJYQKChjeeGW8vYmbjUGe2yDic2HApQeL7u",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6ikzYVNsLCJYQKChjeeGW8vYmbjUGe2yDic2HApQeL7u&amount=1&index=593&proof=4HzUhDA96spw8K6qhDAnDASXptPSyjvRASA9PTiMKu8L,DC3KbDxK9bq66gLEYphwXoCqiELbVV5R5mx6DU8tqQ6s,N6fxrmPJuZx6g8CopaW7eM3Eipo854C1M1ouChwb8is,GXpK5xmi6oaM56RvF8nqpG9UNUGqqfpoUNb95gS421aD,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6JBYQ1pgZULX1sPYjgRTeqMdy9XLQFknncLFDVmZF9jU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6JBYQ1pgZULX1sPYjgRTeqMdy9XLQFknncLFDVmZF9jU&amount=1&index=594&proof=4YY5LwhwAzLvLTYQXLDBWGsrF4uRwSp2Mez8wigBuMD3,ADby6tZbqfTfWQfsmgKwT7XQFhfh1WqXdKfcRecsNXpA,N6fxrmPJuZx6g8CopaW7eM3Eipo854C1M1ouChwb8is,GXpK5xmi6oaM56RvF8nqpG9UNUGqqfpoUNb95gS421aD,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6jD8gMPbQCMpHTAw7EFAVgKH7f4S47be6evCygEY6hDP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6jD8gMPbQCMpHTAw7EFAVgKH7f4S47be6evCygEY6hDP&amount=1&index=595&proof=EuUM7ZERupPG84azoxuKRU8n6s9n8JtXSy1FZui1DfYT,ADby6tZbqfTfWQfsmgKwT7XQFhfh1WqXdKfcRecsNXpA,N6fxrmPJuZx6g8CopaW7eM3Eipo854C1M1ouChwb8is,GXpK5xmi6oaM56RvF8nqpG9UNUGqqfpoUNb95gS421aD,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6JEL6GaZ55L4NTYNnKEmasoRKYpBryzRU5YF316ihGda",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6JEL6GaZ55L4NTYNnKEmasoRKYpBryzRU5YF316ihGda&amount=1&index=596&proof=ELdb9aXcND55344P2qeU9xirKcYEDUznVebQ2P7qTfHz,G5oo7hqJhkszL1qoBdiWur38cftuC6myrdb49YrUcfKE,GDEcXush5UvgaibBeXStULpNbCHyqjyiUmp9mLXXSikL,GXpK5xmi6oaM56RvF8nqpG9UNUGqqfpoUNb95gS421aD,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6JNtiLijUDhfdB4tZyc4PnYqcD9ehbaTdMGDNxxEja7d",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6JNtiLijUDhfdB4tZyc4PnYqcD9ehbaTdMGDNxxEja7d&amount=1&index=597&proof=Cr5XCA7BrVy3DdDFTaxzxfhrK7YqJ3Dauk96CmUKWxFx,G5oo7hqJhkszL1qoBdiWur38cftuC6myrdb49YrUcfKE,GDEcXush5UvgaibBeXStULpNbCHyqjyiUmp9mLXXSikL,GXpK5xmi6oaM56RvF8nqpG9UNUGqqfpoUNb95gS421aD,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6kmkVyhjfREqwjp95u2K5oGRD7obTQvYtPXJ5AtbPD3j",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6kmkVyhjfREqwjp95u2K5oGRD7obTQvYtPXJ5AtbPD3j&amount=1&index=598&proof=8iTgoEgUCp9g61Lt8Xx615vVAYqz4E5oiDyLFWLQXoXT,Dpo7Caz2nxAqWDuUwzaAGdwHLpvk72GjpWoLH67eVchF,GDEcXush5UvgaibBeXStULpNbCHyqjyiUmp9mLXXSikL,GXpK5xmi6oaM56RvF8nqpG9UNUGqqfpoUNb95gS421aD,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6ksngCRthvkQRKFcS2kHf2bNNKAQi78BLCAoDxdLgvX8",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6ksngCRthvkQRKFcS2kHf2bNNKAQi78BLCAoDxdLgvX8&amount=1&index=599&proof=E3LgxXTfuUZbHEhGguZLxpZvVtbDBPLmyn72KUKf2ocb,Dpo7Caz2nxAqWDuUwzaAGdwHLpvk72GjpWoLH67eVchF,GDEcXush5UvgaibBeXStULpNbCHyqjyiUmp9mLXXSikL,GXpK5xmi6oaM56RvF8nqpG9UNUGqqfpoUNb95gS421aD,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6L9muLZSxBvsj2dddaGzvLxD6nm9y9gZoGEa7Tr4ndbe",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6L9muLZSxBvsj2dddaGzvLxD6nm9y9gZoGEa7Tr4ndbe&amount=1&index=600&proof=43DPFiwJ2vT3DhtMNFwNatrHsK9GMDLJYujCc3MUdZd3,4hTjs4zdQkVw3MkXCAoK5iEUf5XzVquPj7aaL8JGa1cJ,HHfincfkR5aDNyR5MsZQ2UPvrB4XLARTQDrJeUeiKQj5,8LTuxRMy78GYNBCynDeXhd7b2pa7XmddyjZdywbtkdLK,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6Lc2wto7ixfT9Ux413gcHn6sAVGNNfgHeJsvQD5kRuvW",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6Lc2wto7ixfT9Ux413gcHn6sAVGNNfgHeJsvQD5kRuvW&amount=1&index=601&proof=4dQZkXhnZ3NNYQXZ1XCJwoHEB5cuhYHr1H5drXEoYzFt,4hTjs4zdQkVw3MkXCAoK5iEUf5XzVquPj7aaL8JGa1cJ,HHfincfkR5aDNyR5MsZQ2UPvrB4XLARTQDrJeUeiKQj5,8LTuxRMy78GYNBCynDeXhd7b2pa7XmddyjZdywbtkdLK,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6mat9B1HxCoGB7kYmR5sHua7WCRG2J6tVYTTBgmoAhfw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6mat9B1HxCoGB7kYmR5sHua7WCRG2J6tVYTTBgmoAhfw&amount=1&index=602&proof=DSXyrJfW6K3VenPBRPBGahR4USTJDjpF87i93LVA3HqN,54FG9m87rLAPv76evMSvRsikX29iFgoQhxWHJhBwSv6a,HHfincfkR5aDNyR5MsZQ2UPvrB4XLARTQDrJeUeiKQj5,8LTuxRMy78GYNBCynDeXhd7b2pa7XmddyjZdywbtkdLK,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6MjhgPyME4uWRqTq5JQ2rUxeRDheZ4YPoSaroeWiipGz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6MjhgPyME4uWRqTq5JQ2rUxeRDheZ4YPoSaroeWiipGz&amount=1&index=603&proof=7cZrQzidvnVwfe9Bgk6mzWkdUCh7cKqfCJdPWFNavUs,54FG9m87rLAPv76evMSvRsikX29iFgoQhxWHJhBwSv6a,HHfincfkR5aDNyR5MsZQ2UPvrB4XLARTQDrJeUeiKQj5,8LTuxRMy78GYNBCynDeXhd7b2pa7XmddyjZdywbtkdLK,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6MjihR9vExDFh9zN8R9bYukFUgKbDgZDHvY65LwJjoiY",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6MjihR9vExDFh9zN8R9bYukFUgKbDgZDHvY65LwJjoiY&amount=1&index=604&proof=G6V2e6NEDQBdwZKYatjB3ZdizHrqS7RnRmKrJ7U7erqz,GBVTxohmX4T2qxc5iH5pBWo76CzFERjw4r8oQytynLms,AUhCmHya4spVJTqDGwYJpZzzRNoW7V9G8B8pBfjeKzjC,8LTuxRMy78GYNBCynDeXhd7b2pa7XmddyjZdywbtkdLK,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6naQgYfQiZxeWgE25UdPa226nVm1otTC8z2XJDunkE3e",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6naQgYfQiZxeWgE25UdPa226nVm1otTC8z2XJDunkE3e&amount=1&index=605&proof=4CaytpNzdLuwuKrcaRfbCdn9ZmmMbQE1grPTLFaDUUYd,GBVTxohmX4T2qxc5iH5pBWo76CzFERjw4r8oQytynLms,AUhCmHya4spVJTqDGwYJpZzzRNoW7V9G8B8pBfjeKzjC,8LTuxRMy78GYNBCynDeXhd7b2pa7XmddyjZdywbtkdLK,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6nT6T9ALTdkFGwR5EvKeFnxFhkG7mHYzrWtgvWK32Kmx",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6nT6T9ALTdkFGwR5EvKeFnxFhkG7mHYzrWtgvWK32Kmx&amount=1&index=606&proof=AhP5VV1hgdTaYof2gDsqjE4wvot5kKWyJXrCA9fnKswh,9U6LwmZJ5S95uegNCxLr7UxpSxRQhzoSbkV6Y1fZSTya,AUhCmHya4spVJTqDGwYJpZzzRNoW7V9G8B8pBfjeKzjC,8LTuxRMy78GYNBCynDeXhd7b2pa7XmddyjZdywbtkdLK,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6oUEP79q7garbqQwQ2d6snJUzycB1k6w3QadhzB6ccBn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6oUEP79q7garbqQwQ2d6snJUzycB1k6w3QadhzB6ccBn&amount=1&index=607&proof=3pJqYV8dz7fwYauLvzzronU92akS48Am2KYR8S4oNgMo,9U6LwmZJ5S95uegNCxLr7UxpSxRQhzoSbkV6Y1fZSTya,AUhCmHya4spVJTqDGwYJpZzzRNoW7V9G8B8pBfjeKzjC,8LTuxRMy78GYNBCynDeXhd7b2pa7XmddyjZdywbtkdLK,BY5YAwgKNZ8YTEHX4irj9qbvtN2DVYdJPX6RmS3NA5kW,DhuVB2d4URGfbz3Qm6DG7UxWVfrNKEBSgrpZJShSLf1N,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6pEKaXK7DhXHTNCUYMRvSChiH8e1rZw96NjEYWaFgLtz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6pEKaXK7DhXHTNCUYMRvSChiH8e1rZw96NjEYWaFgLtz&amount=1&index=608&proof=BMZnsbSdJv7NXjNkB7927Hvm4URRjUDjY4kFpn5aZ8y5,5nCsXW3Rz3XziJCLFPQtcKr53VjusURBFAmKgiCG1b8m,ARTztqNPxNS282fmRag5V37bXPw24oNTSzrH82EACXht,A7wanjDVCdJTgQJehrK7w5X1NhDh8PsAjjchmwQFLjpa,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6pmA19zqrWohVfj6FCUSWszRXa1XRZeP825bhzUPZgRH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6pmA19zqrWohVfj6FCUSWszRXa1XRZeP825bhzUPZgRH&amount=1&index=609&proof=BhrXmvP1rCuRTa4wnqsSScx16DFvQNNGKsU8tdeYNeRC,5nCsXW3Rz3XziJCLFPQtcKr53VjusURBFAmKgiCG1b8m,ARTztqNPxNS282fmRag5V37bXPw24oNTSzrH82EACXht,A7wanjDVCdJTgQJehrK7w5X1NhDh8PsAjjchmwQFLjpa,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6PU5Vwok69Job8t2NNmKpQE8GdeVcxRumesodrG8W5bm",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6PU5Vwok69Job8t2NNmKpQE8GdeVcxRumesodrG8W5bm&amount=1&index=610&proof=Dr2RW5Cm63ECYH16bJBTW61S92FNm8aX37acSg9ts6UF,8bKC6uypkwFvYJora5EcU9ipPcBWGmPtyVBzwy9iBg4h,ARTztqNPxNS282fmRag5V37bXPw24oNTSzrH82EACXht,A7wanjDVCdJTgQJehrK7w5X1NhDh8PsAjjchmwQFLjpa,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6Pw2GcVB522k86cVMBMX1XJ7Ahb2VRxy2ciU8CunVqH5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6Pw2GcVB522k86cVMBMX1XJ7Ahb2VRxy2ciU8CunVqH5&amount=1&index=611&proof=EB4BkRJeDeRMYU4FKLuJJ6WBRZTKmjJGHs3uaEqcDnGw,8bKC6uypkwFvYJora5EcU9ipPcBWGmPtyVBzwy9iBg4h,ARTztqNPxNS282fmRag5V37bXPw24oNTSzrH82EACXht,A7wanjDVCdJTgQJehrK7w5X1NhDh8PsAjjchmwQFLjpa,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6qasrabZgKbbtjkK4aH5adKTdcxoBxUfWLV2jeQuFUKE",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6qasrabZgKbbtjkK4aH5adKTdcxoBxUfWLV2jeQuFUKE&amount=1&index=612&proof=An2Zz7LeDVdmyY6pDHZcsvFjUr5p12QUiAdBwNCzxmy9,H4rL2oP5ywKnaHj1waBimztqpvqpewUMakRtVXfxzZ1u,BBeqhHcjmEwUXouUF51JM18qqBshKT8FrcrYhqTpymPN,A7wanjDVCdJTgQJehrK7w5X1NhDh8PsAjjchmwQFLjpa,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6qRxhTqSRsV9A4PDvfYawQtkX5PNqVApPHsNHFhoLUdd",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6qRxhTqSRsV9A4PDvfYawQtkX5PNqVApPHsNHFhoLUdd&amount=1&index=613&proof=pP82DJBBrgiDHDAiCo9sJvaEq2NsksHfBtvRjwavCnE,H4rL2oP5ywKnaHj1waBimztqpvqpewUMakRtVXfxzZ1u,BBeqhHcjmEwUXouUF51JM18qqBshKT8FrcrYhqTpymPN,A7wanjDVCdJTgQJehrK7w5X1NhDh8PsAjjchmwQFLjpa,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6qV9421Eq5442JCqZLVygJLjXrqPKi6x6h6pyZV4EWtK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6qV9421Eq5442JCqZLVygJLjXrqPKi6x6h6pyZV4EWtK&amount=1&index=614&proof=FNymKL2geErQ94DuposJQs9U3GE6UDMGkBzwXW9vEXb8,AtVz9Ykg7Hru1XZbBD1G9o2FwBaLnhVwS3kHzcZgWgdJ,BBeqhHcjmEwUXouUF51JM18qqBshKT8FrcrYhqTpymPN,A7wanjDVCdJTgQJehrK7w5X1NhDh8PsAjjchmwQFLjpa,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6R3JcFCmrZQJYuD53YffRRbjeaETNAq7N6qxeqiGF5V5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6R3JcFCmrZQJYuD53YffRRbjeaETNAq7N6qxeqiGF5V5&amount=1&index=615&proof=CknGG5Rkg8c6A2qWUhp4pnV2aqrRBkKLSLYmxPqsH4YP,AtVz9Ykg7Hru1XZbBD1G9o2FwBaLnhVwS3kHzcZgWgdJ,BBeqhHcjmEwUXouUF51JM18qqBshKT8FrcrYhqTpymPN,A7wanjDVCdJTgQJehrK7w5X1NhDh8PsAjjchmwQFLjpa,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6rFZAca5wj5JeS8q2gGtMt2Lh4ojqrAKqcCGpKHEj6J3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6rFZAca5wj5JeS8q2gGtMt2Lh4ojqrAKqcCGpKHEj6J3&amount=1&index=616&proof=897mjAzopZvk2QFTbXdmL25CQaw4M4YtoCYJ7AXsVX6m,FjYG4sE4nqJcf8N3yTerwQhjgQijiA3BpnGPpccVFz3g,6wF8A3iSc9vRWexVEpJ5MSPt5urbc7RHbr5GwgnEuRaF,976hYqQvoKTbW9HggzzN3Gw65GEcCKY8PLMsFmAB35qT,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6RHtHi7RJPtaCQGCnkWf7q7RsBzJg4vghepXxFfGnfqp",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6RHtHi7RJPtaCQGCnkWf7q7RsBzJg4vghepXxFfGnfqp&amount=1&index=617&proof=8sDmSWfKa1wxBnas5ArVRhabU3Hvv9AEqof7snd7Mnbn,FjYG4sE4nqJcf8N3yTerwQhjgQijiA3BpnGPpccVFz3g,6wF8A3iSc9vRWexVEpJ5MSPt5urbc7RHbr5GwgnEuRaF,976hYqQvoKTbW9HggzzN3Gw65GEcCKY8PLMsFmAB35qT,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6RMxWoB91r95MybLfuGhwFu5rDZUbipF32qFdJBXpSt2",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6RMxWoB91r95MybLfuGhwFu5rDZUbipF32qFdJBXpSt2&amount=1&index=618&proof=AZAsphMLnh5gw2n5NCNYXJvVhkHmbZhTcvP11TwYHnGm,BdFD6TjqF6Ns4gf63sZZV2J66GT98SmH3eAMTnNfU6CF,6wF8A3iSc9vRWexVEpJ5MSPt5urbc7RHbr5GwgnEuRaF,976hYqQvoKTbW9HggzzN3Gw65GEcCKY8PLMsFmAB35qT,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6s2ZJFPVUoQ5dzCpyaRznPbMnSTjTdC86WXyBGSFfTpz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6s2ZJFPVUoQ5dzCpyaRznPbMnSTjTdC86WXyBGSFfTpz&amount=1&index=619&proof=3L4p6u2Hp2CgcfFeKkmHxY6CgfipdA5dHmiGx5icxtFk,BdFD6TjqF6Ns4gf63sZZV2J66GT98SmH3eAMTnNfU6CF,6wF8A3iSc9vRWexVEpJ5MSPt5urbc7RHbr5GwgnEuRaF,976hYqQvoKTbW9HggzzN3Gw65GEcCKY8PLMsFmAB35qT,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6savR54hnZ2pKjV8EVsobxfN6voXGemFyXoP8kLARBtE",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6savR54hnZ2pKjV8EVsobxfN6voXGemFyXoP8kLARBtE&amount=1&index=620&proof=dnxWeFscCeTv5M32PvZWvwWA9kT7ZJkvuiUHWYySkW1,9k6Yusm4t2mDGFRzHPJ7At7aCi1dgHUHNcZy9oYUwiKy,7wuKnfM59CzaN1yAUco2gvJi1hPnwDDG1jrgUuwiyMQs,976hYqQvoKTbW9HggzzN3Gw65GEcCKY8PLMsFmAB35qT,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6SjoCTpxFFNmyzM42JvgKhwEF985F1G6MyU5yczLWeUG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6SjoCTpxFFNmyzM42JvgKhwEF985F1G6MyU5yczLWeUG&amount=1&index=621&proof=8YJ6TitGtEr7iUEzGjHQ5aquqmpENGJi7FB3VQeofgo7,9k6Yusm4t2mDGFRzHPJ7At7aCi1dgHUHNcZy9oYUwiKy,7wuKnfM59CzaN1yAUco2gvJi1hPnwDDG1jrgUuwiyMQs,976hYqQvoKTbW9HggzzN3Gw65GEcCKY8PLMsFmAB35qT,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6tAeELnWdDrcbqWeS4JwGyojVj1MwQ8ndkFff8bdpkVw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6tAeELnWdDrcbqWeS4JwGyojVj1MwQ8ndkFff8bdpkVw&amount=1&index=622&proof=38CpFrJ4rXW3AsZpJgeYw5utBRnv3X8dxnTYw2ptyAZz,EmgzXDg9PixtJ1WtH3WawcG5yreE5UYW85rbkdPARiLk,7wuKnfM59CzaN1yAUco2gvJi1hPnwDDG1jrgUuwiyMQs,976hYqQvoKTbW9HggzzN3Gw65GEcCKY8PLMsFmAB35qT,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6TJgp9VBGmgz9iSap89zA8XjUFQ3eCEbhjnepyUPX3Wt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6TJgp9VBGmgz9iSap89zA8XjUFQ3eCEbhjnepyUPX3Wt&amount=1&index=623&proof=3sGFfEcknXCiMUtJfV4f6AUSsviHZtgjJNXWJMAs5Gfs,EmgzXDg9PixtJ1WtH3WawcG5yreE5UYW85rbkdPARiLk,7wuKnfM59CzaN1yAUco2gvJi1hPnwDDG1jrgUuwiyMQs,976hYqQvoKTbW9HggzzN3Gw65GEcCKY8PLMsFmAB35qT,F8UECdw4uisK7xLEU44LjpHzvwfkhR3oaKw71hvLbazJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6TosX7cgJapGLrzZA2wNY2m9XLzaaZo5A3kpdsBwAYHD",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6TosX7cgJapGLrzZA2wNY2m9XLzaaZo5A3kpdsBwAYHD&amount=1&index=624&proof=5yN5e6iyZ9tVULN66E7CrqCpDHVfV6fmXqxi22qFgbCs,AXLRPFcap2TBUuz7jKChvUUk5ya8VF2NZLyqiMnQJquN,BF3qiKj1isVEDGxrzeR24arJHxz3RHtAieRGWxhQ1QV8,9mA6xTNZ7cVwDVxhYhb4qFBRNMWbF6gDBeMPTXn6oe52,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6tQpGepTZ55BTXz2GynhmaAqbsC5W33cUNzVGRKEzVLg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6tQpGepTZ55BTXz2GynhmaAqbsC5W33cUNzVGRKEzVLg&amount=1&index=625&proof=CCTHeVamshNXx11YgEV4WPdbNAtys2acpaxBckG685VL,AXLRPFcap2TBUuz7jKChvUUk5ya8VF2NZLyqiMnQJquN,BF3qiKj1isVEDGxrzeR24arJHxz3RHtAieRGWxhQ1QV8,9mA6xTNZ7cVwDVxhYhb4qFBRNMWbF6gDBeMPTXn6oe52,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6TS81znRxf8RnCWdFjoYjxoZdSwTDjnCA6QCNgrVSHWi",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6TS81znRxf8RnCWdFjoYjxoZdSwTDjnCA6QCNgrVSHWi&amount=1&index=626&proof=6WDvbAsH9WCp1RNSBVKbdbZEjqoKCRWVVZ6d31vkKw26,5bVAbUK7BRbyns7WLKVqWq3ZYZ3BTgYT1CKmDocLZjGp,BF3qiKj1isVEDGxrzeR24arJHxz3RHtAieRGWxhQ1QV8,9mA6xTNZ7cVwDVxhYhb4qFBRNMWbF6gDBeMPTXn6oe52,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6tt2ZKZPByrzRuevsMYgEEpy1pRUWMGtPxRh16CSxpwu",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6tt2ZKZPByrzRuevsMYgEEpy1pRUWMGtPxRh16CSxpwu&amount=1&index=627&proof=6LRkpNF5jUL7N3ubGXjFwpbkVLZNJHRHdiTPADUasH7d,5bVAbUK7BRbyns7WLKVqWq3ZYZ3BTgYT1CKmDocLZjGp,BF3qiKj1isVEDGxrzeR24arJHxz3RHtAieRGWxhQ1QV8,9mA6xTNZ7cVwDVxhYhb4qFBRNMWbF6gDBeMPTXn6oe52,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6TU6BmUoYZacn3RMDTAD9ww1fdkrRu8HSPvaHmgVzMRB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6TU6BmUoYZacn3RMDTAD9ww1fdkrRu8HSPvaHmgVzMRB&amount=1&index=628&proof=HGq2Z5tt1ERetozFSq4K8NJgDVcmbnmnDk1eLpNe5LnC,AEUffWt4UzzJTpUt7taDeSr3L6quQn775yc4JCxgwgbk,F7Fjbx3dPyHoDavzJNakTcJ6e7iz2ux9QiDig58PZ2Ai,9mA6xTNZ7cVwDVxhYhb4qFBRNMWbF6gDBeMPTXn6oe52,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6TwU8xjRfNRJEwQAxLNPZRWW3BvQW6pMLApZNTaahSPK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6TwU8xjRfNRJEwQAxLNPZRWW3BvQW6pMLApZNTaahSPK&amount=1&index=629&proof=HCCusTcgSG6HYP9wfq54mcur4X6nLPy5RCU7P7v6JuqY,AEUffWt4UzzJTpUt7taDeSr3L6quQn775yc4JCxgwgbk,F7Fjbx3dPyHoDavzJNakTcJ6e7iz2ux9QiDig58PZ2Ai,9mA6xTNZ7cVwDVxhYhb4qFBRNMWbF6gDBeMPTXn6oe52,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6UBFiv77FX6UBbbFjT3RaFYSvuSYU4kzV4Tuf3aogXrJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6UBFiv77FX6UBbbFjT3RaFYSvuSYU4kzV4Tuf3aogXrJ&amount=1&index=630&proof=76nJiVrBwdzZTWasNRamyTY3RkHmZ9zx8urmjfLAfaXf,C27Qu3Ua5ZyhzTvQCbG3b5yrDAae42ENugUCqKZYpZxp,F7Fjbx3dPyHoDavzJNakTcJ6e7iz2ux9QiDig58PZ2Ai,9mA6xTNZ7cVwDVxhYhb4qFBRNMWbF6gDBeMPTXn6oe52,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6UByeG2qap7Jm1atJuBeDbPrkzE3ksTeKhmjnBQ9QJjc",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6UByeG2qap7Jm1atJuBeDbPrkzE3ksTeKhmjnBQ9QJjc&amount=1&index=631&proof=HhN6S74a38FjMBETuZKKGwMzPhnepmKX28Lw389SXQCu,C27Qu3Ua5ZyhzTvQCbG3b5yrDAae42ENugUCqKZYpZxp,F7Fjbx3dPyHoDavzJNakTcJ6e7iz2ux9QiDig58PZ2Ai,9mA6xTNZ7cVwDVxhYhb4qFBRNMWbF6gDBeMPTXn6oe52,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6UvQ7iZHf5vJzuJebumLvFKLNnrv7CYrSxX8DYNkhwe3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6UvQ7iZHf5vJzuJebumLvFKLNnrv7CYrSxX8DYNkhwe3&amount=1&index=632&proof=7yatizZB3QVgq3yJYvHWNtUBQ2W6z5F68yW8nApCCUuT,DKeveG2xFLw59hCzNVQN7ZPvTNk1HWudCMqwzrBF7gRq,61BWpptrfGhEHmpQ8CSRzHHoPEHDBbpRE1fuBA2Einp7,AaudgNC62jeLQwJLm14DGTMqsBZjTJ37WkjR1im8omFA,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6W61xZiokXo1hXgjuMzgFzpR1fAH32kR9dAcxhC4pv5m",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6W61xZiokXo1hXgjuMzgFzpR1fAH32kR9dAcxhC4pv5m&amount=1&index=633&proof=7nytnrwhChwud5Si8aBric8ZM41y18mvNcmMV84riPnu,DKeveG2xFLw59hCzNVQN7ZPvTNk1HWudCMqwzrBF7gRq,61BWpptrfGhEHmpQ8CSRzHHoPEHDBbpRE1fuBA2Einp7,AaudgNC62jeLQwJLm14DGTMqsBZjTJ37WkjR1im8omFA,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6wmgrLEWLdryYFUQ3UhpXc9sE5GwkfChnzJdc8sttNUk",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6wmgrLEWLdryYFUQ3UhpXc9sE5GwkfChnzJdc8sttNUk&amount=1&index=634&proof=BDSNzGhquq2TBFMZXXZFro55kxDk9tt3akj2JbcPakLH,6UvDfkg6KPqsXRCneGy6MAQwNpR3tS4nvHSxdiBSuB8m,61BWpptrfGhEHmpQ8CSRzHHoPEHDBbpRE1fuBA2Einp7,AaudgNC62jeLQwJLm14DGTMqsBZjTJ37WkjR1im8omFA,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6wnrSrzHwyz593YSD95x1d6MD8nCAKxV3GB5WECw7J6w",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6wnrSrzHwyz593YSD95x1d6MD8nCAKxV3GB5WECw7J6w&amount=1&index=635&proof=9Sritsdct6AF7WX8NnUa8A9AyriqQUzgTa7ioiYHYDzG,6UvDfkg6KPqsXRCneGy6MAQwNpR3tS4nvHSxdiBSuB8m,61BWpptrfGhEHmpQ8CSRzHHoPEHDBbpRE1fuBA2Einp7,AaudgNC62jeLQwJLm14DGTMqsBZjTJ37WkjR1im8omFA,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6wuQ6BHFv25WyMSHbZEkV2uUcNG3rTe8YrGxoL1BFiBE",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6wuQ6BHFv25WyMSHbZEkV2uUcNG3rTe8YrGxoL1BFiBE&amount=1&index=636&proof=2ehQCNdo3ucfsmXSFtJrEjnuHkivEdCKNrYfQgcN2LGi,DTLVs4ALusTzndrfofZa7DhH8oDjdZPcPw5TmT2342rH,8nADQkh1XAEV1M4K5NBEHhYbXkSEkz9hamAcBUiVtTtK,AaudgNC62jeLQwJLm14DGTMqsBZjTJ37WkjR1im8omFA,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6wwuUb4FUKG2kBsnMfEKJ1YiWa26uQonbBdDQJMcvcAD",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6wwuUb4FUKG2kBsnMfEKJ1YiWa26uQonbBdDQJMcvcAD&amount=1&index=637&proof=H1uxExXN3Cb6MZoBW5SMuHkTECugd2G9GXzpUraHdAc4,DTLVs4ALusTzndrfofZa7DhH8oDjdZPcPw5TmT2342rH,8nADQkh1XAEV1M4K5NBEHhYbXkSEkz9hamAcBUiVtTtK,AaudgNC62jeLQwJLm14DGTMqsBZjTJ37WkjR1im8omFA,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6X5CnjpxTTPQXLu3zk7guoDDTuNwPJ7nGYUXD8L9pRXD",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6X5CnjpxTTPQXLu3zk7guoDDTuNwPJ7nGYUXD8L9pRXD&amount=1&index=638&proof=D6qTgRj6ABcUV2XW5d3NaSHhPMcxPtAHSmCHN4BFGxbV,BUiCZfL45KsSS4BS82GQNBQFvztZqRjhnfSemyb3jgGg,8nADQkh1XAEV1M4K5NBEHhYbXkSEkz9hamAcBUiVtTtK,AaudgNC62jeLQwJLm14DGTMqsBZjTJ37WkjR1im8omFA,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6xwvysuTqTMJVpbrBAtnsHMNgBasVQycUcCgWz8iEtR3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6xwvysuTqTMJVpbrBAtnsHMNgBasVQycUcCgWz8iEtR3&amount=1&index=639&proof=3q3uc9zm6KytY6s6rMZFGdAS6BNEntDjkWuuahzgy9fh,BUiCZfL45KsSS4BS82GQNBQFvztZqRjhnfSemyb3jgGg,8nADQkh1XAEV1M4K5NBEHhYbXkSEkz9hamAcBUiVtTtK,AaudgNC62jeLQwJLm14DGTMqsBZjTJ37WkjR1im8omFA,DhDkepqkyunDhkkDzZwDxwDXw5wUU7Roe8ewSeN1wyeJ,BP8dB11vvQGwm5Xnp3VZA3mMt9aPD8nonvBWyfxpwMZY,DjefHH2e4VkcWdwTnVxiDuomzodeBEm11yCw7qdozvXh,BLb6D5hnEMh25jTa2BixpJKhPbuCsYKvKWNJ3X5pvvmv,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6yharbJ6QmLN7tVQpiYNDadgd2nEd75SNrdSckekgviX",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6yharbJ6QmLN7tVQpiYNDadgd2nEd75SNrdSckekgviX&amount=1&index=640&proof=9hTrMCooT1J3vkHqF1JwN2aqtXsEETFK8f7siPivnAxa,Hx24AgQx1kb12LZMnUHBTxH5xegBFpYp8ETaphJTwmjd,9sD1jNcUVLpxv8cFgX9Y57AL6aYv3AsbVynmcf7e7XF7,FasbDSxf6FCUHiJxU1QRai43fod7wjcCsCTC31G6kW7M,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6ysgEWggUhys5D8htA1K1NJg42kqxDQHPenyRgkbrFYG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6ysgEWggUhys5D8htA1K1NJg42kqxDQHPenyRgkbrFYG&amount=1&index=641&proof=9TtvXbxxQ3JUEoVhbSqNbhLPnn5SnwJUiwsnRLQPvLBh,Hx24AgQx1kb12LZMnUHBTxH5xegBFpYp8ETaphJTwmjd,9sD1jNcUVLpxv8cFgX9Y57AL6aYv3AsbVynmcf7e7XF7,FasbDSxf6FCUHiJxU1QRai43fod7wjcCsCTC31G6kW7M,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6yyErrNSvqp1kewRTCuU6g3dLuKggPRzt14YMWLKQxvC",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6yyErrNSvqp1kewRTCuU6g3dLuKggPRzt14YMWLKQxvC&amount=1&index=642&proof=Hyd5oe6qA752HkvCBZFut8FvtS9Gbe8d6XPy3oTh6KC9,Fstu6HpxkUkkQXdfLr4D4A6GPThHknL7qFA33okVW8Pv,9sD1jNcUVLpxv8cFgX9Y57AL6aYv3AsbVynmcf7e7XF7,FasbDSxf6FCUHiJxU1QRai43fod7wjcCsCTC31G6kW7M,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6ZCPnjUjf9GYXoZJmrsR6ac2a2BEk1Xbkk2xL1BkM6x5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6ZCPnjUjf9GYXoZJmrsR6ac2a2BEk1Xbkk2xL1BkM6x5&amount=1&index=643&proof=2PZm12R7kE4qANrYTBV4jubXBLB7UCo623h28W6VdW6a,Fstu6HpxkUkkQXdfLr4D4A6GPThHknL7qFA33okVW8Pv,9sD1jNcUVLpxv8cFgX9Y57AL6aYv3AsbVynmcf7e7XF7,FasbDSxf6FCUHiJxU1QRai43fod7wjcCsCTC31G6kW7M,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "6zYESb5i1LuxjgAXwgyVCrZVjptYMZrjzrsheQvixTuG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=6zYESb5i1LuxjgAXwgyVCrZVjptYMZrjzrsheQvixTuG&amount=1&index=644&proof=51R8pALTXS62DVP8BdfGJhsYFeG1h7iiPzwtVJwHimuz,3GsZ9uzbDJ25Y8ookFc6WmLAVdpEQKDzMqjuyqPjzMUz,FMoCkNFc6C7iqC3SwBv9Lreka4f5rj95KzLKBQWLzbwN,FasbDSxf6FCUHiJxU1QRai43fod7wjcCsCTC31G6kW7M,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "714F7Vd5wgZHRTmGc5Vu9kYuQVha5Jsc1FxgEGxfTMr9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=714F7Vd5wgZHRTmGc5Vu9kYuQVha5Jsc1FxgEGxfTMr9&amount=1&index=645&proof=Cku4hMkzwwEb2oT6yfDTF4yuPXszgGTajY9EZQc3ttVp,3GsZ9uzbDJ25Y8ookFc6WmLAVdpEQKDzMqjuyqPjzMUz,FMoCkNFc6C7iqC3SwBv9Lreka4f5rj95KzLKBQWLzbwN,FasbDSxf6FCUHiJxU1QRai43fod7wjcCsCTC31G6kW7M,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "71EYzbyXViEEmxRM1ojiNipnutUbq4yLXU9CAs4URpS7",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=71EYzbyXViEEmxRM1ojiNipnutUbq4yLXU9CAs4URpS7&amount=1&index=646&proof=apTYag7PXJ7TrB5rvTBw9QcZDCToXtsfJ5jxZQZrpDZ,Hvu8UFcFAAqKwWzMsQae6NCNqa4V2yYgSisCGtsCFY7A,FMoCkNFc6C7iqC3SwBv9Lreka4f5rj95KzLKBQWLzbwN,FasbDSxf6FCUHiJxU1QRai43fod7wjcCsCTC31G6kW7M,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "72euadqZGFYaRm59v6p1N2zc9QBE9i6tZtvhd4hCv1k9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=72euadqZGFYaRm59v6p1N2zc9QBE9i6tZtvhd4hCv1k9&amount=1&index=647&proof=49zN2L5WAyCRpp91RVVq9UHttyTG4qTZVkQe5NoSL6Az,Hvu8UFcFAAqKwWzMsQae6NCNqa4V2yYgSisCGtsCFY7A,FMoCkNFc6C7iqC3SwBv9Lreka4f5rj95KzLKBQWLzbwN,FasbDSxf6FCUHiJxU1QRai43fod7wjcCsCTC31G6kW7M,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "72KUg6oPhPNqwwQxW6nWsAy4vUnGcqsubF22LjDQXYMP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=72KUg6oPhPNqwwQxW6nWsAy4vUnGcqsubF22LjDQXYMP&amount=1&index=648&proof=Ehjg7LzpZWqmncEz65wsNn1rVPBUXDydvPeaKvDCshfY,AnAM1VJXZzatatXmwAaz5tJmHLgULePVfc1kDqiWucFc,4E8Vmpn13dTg2P6h4PsTX4EZUgTGdWzoCkbVgwSQximC,k15am7rgq5nAKrXSLBAWRrm639jyvVQnXTopB7iqAag,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "72RJ7qcV61wHQ1oYW1xNYdJRbqX9JwYp36MDcmpYjDQn",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=72RJ7qcV61wHQ1oYW1xNYdJRbqX9JwYp36MDcmpYjDQn&amount=1&index=649&proof=5kvmst7BDfsCwRhtUggqxR7XuqWKVFgx4s1DnyrFM3B,AnAM1VJXZzatatXmwAaz5tJmHLgULePVfc1kDqiWucFc,4E8Vmpn13dTg2P6h4PsTX4EZUgTGdWzoCkbVgwSQximC,k15am7rgq5nAKrXSLBAWRrm639jyvVQnXTopB7iqAag,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "72vpYRoZts3ikxu46BH6eUAV9PFfpT4uAE1D5RzNMAy1",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=72vpYRoZts3ikxu46BH6eUAV9PFfpT4uAE1D5RzNMAy1&amount=1&index=650&proof=9GYVXhNoXpHHsrE2V9JGHAtWwGWaWxmsQWUmsNAGSXTq,G7iHHGDm7CRTew86nR5Y8bxDorQpgvwXGSzZ2QKNoev6,4E8Vmpn13dTg2P6h4PsTX4EZUgTGdWzoCkbVgwSQximC,k15am7rgq5nAKrXSLBAWRrm639jyvVQnXTopB7iqAag,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "72XVcAgKgB2hqSKZnCgWa3XfmwuDisezbXGtCEk1pZZw",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=72XVcAgKgB2hqSKZnCgWa3XfmwuDisezbXGtCEk1pZZw&amount=1&index=651&proof=6L2AGpwgsMarHo3YUZJfufYXq9RdzzUkzDyqExyCx4NQ,G7iHHGDm7CRTew86nR5Y8bxDorQpgvwXGSzZ2QKNoev6,4E8Vmpn13dTg2P6h4PsTX4EZUgTGdWzoCkbVgwSQximC,k15am7rgq5nAKrXSLBAWRrm639jyvVQnXTopB7iqAag,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "73RYWZtiar9U8XPtYGm9hEWEGQrJcqjJ1aCjbLzDLd1w",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=73RYWZtiar9U8XPtYGm9hEWEGQrJcqjJ1aCjbLzDLd1w&amount=1&index=652&proof=AbGAavYXfdeRJ3znGXbSJCXoXi193GpR5rd4FWzBWNWk,8VBoNKKg9inq82j9gU5qTzeCze5rQ9G6LPSoL3qGviDX,GnRtGKrLTTgmYGoKgGsXZCBew6JgAgS6RXSAhfL5ng4N,k15am7rgq5nAKrXSLBAWRrm639jyvVQnXTopB7iqAag,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "73uS18fxwEhp2zyPFQcR7MEQ8BL6azC9Z7UGeGXzfci9",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=73uS18fxwEhp2zyPFQcR7MEQ8BL6azC9Z7UGeGXzfci9&amount=1&index=653&proof=26pUX8F3QNVrUBzXBEivDjbdaFZYd4etHJ2GhqVcqPXj,8VBoNKKg9inq82j9gU5qTzeCze5rQ9G6LPSoL3qGviDX,GnRtGKrLTTgmYGoKgGsXZCBew6JgAgS6RXSAhfL5ng4N,k15am7rgq5nAKrXSLBAWRrm639jyvVQnXTopB7iqAag,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "73wqf8siLcSwBcTH1idSuLnBVrej4AniXJ4zCwZPCjYd",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=73wqf8siLcSwBcTH1idSuLnBVrej4AniXJ4zCwZPCjYd&amount=1&index=654&proof=DjQFZEoNNmRKUedLyzAdoQTYH4brfEzsCd5JuPysCH9t,A6vXQMPoE57jL6iQk6Ri3M7j7FTeS4WWLekss82kVJK8,GnRtGKrLTTgmYGoKgGsXZCBew6JgAgS6RXSAhfL5ng4N,k15am7rgq5nAKrXSLBAWRrm639jyvVQnXTopB7iqAag,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "74B9Ksx6A8Hz8gev84XFv3UoRq8F4BUwBR8uk2asSd4B",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=74B9Ksx6A8Hz8gev84XFv3UoRq8F4BUwBR8uk2asSd4B&amount=1&index=655&proof=DkEYktKaGzzgSpHaPdNBEzLu8c7kaCVkPfTc67vTz1WR,A6vXQMPoE57jL6iQk6Ri3M7j7FTeS4WWLekss82kVJK8,GnRtGKrLTTgmYGoKgGsXZCBew6JgAgS6RXSAhfL5ng4N,k15am7rgq5nAKrXSLBAWRrm639jyvVQnXTopB7iqAag,Fy7r5vzSFdPWnb1tB5m1uEBw9huryp7abD5BygParH4K,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "74wP8ZrSDUyxnVQa63YHSeJULKuxfRtjVakeAsP75veP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=74wP8ZrSDUyxnVQa63YHSeJULKuxfRtjVakeAsP75veP&amount=1&index=656&proof=CM99bqZF7qVotUffX6GeuDtBexNMvpVmHi2vpbW2FMVq,Dtyxfp2kyBwuorZosufuBSH5KgNcS3NsXc8VoxmV6ZCr,Dr9AbuzoJpynxyJ88eHNPSc94zUiWiJUbmcedj5Y3zXf,7UEGd73r4PvNTrP8LTF3pU18oggafRP47og1CWHZ7zd3,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "75g14sjbNaMMa5CiCDJaBK6X6nfiawS4EtFyZimZE94D",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=75g14sjbNaMMa5CiCDJaBK6X6nfiawS4EtFyZimZE94D&amount=1&index=657&proof=91D96Vk3T3fHqJbzVSYPu2qUHubhrqv18xCPDwpLpFye,Dtyxfp2kyBwuorZosufuBSH5KgNcS3NsXc8VoxmV6ZCr,Dr9AbuzoJpynxyJ88eHNPSc94zUiWiJUbmcedj5Y3zXf,7UEGd73r4PvNTrP8LTF3pU18oggafRP47og1CWHZ7zd3,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "75gi4ZYXAj4AWnGfz9SUNvKzLgPnTSqcZu32tHhJZXFe",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=75gi4ZYXAj4AWnGfz9SUNvKzLgPnTSqcZu32tHhJZXFe&amount=1&index=658&proof=E2H1NN3Y74LGcftXj4RXtuTcoseRtEBhe7Lawv7MVkSk,BrYUyAC7BH1RowUHCSeToySLXFNt5caXFMwKGPp5U2Xw,Dr9AbuzoJpynxyJ88eHNPSc94zUiWiJUbmcedj5Y3zXf,7UEGd73r4PvNTrP8LTF3pU18oggafRP47og1CWHZ7zd3,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "75YSKSeUPMLtPmbk8pa3LKHdMCm4EKysAvwNW9WTzjwK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=75YSKSeUPMLtPmbk8pa3LKHdMCm4EKysAvwNW9WTzjwK&amount=1&index=659&proof=GFTVAvsUEsnSKAvbTNZuun9weAyVesWwrTH4sks39KqJ,BrYUyAC7BH1RowUHCSeToySLXFNt5caXFMwKGPp5U2Xw,Dr9AbuzoJpynxyJ88eHNPSc94zUiWiJUbmcedj5Y3zXf,7UEGd73r4PvNTrP8LTF3pU18oggafRP47og1CWHZ7zd3,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "762EFkjShU3jAyb6LrernhQQvSV4FPJfaf6624Hx7T34",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=762EFkjShU3jAyb6LrernhQQvSV4FPJfaf6624Hx7T34&amount=1&index=660&proof=FeH3nBCHJrHo6bM24g5dKwd3Z63ziAy1bqbYjMpP8FmA,3jTQ8oLTx7kLv6ZTJFSFYTw64AkjTZn92vhFecvy3SrB,5aj7KRN9J5hirqaVhiZG89tNTnCKPcpDT8fqRYdwXap7,7UEGd73r4PvNTrP8LTF3pU18oggafRP47og1CWHZ7zd3,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "77Mcx36ebXD9WJjYkQiJ2vHtKGrMtweyfCrbkkpx5MfS",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=77Mcx36ebXD9WJjYkQiJ2vHtKGrMtweyfCrbkkpx5MfS&amount=1&index=661&proof=99L9uSQZr67cbJq6BmXA1YeAaagn6VfwTreWezuoEFFE,3jTQ8oLTx7kLv6ZTJFSFYTw64AkjTZn92vhFecvy3SrB,5aj7KRN9J5hirqaVhiZG89tNTnCKPcpDT8fqRYdwXap7,7UEGd73r4PvNTrP8LTF3pU18oggafRP47og1CWHZ7zd3,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "77NsXjV6GeD1q4sufxHfRrkCwtjWzdRqg9LbGkNSqTJg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=77NsXjV6GeD1q4sufxHfRrkCwtjWzdRqg9LbGkNSqTJg&amount=1&index=662&proof=C4HnHjyLr6Cqu5Aafy7gmpQeJrGuUPJaTu8PaQQ8BT3A,CYZE5JUiSpgtMFphu1mMJJRBmUo7CYgNviwS7EENfvqJ,5aj7KRN9J5hirqaVhiZG89tNTnCKPcpDT8fqRYdwXap7,7UEGd73r4PvNTrP8LTF3pU18oggafRP47og1CWHZ7zd3,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "77Zd8sr53mw5ndRoJdT2JbgTzvDpE2DzmbczKjGp5En2",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=77Zd8sr53mw5ndRoJdT2JbgTzvDpE2DzmbczKjGp5En2&amount=1&index=663&proof=3v7U1FoMkP8a3CGNiZu1F7974BvjigKJHBjVXhG4NUq5,CYZE5JUiSpgtMFphu1mMJJRBmUo7CYgNviwS7EENfvqJ,5aj7KRN9J5hirqaVhiZG89tNTnCKPcpDT8fqRYdwXap7,7UEGd73r4PvNTrP8LTF3pU18oggafRP47og1CWHZ7zd3,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "78SV3qzLs9je5mPHBwLdY9wVZmhcwCAPmnYLjAJZeLk4",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=78SV3qzLs9je5mPHBwLdY9wVZmhcwCAPmnYLjAJZeLk4&amount=1&index=664&proof=BgoFKbtadxwdzsS5jbzDjsy7t7rk4tkG17z76JkTh7vZ,G8Jyj3cZSN1YSozBZM3YmZhMAVjEEDUBDtkWUtxMujjd,C3s4f7ZWXMXHFdi8b53FHsPTDnW4G6pWmzDby7W4GDpD,HRU87J3G53cRwZ6EY4ZRayrxHhu6YbUnGCE6u3XCwjjN,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "78Y5WAFUt4TNQs7nFPSUMKyz26igkt46HRrPwzL4Y8ab",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=78Y5WAFUt4TNQs7nFPSUMKyz26igkt46HRrPwzL4Y8ab&amount=1&index=665&proof=Hnxxkjc8ADJ9fKv9qy82CXNkw9ZK1tA7vsLnKqB1s779,G8Jyj3cZSN1YSozBZM3YmZhMAVjEEDUBDtkWUtxMujjd,C3s4f7ZWXMXHFdi8b53FHsPTDnW4G6pWmzDby7W4GDpD,HRU87J3G53cRwZ6EY4ZRayrxHhu6YbUnGCE6u3XCwjjN,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "79C8ogRQuguQFcrh8GizxrhTjmRHnhtVWRASmW1mvwpB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=79C8ogRQuguQFcrh8GizxrhTjmRHnhtVWRASmW1mvwpB&amount=1&index=666&proof=9Nzqki2wUSryJWKkJdqn7ZKx5Pi9ZUKap18PFmxnRHZQ,2wndoxYzCv6RnnKgMGtezazioUUjifu8j5QxHh8R9Tq8,C3s4f7ZWXMXHFdi8b53FHsPTDnW4G6pWmzDby7W4GDpD,HRU87J3G53cRwZ6EY4ZRayrxHhu6YbUnGCE6u3XCwjjN,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7A1rrxTPZ2a3my4seW62BzGQjuPejRcEnJcvfAkZGcrk",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7A1rrxTPZ2a3my4seW62BzGQjuPejRcEnJcvfAkZGcrk&amount=1&index=667&proof=9oCSo3ksj9GBFjCxt5YqDpa4Ek9NWEVkDNLxGV8fWpLq,2wndoxYzCv6RnnKgMGtezazioUUjifu8j5QxHh8R9Tq8,C3s4f7ZWXMXHFdi8b53FHsPTDnW4G6pWmzDby7W4GDpD,HRU87J3G53cRwZ6EY4ZRayrxHhu6YbUnGCE6u3XCwjjN,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7A9oMa5hFjgBguwpJyAfY91aNzWjPXyfNoMYqmBpDSSv",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7A9oMa5hFjgBguwpJyAfY91aNzWjPXyfNoMYqmBpDSSv&amount=1&index=668&proof=6EMEgV28gedkssmKVT4PqHJGadMapRWiGMsfdAdodQfH,GL7kfyMpUia6yQKeYkVcBggEq42NJjcF6no2iw8rgoMC,3JFFWyaAvVFfSRfobUo1efD8fpe8pB9gj2YC7qVu19R3,HRU87J3G53cRwZ6EY4ZRayrxHhu6YbUnGCE6u3XCwjjN,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7AAWQXLPnrRKg6JPgzeGyQPAreGThw2G21RNGwNrBgzj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7AAWQXLPnrRKg6JPgzeGyQPAreGThw2G21RNGwNrBgzj&amount=1&index=669&proof=9zDK946FP2iJEEWBqako6DDniAa47CoL1UsvaKSAG2uq,GL7kfyMpUia6yQKeYkVcBggEq42NJjcF6no2iw8rgoMC,3JFFWyaAvVFfSRfobUo1efD8fpe8pB9gj2YC7qVu19R3,HRU87J3G53cRwZ6EY4ZRayrxHhu6YbUnGCE6u3XCwjjN,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7AprRVbKSAHB8iwWh7hdX3T8Tpy9VXBUfd6QjCNG2LSB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7AprRVbKSAHB8iwWh7hdX3T8Tpy9VXBUfd6QjCNG2LSB&amount=1&index=670&proof=GwM8APNnx4ii16rAkBsWPCmLMTw7qfopJisxCUvwynH1,6oZfi73DvnvyeMRHi4XNKTpMShYjD8RkNCCJNJNAF2U4,3JFFWyaAvVFfSRfobUo1efD8fpe8pB9gj2YC7qVu19R3,HRU87J3G53cRwZ6EY4ZRayrxHhu6YbUnGCE6u3XCwjjN,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7ayUjq6FHKzdTtwbYgZLE5jEi7Y7uGJRbyXkJC9vJaNa",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7ayUjq6FHKzdTtwbYgZLE5jEi7Y7uGJRbyXkJC9vJaNa&amount=1&index=671&proof=615h6eixyhi8ZuzbG2e2LK1YvWfep35zcHccwut2ReEQ,6oZfi73DvnvyeMRHi4XNKTpMShYjD8RkNCCJNJNAF2U4,3JFFWyaAvVFfSRfobUo1efD8fpe8pB9gj2YC7qVu19R3,HRU87J3G53cRwZ6EY4ZRayrxHhu6YbUnGCE6u3XCwjjN,rZRpRuEwwUXJvPpXqDfT1Ub49MScrZbd31hKkfV2qQH,Am7ttaqZuXQHbo5SNrEVijf4TmCh6Wf2LoVKh76qYbLm,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7B4rq1g1M7MbMVpdWcqPEPuDMmrFfVm3M356NUf6CTXW",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7B4rq1g1M7MbMVpdWcqPEPuDMmrFfVm3M356NUf6CTXW&amount=1&index=672&proof=E6sVt86PSyVxj1YjLyxyFVLiadAyqsmhTD4EyvUXzNNP,BpdCLpMZ6MaLwAmSEXewCFq1wj5caWKchEmVLJuhgJ2H,BzmBRgJwiwVVuMcXPQFHeF7seLCKCYoceFha3yqUaD44,7AfVkYc1ygpoxdA6yQ3uB5p7wAqEQQv2L2xpR788Vxmg,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7BeRBYiNrFPENYrrJdRKxpVvX1JCMjrsuwBSNjjMJsKP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7BeRBYiNrFPENYrrJdRKxpVvX1JCMjrsuwBSNjjMJsKP&amount=1&index=673&proof=HJaYdLAhpmySaLLZ7E298C32bQCxfechNkn7G4yz2CcW,BpdCLpMZ6MaLwAmSEXewCFq1wj5caWKchEmVLJuhgJ2H,BzmBRgJwiwVVuMcXPQFHeF7seLCKCYoceFha3yqUaD44,7AfVkYc1ygpoxdA6yQ3uB5p7wAqEQQv2L2xpR788Vxmg,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7c1YQCU8XhTyBY5BL3GVofRSTbMsiGuQxfqHvrmNvmzQ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7c1YQCU8XhTyBY5BL3GVofRSTbMsiGuQxfqHvrmNvmzQ&amount=1&index=674&proof=67Fi4YevG4qCctwJhX4JwxT25nHda2iEEN4bpQ2B7o9c,DDucTigCuYsaXKFsCKPuW86qpHF9FzTChDWsQwG8qas3,BzmBRgJwiwVVuMcXPQFHeF7seLCKCYoceFha3yqUaD44,7AfVkYc1ygpoxdA6yQ3uB5p7wAqEQQv2L2xpR788Vxmg,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7DCeoFyRNPeLrAf1fsZj8jq25pHjXZ4p5f5SmnbuA2fb",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7DCeoFyRNPeLrAf1fsZj8jq25pHjXZ4p5f5SmnbuA2fb&amount=1&index=675&proof=2JYs6fBjTAqBUGQ8tgzuAuye6z83jSMJkwHAcAu55V2n,DDucTigCuYsaXKFsCKPuW86qpHF9FzTChDWsQwG8qas3,BzmBRgJwiwVVuMcXPQFHeF7seLCKCYoceFha3yqUaD44,7AfVkYc1ygpoxdA6yQ3uB5p7wAqEQQv2L2xpR788Vxmg,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7DjnG4kRqb8tUqqHzaHwuKhYjK6CZ3uSwKRCSvPN8vbq",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7DjnG4kRqb8tUqqHzaHwuKhYjK6CZ3uSwKRCSvPN8vbq&amount=1&index=676&proof=3GcNTCrD5dABwp72xPqeDSgT5aTXjNx1UoNqQZ5wycS7,3u2dvzJaLQ5dHfhBetSy9XTohdLKoTQyKdQeMCzf5V86,ABfAgSgUyJuV3b7YPbMLdU9FAsFH6wGXKnonDyA1fyLT,7AfVkYc1ygpoxdA6yQ3uB5p7wAqEQQv2L2xpR788Vxmg,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7e2Wj8UsF73WFvDuCAtLS5ZZM5zsNwcREEr57dmvu2QV",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7e2Wj8UsF73WFvDuCAtLS5ZZM5zsNwcREEr57dmvu2QV&amount=1&index=677&proof=14SckJ6XSiGUvrsvAraL6S6eeW1QQTcCAVZeDMbeV1na,3u2dvzJaLQ5dHfhBetSy9XTohdLKoTQyKdQeMCzf5V86,ABfAgSgUyJuV3b7YPbMLdU9FAsFH6wGXKnonDyA1fyLT,7AfVkYc1ygpoxdA6yQ3uB5p7wAqEQQv2L2xpR788Vxmg,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7eaTuS82prvR3NXCejn4ZVwsaTXFAMvopzwiQMLhawKf",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7eaTuS82prvR3NXCejn4ZVwsaTXFAMvopzwiQMLhawKf&amount=1&index=678&proof=8fkZJuTgu1PiRUTFy7x2wARmzfy2gMjYvabZ2ZPqcT9n,8zEMzReGnQvYyyZcpzYYbQQBjsLgY2tgj3CVRX3w1V5J,ABfAgSgUyJuV3b7YPbMLdU9FAsFH6wGXKnonDyA1fyLT,7AfVkYc1ygpoxdA6yQ3uB5p7wAqEQQv2L2xpR788Vxmg,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7eowApNoXvxcVeHs5fZ1XdUVEUAD7JhvmQYGu8hQ4BwB",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7eowApNoXvxcVeHs5fZ1XdUVEUAD7JhvmQYGu8hQ4BwB&amount=1&index=679&proof=96wa1k6BUfaVoeFdHD9LJsS3zS43EK3ebx6L3rL6qPyk,8zEMzReGnQvYyyZcpzYYbQQBjsLgY2tgj3CVRX3w1V5J,ABfAgSgUyJuV3b7YPbMLdU9FAsFH6wGXKnonDyA1fyLT,7AfVkYc1ygpoxdA6yQ3uB5p7wAqEQQv2L2xpR788Vxmg,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7EPpeBC1rhuwKWhtyAF886V1CGaorbhCodJwKtN23z3f",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7EPpeBC1rhuwKWhtyAF886V1CGaorbhCodJwKtN23z3f&amount=1&index=680&proof=G6b6MH3wf5UUkLvgv7Q2ZynVRbnZWn1FQZyaFQcY6pF4,3eDheRysixfVQnKssd2xaHMqb2ohBTURvLzQqwFA43MZ,6bgEoa7SYK2T3X3HZEfTCrwpYKjk4Fd55c3WRBoho3Ht,Cz5eaaa3qQoPkQso21ptjU1DNv4a2pDSnspbJkLPzLuU,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7eQ3akJCMmvQz1k1BLrjV3H85vFhr82gyqiVhhdytqXv",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7eQ3akJCMmvQz1k1BLrjV3H85vFhr82gyqiVhhdytqXv&amount=1&index=681&proof=3JGV7CGALFjp42isDhRBecMg2cqNCReAUXsMHNw4sbXR,3eDheRysixfVQnKssd2xaHMqb2ohBTURvLzQqwFA43MZ,6bgEoa7SYK2T3X3HZEfTCrwpYKjk4Fd55c3WRBoho3Ht,Cz5eaaa3qQoPkQso21ptjU1DNv4a2pDSnspbJkLPzLuU,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7eRHePJ1oDDhuSGc8ZUhZdVPNvKkv3hzkbCuXHQubQtE",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7eRHePJ1oDDhuSGc8ZUhZdVPNvKkv3hzkbCuXHQubQtE&amount=1&index=682&proof=HfyVsAYjjrhCeoF3A8vnXugGkWv432C9suZoqB4A8qCo,7dKBtDrTr3fmTgxUvuA2rzr4zkuECxy6vFjoY3iqSFEd,6bgEoa7SYK2T3X3HZEfTCrwpYKjk4Fd55c3WRBoho3Ht,Cz5eaaa3qQoPkQso21ptjU1DNv4a2pDSnspbJkLPzLuU,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7EuRk48UADVTe4WtVBV8zC8NbaFaWAUFXoYP73Yn85A5",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7EuRk48UADVTe4WtVBV8zC8NbaFaWAUFXoYP73Yn85A5&amount=1&index=683&proof=EJHdFJRiBn9KDQ9f4HuANdys1y6oLGuUQVx7Df46meWy,7dKBtDrTr3fmTgxUvuA2rzr4zkuECxy6vFjoY3iqSFEd,6bgEoa7SYK2T3X3HZEfTCrwpYKjk4Fd55c3WRBoho3Ht,Cz5eaaa3qQoPkQso21ptjU1DNv4a2pDSnspbJkLPzLuU,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7EXVY2CZzP7p9YNMPUE3TmeqFEVKiNts3TPamNVSFexz",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7EXVY2CZzP7p9YNMPUE3TmeqFEVKiNts3TPamNVSFexz&amount=1&index=684&proof=7qm7EmqgF6G4nXEUDmw2TXVJbvQup18VygiKtHQsQ1kB,3XDKc5AJRvPs6MZY7QSG8cr63denRypHpKKYTqRvaXgN,3szvNvY7ETwmyg9TaHFYfLpF4XXeCthM9WubY7E63buV,Cz5eaaa3qQoPkQso21ptjU1DNv4a2pDSnspbJkLPzLuU,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7f6hpqTQrAX9q6KccoaQXEP83fit5CymVqZSKCiYAYSj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7f6hpqTQrAX9q6KccoaQXEP83fit5CymVqZSKCiYAYSj&amount=1&index=685&proof=6Z2t7vQtZXGrFRcJRtbX9aJUHqonnJ4ofis6W94EY13Q,3XDKc5AJRvPs6MZY7QSG8cr63denRypHpKKYTqRvaXgN,3szvNvY7ETwmyg9TaHFYfLpF4XXeCthM9WubY7E63buV,Cz5eaaa3qQoPkQso21ptjU1DNv4a2pDSnspbJkLPzLuU,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7f8HfUP4c4HrdrRN1Kn9ydr5p595jy6FB6PhBPdq1MH6",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7f8HfUP4c4HrdrRN1Kn9ydr5p595jy6FB6PhBPdq1MH6&amount=1&index=686&proof=4wxw8Sj8GZ4NCA5Gwu37npQdy8BLiyqPHDWCcjBgQP5c,GVm6bvmy1StSB44bsbxrH3EPj6h5i7rUY2rwGhqC71sm,3szvNvY7ETwmyg9TaHFYfLpF4XXeCthM9WubY7E63buV,Cz5eaaa3qQoPkQso21ptjU1DNv4a2pDSnspbJkLPzLuU,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7fRqFPjhJ3Bf9FHUeYXyJwB8TZ6tdHr5to3KhFsjcimN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7fRqFPjhJ3Bf9FHUeYXyJwB8TZ6tdHr5to3KhFsjcimN&amount=1&index=687&proof=HgE2aSh84MpzmEcQ1VoHgcRJzLRLtsogeVr3bZj8mYKY,GVm6bvmy1StSB44bsbxrH3EPj6h5i7rUY2rwGhqC71sm,3szvNvY7ETwmyg9TaHFYfLpF4XXeCthM9WubY7E63buV,Cz5eaaa3qQoPkQso21ptjU1DNv4a2pDSnspbJkLPzLuU,ELjKzriVCKj3Ako3M6dTuZNZvgnu1atwsAQ224vf1xK8,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7FsL6CXn2LY3j534gtR8fBxUz1xtUm2G68K1eGqFuaEF",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7FsL6CXn2LY3j534gtR8fBxUz1xtUm2G68K1eGqFuaEF&amount=1&index=688&proof=7zSn9jixtx6UuBZZFXWeJ1cbMmzdNVo5um3yaHgjCW9U,jk6duMsUPLj51zFsXFwJfTMCNTVbt24m2ymVFsovSmf,DPsdopETdMVZq7EkxUMA2a7rBvxzvBGhN5HgS8gcfwpr,ARjYtEcQkiPRpUHVg5cvyFGDgzEtFbfzJ2NnDbPoerm2,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7fTujceBjopTTatre2R1Z9BzGWPYSa6NGET5fPSFURPt",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7fTujceBjopTTatre2R1Z9BzGWPYSa6NGET5fPSFURPt&amount=1&index=689&proof=FGjdyJUJo3w3tZcUWaVDUgACBRR7WQnSh971VEuC6ogz,jk6duMsUPLj51zFsXFwJfTMCNTVbt24m2ymVFsovSmf,DPsdopETdMVZq7EkxUMA2a7rBvxzvBGhN5HgS8gcfwpr,ARjYtEcQkiPRpUHVg5cvyFGDgzEtFbfzJ2NnDbPoerm2,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7FZYyn9jvJy9sJMKAynTDPEgoyzHwffYnHSktJvarnmA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7FZYyn9jvJy9sJMKAynTDPEgoyzHwffYnHSktJvarnmA&amount=1&index=690&proof=5dNEGH1SKc7DmyvheEZ6Q7kVG7z7hUub9AaEYhnFF4oi,8epgq1TuaWiPCHvnGy7t1JyUMHgSjDK2y8zv6ThGTFZt,DPsdopETdMVZq7EkxUMA2a7rBvxzvBGhN5HgS8gcfwpr,ARjYtEcQkiPRpUHVg5cvyFGDgzEtFbfzJ2NnDbPoerm2,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7g2yB8Zb4SscoTt4DH35Ct57aAfDAYQZpLMv5LkY87qj",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7g2yB8Zb4SscoTt4DH35Ct57aAfDAYQZpLMv5LkY87qj&amount=1&index=691&proof=FZ7M1eyhYwDFo1VPMtDNoKAJji6pW75J65TmMSr3Brxg,8epgq1TuaWiPCHvnGy7t1JyUMHgSjDK2y8zv6ThGTFZt,DPsdopETdMVZq7EkxUMA2a7rBvxzvBGhN5HgS8gcfwpr,ARjYtEcQkiPRpUHVg5cvyFGDgzEtFbfzJ2NnDbPoerm2,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7GsmEJBSb9x29iVCKEsTYsNHyL1g47QPTRDmSWCkAdwH",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7GsmEJBSb9x29iVCKEsTYsNHyL1g47QPTRDmSWCkAdwH&amount=1&index=692&proof=AzbovZPUNkuJFGS7LJcxKdXaGrv6F1wB9pZHgNuX9NFt,2rKH52gEWmRLRv5t8QALCkrLxrPZ4GMmYBWNzDCbLo8b,7G9Z6HyaUz7Mg6PURbBis9iXBGdMa6ppe54br1BVM8w1,ARjYtEcQkiPRpUHVg5cvyFGDgzEtFbfzJ2NnDbPoerm2,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7gUUQZs8mzGWtcr7eCF7XgkJVixhM4KKKy4Jn6XsBzxR",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7gUUQZs8mzGWtcr7eCF7XgkJVixhM4KKKy4Jn6XsBzxR&amount=1&index=693&proof=4HF2ywmnNfbspu6vkb6mavfcYb2yz4DG34K1KbRwpp7N,2rKH52gEWmRLRv5t8QALCkrLxrPZ4GMmYBWNzDCbLo8b,7G9Z6HyaUz7Mg6PURbBis9iXBGdMa6ppe54br1BVM8w1,ARjYtEcQkiPRpUHVg5cvyFGDgzEtFbfzJ2NnDbPoerm2,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7H3jBKJuBrhz7e4envaqeRa6yVTKKAKhxjGohLXJvjUx",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7H3jBKJuBrhz7e4envaqeRa6yVTKKAKhxjGohLXJvjUx&amount=1&index=694&proof=2rkWX3KyBZZd1jYGAECWctxVECQSyBy4g3iXkyDhZXUT,4nwCe46ezTkXhpG96GBo3nhftZe7ZG3gxxyTdYGyc8dZ,7G9Z6HyaUz7Mg6PURbBis9iXBGdMa6ppe54br1BVM8w1,ARjYtEcQkiPRpUHVg5cvyFGDgzEtFbfzJ2NnDbPoerm2,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7hHRobyXm5jhB9uNXLnTti4RTjcY66yDXinVdvtAFTP",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7hHRobyXm5jhB9uNXLnTti4RTjcY66yDXinVdvtAFTP&amount=1&index=695&proof=3jPio6wgBDLmNngQWLEGCDeiX32qMDm3CWjsZvJALcje,4nwCe46ezTkXhpG96GBo3nhftZe7ZG3gxxyTdYGyc8dZ,7G9Z6HyaUz7Mg6PURbBis9iXBGdMa6ppe54br1BVM8w1,ARjYtEcQkiPRpUHVg5cvyFGDgzEtFbfzJ2NnDbPoerm2,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7hpwNXxDjkCu2wJWaC3M9JmkEmLyGbeBNaZCBes9YPPN",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7hpwNXxDjkCu2wJWaC3M9JmkEmLyGbeBNaZCBes9YPPN&amount=1&index=696&proof=E2pntdZUDd4z937Gu7jB9MiX8j2BGhY5ZVHPxBqKboDL,D6PYtWGz7xmHmrh938NmNgFP4oVaUXVzVKNhnzEUZbbH,8qJSNUeq1uWSaa1sUuckyzboM1zh8vwuRtvRErZxiTpF,oiV6BhFcnFqUpMQczaSTX7FLW1o2wfhZuvCSvwQTjZr,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7hyrPcPn9CLp5MgytxSthty7bNYkpibtCPrNe3SJmo17",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7hyrPcPn9CLp5MgytxSthty7bNYkpibtCPrNe3SJmo17&amount=1&index=697&proof=Avgx5wFNqc6rUxSQL5CCwoBtDK8uUeRXBQp4xqVcTAR3,D6PYtWGz7xmHmrh938NmNgFP4oVaUXVzVKNhnzEUZbbH,8qJSNUeq1uWSaa1sUuckyzboM1zh8vwuRtvRErZxiTpF,oiV6BhFcnFqUpMQczaSTX7FLW1o2wfhZuvCSvwQTjZr,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7imGs7UVEvLSs8JqWbs7q1kDGLz3dWP7q4B7jhmxxku4",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7imGs7UVEvLSs8JqWbs7q1kDGLz3dWP7q4B7jhmxxku4&amount=1&index=698&proof=AXp8TkHqPdwMGfZDUvevJqT3MQcEXnrpgnHetGmoGwEg,Chha6oaYSSjZCJv1JvUQ1TaXYcwnrYHMgA6CsY4A8RUn,8qJSNUeq1uWSaa1sUuckyzboM1zh8vwuRtvRErZxiTpF,oiV6BhFcnFqUpMQczaSTX7FLW1o2wfhZuvCSvwQTjZr,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7jAU9XHnjhju3mKxTo5vcrhQhonQRmXDmLhDJBoJ8SXg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7jAU9XHnjhju3mKxTo5vcrhQhonQRmXDmLhDJBoJ8SXg&amount=1&index=699&proof=FUu8z32t2eMVw6sPu1NQvWr85TkngBgC99A4WFGM5PQ9,Chha6oaYSSjZCJv1JvUQ1TaXYcwnrYHMgA6CsY4A8RUn,8qJSNUeq1uWSaa1sUuckyzboM1zh8vwuRtvRErZxiTpF,oiV6BhFcnFqUpMQczaSTX7FLW1o2wfhZuvCSvwQTjZr,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7jfhoryDYc1VvSfibavycFkzJM64x1KWMrVtcpa5RMwk",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7jfhoryDYc1VvSfibavycFkzJM64x1KWMrVtcpa5RMwk&amount=1&index=700&proof=DGEGpEabfABniXhUmb625m6HAZdzD3f4KgWyDLXM7WNW,232YjkYyp4eRJ8TcKjPeZJ5wryd7XFW2mqNBo3mdUNhj,3EZfYzDHBFWhHTQvXgP6oxzmWTK8QU9thJywr8cDEkNQ,oiV6BhFcnFqUpMQczaSTX7FLW1o2wfhZuvCSvwQTjZr,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7jNsjkhunMrmynMPnnHYcKhHnzLuh2AKqoCrhMSv3VSr",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7jNsjkhunMrmynMPnnHYcKhHnzLuh2AKqoCrhMSv3VSr&amount=1&index=701&proof=CzHYEbG3jxv4HJHnxvUbpyLGKH7idc6kMJJTMJq5QYeL,232YjkYyp4eRJ8TcKjPeZJ5wryd7XFW2mqNBo3mdUNhj,3EZfYzDHBFWhHTQvXgP6oxzmWTK8QU9thJywr8cDEkNQ,oiV6BhFcnFqUpMQczaSTX7FLW1o2wfhZuvCSvwQTjZr,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7jwv1aV36suyevYE5qcrP6MUoAoXD3hx4W516LEbBT4a",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7jwv1aV36suyevYE5qcrP6MUoAoXD3hx4W516LEbBT4a&amount=1&index=702&proof=EyYLmE9gFQbdNCve33KNMrtcjAkkN8U4jpaJYa41UsSt,AWgEeBACiWgDJ6H61qpyX3EXzCZdPMynrEkQ3wjhpRSX,3EZfYzDHBFWhHTQvXgP6oxzmWTK8QU9thJywr8cDEkNQ,oiV6BhFcnFqUpMQczaSTX7FLW1o2wfhZuvCSvwQTjZr,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7kbFb9x5Ck6vgFMqten3sA7YvGb991xsgxhGLs1X2kff",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7kbFb9x5Ck6vgFMqten3sA7YvGb991xsgxhGLs1X2kff&amount=1&index=703&proof=J7JrWV5DBGgmGFqJX9UebggeB8RDUUfZrTMTEqh1UzEY,AWgEeBACiWgDJ6H61qpyX3EXzCZdPMynrEkQ3wjhpRSX,3EZfYzDHBFWhHTQvXgP6oxzmWTK8QU9thJywr8cDEkNQ,oiV6BhFcnFqUpMQczaSTX7FLW1o2wfhZuvCSvwQTjZr,6nVsPKbLXWcSWznUC6BGGhYuHexA4WM5j8A3VwgZLQkJ,F895cm7YXF44kjiY11gEkCVkfimNxeEbv39VpCP3HXPj,DauzFPGeyHZ4umQ3ZtwLXiLNn6GR7zd5GtA1HUGo6tQq,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7Kc7RZoRXNtfQWPFmYbkBixy6952jQS2M6WA3nrrbMx3",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7Kc7RZoRXNtfQWPFmYbkBixy6952jQS2M6WA3nrrbMx3&amount=1&index=704&proof=3PzUh23syfPxVcps3vaGdGpQNy3FFrtyY4W3NUJaVKob,9JstKkMwmoKTvQeZ2M3FaVgJ9ioBhAwULHusuaJamSdW,E4gNbrJdwzBi4CoyPXQE5eMSzH6hDrDjvCDx4a21Xua9,Bk8GVtz3UpnjBakW1oHdTntuBMXD41FVxD83hU9SZrU1,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7krwH492pdDhuaTrxbowUDxERP99hAkR8vtXFRPjfMYg",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7krwH492pdDhuaTrxbowUDxERP99hAkR8vtXFRPjfMYg&amount=1&index=705&proof=DwWT94vejibYnwNEBqM9jd2qt7ovW352n1r8cpXTMBR5,9JstKkMwmoKTvQeZ2M3FaVgJ9ioBhAwULHusuaJamSdW,E4gNbrJdwzBi4CoyPXQE5eMSzH6hDrDjvCDx4a21Xua9,Bk8GVtz3UpnjBakW1oHdTntuBMXD41FVxD83hU9SZrU1,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7L2jpbQdVwfZyy9JZt6QjLygEQskcSqEAAiMEwZPp7RJ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7L2jpbQdVwfZyy9JZt6QjLygEQskcSqEAAiMEwZPp7RJ&amount=1&index=706&proof=FuHMsLAi4TpLsqwX5UUzs8Pm9g9zyEgDLU9Ubz3isTTv,DTz7Ejrc65PcyposWd4fVHwKvbBGNM92egK9Vb61q8cB,E4gNbrJdwzBi4CoyPXQE5eMSzH6hDrDjvCDx4a21Xua9,Bk8GVtz3UpnjBakW1oHdTntuBMXD41FVxD83hU9SZrU1,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7LbdZjCrz5vwiPg2wnxM8bnu7ukV8gxRSARpNwtMALvU",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7LbdZjCrz5vwiPg2wnxM8bnu7ukV8gxRSARpNwtMALvU&amount=1&index=707&proof=BbJF8vs333hjdS9aXfEcZvX4XtRXoGveBp38roonY669,DTz7Ejrc65PcyposWd4fVHwKvbBGNM92egK9Vb61q8cB,E4gNbrJdwzBi4CoyPXQE5eMSzH6hDrDjvCDx4a21Xua9,Bk8GVtz3UpnjBakW1oHdTntuBMXD41FVxD83hU9SZrU1,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7mKC8XfBqaTarnHoDNfV3rSFyHGpaWZBaDmkXXUFntSA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7mKC8XfBqaTarnHoDNfV3rSFyHGpaWZBaDmkXXUFntSA&amount=1&index=708&proof=ENxUt5rw7oYu1yvNsesp1eMyRymrycZRggpmjChf34us,6GRQtVKbLoCMrbaAX3gBwB6WLoHuUPt9oqRvvMq6wKGe,5qaFF31MXCHcwMaB6PBQMgAwpcKt3jPRzTJgseAyr9zt,Bk8GVtz3UpnjBakW1oHdTntuBMXD41FVxD83hU9SZrU1,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7n85zeGK83ZV69EkiCBWY2AUwJqiydXhKSFkvrnGcrqK",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7n85zeGK83ZV69EkiCBWY2AUwJqiydXhKSFkvrnGcrqK&amount=1&index=709&proof=A7GBaRZkRZK6JNfKKRwi25Cu87da1yv8USc41EhETzZm,6GRQtVKbLoCMrbaAX3gBwB6WLoHuUPt9oqRvvMq6wKGe,5qaFF31MXCHcwMaB6PBQMgAwpcKt3jPRzTJgseAyr9zt,Bk8GVtz3UpnjBakW1oHdTntuBMXD41FVxD83hU9SZrU1,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7nbdBncnnNk4N5P13xDPNHTgBxnyayukZkFoqEsYwFAV",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7nbdBncnnNk4N5P13xDPNHTgBxnyayukZkFoqEsYwFAV&amount=1&index=710&proof=8Lx3JgT7oLURPYkDGdUv9vvydhfXFPzyPALHSsNpMKsa,GBygSrjwBuJfN78DnMypEKLBDL5WqS2QQZL5MSiNQ3T5,5qaFF31MXCHcwMaB6PBQMgAwpcKt3jPRzTJgseAyr9zt,Bk8GVtz3UpnjBakW1oHdTntuBMXD41FVxD83hU9SZrU1,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7oMvqgC4AvDErqU3Z1bTvFBBvkb5UwBbc6uw8Gvyu7tG",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7oMvqgC4AvDErqU3Z1bTvFBBvkb5UwBbc6uw8Gvyu7tG&amount=1&index=711&proof=CBDenhcg9CnGmv83N1Y5DYyVkji7haLZWZ3jDz6EEQqC,GBygSrjwBuJfN78DnMypEKLBDL5WqS2QQZL5MSiNQ3T5,5qaFF31MXCHcwMaB6PBQMgAwpcKt3jPRzTJgseAyr9zt,Bk8GVtz3UpnjBakW1oHdTntuBMXD41FVxD83hU9SZrU1,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7oV3YUgArSgNTZTXmpQ8UVfPG27XdkNVbAqBWtQskcLA",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7oV3YUgArSgNTZTXmpQ8UVfPG27XdkNVbAqBWtQskcLA&amount=1&index=712&proof=5ZEGBx25mDpwbmDW4MALcbjxFvggaYVdS47cks3En2u3,HPwFokfaGDLBdPV4prdcQojurw7c7HPsm46f98iWhFHx,8cWwbevHaSKD1Y3tXZf2VXPRBcMFJVWhx7FBcYGw2gym,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7poFpMmxScaeBaHVogozVoEpgDRdk9UWini3VqsMweVQ",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7poFpMmxScaeBaHVogozVoEpgDRdk9UWini3VqsMweVQ&amount=1&index=713&proof=Eh6e23rJbVNPVFabjfzU1PH54kdg61PSg7iutbgKcbaU,HPwFokfaGDLBdPV4prdcQojurw7c7HPsm46f98iWhFHx,8cWwbevHaSKD1Y3tXZf2VXPRBcMFJVWhx7FBcYGw2gym,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7Q6GF8HrAxhpFmYma1Ca1sE9t5qNeRbJWunp9KfQD8cW",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7Q6GF8HrAxhpFmYma1Ca1sE9t5qNeRbJWunp9KfQD8cW&amount=1&index=714&proof=9Q1ab1jw9XbdQ2ZcswNyhvZxJtLZB5Z9rzk8xAKEnohr,AGLn2Jwkq6UtL6UgvSJwSfvJvxkPB8XoRPRTqGvugLkr,8cWwbevHaSKD1Y3tXZf2VXPRBcMFJVWhx7FBcYGw2gym,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    },
+    {
+     "Wallet Address": "7qn7Yjp4Nhv9pyWS1WQ5KFXnpVGnDQH5T4ofS2vUrzED",
+     "Amount": 1,
+     "Link": "https:\/\/gumdrop.metaplex.com\/claim?distributor=FXjokaaQg3Rqob5mbhFkJWtfneSgKw9oSsnA4B1TZ6kM&method=wallets&handle=7qn7Yjp4Nhv9pyWS1WQ5KFXnpVGnDQH5T4ofS2vUrzED&amount=1&index=715&proof=QP6qxM1U4Me7bLmUXc5nuwEP8KyE7TR6XBLoqk8NDgx,AGLn2Jwkq6UtL6UgvSJwSfvJvxkPB8XoRPRTqGvugLkr,8cWwbevHaSKD1Y3tXZf2VXPRBcMFJVWhx7FBcYGw2gym,7NbfuqSdZ2iUmKuMdQW1gGgLRHeWq3hxW8Qkz9S5Kw7B,DF7r8gLSkJE52zbuA3ebWw8gvF4YKnzcgWYowiU9f6PR,HpH1xZ8XdUUmTCQAdxUMfVW57214jYocu3B8mg2f3rbB&pin=NA&tokenAcc=DoFMH3vkdQeK9nUPNHux9cuj2PcQRFa9MNTPu9MpasuH"
+    }
+ ]
+
+
+
+
+
+
+ let btn = document.querySelector('#search')
+ 
+ let CopyBtn = document.querySelector('#Copy')
+
+btn.addEventListener('click', e => {
+  e.preventDefault();
+
+  let walletAddress = document.querySelector('#wallet').value;
+  let linkInput = document.querySelector('#linkInput');
+
+  btn.disabled = true
+  btn.innerHTML = "Searching...."
+  
+  for (let i = 0; i < walletsClaim.length; i++) {
+    const wallet = walletsClaim[i];
+    
+    if(walletAddress == wallet['Wallet Address']) {
+      console.log(wallet['Gumdrop Link'])
+      linkInput.value = wallet['Gumdrop Link']
+      
+      btn.disabled = false
+      btn.innerHTML = "Search"
+      CopyBtn.disabled = false
+
+      CopyBtn.addEventListener('click', e => {
+        e.preventDefault()
+        navigator.clipboard.writeText(wallet['Gumdrop Link']);
+        Swal.fire({
+          title: 'Success',
+          text: "Link Copied",
+          icon: 'success',
+          showCancelButton: false,
+          confirmButtonColor: '#6266FF',
+        })
+      })
+      break;
+    } else {
+      if(i === walletsClaim.length - 1) {
+        Swal.fire({
+          title: 'Oooops',
+          text: "Wallet Not Found",
+          icon: 'error',
+          showCancelButton: false,
+          confirmButtonColor: '#6266FF',
+        })
+        linkInput.value = 'Wallet Not Found'
+        btn.disabled = false
+        btn.innerHTML = "Search"
+      }
+    }
+
+    
+
+  }
+  
+})
+
+
